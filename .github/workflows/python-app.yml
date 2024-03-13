@@ -5,9 +5,9 @@ name: Python application
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
   workflow_call:
     inputs:
       dir:
@@ -23,30 +23,28 @@ on:
         required: true
         type: string
 
-env: 
+env:
   API_KEY: c6b450a2fb51077faa022f7412d89dcb
-  
 
 permissions:
   contents: read
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
     env:
-     FILE_PATH: ${{ github.ref }}/${{inputs.name}}
+      FILE_PATH: ./1.json
     steps:
-    - uses: actions/checkout@v3
-    - name: Set up Python 3.9
-      uses: actions/setup-python@v3
-      with:
-        python-version: "3.9"
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install git+https://github.com/MuXiu1997/ParaTranz-SDK-python.git
-        pip install PyGithub
-    - name: Test with pytest
-      run: |
-        python main.py
+      - uses: actions/checkout@v3
+      - name: Set up Python 3.9
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.9"
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install git+https://github.com/MuXiu1997/ParaTranz-SDK-python.git
+          pip install PyGithub
+      - name: Test with pytest
+        run: |
+          python main.py
