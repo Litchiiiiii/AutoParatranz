@@ -46,8 +46,8 @@ def get_filelist(dir, Filelist):
             # 如果需要忽略某些文件夹，使用以下代码
             # if s == "xxx":
             # continue
-            if s == "patchouli_books":
-                continue
+            #if s == "patchouli_books":
+                #continue
             newDir = os.path.join(dir, s)
             get_filelist(newDir, Filelist)
     return Filelist
@@ -63,5 +63,5 @@ if __name__ == '__main__':
         path = pathlist[1]
         path = path.replace('\\', '/')
         path = path.replace(os.path.basename(a), "")
-        print(a + "\n")
+        #print(a + "\n")
         asyncio.run(f(file=a,path=path))
