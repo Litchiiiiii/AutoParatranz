@@ -10,9 +10,6 @@ env:
   API_KEY: c6b450a2fb51077faa022f7412d89dcb
   GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-permissions:
-  contents: read
-
 jobs:
   check-issue-and-upload:
     if: contains(github.event.issue.labels.*.name, '自动化:json→paratranz')
