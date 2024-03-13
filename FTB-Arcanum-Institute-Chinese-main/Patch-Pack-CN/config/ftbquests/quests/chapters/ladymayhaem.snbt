@@ -1,0 +1,329 @@
+{
+	id: "74714D8CAB4C2668"
+	group: "125708BF22E6ABEE"
+	order_index: 2
+	filename: "ladymayhaem"
+	title: "梅希姆教授"
+	icon: "ftbai:codex_botania"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 1.0d
+			y: 2.0d
+			description: [
+				"亲爱的学生："
+				""
+				"到目前为止，你做得非常出色，我打算让你进行第一次测验。照你目前的进度看，这应该不会太难。给我带点&625魔力钢锭&r来，这东西以后会派上用场。"
+				""
+				"好吧，该出发了，祝你好运！"
+			]
+			dependencies: [
+				"4339E4F7236D2091"
+				"016AE3BFE56E4C03"
+			]
+			min_width: 350
+			id: "40E4947E39C4CCD4"
+			tasks: [{
+				id: "0765189001E710B8"
+				type: "item"
+				item: "botania:manasteel_ingot"
+				count: 25L
+				consume_items: true
+			}]
+		}
+		{
+			x: 3.5d
+			y: 7.5d
+			description: [
+				"亲爱的学生："
+				""
+				"你进步神速，已经到了第三次测验的时候了。"
+				""
+				"你永远不知道会发生什么，所以你应该时刻确保法力储备充足，以备不时之需。"
+				""
+				"祝你好运。"
+			]
+			dependencies: [
+				"44311CF7C23D7FF3"
+				"016AE3BFE56E4C03"
+			]
+			min_width: 300
+			id: "3A259D7D5BE376DB"
+			tasks: [{
+				id: "6293890DA067E0AD"
+				type: "item"
+				item: "botania:mana_mirror"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "5A5B35D64D036723"
+				type: "item"
+				item: {
+					id: "botania:blacker_lotus"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 3
+			}]
+		}
+		{
+			title: "火花"
+			x: 1.0d
+			y: 9.0d
+			description: [
+				"亲爱的学生："
+				""
+				"真不敢相信，我们的课程已经过半！相信你已经准备好进行第四次测验了，现在就开始吧。我需要你给我做一套火花升级。如有必要，你可以在植物魔法辞典里找到更多信息。"
+				""
+				"我本想祝你好运，但我觉得你并不需要，所以，祝你开心！"
+			]
+			dependencies: [
+				"3A259D7D5BE376DB"
+				"016AE3BFE56E4C03"
+			]
+			min_width: 300
+			id: "5E17CF538EFAE2A7"
+			tasks: [
+				{
+					id: "3AC66FF0A23564B2"
+					type: "item"
+					item: "botania:spark_upgrade_dispersive"
+					consume_items: true
+				}
+				{
+					id: "389BE7E3CF6631AD"
+					type: "item"
+					item: "botania:spark_upgrade_dominant"
+					consume_items: true
+				}
+				{
+					id: "6AFD4645E3E448FB"
+					type: "item"
+					item: "botania:spark_upgrade_recessive"
+					consume_items: true
+				}
+				{
+					id: "2B2AD80926D0B5B7"
+					type: "item"
+					item: "botania:spark_upgrade_isolated"
+					consume_items: true
+				}
+			]
+		}
+		{
+			icon: "botania:teru_teru_bozu"
+			x: 3.5d
+			y: 3.5d
+			description: [
+				"你好啊，我亲爱的学生！"
+				""
+				"在你的下一个测验中，我们要做点不同寻常的事——控制天气。虽然小雨对花儿有益，但它们还是需要大量的阳光。我希望你能带给我一个&6晴天娃娃&r，它能够驱散坏天气，带来阳光！除此之外，它还有好多有趣的地方！"
+				""
+				"祝你好运，玩得开心！"
+				""
+				"好了好了，快去快去！"
+			]
+			dependencies: [
+				"40E4947E39C4CCD4"
+				"016AE3BFE56E4C03"
+			]
+			min_width: 350
+			id: "44311CF7C23D7FF3"
+			tasks: [{
+				id: "5494F7AF2F2CCFD7"
+				type: "item"
+				item: "botania:teru_teru_bozu"
+				consume_items: true
+			}]
+		}
+		{
+			title: "天翼族之冠"
+			x: -1.5d
+			y: 3.5d
+			description: [
+				"我亲爱的学生："
+				""
+				"这是对你能否巧妙使用技能的一个测验。去做一个天翼族之冠，让我看看你学到了多少！"
+				""
+				"我听说几个学生在庭院里售卖&b末地空气&r，你可以去找找他们。"
+				""
+				"与第五次测验相比，这似乎很轻松。主要是我们不能在每个学期末都拿你的生命冒险——"
+				""
+				"——这与我能说出名字的另一所魔法学校大相径庭。"
+			]
+			dependencies: [
+				"7FECB0E48BB4FC79"
+				"016AE3BFE56E4C03"
+			]
+			min_width: 300
+			id: "49778CCF0E0E01D9"
+			tasks: [{
+				id: "58E1C9EE42CA0F93"
+				type: "item"
+				title: "天翼族之冠"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "botania:flight_tiara"
+								tag: {
+									variant: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "botania:flight_tiara"
+								tag: {
+									variant: 1
+								}
+							}
+							{
+								Count: 1b
+								id: "botania:flight_tiara"
+								tag: {
+									variant: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "botania:flight_tiara"
+								tag: {
+									variant: 3
+								}
+							}
+							{
+								Count: 1b
+								id: "botania:flight_tiara"
+								tag: {
+									variant: 4
+								}
+							}
+							{
+								Count: 1b
+								id: "botania:flight_tiara"
+								tag: {
+									variant: 5
+								}
+							}
+							{
+								Count: 1b
+								id: "botania:flight_tiara"
+								tag: {
+									variant: 6
+								}
+							}
+							{
+								Count: 1b
+								id: "botania:flight_tiara"
+								tag: {
+									variant: 7
+								}
+							}
+							{
+								Count: 1b
+								id: "botania:flight_tiara"
+								tag: {
+									variant: 8
+								}
+							}
+							{
+								Count: 1b
+								id: "botania:flight_tiara"
+								tag: {
+									variant: 9
+									gliding: 0b
+									RepairCost: 0
+									flying: 0b
+								}
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			title: "盖亚的头"
+			x: -1.5d
+			y: 7.5d
+			description: [
+				"亲爱的学生："
+				""
+				"我们与&5邪恶女巫&r的战斗似乎永远不会结束，能否让我再指望你一次？请为我打败&6盖亚之魂&r——一种力量强大且神圣的生物。虽然我不认为现阶段邪恶女巫有任何的可能性从我们手底下逃走，但最近发生了太多的袭击事件，不能将其视为巧合。门外的僵尸、奇怪的遭遇……"
+				""
+				"这与我预期的第五次测验有所出入，但我相信你能完成。"
+				""
+				"祝你好运，同时保持警惕。"
+			]
+			dependencies: [
+				"5E17CF538EFAE2A7"
+				"016AE3BFE56E4C03"
+			]
+			min_width: 300
+			id: "7FECB0E48BB4FC79"
+			tasks: [{
+				id: "6B6C9F7DD0B2EF5B"
+				type: "item"
+				item: "botania:gaia_head"
+				consume_items: true
+			}]
+		}
+		{
+			icon: "ftbai:codex_botania"
+			x: 1.0d
+			y: 5.5d
+			shape: "hexagon"
+			description: [
+				"我亲爱的学生："
+				""
+				"就这样吧，这是你的最后一次植物魔法测验。看到你已经达到如此境界，我为你感到骄傲。"
+				""
+				"在奥术学院，我们不相信书面考试。恰恰相反，如果你不知道如何学习，你就不会走到这一步。所以我们更喜欢用一些更实际的方式来测试你的掌握程度。"
+				""
+				"如果你能制作出一个黑洞护符，我就相信你已经学会了我在这门课上要教的所有内容。"
+				""
+				"感谢你刻苦的学习。很高兴能成为你的老师。"
+				""
+				"梅希姆夫人"
+			]
+			dependencies: [
+				"49778CCF0E0E01D9"
+				"016AE3BFE56E4C03"
+			]
+			size: 3.0d
+			id: "1FC930BD6B9A3A3B"
+			tasks: [{
+				id: "44F7DA04A948C2FC"
+				type: "item"
+				item: "botania:black_hole_talisman"
+				consume_items: true
+			}]
+			rewards: [
+				{
+					id: "0990C2E526598C53"
+					type: "item"
+					item: {
+						id: "ftbai:codex_botania"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "4B073DB0E370239C"
+					type: "gamestage"
+					auto: "invisible"
+					ignore_reward_blocking: true
+					stage: "codex_botania"
+				}
+			]
+		}
+	]
+	quest_links: [ ]
+}

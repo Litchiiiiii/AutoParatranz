@@ -1,0 +1,14 @@
+autoSwitchLanguage = false
+checkModPackTranslationUpdate = true
+autoDownloadVMTranslationPack = false
+autoInstallVMTranslationPack = false
+displayTips = true
+playerNameCheck = true
+modPackTranslationUpdateCheckUrl = "https://vmct-cn.top/modpacks/arcanum/update.txt"
+modPackTranslationUrl = "https://vmct-cn.top/modpacks/arcanum/"
+tipsUrl = "https://vmct-cn.top/tips.txt"
+modPackTranslationVersion = "1.3"
+tipsMinutes = 25
+traslationPackName = "VM汉化组模组汉化包1.18"
+traslationPackUrl = "https://cdn.modrinth.com/data/IDWIdXwS/versions/VM%E6%B1%89%E5%8C%96%E7%BB%84%E6%A8%A1%E7%BB%84%E6%B1%89%E5%8C%96%E5%8C%851.18"
+nameUrl = "https://vmct-cn.top/name.json"

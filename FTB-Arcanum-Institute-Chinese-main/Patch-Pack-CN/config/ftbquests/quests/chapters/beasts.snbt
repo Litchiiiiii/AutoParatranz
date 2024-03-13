@@ -1,0 +1,739 @@
+{
+	id: "04B70B12A90DE475"
+	group: "0960D5B8A7FB00EA"
+	order_index: 0
+	filename: "beasts"
+	title: "野兽大师"
+	icon: {
+		id: "ftbquests:custom_icon"
+		Count: 1b
+		tag: {
+			Icon: "iceandfire:textures/item/amphithere_skull.png"
+		}
+	}
+	subtitle: ["野兽与使魔"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "普通的被动生物"
+			icon: "minecraft:pig_spawn_egg"
+			x: 1.0d
+			y: 9.0d
+			description: [
+				"我敢打赌你没想到农业也是奥术的一部分。"
+				""
+				"很多学生都没想到。我曾经认识一个非常讨厌农作的魔法师，只会通过购买获得材料。这当然不失为一种选择，但在这里，即使是最平凡的生物，我们都会教你抚养和照顾它们，因为它们至少都有一个我们所需的特质。"
+			]
+			dependencies: ["60CB78F73F0B9016"]
+			can_repeat: true
+			id: "4427A56F548EFD4F"
+			tasks: [{
+				id: "1FD6AAA6618EC001"
+				type: "item"
+				item: "ftbai:gold_coin"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "5CDF992F615EB119"
+				type: "choice"
+				exclude_from_claim_all: true
+				table_id: 1699214223844610106L
+			}]
+		}
+		{
+			title: "不常见生物的刷怪蛋"
+			icon: "minecraft:parrot_spawn_egg"
+			x: 2.5d
+			y: 9.0d
+			description: ["我们现在要开始学习不太常见的生物，它们的成本稍高。但到现在为止，你应该已经有了稳定的黄金供应。为了成为巫师，这都是值得的，对吧？"]
+			dependencies: ["60CB78F73F0B9016"]
+			can_repeat: true
+			id: "0CA242FADD653495"
+			tasks: [{
+				id: "72B6627BDFA57950"
+				type: "item"
+				item: "ftbai:gold_coin"
+				count: 2L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "0CBF78F2510D9E86"
+				type: "choice"
+				exclude_from_claim_all: true
+				table_id: 8630308146041118707L
+			}]
+		}
+		{
+			title: "稀有生物的刷怪蛋"
+			icon: "minecraft:axolotl_spawn_egg"
+			x: 4.0d
+			y: 9.0d
+			description: ["你已经掌握了照料相对常见生物的窍门，我想你已经准备好迎接一些更奇特的动物了。"]
+			dependencies: ["60CB78F73F0B9016"]
+			can_repeat: true
+			id: "1572560FCCCFFBED"
+			tasks: [{
+				id: "42149066D2EB4489"
+				type: "item"
+				item: "ftbai:gold_coin"
+				count: 4L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "444B5E0C8866ACC0"
+				type: "choice"
+				exclude_from_claim_all: true
+				table_id: 7933030901280256724L
+			}]
+		}
+		{
+			icon: "ars_nouveau:starbuncle_shards"
+			x: 8.0d
+			y: 6.5d
+			description: [
+				"将一个&b金粒&r交予&6星宝石兽&r会使它们变成一个碎片。"
+				""
+				"这将使它能被用于制作真正的护符，以允许你对它们进行一定程度的控制。"
+				""
+				"但是请记住，它们仍然是活生生的生物，所以请悉心照料它们！"
+			]
+			id: "18471DB81EB29232"
+			tasks: [
+				{
+					id: "72C1817812CC511E"
+					type: "item"
+					item: "ars_nouveau:starbuncle_shards"
+				}
+				{
+					id: "198F9D584EDFD7FD"
+					type: "item"
+					item: {
+						id: "minecraft:gold_nugget"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			icon: "ars_nouveau:drygmy_shard"
+			x: 8.0d
+			y: 8.0d
+			description: [
+				"&6德格米&r偶尔会出现在你的宿舍里。与它们交朋友需要丢给他们一个&b荒野之角&r，并等待它们捡起它。"
+				""
+				"德格米拥有非凡的能力，它可以从附近的怪物和动物身上生产物品而不会对它们造成伤害。"
+			]
+			id: "79EAC89A14777746"
+			tasks: [
+				{
+					id: "6AFC51A530F68762"
+					type: "item"
+					item: "ars_nouveau:drygmy_shard"
+				}
+				{
+					id: "6C2AA01B5AD20E36"
+					type: "item"
+					item: {
+						id: "ars_nouveau:wilden_horn"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			icon: "ars_nouveau:whirlisprig_shards"
+			x: 8.0d
+			y: 9.5d
+			description: [
+				"在&6风转草&r附近种植树木时，它们会掉落&b风转草碎片&r以表达他们的感激之情。风转草的这种行为揭示了它们对自然环境的喜爱。"
+				""
+				"他们对大自然的喜爱正如我对所有这些动物种群的欣赏。"
+			]
+			id: "7595EF13DCE33641"
+			tasks: [{
+				id: "25488A5235FCD3BB"
+				type: "item"
+				item: "ars_nouveau:whirlisprig_shards"
+			}]
+		}
+		{
+			icon: "ars_nouveau:whirlisprig_charm"
+			x: 9.5d
+			y: 9.5d
+			description: [
+				"使用&6附魔装置&r可以制作&b风转草护符&r。在任意一种&b花&r上使用护符可以召唤风转草。"
+				""
+				"风转草会将其出生点周围10格视为它的家。在这个区域内，它们会生产木材、农作物、种子和花卉等天然材料。需要注意的是，你需要一些&5魔源&r来换取它们的服务。"
+			]
+			dependencies: [
+				"7595EF13DCE33641"
+				"31A754EB419CD398"
+			]
+			id: "4797C18E263A616E"
+			tasks: [
+				{
+					id: "772C4ABFD30EBE79"
+					type: "item"
+					item: "ars_nouveau:whirlisprig_charm"
+				}
+				{
+					id: "0296B6C769630E40"
+					type: "item"
+					title: "任意小型花"
+					icon: "minecraft:poppy"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "minecraft:small_flowers"
+						}
+					}
+				}
+			]
+		}
+		{
+			icon: "ars_nouveau:drygmy_charm"
+			x: 9.5d
+			y: 8.0d
+			description: [
+				"使用&6附魔装置&r可以制作&b德格米护符&r。这个护符可以用于召唤德格米，在&b苔石&r上使用护符以使其变为德格米石阵。"
+				""
+				"使用后，德格米石阵周围10格内将被视为德格米的家。这些神奇生物承担着照料其领土内的动物和怪物的责任。需要注意的是，你需要一些&5魔源&r来换取它们的服务。"
+			]
+			dependencies: [
+				"79EAC89A14777746"
+				"31A754EB419CD398"
+			]
+			id: "2AA19DE451116157"
+			tasks: [
+				{
+					id: "4040B102242ECFF8"
+					type: "item"
+					item: "ars_nouveau:drygmy_charm"
+				}
+				{
+					id: "02B956A5C33FB4E8"
+					type: "item"
+					item: "minecraft:mossy_cobblestone"
+				}
+			]
+		}
+		{
+			x: 9.5d
+			y: 6.5d
+			description: [
+				"使用&6附魔装置&r可以制作&b星宝石兽护符&r。这个护符赋予你召唤星宝石兽的能力，你可以使用&6支配之杖&r来指挥它。"
+				""
+				"要从容器中取出物品，需要先与容器交互，然后再与星宝石兽交互。存储物品则反之。"
+			]
+			dependencies: [
+				"18471DB81EB29232"
+				"31A754EB419CD398"
+			]
+			id: "05F3986B1E6B9F49"
+			tasks: [{
+				id: "74B5B7938CCD07F3"
+				type: "item"
+				item: {
+					id: "ars_nouveau:starbuncle_charm"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 8.0d
+			y: 11.0d
+			description: ["在女巫生命值为一半或更低时对它施放解除魔法可以获得&b薇克精碎片&r。"]
+			id: "1B92A2F7CE0677D1"
+			tasks: [{
+				id: "01E04E7AFCA4AAF3"
+				type: "item"
+				item: "ars_nouveau:wixie_shards"
+			}]
+		}
+		{
+			icon: "ars_nouveau:wixie_charm"
+			x: 9.5d
+			y: 11.0d
+			description: [
+				"用你的&6附魔装置&r制作&b薇克精护符&r应该不成问题。"
+				""
+				"拥有&b薇克精护符&r后，可以在炼药锅上使用来召唤你的&6薇克精&r。"
+				""
+				"&6薇克精&r拥有与生俱来的能力，使它可以根据附近存储的物品选择制作配方，无需指定确切的材料。例如，在制作木棍时，&6薇克精&r会创造性地从附近的箱子中收集木板来完成配方。"
+				""
+				"每次制作都会自动从附近的魔源罐中抽取所需的少量魔源。需要注意的是，给薇克精炼药锅提供红石信号会停止制作。"
+			]
+			dependencies: [
+				"1B92A2F7CE0677D1"
+				"31A754EB419CD398"
+			]
+			id: "703349839C15538E"
+			tasks: [
+				{
+					id: "3D1684F640869F2C"
+					type: "item"
+					item: "ars_nouveau:wixie_charm"
+				}
+				{
+					id: "3A56D8ECB9BF242D"
+					type: "item"
+					item: "minecraft:cauldron"
+				}
+			]
+		}
+		{
+			icon: "ars_nouveau:bookwyrm_charm"
+			x: 9.5d
+			y: 5.0d
+			description: [
+				"&6书龙&r是非常有用的生物，擅长利用魔源罐中的魔源来施放法术。将刻有法术的法术羊皮纸赋予它，它就会在书龙讲台周围的区域施展这个法术。"
+				""
+				"召唤&6书龙&r需要在讲台上使用&b书龙护符&r。此外，这些书龙还可以使用白色、黑色、蓝色、绿色、红色或紫色染料进行染色。"
+			]
+			dependencies: ["31A754EB419CD398"]
+			id: "0D58C224055A34B6"
+			tasks: [
+				{
+					id: "6738A52E8C470A2C"
+					type: "item"
+					item: "ars_nouveau:bookwyrm_charm"
+				}
+				{
+					id: "19A528DC5F7D5416"
+					type: "item"
+					item: "minecraft:lectern"
+				}
+			]
+		}
+		{
+			x: 11.0d
+			y: 5.0d
+			description: [
+				"&b书龙&r使魔可以减少任何法术的消耗，并无条件增加1点法术伤害。"
+				""
+				"在一只&b书龙&r旁进行&6绑定仪式&r可获得该使魔。"
+			]
+			dependencies: [
+				"4517857C42B0F135"
+				"0D58C224055A34B6"
+			]
+			id: "2A7C95A79E0499CB"
+			tasks: [{
+				id: "209ED2D3FB5191FF"
+				type: "item"
+				item: "ars_nouveau:familiar_bookwyrm"
+			}]
+		}
+		{
+			x: 11.0d
+			y: 6.5d
+			description: [
+				"&b星宝石兽&r使魔能持续给予你速度II状态。"
+				""
+				"在一只&b星宝石兽&r旁进行&6绑定仪式&r可获得该使魔。"
+			]
+			dependencies: [
+				"4517857C42B0F135"
+				"05F3986B1E6B9F49"
+			]
+			id: "0E74C0C0F39E1B03"
+			tasks: [{
+				id: "6B31CAF16D27BC94"
+				type: "item"
+				item: "ars_nouveau:familiar_starbuncle"
+			}]
+		}
+		{
+			x: 11.0d
+			y: 8.0d
+			description: [
+				"&b德格米&r使魔能增加2点土元素学派法术的伤害，还能增加杀敌后的掉落物数量。"
+				""
+				"在一只&b德格米&r旁进行&6绑定仪式&r可获得该使魔。"
+			]
+			dependencies: [
+				"4517857C42B0F135"
+				"2AA19DE451116157"
+			]
+			id: "5C3E734AB70E2F8B"
+			tasks: [{
+				id: "6267083ED0D1ECA6"
+				type: "item"
+				item: "ars_nouveau:familiar_drygmy"
+			}]
+		}
+		{
+			x: 11.0d
+			y: 9.5d
+			description: [
+				"&b风转草&r使魔能使土元素学派法术的魔力消耗减半，还能在主人进食时恢复额外的饱和度。"
+				""
+				"在一只&b风转草&r旁进行&6绑定仪式&r可获得该使魔。"
+			]
+			dependencies: [
+				"4517857C42B0F135"
+				"4797C18E263A616E"
+			]
+			id: "091D8996591CA2B4"
+			tasks: [{
+				id: "25CC9DD823C333DA"
+				type: "item"
+				item: "ars_nouveau:familiar_whirlisprig"
+			}]
+		}
+		{
+			x: 11.0d
+			y: 11.0d
+			description: [
+				"&b薇克精&r使魔能增加药水的持续时间。战斗时薇克精还会对敌人使用有害的药水。"
+				""
+				"在一只&b薇克精&r旁进行&6绑定仪式&r可获得该使魔。"
+			]
+			dependencies: [
+				"4517857C42B0F135"
+				"703349839C15538E"
+			]
+			id: "59CFAF8BA8786CEF"
+			tasks: [{
+				id: "3E45B11B6D2F5614"
+				type: "item"
+				item: "ars_nouveau:familiar_wixie"
+			}]
+		}
+		{
+			x: 11.0d
+			y: 3.5d
+			description: ["召唤使魔需要获得你试图结交的生物对应的&6绑定手稿&r。这些绑定手稿可以通过在实体附近进行&b绑定仪式&r来获得。"]
+			dependencies: ["23F6282DF69B8625"]
+			id: "4517857C42B0F135"
+			tasks: [{
+				id: "5FBE1E20E7869B8D"
+				type: "item"
+				item: "ars_nouveau:ritual_binding"
+			}]
+		}
+		{
+			title: "敌对生物刷怪蛋"
+			icon: "minecraft:creeper_spawn_egg"
+			x: 2.5d
+			y: 5.0d
+			description: [
+				"获得生物刷怪蛋最简单的方法之一就是直接购买它们。"
+				""
+				"为此，你需要一些金币。带一些来，我会给你你选择的刷怪蛋。"
+			]
+			dependencies: ["60CB78F73F0B9016"]
+			can_repeat: true
+			id: "0F8EF8519B6C4562"
+			tasks: [{
+				id: "04AD7151F3B65871"
+				type: "item"
+				item: "ftbai:gold_coin"
+				count: 4L
+				consume_items: true
+			}]
+			rewards: [
+				{
+					id: "25D0963479351673"
+					type: "choice"
+					exclude_from_claim_all: true
+					table_id: 3932349206076565492L
+				}
+				{
+					id: "66A8D6BDD7718FA8"
+					type: "choice"
+					exclude_from_claim_all: true
+					table_id: 3932349206076565492L
+				}
+				{
+					id: "3BDB275CACBBC8F2"
+					type: "choice"
+					exclude_from_claim_all: true
+					table_id: 3932349206076565492L
+				}
+			]
+		}
+		{
+			icon: "iceandfire:amphithere_skull"
+			x: 2.5d
+			y: 7.0d
+			shape: "pentagon"
+			description: [
+				"嗨，同学们。"
+				""
+				"我是杰克，这是我的朋友波。在此，我们将帮助你学习如何获取并照料自然界中的神奇生物。"
+				""
+				"这个课程与你们平时的课程不同，这里没有作业，也没有正式的上课部分。"
+				""
+				"但这里有你需要寻找并在校舍中照料的，可以帮到你的生物，如果在这过程中你需要帮助，我会在这里等你。"
+			]
+			hide_dependency_lines: true
+			dependencies: ["63368A007664E4B5"]
+			invisible_until_tasks: 1
+			id: "60CB78F73F0B9016"
+			tasks: [{
+				id: "4F5F5CAC4FA288BF"
+				type: "location"
+				title: "找到杰克和波"
+				dimension: "minecraft:overworld"
+				ignore_dimension: false
+				position: [I;
+					-141
+					-25
+					-3
+				]
+				size: [I;
+					30
+					10
+					30
+				]
+			}]
+		}
+		{
+			title: "小型传送门珍珠"
+			icon: {
+				id: "gateways:gate_pearl"
+				Count: 1b
+				tag: {
+					gateway: "gateways:zombie_gate_small"
+				}
+			}
+			x: 0.5d
+			y: 3.5d
+			description: [
+				"欢迎，疲惫的旅者！"
+				""
+				"看看神秘的小型传送门珍珠，这是一种稀有的遗物，可以用于召唤各种生物。"
+				""
+				"那些生物的掉落物可以拿到我这来换更多的硬币。"
+				""
+				""
+				"只要一点点金币，它的力量就将为你所用，这对你的冒险可是一笔超值的投资。"
+				""
+				"勇敢的灵魂啊，你要如何抉择？"
+			]
+			hide_dependency_lines: true
+			dependencies: ["60CB78F73F0B9016"]
+			can_repeat: true
+			id: "017B67BF45FDAC09"
+			tasks: [{
+				id: "3A3A9377A3D56646"
+				type: "item"
+				disable_toast: true
+				item: "ftbai:gold_coin"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "16FFEE5EFE72F700"
+				type: "choice"
+				exclude_from_claim_all: true
+				table_id: 1525742000000944586L
+			}]
+		}
+		{
+			title: "普通传送门珍珠"
+			icon: {
+				id: "gateways:gate_pearl"
+				Count: 1b
+				tag: {
+					gateway: "gateways:zombie_gate"
+				}
+			}
+			x: 2.5d
+			y: 2.5d
+			description: ["你做得很好，我认为你已经准备好加点难度了。"]
+			hide_dependency_lines: true
+			dependencies: ["60CB78F73F0B9016"]
+			can_repeat: true
+			id: "3D48A3F4CAFE9BA7"
+			tasks: [{
+				id: "470DF7FAD83DDF78"
+				type: "item"
+				disable_toast: true
+				item: "ftbai:gold_coin"
+				count: 2L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "18EA5CD7AA002510"
+				type: "choice"
+				exclude_from_claim_all: true
+				table_id: 976161652597693395L
+			}]
+		}
+		{
+			title: "大型传送门珍珠"
+			icon: {
+				id: "gateways:gate_pearl"
+				Count: 1b
+				tag: {
+					gateway: "gateways:zombie_gate_large"
+				}
+			}
+			x: 4.5d
+			y: 3.5d
+			description: ["你做好了准备，是时候进军更高难度了。更难的传送门意味着更多的掉落物。"]
+			hide_dependency_lines: true
+			dependencies: ["60CB78F73F0B9016"]
+			can_repeat: true
+			id: "0A388C5D46B9D824"
+			tasks: [{
+				id: "3BDBB3CCD8331AD2"
+				type: "item"
+				disable_toast: true
+				item: "ftbai:gold_coin"
+				count: 4L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "23A55E55AD0D8086"
+				type: "choice"
+				exclude_from_claim_all: true
+				table_id: 4852831395482533046L
+			}]
+		}
+		{
+			title: "新生魔艺传送门珍珠"
+			icon: {
+				id: "gateways:gate_pearl"
+				Count: 1b
+				tag: {
+					gateway: "gateways:ars_gate"
+				}
+			}
+			x: 2.5d
+			y: 1.0d
+			description: [
+				"新生魔艺传送门会生成多波不同的敌人。这是迄今为止我交予你的任务中最难的一个，但我对你有信心。"
+				""
+				"在这个传送门中，你要面对的并非只是更难的生物，更好的战利品而已，对于怀有远大抱负的奥术学生来说，这是必不可少的战斗训练。你的职业生涯中很可能会有面临危险之时，所以你必须准备好足以击败任何敌人的知识与技能。"
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"612BC02EEA4C9BBA"
+				"60CB78F73F0B9016"
+			]
+			hide: true
+			can_repeat: true
+			id: "450912098F43A0A7"
+			tasks: [{
+				id: "2CBDFCD60805DD32"
+				type: "item"
+				item: "ftbai:gold_coin"
+				count: 2L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "26DC346F8BFE4C2F"
+				type: "item"
+				item: {
+					id: "gateways:gate_pearl"
+					Count: 1b
+					tag: {
+						gateway: "gateways:ars_gate"
+					}
+				}
+			}]
+		}
+		{
+			title: "星宝石兽"
+			icon: {
+				id: "ars_nouveau:starbuncle_se"
+				Count: 1b
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+			x: 7.0d
+			y: 6.5d
+			description: [
+				"欢迎！"
+				""
+				"&b星宝石兽&r是&5新生魔艺&r中一种非常有用的生物。"
+				""
+				"它们可以在两个容器之间移动物品。"
+				""
+				"不仅如此，它们在收集&6魔源浆果&r时也非常有用。你真该找一天试试！"
+				""
+				"小心地带几只回家？"
+			]
+			hide_dependency_lines: true
+			dependencies: ["60CB78F73F0B9016"]
+			can_repeat: true
+			id: "3C01900C56808DE7"
+			tasks: [{
+				id: "37C664736AFAAC85"
+				type: "item"
+				disable_toast: true
+				item: "ftbai:gold_coin"
+				count: 2L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "4A6732AF2DBD2DE5"
+				type: "item"
+				item: {
+					id: "ars_nouveau:starbuncle_se"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 3
+			}]
+		}
+		{
+			title: "风转草"
+			icon: {
+				id: "ars_nouveau:whirlisprig_se"
+				Count: 1b
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+			x: 7.0d
+			y: 9.5d
+			description: [
+				"欢迎！"
+				""
+				"&b风转草&r是&5新生魔艺&r中一些非常可爱的生物。"
+				""
+				"当你提供&6魔源&r时，它可以产出植物资源。"
+			]
+			hide_dependency_lines: true
+			dependencies: ["60CB78F73F0B9016"]
+			can_repeat: true
+			id: "7B56AB4C87CAF321"
+			tasks: [{
+				id: "3FD7552DDFE00DA5"
+				type: "item"
+				disable_toast: true
+				item: "ftbai:gold_coin"
+				count: 2L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6B7782D07CF22285"
+				type: "item"
+				item: {
+					id: "ars_nouveau:whirlisprig_se"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 3
+			}]
+		}
+	]
+	quest_links: [ ]
+}

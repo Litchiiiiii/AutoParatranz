@@ -1,0 +1,324 @@
+{
+	id: "2EE8A39C445ECFBE"
+	group: "125708BF22E6ABEE"
+	order_index: 1
+	filename: "aaronhowser1"
+	title: "豪瑟教授"
+	icon: "ftbai:codex_evilcraft"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "邪恶工艺典籍"
+			icon: "ftbai:codex_evilcraft"
+			x: -0.5d
+			y: -1.0d
+			shape: "hexagon"
+			description: [
+				"亲爱的学生"
+				""
+				"为了表彰你的勇气和贡献，我将给予你一份无价之宝：我的&e典籍&r。&e典籍&r是一种蕴藏咒语与聪敏之智的无价的知识宝库。"
+				""
+				"我将这至宝托付予你，我相信以你的能力能够利用它的奥秘之识取得更大的收获。愿它能在未来的时日里引导你走上你自己的道路。"
+				""
+				"再次祝贺结课。我很少能有幸指导如此聪明，有前景的学生。"
+				""
+				"谨上，"
+				"亚伦·豪瑟"
+				"&b邪恶工艺&r教授。"
+			]
+			dependencies: [
+				"707B6E2F45255730"
+				"2C443D0A7F527025"
+			]
+			size: 3.0d
+			min_width: 350
+			id: "075F44C1D333F731"
+			tasks: [{
+				id: "7DDDAF7958BF4519"
+				type: "checkmark"
+			}]
+			rewards: [
+				{
+					id: "1D6E355632FEF4AA"
+					type: "item"
+					item: "ftbai:codex_evilcraft"
+				}
+				{
+					id: "3B1640F92E91376C"
+					type: "gamestage"
+					auto: "invisible"
+					ignore_reward_blocking: true
+					stage: "codex_evilcraft"
+				}
+			]
+		}
+		{
+			x: -0.5d
+			y: -4.5d
+			description: [
+				"你好，我是暗黑技艺的导师，"
+				""
+				"请你协助我取得黑暗宝石，目的有两个。其一，我需要将它们用于我的研究；其二，这是考察你对&b邪恶工艺&r掌握程度的几项测试中的第一项。"
+				""
+				"冒昧地问一句，我能请你帮我弄来&616个暗黑宝石&r吗？"
+				""
+				"我急切地等待你带着这些难以捉摸但无价的珍宝满载而归。"
+			]
+			dependencies: ["2C443D0A7F527025"]
+			min_width: 350
+			id: "053395783C6C0E3F"
+			tasks: [{
+				id: "01BD9606F97E3AC4"
+				type: "item"
+				item: {
+					id: "evilcraft:dark_gem"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 16L
+				consume_items: false
+			}]
+		}
+		{
+			x: 2.0d
+			y: -3.0d
+			description: [
+				"我亲爱的学生，"
+				""
+				"你的任务是获得一个&6木制合成包&r，在我们的神秘领域中的一个必不可少的便携制作工具。制作这个无比重要的装备来提高你在魔法上的实力与工作效率。"
+				""
+				"制作后，木制合成包将随时为你提供帮助，让你在魔法之旅的任何地方都能进行合成。"
+				""
+				"祝你好运。"
+			]
+			dependencies: [
+				"053395783C6C0E3F"
+				"2C443D0A7F527025"
+			]
+			min_width: 350
+			id: "551C892155052857"
+			tasks: [{
+				id: "04020437AE8B3EDA"
+				type: "item"
+				item: {
+					id: "evilcraft:exalted_crafter_wooden"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				consume_items: true
+			}]
+		}
+		{
+			x: 2.0d
+			y: 1.0d
+			description: [
+				"尊敬的学徒，"
+				""
+				"要想在课程上取得非凡的进步，你需要完成一项有点挑战的任务——获得&e坚韧的诺言I&r这件造物，它能使血能注入器获得实质性强化。"
+				""
+				"如果你成功做到了，你将会被奖励一个特别的饰品：&b迅捷指环&r。这枚指环可以令使用者身手矫健，并能增强他们的奥术本领。"
+				""
+				"祝学业顺利。"
+			]
+			dependencies: [
+				"551C892155052857"
+				"2C443D0A7F527025"
+			]
+			min_width: 350
+			id: "484AB9304C439CF2"
+			tasks: [{
+				id: "699E94E9638D5A39"
+				type: "item"
+				item: {
+					id: "evilcraft:promise_tier_1"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				consume_items: true
+			}]
+			rewards: [{
+				id: "2F20BC87391FDA71"
+				type: "item"
+				item: {
+					id: "evilcraft:effortless_ring"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: -0.5d
+			y: 2.5d
+			description: [
+				""
+				"做得好，你在课程上堪称模范的进步象征着非凡的献身精神。你的进步表明你已经准备好迎接下一个测试了。这次测试，你需要获得&6血能箱&r。这个看似不起眼的宝箱蕴含了独特的魔法特性——它有着能够使用血液精华修复物品的非凡能力。"
+				""
+				"这是我们课程中六项测试中的第四项，成功得到血能箱展示着你不断进步的专业知识，让你离取得毕业所需的典籍更进一步。"
+				""
+				"祝你在这项奖励丰厚的挑战中成功。"
+			]
+			dependencies: [
+				"484AB9304C439CF2"
+				"2C443D0A7F527025"
+			]
+			min_width: 350
+			id: "1A0B77451C56054A"
+			tasks: [{
+				id: "0F9F64252DB6FC90"
+				type: "item"
+				item: {
+					id: "evilcraft:blood_chest"
+					Count: 1b
+					tag: {
+						Fluid: {
+							FluidName: "minecraft:empty"
+							Amount: 0
+						}
+						capacity: 10000
+					}
+					ForgeCaps: {
+						Parent: {
+							FluidName: "minecraft:empty"
+							Amount: 0
+							capacity: 10000
+						}
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				consume_items: true
+			}]
+			rewards: [{
+				id: "542961A94B2A8549"
+				type: "item"
+				item: {
+					id: "evilcraft:environmental_accumulation_core"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: -3.0d
+			y: 1.0d
+			description: [
+				"亲爱的学生，"
+				""
+				"你可能在对大战的研究中已经了解过复仇之魂。它们是&5暗黑女巫&r最可怕的部下。有报道称他们的踪迹已经显露，这证实了我们最担心的事情——她或她的助理正在再次崛起。"
+				""
+				"绝不能让它们接近她。为此，你的第五个测试是：弄到三样必要的器物：&6复仇之焦&r，&6复仇指环&r和&6永恒灵魂箱&r"
+				""
+				"得到这三件器具，我们将加深对&5暗黑女巫&r所使用的强大而复杂的巫术的理解。"
+				""
+				"我不会谎称这次测试没有危险，千万小心。"
+			]
+			dependencies: [
+				"1A0B77451C56054A"
+				"2C443D0A7F527025"
+			]
+			min_width: 350
+			id: "1077C773A2C628AE"
+			tasks: [
+				{
+					id: "78FEA38648FBBDBC"
+					type: "item"
+					item: {
+						id: "evilcraft:vengeance_focus"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "16DE6B88E23BBB4F"
+					type: "item"
+					item: {
+						id: "evilcraft:vengeance_ring"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "52469A1097BF52F9"
+					type: "item"
+					item: {
+						id: "evilcraft:box_of_eternal_closure"
+						Count: 1b
+						tag: {
+							spiritTag: {
+								playerName: ""
+								remainingLife: 0
+								isSwarm: 1b
+								swarmTier: 4
+								buildupDuration: 0
+								frozenDuration: 0
+								playerId: ""
+							}
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -3.0d
+			y: -3.0d
+			description: [
+				"亲爱的学生，"
+				""
+				"你已经成功得到了永恒灵魂箱，现在你将面对这门课程的最终测试。你现在拿着的灵魂箱里装着一个复仇之魂，你的任务是打开它，并打败箱中的灵魂。一旦它被征服，就把它含有的&6复仇精华&r交给我。"
+				""
+				"如果你成功了，我们将能获得有关暗黑女巫同盟的力量来源的宝贵信息。另外，作为奖励，你不但会收到完成这门课所发放的典籍，还会得到一副&e幽冥眼镜&r。这副增强的眼镜将在虚无缥缈的层面上援助并引导你。"
+				""
+				"祝你好运"
+			]
+			dependencies: [
+				"1077C773A2C628AE"
+				"2C443D0A7F527025"
+			]
+			min_width: 350
+			id: "707B6E2F45255730"
+			tasks: [{
+				id: "2124B961D7606E99"
+				type: "item"
+				item: {
+					id: "evilcraft:vengeance_essence"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "76F9D70A87318921"
+				type: "item"
+				item: {
+					id: "evilcraft:spectral_glasses"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+	]
+	quest_links: [ ]
+}

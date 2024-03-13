@@ -1,0 +1,741 @@
+{
+	id: "692841377FEA4C94"
+	group: "125708BF22E6ABEE"
+	order_index: 0
+	filename: "saereth"
+	title: "萨拉斯教授"
+	icon: "ftbai:codex_bloodmagic"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -1.5d
+			y: -0.5d
+			description: [
+				"同学们，大家好。"
+				""
+				"我有点事要请你们帮忙。还记得我们上次讲的那些“空白石板”吗？"
+				""
+				"我需要大概25个石板，用在我一个正在进行的项目中。"
+				"如果你愿意给予帮助，把石板带到课堂上，那可真是太好了。"
+				""
+				"我们会把这作为你的第一次测试。"
+				""
+			]
+			dependencies: ["786E87AD25C9C9D6"]
+			min_width: 350
+			id: "32258E6A1885FD24"
+			tasks: [{
+				id: "1D10F04F48377759"
+				type: "item"
+				item: "bloodmagic:blankslate"
+				count: 25L
+			}]
+		}
+		{
+			icon: "ftbai:codex_bloodmagic"
+			x: -1.5d
+			y: 3.0d
+			shape: "hexagon"
+			description: [
+				"亲爱的学生，"
+				""
+				"我知道大多数老师都认为，第六次测试是期末考试，并给学生一些小建议。但我不是大多数老师，你们也不是大多数学生。"
+				""
+				"如果你想获得我的宝典，就必须证明你自己。我想让你制作一个贤者气血宝珠。这样我就能了解你是否能够掌握我宝典中的知识。"
+				""
+				"我对你充满信心，这对你来说应该不算太难。我已经准备好祝贺你了。你真是个优秀的学生。"
+				""
+				"……好的，就到这里吧。"
+			]
+			dependencies: [
+				"463DEA7935E7ABC2"
+				"786E87AD25C9C9D6"
+			]
+			size: 3.0d
+			min_width: 350
+			id: "1398EE0EDE107238"
+			tasks: [{
+				id: "6755D9F80D7B1511"
+				type: "item"
+				item: "bloodmagic:archmagebloodorb"
+			}]
+			rewards: [
+				{
+					id: "5A17AB4200FCFB36"
+					type: "item"
+					item: "ftbai:codex_bloodmagic"
+				}
+				{
+					id: "47C2B455DC846699"
+					type: "gamestage"
+					auto: "invisible"
+					ignore_reward_blocking: true
+					stage: "codex_bloodmagic"
+				}
+			]
+		}
+		{
+			x: -1.5d
+			y: 6.5d
+			description: [
+				"亲爱的学生，"
+				""
+				"我想你已经准备好迎接第四次考试了，我也清楚该怎么给你提出挑战。"
+				""
+				"给我带来八个特殊意志晶体。这是对你能力的一次重要考验，你需要用到它们来应对接下来的课程。"
+				""
+				"谢了——"
+			]
+			dependencies: [
+				"786E87AD25C9C9D6"
+				"4DBD89BDF4831A6C"
+			]
+			min_width: 350
+			id: "65DD3960EFE74132"
+			tasks: [{
+				id: "63D3EAEE0B2A30A0"
+				type: "item"
+				title: "意志晶体"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "bloodmagic:steadfastcrystal"
+								Count: 1b
+							}
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "bloodmagic:destructivecrystal"
+								Count: 1b
+							}
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "bloodmagic:vengefulcrystal"
+								Count: 1b
+							}
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "bloodmagic:corrosivecrystal"
+								Count: 1b
+							}
+						]
+					}
+				}
+				count: 8L
+				consume_items: true
+			}]
+		}
+		{
+			x: -4.0d
+			y: 5.0d
+			description: [
+				"亲爱的学生，"
+				""
+				"我们发现了一件不可思议的魔物，污血吊坠，它来自于一种我所不知的魔法。请向植物魔法大师，梅希姆女士询问如何制造这个吊坠。"
+				""
+				"只要你掌握了所需的知识，就能制造出污血吊坠交给我。这是我们进行的研究中必不可少的一个环节，更多的细节我会在适当的时候告诉你。"
+				""
+				"致敬"
+			]
+			dependencies: [
+				"65DD3960EFE74132"
+				"786E87AD25C9C9D6"
+			]
+			min_width: 350
+			id: "0D582D2AF121586F"
+			tasks: [{
+				id: "514B7C619D850406"
+				type: "item"
+				item: {
+					id: "botania:blood_pendant"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: -4.0d
+			y: 1.0d
+			description: [
+				"亲爱的学生，"
+				""
+				"为了你的第六次测试，我希望你能拿到一把矿工之钥"
+				""
+				"这个请求的真正目的会在合适的时机向你说明。"
+				""
+				"致敬"
+			]
+			dependencies: [
+				"0D582D2AF121586F"
+				"786E87AD25C9C9D6"
+			]
+			min_width: 350
+			id: "463DEA7935E7ABC2"
+			tasks: [{
+				id: "7A8C497BA0ACE784"
+				type: "item"
+				item: "bloodmagic:minekey"
+				consume_items: true
+			}]
+		}
+		{
+			x: 1.0d
+			y: 5.0d
+			description: [
+				"亲爱的学生，"
+				""
+				"你在我们班上学习炼金术一直很用功，我有一项特殊的任务想要交给你，这项任务要求你运用你在我班上所学到的全部知识。帮助我制作一个高级的炼金瓶"
+				""
+				"但是很抱歉，我目前还不能告诉你这项任务的详细情况。尽管如此，你对这项任务仍然非常重要，也会对某件大事有很大的帮助。"
+				""
+				"感谢你的关注和体谅。鉴于它的复杂程度，我们决定把它当作你的第二次测试。"
+				""
+			]
+			dependencies: [
+				"786E87AD25C9C9D6"
+				"6524D8566D371E0A"
+			]
+			min_width: 350
+			id: "4DBD89BDF4831A6C"
+			tasks: [{
+				id: "32F75D1EE423118F"
+				type: "item"
+				title: "强效瓶"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "bloodmagic:alchemy_flask"
+								Count: 1b
+								tag: {
+									CustomPotionEffects: [{
+										"forge:id": "minecraft:instant_damage"
+										Ambient: 0b
+										CurativeItems: [{
+											id: "minecraft:milk_bucket"
+											Count: 1b
+										}]
+										ShowIcon: 1b
+										ShowParticles: 1b
+										Duration: 900
+										Id: 7b
+										Amplifier: 2b
+									}]
+									effectholder: [{
+										Duration: 3600
+										Id: 7
+										LengthDurationMod: 1.0d
+										Amplifier: 2b
+										AmpDurationMod: 0.25d
+									}]
+									Damage: 0
+								}
+							}
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "bloodmagic:alchemy_flask"
+								Count: 1b
+								tag: {
+									CustomPotionEffects: [{
+										"forge:id": "minecraft:strength"
+										Ambient: 0b
+										CurativeItems: [{
+											id: "minecraft:milk_bucket"
+											Count: 1b
+										}]
+										ShowIcon: 1b
+										ShowParticles: 1b
+										Duration: 900
+										Id: 5b
+										Amplifier: 2b
+									}]
+									effectholder: [{
+										Duration: 3600
+										Id: 5
+										LengthDurationMod: 1.0d
+										Amplifier: 2b
+										AmpDurationMod: 0.25d
+									}]
+									Damage: 0
+								}
+							}
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "bloodmagic:alchemy_flask"
+								Count: 1b
+								tag: {
+									CustomPotionEffects: [{
+										"forge:id": "bloodmagic:flight"
+										Ambient: 0b
+										CurativeItems: [{
+											id: "minecraft:milk_bucket"
+											Count: 1b
+										}]
+										ShowIcon: 1b
+										ShowParticles: 1b
+										Duration: 900
+										Id: 86b
+										Amplifier: 2b
+									}]
+									effectholder: [{
+										Duration: 3600
+										Id: 86
+										LengthDurationMod: 1.0d
+										Amplifier: 2b
+										AmpDurationMod: 0.25d
+									}]
+									Damage: 0
+								}
+							}
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "bloodmagic:alchemy_flask"
+								Count: 1b
+								tag: {
+									CustomPotionEffects: [{
+										"forge:id": "minecraft:speed"
+										Ambient: 0b
+										CurativeItems: [{
+											id: "minecraft:milk_bucket"
+											Count: 1b
+										}]
+										ShowIcon: 1b
+										ShowParticles: 1b
+										Duration: 900
+										Id: 1b
+										Amplifier: 2b
+									}]
+									effectholder: [{
+										Duration: 3600
+										Id: 1
+										LengthDurationMod: 1.0d
+										Amplifier: 2b
+										AmpDurationMod: 0.25d
+									}]
+									Damage: 0
+								}
+							}
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "bloodmagic:alchemy_flask"
+								Count: 1b
+								tag: {
+									CustomPotionEffects: [{
+										"forge:id": "bloodmagic:heavy_heart"
+										Ambient: 0b
+										CurativeItems: [{
+											id: "minecraft:milk_bucket"
+											Count: 1b
+										}]
+										ShowIcon: 1b
+										ShowParticles: 1b
+										Duration: 900
+										Id: 89b
+										Amplifier: 2b
+									}]
+									effectholder: [{
+										Duration: 3600
+										Id: 89
+										LengthDurationMod: 1.0d
+										Amplifier: 2b
+										AmpDurationMod: 0.25d
+									}]
+									Damage: 0
+								}
+							}
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "bloodmagic:alchemy_flask"
+								Count: 1b
+								tag: {
+									CustomPotionEffects: [{
+										"forge:id": "bloodmagic:obsidian_cloak"
+										Ambient: 0b
+										CurativeItems: [{
+											id: "minecraft:milk_bucket"
+											Count: 1b
+										}]
+										ShowIcon: 1b
+										ShowParticles: 1b
+										Duration: 900
+										Id: 94b
+										Amplifier: 2b
+									}]
+									effectholder: [{
+										Duration: 3600
+										Id: 94
+										LengthDurationMod: 1.0d
+										Amplifier: 2b
+										AmpDurationMod: 0.25d
+									}]
+									Damage: 0
+								}
+							}
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "bloodmagic:alchemy_flask"
+								Count: 1b
+								tag: {
+									CustomPotionEffects: [{
+										"forge:id": "minecraft:instant_health"
+										Ambient: 0b
+										CurativeItems: [{
+											id: "minecraft:milk_bucket"
+											Count: 1b
+										}]
+										ShowIcon: 1b
+										ShowParticles: 1b
+										Duration: 900
+										Id: 6b
+										Amplifier: 2b
+									}]
+									effectholder: [{
+										Duration: 3600
+										Id: 6
+										LengthDurationMod: 1.0d
+										Amplifier: 2b
+										AmpDurationMod: 0.25d
+									}]
+									Damage: 0
+								}
+							}
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "bloodmagic:alchemy_flask"
+								Count: 1b
+								tag: {
+									CustomPotionEffects: [{
+										"forge:id": "minecraft:weakness"
+										Ambient: 0b
+										CurativeItems: [{
+											id: "minecraft:milk_bucket"
+											Count: 1b
+										}]
+										ShowIcon: 1b
+										ShowParticles: 1b
+										Duration: 900
+										Id: 18b
+										Amplifier: 2b
+									}]
+									effectholder: [{
+										Duration: 3600
+										Id: 18
+										LengthDurationMod: 1.0d
+										Amplifier: 2b
+										AmpDurationMod: 0.25d
+									}]
+									Damage: 0
+								}
+							}
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "bloodmagic:alchemy_flask"
+								Count: 1b
+								tag: {
+									CustomPotionEffects: [{
+										"forge:id": "minecraft:jump_boost"
+										Ambient: 0b
+										CurativeItems: [{
+											id: "minecraft:milk_bucket"
+											Count: 1b
+										}]
+										ShowIcon: 1b
+										ShowParticles: 1b
+										Duration: 900
+										Id: 8b
+										Amplifier: 2b
+									}]
+									effectholder: [{
+										Duration: 3600
+										Id: 8
+										LengthDurationMod: 1.0d
+										Amplifier: 2b
+										AmpDurationMod: 0.25d
+									}]
+									Damage: 0
+								}
+							}
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "bloodmagic:alchemy_flask"
+								Count: 1b
+								tag: {
+									CustomPotionEffects: [{
+										"forge:id": "bloodmagic:gravity"
+										Ambient: 0b
+										CurativeItems: [{
+											id: "minecraft:milk_bucket"
+											Count: 1b
+										}]
+										ShowIcon: 1b
+										ShowParticles: 1b
+										Duration: 900
+										Id: 88b
+										Amplifier: 2b
+									}]
+									effectholder: [{
+										Duration: 3600
+										Id: 88
+										LengthDurationMod: 1.0d
+										Amplifier: 2b
+										AmpDurationMod: 0.25d
+									}]
+									Damage: 0
+								}
+							}
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "bloodmagic:alchemy_flask"
+								Count: 1b
+								tag: {
+									CustomPotionEffects: [{
+										"forge:id": "bloodmagic:spectral_sight"
+										Ambient: 0b
+										CurativeItems: [{
+											id: "minecraft:milk_bucket"
+											Count: 1b
+										}]
+										ShowIcon: 1b
+										ShowParticles: 1b
+										Duration: 900
+										Id: 87b
+										Amplifier: 2b
+									}]
+									effectholder: [{
+										Duration: 3600
+										Id: 87
+										LengthDurationMod: 1.0d
+										Amplifier: 2b
+										AmpDurationMod: 0.25d
+									}]
+									Damage: 0
+								}
+							}
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "bloodmagic:alchemy_flask"
+								Count: 1b
+								tag: {
+									CustomPotionEffects: [{
+										"forge:id": "minecraft:levitation"
+										Ambient: 0b
+										CurativeItems: [{
+											id: "minecraft:milk_bucket"
+											Count: 1b
+										}]
+										ShowIcon: 1b
+										ShowParticles: 1b
+										Duration: 900
+										Id: 25b
+										Amplifier: 2b
+									}]
+									effectholder: [{
+										Duration: 3600
+										Id: 25
+										LengthDurationMod: 1.0d
+										Amplifier: 2b
+										AmpDurationMod: 0.25d
+									}]
+									Damage: 0
+								}
+							}
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "bloodmagic:alchemy_flask"
+								Count: 1b
+								tag: {
+									CustomPotionEffects: [{
+										"forge:id": "minecraft:regeneration"
+										Ambient: 0b
+										CurativeItems: [{
+											id: "minecraft:milk_bucket"
+											Count: 1b
+										}]
+										ShowIcon: 1b
+										ShowParticles: 1b
+										Duration: 900
+										Id: 10b
+										Amplifier: 2b
+									}]
+									effectholder: [{
+										Duration: 3600
+										Id: 10
+										LengthDurationMod: 1.0d
+										Amplifier: 2b
+										AmpDurationMod: 0.25d
+									}]
+									Damage: 0
+								}
+							}
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "bloodmagic:alchemy_flask"
+								Count: 1b
+								tag: {
+									CustomPotionEffects: [{
+										"forge:id": "minecraft:poison"
+										Ambient: 0b
+										CurativeItems: [{
+											id: "minecraft:milk_bucket"
+											Count: 1b
+										}]
+										ShowIcon: 1b
+										ShowParticles: 1b
+										Duration: 900
+										Id: 19b
+										Amplifier: 2b
+									}]
+									effectholder: [{
+										Duration: 3600
+										Id: 19
+										LengthDurationMod: 1.0d
+										Amplifier: 2b
+										AmpDurationMod: 0.25d
+									}]
+									Damage: 0
+								}
+							}
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "bloodmagic:alchemy_flask"
+								Count: 1b
+								tag: {
+									CustomPotionEffects: [{
+										"forge:id": "bloodmagic:hard_cloak"
+										Ambient: 0b
+										CurativeItems: [{
+											id: "minecraft:milk_bucket"
+											Count: 1b
+										}]
+										ShowIcon: 1b
+										ShowParticles: 1b
+										Duration: 900
+										Id: 95b
+										Amplifier: 2b
+									}]
+									effectholder: [{
+										Duration: 3600
+										Id: 95
+										LengthDurationMod: 1.0d
+										Amplifier: 2b
+										AmpDurationMod: 0.25d
+									}]
+									Damage: 0
+								}
+							}
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "bloodmagic:alchemy_flask"
+								Count: 1b
+								tag: {
+									CustomPotionEffects: [{
+										"forge:id": "minecraft:slowness"
+										Ambient: 0b
+										CurativeItems: [{
+											id: "minecraft:milk_bucket"
+											Count: 1b
+										}]
+										ShowIcon: 1b
+										ShowParticles: 1b
+										Duration: 900
+										Id: 2b
+										Amplifier: 2b
+									}]
+									effectholder: [{
+										Duration: 3600
+										Id: 2
+										LengthDurationMod: 1.0d
+										Amplifier: 2b
+										AmpDurationMod: 0.25d
+									}]
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				consume_items: true
+				match_nbt: true
+			}]
+		}
+		{
+			x: 1.0d
+			y: 1.0d
+			description: [
+				"亲爱的学生，"
+				""
+				"你在血魔法的研究成果并没有被忽视。我一直在思考应该怎样安排你的第三次测试。"
+				""
+				"我肯定不拿你当普通学生，我要给你一些有挑战性的任务，制作一块普通地狱魂石。这对你来说应该不是难事，但可以检验你的学习成果。"
+				""
+				"加油。"
+			]
+			dependencies: [
+				"786E87AD25C9C9D6"
+				"32258E6A1885FD24"
+			]
+			min_width: 350
+			id: "6524D8566D371E0A"
+			tasks: [{
+				id: "77492126D6D07C7E"
+				type: "item"
+				item: {
+					id: "bloodmagic:soulgemcommon"
+					Count: 1b
+					tag: { }
+				}
+				consume_items: true
+			}]
+		}
+	]
+	quest_links: [ ]
+}

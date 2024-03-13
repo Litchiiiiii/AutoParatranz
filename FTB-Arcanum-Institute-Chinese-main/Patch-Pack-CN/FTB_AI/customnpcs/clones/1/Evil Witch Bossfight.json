@@ -1,0 +1,862 @@
+{
+    "ReturnToStart": 1b,
+    "PuppetHead": {
+        "RotationY": 0.0f,
+        "RotationX": 0.0f,
+        "RotationZ": 0.0f,
+        "Disabled": 0b
+    },
+    "NpcInv": [
+    ],
+    "BossColor": 2,
+    "PotionEffect": 4,
+    "Size": 4,
+    "Resistances": {
+        "Arrow": 1.5f,
+        "Explosion": 2.0f,
+        "Knockback": 2.0f,
+        "Melee": 0.49295774f
+    },
+    "BossBar": 1b,
+    "RespawnTime": 0,
+    "NpcAngrySound": "",
+    "IgnoreCobweb": 1b,
+    "PuppetRArm2": {
+        "RotationY": 0.0f,
+        "RotationX": 0.0f,
+        "RotationZ": 0.0f,
+        "Disabled": 0b
+    },
+    "CanUpdate": 1b,
+    "LootMode": 0,
+    "AttackStrenght": 5,
+    "PersistenceRequired": 0b,
+    "NpcLines": {
+        "Lines": [
+        ]
+    },
+    "Tags": [
+        "water"
+    ],
+    "PuppetLLeg": {
+        "RotationY": 0.0f,
+        "RotationX": 0.0f,
+        "RotationZ": 0.0f,
+        "Disabled": 0b
+    },
+    "NpcScenes": {
+        "Scenes": [
+        ]
+    },
+    "SkinUsername": {
+        "Id": [I;1882494869,2074691878,-1079174956,1441394763],
+        "Properties": {
+            "textures": [
+                {
+                    "Signature": "R0KbKMChdC7fT2m7ZglBFVLhLeP7t9VMQ2gMkGrle7Sxgo+O69jO4ZjNZy2i8kv9BfgBPPLgCTJChITtGXu1nfSWSWObps8JBhfC8gIdWpOVoExECeMAGqg4bBO/HNGKVEvpdQ65wWy+JvKvjasS1BLDyefGHpX2ir2U0jYs7oT/l16KuX1jk7YpH1p2kAIWvdjP8kQLtPBJ6jXitwhSWZtPc/Z5+znR5k+YG0p26pxfHhF++gBKT6/JXX8isf5XTF5Dju+MPd6GyIrpT3bl7dBHCaVXvxUuLkAwZaMkQUoNWKTpV2gMLeFTY4ROda8kizxawFnDsIE5fLjFZOFLzzWDMwdkn1scq2hY8DleEhERxYTm8/Hu4GxHrq1H6uoaXKdVVab61l1Kkhj354rAS2As6mhbbtX8dvpkbxENZu4OumgK9YXoFqv/VK/MqEfqiDtD1cWd0P9PR0fNL+Ndp/Hl4+cKxByvtZNAipCEhppRJHqsIV1iP3LFzj1wDHC4C5qWoDmGQOWdmOk9jkQyFaJ8PEsfHbv0lNSUQXu/l8pqdD6TD3mwASbTbD/axqn1ABJXmjbQ3jfliHB5UBhklUiFd3GWJARI/vj76mqxfnnNzR5bKO44m3WyW3sKdbXRdJDpZbHBJQ3t2n+0ALaDJpUVEv95fkUArnvOtR4a2fc=",
+                    "Value": "ewogICJ0aW1lc3RhbXAiIDogMTY5MzY0OTU0NzU0MywKICAicHJvZmlsZUlkIiA6ICI3MDM0OTc5NTdiYTk0OTI2YmZhZDE4ZDQ1NWU5ZjA0YiIsCiAgInByb2ZpbGVOYW1lIiA6ICJMYWR5TGV4eGllIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzc3NmIxOTUxOWE0NmVkYzRhZTM5MDY1Zjg4OWMxMzIyOGYwZWY5MmU2MWI0YTU3Y2U5ZDRlZmE1N2U1ZjY2MDAiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfSwKICAgICJDQVBFIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS8yMzQwYzBlMDNkZDI0YTExYjE1YThiMzNjMmE3ZTllMzJhYmIyMDUxYjI0ODFkMGJhN2RlZmQ2MzVjYTdhOTMzIgogICAgfQogIH0KfQ=="
+                }
+            ]
+        },
+        "Name": "LadyLexxie"
+    },
+    "CitadelData": {
+    },
+    "Orientation": 90,
+    "ScriptLanguage": "ECMAScript",
+    "KnockBack": 0,
+    "TransformHasJob": 0b,
+    "PuppetHead2": {
+        "RotationY": 0.0f,
+        "RotationX": 0.0f,
+        "RotationZ": 0.0f,
+        "Disabled": 0b
+    },
+    "BurnInSun": 0b,
+    "AttackInvisible": 1b,
+    "HurtTime": 0s,
+    "PuppetMoving": 0b,
+    "PuppetBody": {
+        "RotationY": 0.0f,
+        "RotationX": 0.0f,
+        "RotationZ": 0.0f,
+        "Disabled": 0b
+    },
+    "PotionImmune": 1b,
+    "AvoidsSun": 0b,
+    "Texture": "customnpcs:textures/entity/humanmale/steve.png",
+    "NpcJob": 9,
+    "BurstCount": 1,
+    "pSpeed": 10,
+    "DeathTime": 0s,
+    "pImpact": 0,
+    "Motion": [
+        0.0d,
+        -0.0784000015258789d,
+        0.0d
+    ],
+    "pEffect": 0,
+    "DistanceToMelee": 0,
+    "NpcStepSound": "",
+    "FireRate": 5,
+    "pEffAmp": 0,
+    "NpcKilledLines": {
+        "Lines": [
+        ]
+    },
+    "Fire": -1s,
+    "TransformHasInv": 0b,
+    "PuppetAnimationSpeed": 4,
+    "NpcInteractLines": {
+        "Lines": [
+        ]
+    },
+    "pSpin": 0b,
+    "NpcHurtSound": "minecraft:entity.player.hurt",
+    "pTrail": 0,
+    "NoFallDamage": 1b,
+    "AbsorptionAmount": 0.0f,
+    "Name": "Evil Witch",
+    "FallDistance": 0.0f,
+    "SkinColor": 16777215,
+    "PuppetLArm": {
+        "RotationY": 0.0f,
+        "RotationX": 0.0f,
+        "RotationZ": 0.0f,
+        "Disabled": 0b
+    },
+    "NPCDialogOptions": [
+    ],
+    "AggroRange": 64,
+    "DirectLOS": 0b,
+    "HandDropChances": [
+        0.085f,
+        0.085f
+    ],
+    "NpcModelData": {
+        "CustomSkinUrl": "",
+        "BodyConfig": {
+            "NotShared": 0b,
+            "ScaleZ": 1.0f,
+            "TransZ": 0.0f,
+            "TransY": 0.0f,
+            "TransX": 0.0f,
+            "ScaleY": 1.0f,
+            "ScaleX": 1.0f
+        },
+        "MoveAnimation": 16,
+        "Legs2Config": {
+            "NotShared": 0b,
+            "ScaleZ": 1.0f,
+            "TransZ": 0.0f,
+            "TransY": 0.0f,
+            "TransX": 0.0f,
+            "ScaleY": 1.0f,
+            "ScaleX": 1.0f
+        },
+        "SimpleRender": 0b,
+        "ArmsConfig": {
+            "NotShared": 0b,
+            "ScaleZ": 1.0f,
+            "TransZ": 0.0f,
+            "TransY": 0.0f,
+            "TransX": 0.0f,
+            "ScaleY": 1.0f,
+            "ScaleX": 1.0f
+        },
+        "ExtraData": {
+        },
+        "HeadConfig": {
+            "NotShared": 0b,
+            "ScaleZ": 1.0f,
+            "TransZ": 0.0f,
+            "TransY": 0.0f,
+            "TransX": 0.0f,
+            "ScaleY": 1.0f,
+            "ScaleX": 1.0f
+        },
+        "LegsConfig": {
+            "NotShared": 0b,
+            "ScaleZ": 1.0f,
+            "TransZ": 0.0f,
+            "TransY": 0.0f,
+            "TransX": 0.0f,
+            "ScaleY": 1.0f,
+            "ScaleX": 1.0f
+        },
+        "Arms2Config": {
+            "NotShared": 0b,
+            "ScaleZ": 1.0f,
+            "TransZ": 0.0f,
+            "TransY": 0.0f,
+            "TransX": 0.0f,
+            "ScaleY": 1.0f,
+            "ScaleX": 1.0f
+        },
+        "Parts": [
+        ],
+        "NewParts": [
+        ],
+        "WingMode": 0,
+        "DisplayName": "",
+        "Animation": 0,
+        "ModelType": 0,
+        "LastEdited": 1693649520958L
+    },
+    "VisibleAvailability": {
+        "AvailabilityQuestId": -1,
+        "AvailabilityScoreboardType": 1,
+        "AvailabilityFactionStance": 0,
+        "AvailabilityScoreboard2Value": 1,
+        "AvailabilityQuest": 0,
+        "AvailabilityDialog4": 0,
+        "AvailabilityScoreboardObjective": "",
+        "AvailabilityDialog3": 0,
+        "AvailabilityQuest2": 0,
+        "AvailabilityQuest3": 0,
+        "AvailabilityScoreboard2Objective": "",
+        "AvailabilityQuest4": 0,
+        "ModRev": 18,
+        "AvailabilityDialog2": 0,
+        "AvailabilityDayTime": 0,
+        "AvailabilityFaction2Id": -1,
+        "AvailabilityScoreboardValue": 1,
+        "AvailabilityFaction": 0,
+        "AvailabilityDialog": 0,
+        "AvailabilityScoreboard2Type": 1,
+        "AvailabilityFaction2": 0,
+        "AvailabilityFactionId": -1,
+        "AvailabilityFaction2Stance": 0,
+        "AvailabilityDialogId": -1,
+        "AvailabilityQuest4Id": -1,
+        "AvailabilityQuest3Id": -1,
+        "AvailabilityQuest2Id": -1,
+        "AvailabilityDialog2Id": -1,
+        "AvailabilityDialog3Id": -1,
+        "AvailabilityDialog4Id": -1,
+        "AvailabilityMinPlayerLevel": 0
+    },
+    "minDelay": 20,
+    "DoorInteract": 2,
+    "MoveSpeed": 0,
+    "TransformEditingModus": 0b,
+    "UsingSkinUrl": 1b,
+    "PuppetRArm": {
+        "RotationY": 0.0f,
+        "RotationX": 0.0f,
+        "RotationZ": 0.0f,
+        "Disabled": 0b
+    },
+    "PotionDuration": 5,
+    "maxDelay": 40,
+    "ScriptEnabled": 1b,
+    "Role": 0,
+    "DropChance": [
+        {
+            "Integer": 100.0f,
+            "Slot": 0
+        },
+        {
+            "Integer": 100.0f,
+            "Slot": 1
+        },
+        {
+            "Integer": 100.0f,
+            "Slot": 2
+        },
+        {
+            "Integer": 100.0f,
+            "Slot": 3
+        },
+        {
+            "Integer": 100.0f,
+            "Slot": 4
+        },
+        {
+            "Integer": 100.0f,
+            "Slot": 5
+        },
+        {
+            "Integer": 100.0f,
+            "Slot": 6
+        },
+        {
+            "Integer": 100.0f,
+            "Slot": 7
+        },
+        {
+            "Integer": 100.0f,
+            "Slot": 8
+        }
+    ],
+    "KilledTime": 0L,
+    "AimWhileShooting": 0b,
+    "CanPickUpLoot": 0b,
+    "CanDrown": 0b,
+    "pSize": 5,
+    "CanSprint": 0b,
+    "CanLeap": 0b,
+    "ForgeData": {
+        "cnpcmarkdata": {
+            "marks": [
+            ]
+        },
+        "CNPCStoredData": {
+            "phase": 1.0d,
+            "AA": 1.0d,
+            "invulnerable": "false",
+            "stage": 1.0d,
+            "attacking": "false",
+            "element": "earth"
+        }
+    },
+    "PuppetAttacking": 0b,
+    "PotionAmp": 0,
+    "PuppetBody2": {
+        "RotationY": 0.0f,
+        "RotationX": 0.0f,
+        "RotationZ": 0.0f,
+        "Disabled": 0b
+    },
+    "MaxExp": 0,
+    "PortalCooldown": 0,
+    "pGlows": 0b,
+    "TransformHasAdvanced": 0b,
+    "MovementType": 0,
+    "FiringSound": "minecraft:entity.arrow.shoot",
+    "Armor": [
+        {
+            "Slot": 0b,
+            "ForgeCaps": {
+                "customnpcs:itemscripteddata": {
+                }
+            },
+            "id": "hexerei:witch_helmet",
+            "Count": 1b,
+            "tag": {
+                "Damage": 0,
+                "display": {
+                    "color": 4697343
+                }
+            }
+        },
+        {
+            "Slot": 1b,
+            "ForgeCaps": {
+                "customnpcs:itemscripteddata": {
+                }
+            },
+            "id": "hexerei:witch_chestplate",
+            "Count": 1b,
+            "tag": {
+                "Damage": 0,
+                "display": {
+                    "color": 4697343
+                }
+            }
+        },
+        {
+            "Slot": 2b,
+            "ForgeCaps": {
+                "customnpcs:itemscripteddata": {
+                }
+            },
+            "id": "forbidden_arcanus:draco_arcanus_leggings",
+            "Count": 1b,
+            "tag": {
+                "Damage": 0
+            }
+        },
+        {
+            "Slot": 3b,
+            "ForgeCaps": {
+                "customnpcs:itemscripteddata": {
+                }
+            },
+            "id": "hexerei:witch_boots",
+            "Count": 1b,
+            "tag": {
+                "Damage": 0,
+                "display": {
+                    "color": 4697343
+                }
+            }
+        }
+    ],
+    "CloakTexture": "",
+    "GlowTexture": "",
+    "pXlr8": 0b,
+    "MarkovGeneratorId": 1,
+    "Scripts": [
+        {
+            "Script": "",
+            "Console": [
+                {
+                    "Long": 1702050857762L,
+                    "String": "javax.script.ScriptException: TypeError: NaN is not an Object in <eval> at line number 2136
+	at MC-BOOTSTRAP/org.openjdk.nashorn/org.openjdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:463)
+	at MC-BOOTSTRAP/org.openjdk.nashorn/org.openjdk.nashorn.api.scripting.NashornScriptEngine.invokeImpl(NashornScriptEngine.java:385)
+	at MC-BOOTSTRAP/org.openjdk.nashorn/org.openjdk.nashorn.api.scripting.NashornScriptEngine.invokeFunction(NashornScriptEngine.java:186)
+	at TRANSFORMER/customnpcs@1.18.2.20230803/noppes.npcs.controllers.ScriptContainer.run(ScriptContainer.java:155)
+	at TRANSFORMER/customnpcs@1.18.2.20230803/noppes.npcs.controllers.ScriptContainer.run(ScriptContainer.java:112)
+	at TRANSFORMER/customnpcs@1.18.2.20230803/noppes.npcs.entity.data.DataScript.runScript(DataScript.java:58)
+	at TRANSFORMER/customnpcs@1.18.2.20230803/noppes.npcs.EventHooks.onNPCTimer(EventHooks.java:172)
+	at TRANSFORMER/customnpcs@1.18.2.20230803/noppes.npcs.entity.data.DataTimers$Timer.update(DataTimers.java:112)
+	at TRANSFORMER/customnpcs@1.18.2.20230803/noppes.npcs.entity.data.DataTimers.update(DataTimers.java:83)
+	at TRANSFORMER/customnpcs@1.18.2.20230803/noppes.npcs.entity.EntityNPCInterface.m_8119_(EntityNPCInterface.java:237)
+	at TRANSFORMER/customnpcs@1.18.2.20230803/noppes.npcs.entity.EntityCustomNpc.m_8119_(EntityCustomNpc.java:46)
+	at TRANSFORMER/minecraft@1.18.2/net.minecraft.server.level.ServerLevel.m_8647_(ServerLevel.java:652)
+	at TRANSFORMER/minecraft@1.18.2/net.minecraft.world.level.Level.m_46653_(Level.java:1579)
+	at TRANSFORMER/minecraft@1.18.2/net.minecraft.server.level.ServerLevel.m_184063_(ServerLevel.java:319)
+	at TRANSFORMER/minecraft@1.18.2/net.minecraft.world.level.entity.EntityTickList.m_156910_(EntityTickList.java:54)
+	at TRANSFORMER/minecraft@1.18.2/net.minecraft.server.level.ServerLevel.m_8793_(ServerLevel.java:299)
+	at TRANSFORMER/minecraft@1.18.2/net.minecraft.server.MinecraftServer.m_5703_(MinecraftServer.java:902)
+	at TRANSFORMER/minecraft@1.18.2/net.minecraft.server.MinecraftServer.m_5705_(MinecraftServer.java:842)
+	at TRANSFORMER/minecraft@1.18.2/net.minecraft.client.server.IntegratedServer.m_5705_(IntegratedServer.java:84)
+	at TRANSFORMER/minecraft@1.18.2/net.minecraft.server.MinecraftServer.m_130011_(MinecraftServer.java:685)
+	at TRANSFORMER/minecraft@1.18.2/net.minecraft.server.MinecraftServer.m_177918_(MinecraftServer.java:261)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: <eval>:2136 TypeError: NaN is not an Object
+	at MC-BOOTSTRAP/org.openjdk.nashorn/org.openjdk.nashorn.internal.runtime.ECMAErrors.error(ECMAErrors.java:57)
+	at MC-BOOTSTRAP/org.openjdk.nashorn/org.openjdk.nashorn.internal.runtime.ECMAErrors.typeError(ECMAErrors.java:212)
+	at MC-BOOTSTRAP/org.openjdk.nashorn/org.openjdk.nashorn.internal.runtime.ECMAErrors.typeError(ECMAErrors.java:184)
+	at MC-BOOTSTRAP/org.openjdk.nashorn/org.openjdk.nashorn.internal.runtime.ECMAErrors.typeError(ECMAErrors.java:171)
+	at MC-BOOTSTRAP/org.openjdk.nashorn/org.openjdk.nashorn.internal.objects.NativeObject.notAnObject(NativeObject.java:141)
+	at MC-BOOTSTRAP/org.openjdk.nashorn/org.openjdk.nashorn.internal.objects.NativeObject.keys(NativeObject.java:484)
+	at org.openjdk.nashorn.scripts/org.openjdk.nashorn.internal.scripts.Script$Recompilation$260$79003A$\\^eval\\_.timer(<eval>:2136)
+	at MC-BOOTSTRAP/org.openjdk.nashorn/org.openjdk.nashorn.internal.runtime.ScriptFunctionData.invoke(ScriptFunctionData.java:648)
+	at MC-BOOTSTRAP/org.openjdk.nashorn/org.openjdk.nashorn.internal.runtime.ScriptFunction.invoke(ScriptFunction.java:513)
+	at MC-BOOTSTRAP/org.openjdk.nashorn/org.openjdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:520)
+	at MC-BOOTSTRAP/org.openjdk.nashorn/org.openjdk.nashorn.api.scripting.ScriptObjectMirror.callMember(ScriptObjectMirror.java:187)
+	at MC-BOOTSTRAP/org.openjdk.nashorn/org.openjdk.nashorn.api.scripting.NashornScriptEngine.invokeImpl(NashornScriptEngine.java:379)
+	... 20 more"
+                }
+            ],
+            "ScriptList": [
+                {
+                    "Line": "witch.js"
+                }
+            ]
+        }
+    ],
+    "Health": 880.0f,
+    "MovingPause": 1b,
+    "Title": "Lady Lexi",
+    "KubeJSPersistentData": {
+    },
+    "PuppetRLeg": {
+        "RotationY": 0.0f,
+        "RotationX": 0.0f,
+        "RotationZ": 0.0f,
+        "Disabled": 0b
+    },
+    "PuppetLLeg2": {
+        "RotationY": 0.0f,
+        "RotationX": 0.0f,
+        "RotationZ": 0.0f,
+        "Disabled": 0b
+    },
+    "Rotation": [
+        315.0f,
+        0.0f
+    ],
+    "ShowName": 0,
+    "SpawnCycle": 3,
+    "Brain": {
+        "memories": {
+        }
+    },
+    "stopAndInteract": 1b,
+    "ReactsToFire": 0b,
+    "PositionOffsetZ": 5.0f,
+    "PositionOffsetY": 5.0f,
+    "PositionOffsetX": 5.0f,
+    "TransformHasAI": 0b,
+    "id": "customnpcs:customnpc",
+    "IsStatue": 0b,
+    "MovingPatern": 0,
+    "DefendFaction": 1b,
+    "FireIndirect": 0,
+    "NpcVisible": 0,
+    "LinkedNpcName": "",
+    "HitSound": "minecraft:entity.arrow.hit",
+    "FindShelter": 2,
+    "Air": 300s,
+    "HandItems": [
+        {
+        },
+        {
+        }
+    ],
+    "ArmorDropChances": [
+        0.085f,
+        0.085f,
+        0.085f,
+        0.085f
+    ],
+    "StandingState": 2,
+    "NpcInteractNPCLines": {
+        "Lines": [
+        ]
+    },
+    "WalkingRange": 10,
+    "ShotCount": 1,
+    "pDur": 5,
+    "AttackRange": 2,
+    "NpcKillLines": {
+        "Lines": [
+        ]
+    },
+    "NpcAttackLines": {
+        "Lines": [
+        ]
+    },
+    "pArea": 0,
+    "MoveState": 0,
+    "pRender3D": 1b,
+    "CombatRegen": 0,
+    "NpcsTimers": [
+        {
+            "Ticks": 12,
+            "TimerTicks": 1,
+            "Repeat": 1b,
+            "ID": 1
+        },
+        {
+            "Ticks": 572,
+            "TimerTicks": 2,
+            "Repeat": 1b,
+            "ID": 2
+        }
+    ],
+    "MarkovGender": 0,
+    "PuppetRLeg2": {
+        "RotationY": 0.0f,
+        "RotationX": 0.0f,
+        "RotationZ": 0.0f,
+        "Disabled": 0b
+    },
+    "LeftHanded": 0b,
+    "OnGround": 1b,
+    "ImmuneToFire": 1b,
+    "ArmorItems": [
+        {
+        },
+        {
+        },
+        {
+        },
+        {
+        }
+    ],
+    "DisablePitch": 0b,
+    "pPhysics": 1b,
+    "PuppetLArm2": {
+        "RotationY": 0.0f,
+        "RotationX": 0.0f,
+        "RotationZ": 0.0f,
+        "Disabled": 0b
+    },
+    "HurtByTimestamp": 9289,
+    "CreatureType": 0,
+    "Attributes": [
+        {
+            "Base": 11.0d,
+            "Name": "minecraft:generic.armor"
+        },
+        {
+            "Base": 0.0d,
+            "Name": "minecraft:generic.knockback_resistance"
+        },
+        {
+            "Base": 880.0d,
+            "Name": "minecraft:generic.max_health"
+        },
+        {
+            "Base": 0.0d,
+            "Name": "lodestone:magic_damage"
+        },
+        {
+            "Base": 32.0d,
+            "Name": "minecraft:generic.follow_range"
+        },
+        {
+            "Base": 0.0d,
+            "Name": "forge:step_height_addition"
+        },
+        {
+            "Base": 0.0d,
+            "Name": "minecraft:generic.flying_speed"
+        },
+        {
+            "Base": 5.1d,
+            "Name": "minecraft:generic.attack_damage"
+        },
+        {
+            "Base": 0.08d,
+            "Name": "forge:entity_gravity"
+        },
+        {
+            "Base": 0.01d,
+            "Name": "minecraft:generic.movement_speed"
+        },
+        {
+            "Base": 0.0d,
+            "Name": "lodestone:magic_proficiency"
+        },
+        {
+            "Base": 11.0d,
+            "Name": "minecraft:generic.armor_toughness"
+        }
+    ],
+    "Invulnerable": 0b,
+    "TransformHasDisplay": 0b,
+    "TransformHasRole": 0b,
+    "PuppetAnimate": 0b,
+    "NpcIdleSound": "",
+    "Weapons": [
+        {
+            "Slot": 0b,
+            "ForgeCaps": {
+                "customnpcs:itemscripteddata": {
+                    "ScriptEnabled": 1b,
+                    "DurabilityValue": 1.0f,
+                    "Scripts": [
+                        {
+                            "Script": "function init(t){
+    t.item.setCustomName('Green Staff')
+    t.item.setTexture('iceandfire:dread_queen_sword')
+    t.item.setColor(6014771)
+}
+",
+                            "Console": [
+                            ],
+                            "ScriptList": [
+                            ]
+                        }
+                    ],
+                    "ScriptTexture": "iceandfire:dread_queen_staff",
+                    "ItemColor": 4697343,
+                    "ItemTags": {
+                        "ScriptedData": {
+                            "ScriptEnabled": 1b,
+                            "Scripts": [
+                                {
+                                    "Script": "function init(t){
+    t.item.setCustomName('Green Staff')
+    t.item.setTexture('iceandfire:dread_queen_sword')
+    t.item.setColor(6014771)
+}
+",
+                                    "Console": [
+                                    ],
+                                    "ScriptList": [
+                                    ]
+                                }
+                            ],
+                            "ScriptTexture": "iceandfire:dread_queen_sword",
+                            "ScriptLanguage": "ECMAScript"
+                        },
+                        "display": {
+                            "Name": "{\"translate\":\"Green Staff\"}"
+                        }
+                    },
+                    "MaxStackSize": 64,
+                    "DurabilityShow": 1b,
+                    "ScriptLanguage": "ECMAScript",
+                    "DurabilityColor": -1
+                }
+            },
+            "id": "customnpcs:scripted_item",
+            "Count": 1b,
+            "tag": {
+                "ScriptedData": {
+                    "ScriptEnabled": 1b,
+                    "Scripts": [
+                        {
+                            "Console": [
+                            ],
+                            "Script": "function init(t){
+    t.item.setCustomName('Green Staff')
+    t.item.setTexture('iceandfire:dread_queen_sword')
+    t.item.setColor(6014771)
+}
+",
+                            "ScriptList": [
+                            ]
+                        }
+                    ],
+                    "ScriptTexture": "iceandfire:dread_queen_sword",
+                    "ScriptLanguage": "ECMAScript"
+                },
+                "display": {
+                    "Name": "{\"translate\":\"Green Staff\"}"
+                }
+            }
+        },
+        {
+            "Slot": 2b,
+            "ForgeCaps": {
+                "customnpcs:itemscripteddata": {
+                    "ScriptEnabled": 1b,
+                    "DurabilityValue": 1.0f,
+                    "Scripts": [
+                        {
+                            "Script": "function init(t){
+    t.item.setCustomName('Green Staff')
+    t.item.setTexture('iceandfire:dread_queen_sword')
+    t.item.setColor(6014771)
+}
+",
+                            "Console": [
+                            ],
+                            "ScriptList": [
+                            ]
+                        }
+                    ],
+                    "ScriptTexture": "iceandfire:dread_queen_staff",
+                    "ItemColor": 4697343,
+                    "ItemTags": {
+                        "ScriptedData": {
+                            "ScriptEnabled": 1b,
+                            "Scripts": [
+                                {
+                                    "Script": "function init(t){
+    t.item.setCustomName('Green Staff')
+    t.item.setTexture('iceandfire:dread_queen_sword')
+    t.item.setColor(6014771)
+}
+",
+                                    "Console": [
+                                    ],
+                                    "ScriptList": [
+                                    ]
+                                }
+                            ],
+                            "ScriptTexture": "iceandfire:dread_queen_sword",
+                            "ScriptLanguage": "ECMAScript"
+                        },
+                        "display": {
+                            "Name": "{\"translate\":\"Green Staff\"}"
+                        }
+                    },
+                    "MaxStackSize": 64,
+                    "DurabilityShow": 1b,
+                    "ScriptLanguage": "ECMAScript",
+                    "DurabilityColor": -1
+                }
+            },
+            "id": "customnpcs:scripted_item",
+            "Count": 1b,
+            "tag": {
+                "ScriptedData": {
+                    "ScriptEnabled": 1b,
+                    "Scripts": [
+                        {
+                            "Console": [
+                            ],
+                            "Script": "function init(t){
+    t.item.setCustomName('Green Staff')
+    t.item.setTexture('iceandfire:dread_queen_sword')
+    t.item.setColor(6014771)
+}
+",
+                            "ScriptList": [
+                            ]
+                        }
+                    ],
+                    "ScriptTexture": "iceandfire:dread_queen_sword",
+                    "ScriptLanguage": "ECMAScript"
+                },
+                "display": {
+                    "Name": "{\"translate\":\"Green Staff\"}"
+                }
+            }
+        }
+    ],
+    "HealthRegen": 0,
+    "ForgeCaps": {
+        "mowziesmobs:living_cap": {
+        },
+        "mowziesmobs:frozen_cap": {
+            "frozenYaw": 0.0f,
+            "freezeProgress": 0.0f,
+            "frozenPitch": 0.0f,
+            "freezeDecayDelay": 0,
+            "prevHasAI": 1b,
+            "frozenYawHead": 0.0f,
+            "frozen": 0b,
+            "frozenLimbSwingAmount": 0.0f,
+            "prevFrozen": 0b,
+            "frozenRenderYawOffset": 0.0f,
+            "frozenSwingProgress": 0.0f
+        },
+        "lodestone:entity_data": {
+        },
+        "mowziesmobs:ability": {
+        },
+        "mowziesmobs:frozen": {
+            "frozenYaw": 0.0f,
+            "freezeProgress": 0.0f,
+            "frozenPitch": 0.0f,
+            "freezeDecayDelay": 0,
+            "prevHasAI": 1b,
+            "frozenYawHead": 0.0f,
+            "frozen": 0b,
+            "frozenLimbSwingAmount": 0.0f,
+            "prevFrozen": 0b,
+            "frozenRenderYawOffset": 0.0f,
+            "frozenSwingProgress": 0.0f
+        },
+        "mowziesmobs:last_damage": {
+        },
+        "malum:living_data": {
+            "darknessAfflictionData": {
+                "currentAffliction": 0.0f,
+                "expectedAffliction": 0,
+                "rejection": 0,
+                "timeSpentInGoop": 0,
+                "afflictionDuration": 0
+            },
+            "soulData": {
+                "spawnerSpawned": 0b,
+                "soulless": 0b
+            }
+        }
+    },
+    "SkinUrl": "",
+    "CanSwim": 1b,
+    "GroundSound": "minecraft:block.stone.break",
+    "MaxHealth": 800,
+    "HideBodyWhenKilled": 0b,
+    "AttackSpeed": 20,
+    "FactionPoints": {
+        "DecreaseFaction1Points": 0b,
+        "OptionFaction2Points": 100,
+        "OptionFactions1": -1,
+        "OptionFactions2": -1,
+        "OptionFaction1Points": 100,
+        "DecreaseFaction2Points": 0b
+    },
+    "pDamage": 4,
+    "AttackOtherFactions": 1b,
+    "TransformIsActive": 0b,
+    "MovingState": 0,
+    "MovingPos": 0,
+    "OnAttack": 0,
+    "FallFlying": 0b,
+    "OrderedLines": 0b,
+    "PuppetStanding": 0b,
+    "TransformHasStats": 0b,
+    "ModRev": 18,
+    "Accuracy": 60,
+    "MinExp": 0,
+    "MaxFiringRange": 15,
+    "pStick": 0b,
+    "NpcDeathSound": "minecraft:entity.player.hurt",
+    "FactionID": 2,
+    "TotalTicksAlive": 1533745L,
+    "npcInteracting": 1b,
+    "AvoidsWater": 0b,
+    "NoLivingAnimation": 0b
+}

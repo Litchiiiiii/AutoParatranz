@@ -1,0 +1,2371 @@
+{
+	id: "15CC48755860FDC3"
+	group: "0960D5B8A7FB00EA"
+	order_index: 2
+	filename: "bloods_and_sacrifice"
+	title: "鲜血与献祭"
+	icon: "bloodmagic:altar"
+	subtitle: ["血魔法"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	default_min_width: 300
+	quests: [
+		{
+			x: 2.5d
+			y: 1.5d
+			description: [
+				"我已经将第一个物品所需的材料给你了。别习惯这种事。"
+				""
+				"将&6奥术粉灰&r与&6空白石板&r相组合以铸造你的第一块印记：如果你按照步骤做，现在你拥有了一块&b占卜印记&r。"
+			]
+			dependencies: ["0E0C6473FEBC9E99"]
+			dependency_requirement: "one_completed"
+			hide_details_until_startable: true
+			id: "773AC3684A65800F"
+			tasks: [{
+				id: "17012F80BBD96E6B"
+				type: "item"
+				item: "bloodmagic:divinationsigil"
+			}]
+			rewards: [
+				{
+					id: "55ED43547B721584"
+					type: "item"
+					item: {
+						id: "bloodmagic:upgradetome"
+						Count: 1b
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"血魔法笔记\"}"
+							}
+							livingStats: {
+								maxPoints: 0
+								upgrades: [{
+									exp: 100.0d
+									key: ""
+								}]
+							}
+						}
+					}
+				}
+				{
+					id: "60A794C17902EB6E"
+					type: "item"
+					item: "bloodmagic:experiencebook"
+				}
+			]
+		}
+		{
+			title: "牺牲匕首"
+			icon: {
+				id: "bloodmagic:sacrificialdagger"
+				Count: 1b
+				tag: {
+					sacrifice: 0b
+				}
+			}
+			x: 4.0d
+			y: 0.0d
+			description: [
+				"有两种控制并利用&e血魔法&r力量的途径："
+				"&a自我牺牲&r之路和&4献祭&r之路。"
+				""
+				"&a自我牺牲&r之路围绕着使用你自己的生命源质来给&e血魔法&r的奥术仪式和法术充能。"
+				""
+				"它需要你对自己的极限有着深刻认知，并愿意用你自己的生命力换取魔法能量。"
+				""
+				"通过牺牲生命值和生命力，你可以挖掘无尽的力量，达成非凡的壮举。"
+			]
+			dependencies: ["773AC3684A65800F"]
+			invisible_until_tasks: 1
+			id: "60A43619EE2B4D97"
+			tasks: [{
+				id: "3EB708DC5805F28A"
+				type: "item"
+				item: {
+					id: "bloodmagic:upgradetome"
+					Count: 1b
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"血魔法笔记\"}"
+						}
+						livingStats: {
+							maxPoints: 0
+							upgrades: [{
+								exp: 100.0d
+								key: ""
+							}]
+						}
+					}
+				}
+				consume_items: true
+			}]
+			rewards: [
+				{
+					id: "4A4AADF8B734F3D2"
+					type: "item"
+					item: {
+						id: "bloodmagic:sacrificialdagger"
+						Count: 1b
+						tag: {
+							sacrifice: 0b
+						}
+					}
+				}
+				{
+					id: "40C55D1E71EFB6BA"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "5EEA60FCEE1AAFB8"
+					type: "item"
+					item: {
+						id: "bloodmagic:incensealtar"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "64C2FEBE7F208083"
+					type: "item"
+					team_reward: true
+					item: {
+						id: "bloodmagic:selfsacrificerune"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			title: "献祭刀"
+			icon: "bloodmagic:daggerofsacrifice"
+			x: 4.0d
+			y: 3.0d
+			description: [
+				"有两种控制并利用&e血魔法&r力量的途径："
+				"&4自我牺牲&r之路和&a献祭&r之路"
+				""
+				"&a献祭&r之路包括从外界来源收集生命源质，特别是其他的生物。"
+				""
+				"它需要深思熟虑伦理方面，并需要一个合理的方式来确保生命的平衡与和谐。"
+				""
+				"通过献祭情愿抑或不情愿的生物的生命源质，你能引导它们的能量来强化你的魔法能力。"
+			]
+			dependencies: ["773AC3684A65800F"]
+			id: "2C5BE4C092BE0F2D"
+			tasks: [{
+				id: "7EFB788FAC78CCD8"
+				type: "item"
+				item: {
+					id: "bloodmagic:upgradetome"
+					Count: 1b
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"血魔法笔记\"}"
+						}
+						livingStats: {
+							maxPoints: 0
+							upgrades: [{
+								exp: 100.0d
+								key: ""
+							}]
+						}
+					}
+				}
+				consume_items: true
+			}]
+			rewards: [
+				{
+					id: "174ADED76B05411B"
+					type: "item"
+					item: "bloodmagic:daggerofsacrifice"
+				}
+				{
+					id: "21AD0E1AD58CE027"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "7094EF1FA0C6B0E1"
+					type: "item"
+					item: {
+						id: "iceandfire:deathworm_egg"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "414C93976AFE4E5A"
+					type: "item"
+					team_reward: true
+					item: {
+						id: "bloodmagic:sacrificerune"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			x: 5.5d
+			y: 1.5d
+			description: [
+				"今天，你将迈向控制并利用&e血魔法&r真正的第一步。"
+				""
+				"你的任务是做出你自己的&5血之祭坛&r并通过制作一块&6强化石板&r来证明你的能力。"
+				""
+				"这将展示如果你拥有这个意愿和操作血魔法的力量，并标志着在掌握这个奥术技艺中的你的进步。"
+				""
+				"让我们开始制作你的&7血之祭坛&r吧，并让你的技巧和奉献闪耀世界。"
+				""
+				"为了协助获取基础的合成材料，查看&e进程章节&r。"
+			]
+			min_required_dependencies: 1
+			dependencies: [
+				"60A43619EE2B4D97"
+				"2C5BE4C092BE0F2D"
+			]
+			dependency_requirement: "all_started"
+			id: "4903CEB8C47D208D"
+			tasks: [{
+				id: "7F767EBBFF7B2E90"
+				type: "item"
+				item: "bloodmagic:altar"
+			}]
+		}
+		{
+			x: 7.5d
+			y: 1.5d
+			description: [
+				"成功制作你自己的&5血之祭坛&r之后，来到给你的独立&5鲜血网络&r授权的时候了。"
+				""
+				"通过给一颗钻石注入大量的鲜血，你将会锻造出你自己的&b气血宝珠&r。"
+				""
+				"这项重大成就将会巩固你与&e血魔法&r的神秘能量的链接，把你的本质与宝珠绑定在一起。"
+				""
+				"作为这次努力的最终结果，你将拥有一件强大的工具，与你的本质相调谐。"
+				""
+				"继续进行仪式然后在&e血魔法&r的众多实践者之中树立起你的正确地位。"
+			]
+			dependencies: ["4903CEB8C47D208D"]
+			id: "701CC58B650FE3A1"
+			tasks: [{
+				id: "6F900DF96A030FB9"
+				type: "item"
+				item: "bloodmagic:weakbloodorb"
+			}]
+			rewards: [{
+				id: "1FB2023C875C6836"
+				type: "item"
+				team_reward: true
+				item: {
+					id: "bloodmagic:orbcapacityrune"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 4
+			}]
+		}
+		{
+			title: "升级你的血之祭坛"
+			x: 9.5d
+			y: 1.5d
+			description: [
+				"你在&5血魔法&r方面的研究是时候要深入点了。想要升级你的&5血魔法祭坛&r，你需要获得&b八块空白符文&r。把它们围绕着你的祭坛放置，应该会加强它的潜力，使它能制作二阶的物品，例如&6强化石板&r。"
+				""
+				"不要低估这一步的重要性。恰当使用你的祭坛提升之后的能力，会在你深入探索奥术技艺中起到关键作用。"
+				""
+				"仔细点行动，确保符文摆放好。它们是你在血魔法之路中的基石。"
+			]
+			dependencies: ["701CC58B650FE3A1"]
+			id: "387CE36B90720D95"
+			tasks: [{
+				id: "269BDD4B952D693D"
+				type: "item"
+				item: "bloodmagic:blankrune"
+				count: 8L
+				consume_items: true
+			}]
+			rewards: [
+				{
+					id: "03B4870137A2230B"
+					type: "item"
+					item: {
+						id: "bloodmagic:reinforcedslate"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 4
+				}
+				{
+					id: "151E04DA919FE242"
+					type: "choice"
+					team_reward: true
+					exclude_from_claim_all: true
+					table_id: 5457478480019312846L
+				}
+				{
+					id: "3BCE0BEAB043EC2B"
+					type: "random"
+					icon: {
+						id: "bloodmagic:blankrune"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					team_reward: true
+					table_id: 5336047429620236304L
+				}
+				{
+					id: "2BC12CD923E5D963"
+					type: "random"
+					icon: {
+						id: "bloodmagic:blankrune"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					team_reward: true
+					table_id: 5336047429620236304L
+				}
+				{
+					id: "0C7F0770DE512CE4"
+					type: "random"
+					icon: {
+						id: "bloodmagic:blankrune"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					team_reward: true
+					table_id: 5336047429620236304L
+				}
+				{
+					id: "5923998145DEEB1D"
+					type: "random"
+					icon: {
+						id: "bloodmagic:blankrune"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					team_reward: true
+					table_id: 5336047429620236304L
+				}
+				{
+					id: "4D3D4E384C4A2D80"
+					type: "random"
+					icon: {
+						id: "bloodmagic:blankrune"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					team_reward: true
+					table_id: 5336047429620236304L
+				}
+				{
+					id: "2AD12A428A208419"
+					type: "random"
+					icon: {
+						id: "bloodmagic:blankrune"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					team_reward: true
+					table_id: 5336047429620236304L
+				}
+			]
+		}
+		{
+			x: 6.5d
+			y: 3.0d
+			description: [
+				"炼金术桌可以将你灵魂网络中的生命源质凝聚为炼金混合物。"
+				""
+				"它可以通过你放入的气血宝珠确定执行配方的等级。"
+			]
+			dependencies: ["4903CEB8C47D208D"]
+			id: "4D8EAAC6A2576BCD"
+			tasks: [{
+				id: "4C3B288E985A283D"
+				type: "item"
+				item: "bloodmagic:alchemytable"
+			}]
+			rewards: [
+				{
+					id: "651F5BAEE6FC1152"
+					type: "item"
+					item: {
+						id: "bloodmagic:plantoil"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 4
+				}
+				{
+					id: "5B75B448D2F1C530"
+					type: "item"
+					item: {
+						id: "apotheosis:sigil_of_socketing"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 11.5d
+			y: 0.0d
+			description: [
+				"今天这节课应该包括了使用符文来加强&6生命源质&r的产量。"
+				""
+				"存在着两级牺牲符文。随着你的深入精通，制作强化符文变成可能。"
+				""
+				"我会提供给你两个强化符文，你也需要&b2个献祭/牺牲符文&r以交换，用于提升你的知识。"
+			]
+			dependencies: ["65C2BC44E8065433"]
+			id: "49C7C1F481A78001"
+			tasks: [{
+				id: "12C28FABAC894C17"
+				type: "item"
+				title: "献祭符文"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "bloodmagic:selfsacrificerune"
+								Count: 1b
+							}
+							{
+								id: "bloodmagic:sacrificerune"
+								Count: 1b
+							}
+						]
+					}
+				}
+				count: 2L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "50D5F614BDB18D39"
+				type: "choice"
+				exclude_from_claim_all: true
+				table_id: 5457478480019312846L
+			}]
+		}
+		{
+			x: 11.5d
+			y: 1.5d
+			description: [
+				"随着你祭坛的升级，在&5血魔法&r的第三阶，你很快将会制作&b灌输石板&r。这些石板使&6血魔法&r的可能性无限，同时我们将在接下来的课程中涉及一个话题。 "
+				""
+				"在你的魔法旅途中，制作这些&b灌输石板&r是关键的一步。在我们的下一节课期间，我们将细致探索它们的潜能。"
+				""
+				"准备好去发现这些石板提供的大量机遇，因为我们要更加深入钻研&5血魔法&r了。"
+			]
+			dependencies: ["387CE36B90720D95"]
+			id: "65C2BC44E8065433"
+			tasks: [{
+				id: "01D74B8D85F11307"
+				type: "item"
+				item: "bloodmagic:infusedslate"
+			}]
+			rewards: [
+				{
+					id: "4BFAA6C745E98D0D"
+					type: "item"
+					item: {
+						id: "minecraft:warped_fungus"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "47EA0520115B1FE2"
+					type: "item"
+					team_reward: true
+					item: {
+						id: "bloodmagic:blankslate"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			x: 13.5d
+			y: 1.5d
+			description: [
+				"在我们的&5血之祭坛&r达到四阶以后，现在我们深入研究获取&b恶魔石板&r了。请记住，每一个更高的等级需要更多的鲜血。确保各种各样的&6符文&r围绕着你的&6血之祭坛&r来维持它的功能。"
+				""
+				"为了追求符文的协调布置，适应逐步上升的血液需求就像我们探索更高的等级。"
+			]
+			dependencies: [
+				"65C2BC44E8065433"
+				"05CDF6A1583773BF"
+			]
+			id: "3D04A755B3FAFE95"
+			tasks: [{
+				id: "3B9F40891A39AD60"
+				type: "item"
+				item: "bloodmagic:demonslate"
+			}]
+			rewards: [{
+				id: "21BD0E9C6D7D1EEB"
+				type: "item"
+				team_reward: true
+				item: {
+					id: "bloodmagic:infusedslate"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 4
+			}]
+		}
+		{
+			x: 15.5d
+			y: 1.5d
+			description: ["五阶也就是终阶血之祭坛能够生产悬幽石板。它们与恶魔意志在多维水平之上产生共鸣，并且允许你把原始的生命源质注入到最强大的仪式和物品之中。"]
+			dependencies: [
+				"3D04A755B3FAFE95"
+				"138BD1F399AF5758"
+			]
+			id: "0E52379106270341"
+			tasks: [{
+				id: "5FD1FDD596F84895"
+				type: "item"
+				item: "bloodmagic:etherealslate"
+			}]
+			rewards: [{
+				id: "720F7518A42306F9"
+				type: "item"
+				team_reward: true
+				item: {
+					id: "bloodmagic:demonslate"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 4
+			}]
+		}
+		{
+			title: "意志在狱火中锻造"
+			x: 6.5d
+			y: 0.0d
+			description: [
+				"流血获取力量很容易，但那仅仅是血魔法的真正本质的一个延伸。"
+				""
+				"它力量的真谛在于练习者的意志。控制原始的意志，把世界扭曲到你渴望的样子，这是这门技艺的关键。"
+				""
+				"最后，你将制作一个狱火锻炉。这将允许你开始将意志实体化，并直接转化为物质形态。"
+			]
+			dependencies: ["4903CEB8C47D208D"]
+			id: "6495FB76535B1030"
+			tasks: [{
+				id: "696F5081FDF4F518"
+				type: "item"
+				item: "bloodmagic:soulforge"
+			}]
+			rewards: [
+				{
+					id: "530837393832C26A"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "121BD08A0034A4C3"
+					type: "item"
+					item: {
+						id: "bloodmagic:soulsnare"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 8
+				}
+				{
+					id: "4C2110430395FA6E"
+					type: "item"
+					item: {
+						id: "minecraft:crimson_nylium"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "2E7BE2BF8A89F1F1"
+					type: "item"
+					item: {
+						id: "minecraft:warped_nylium"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 6.5d
+			y: -1.5d
+			description: [
+				"为了收集一些意志来开启进程，你将会需要捕获一些敌对灵魂。"
+				"朝着它们投掷投网，最好的情况是会产生效果，有一些可能会抵制效果。如果你看它们身上冒着白色粒子，那么它便生效了。"
+				"一旦你已捕获了它们，击杀它们会掉落物质化的恶魔意志，可供你制作一块地狱魂石"
+			]
+			dependencies: ["6495FB76535B1030"]
+			id: "47525C1CDE2346F4"
+			tasks: [{
+				id: "11F62C87381F3CDE"
+				type: "item"
+				item: {
+					id: "bloodmagic:soulgempetty"
+					Count: 1b
+					tag: { }
+				}
+				match_nbt: false
+			}]
+			rewards: [
+				{
+					id: "6364385A9BA86DCC"
+					type: "item"
+					item: {
+						id: "bloodmagic:demonwillgauge"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "34BB19D33E2581FA"
+					type: "xp"
+					xp: 2
+				}
+				{
+					id: "2C4399FF87810DF0"
+					type: "item"
+					item: {
+						id: "bloodmagic:soulgempetty"
+						Count: 1b
+						tag: {
+							souls: 0.0d
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 6.5d
+			y: -3.0d
+			description: ["你还需要继续强化并精炼你的控制手段。首先，把它升级到细块地狱魂石，然后便是普通。有了普通地狱魂石，你能制作中阶血魔法的多数材料，包括完全解锁为自动化而生的路由节点。"]
+			dependencies: ["47525C1CDE2346F4"]
+			id: "7B110F2E2E7002E6"
+			tasks: [{
+				id: "516D68687F1D7621"
+				type: "item"
+				item: {
+					id: "bloodmagic:soulgemcommon"
+					Count: 1b
+					tag: { }
+				}
+				match_nbt: false
+			}]
+			rewards: [
+				{
+					id: "71C1529E1A3CF931"
+					type: "item"
+					item: {
+						id: "bloodmagic:soulgemcommon"
+						Count: 1b
+						tag: {
+							souls: 1.0d
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "7BBC5DBA6455CB1D"
+					type: "item"
+					item: {
+						id: "minecraft:crimson_fungus"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 5.0d
+			y: -3.0d
+			description: ["你将会需要获得来自恶魔领域的恶魔气血碎片（Demon Blood Shard）和至少一个四阶血之祭坛来制作大师意志催化剂（Master Will Catalyst）。这个大块地狱魂石将能够意志以最快的流速进入到你的造物之中。（译注：作者此任务中描述的两物品都不存在）"]
+			dependencies: ["7B110F2E2E7002E6"]
+			id: "04D54AF2ACBAF945"
+			tasks: [{
+				id: "74E7C80FD4D88AB2"
+				type: "item"
+				item: {
+					id: "bloodmagic:soulgemgreater"
+					Count: 1b
+					tag: { }
+				}
+				match_nbt: false
+			}]
+			rewards: [
+				{
+					id: "5624FFBC2A3163E5"
+					type: "item"
+					item: {
+						id: "bloodmagic:corrosivecrystal"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 8
+				}
+				{
+					id: "12C06028C94F37B0"
+					type: "item"
+					item: {
+						id: "bloodmagic:vengefulcrystal"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 8
+				}
+				{
+					id: "1FB738807CFA5BEE"
+					type: "item"
+					item: {
+						id: "bloodmagic:destructivecrystal"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 8
+				}
+				{
+					id: "38979E230DE7EEC8"
+					type: "item"
+					item: {
+						id: "bloodmagic:steadfastcrystal"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 8
+				}
+				{
+					id: "1AE1158322C12D9C"
+					type: "item"
+					item: {
+						id: "bloodmagic:demonslate"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			x: 5.0d
+			y: -1.5d
+			description: [
+				"感知之剑收集恶魔意志的效率比投网更高。你用感知之剑杀死的任何敌人都会掉落恶魔意志，会自动填充到你物品栏中的地狱魂石之中。"
+				""
+			]
+			dependencies: ["47525C1CDE2346F4"]
+			id: "6B41D442A812FE48"
+			tasks: [{
+				id: "45789B9BAB25101C"
+				type: "item"
+				item: {
+					id: "bloodmagic:soulsword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "2F1F2787F95EE084"
+					type: "choice"
+					title: "选择魔咒"
+					icon: {
+						id: "minecraft:enchanted_book"
+						Count: 1b
+						tag: {
+							StoredEnchantments: [{
+								lvl: 4s
+								id: "minecraft:sharpness"
+							}]
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					exclude_from_claim_all: true
+					table_id: 7557558112735709859L
+				}
+				{
+					id: "1FBC5BD611A48D1A"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			x: 11.5d
+			y: 3.0d
+			description: [
+				"&b炼金反应炉&r是一个拥有多种功能的强大工具。它作为一个魔法熔炉和擅长&6精炼矿物&r，提供一个更好的产量的机会。"
+				""
+				"然而，它摆在面前的首要功能是获取&6虚弱气血碎片&r，一个在我们学习奥术技艺中的关键要素。"
+				""
+				"了解它的多功能性因为它拥有多种魔法追求的关键。"
+			]
+			dependencies: ["65C2BC44E8065433"]
+			id: "11CE06B33AA17486"
+			tasks: [{
+				id: "4B3C035A17B3EE61"
+				type: "item"
+				item: "bloodmagic:alchemicalreactionchamber"
+			}]
+			rewards: [{
+				id: "704C45E7681C8BFB"
+				type: "item"
+				item: {
+					id: "bloodmagic:simplekey"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 3
+			}]
+		}
+		{
+			title: "隐域之缘"
+			icon: "bloodmagic:inversion_pillar"
+			x: 11.5d
+			y: 4.5d
+			description: [
+				"允许我介绍&5隐域之缘仪式&r。它是一场评估你的技巧和力量的重大考验。 创造&b反转石柱&r，与之互动你就能进入这个领域。"
+				""
+				"到现在，你应该已经获得一些&6铁钥匙&r了。这些钥匙起到解锁隐域中房间的通行证的作用。"
+			]
+			dependencies: ["11CE06B33AA17486"]
+			id: "39A8E6F8A70D56EA"
+			tasks: [
+				{
+					id: "43CD4D36921F0105"
+					type: "item"
+					item: "bloodmagic:ritualdiviner"
+				}
+				{
+					id: "59D65421DF44E779"
+					type: "observation"
+					title: "看着一根反转石柱"
+					icon: "bloodmagic:dungeon_emitter"
+					timer: 0L
+					observe_type: 0
+					to_observe: "bloodmagic:inversion_pillar"
+				}
+			]
+			rewards: [{
+				id: "31387C62AAA4F951"
+				type: "item"
+				item: "bloodmagic:simplekey"
+				count: 4
+			}]
+		}
+		{
+			x: 13.5d
+			y: 4.5d
+			description: [
+				"在&5隐域之缘仪式&r中的首要目标是获得&b血命果&r，可以在战利品箱中发现它。"
+				""
+				"这些果实培育起来极具挑战性，因为它们需要一个独特的过程。在成熟之后，它们需要吸取一个活物的鲜血来满足它们对邪恶的渴望然后转化为一个&b饱满血命果&r。"
+				""
+				"要协助这个的成长，使用&2绿丛仪式&r将会显著协助滋养这些独特的水果。"
+			]
+			dependencies: ["39A8E6F8A70D56EA"]
+			id: "62D76E4208D8F78F"
+			tasks: [{
+				id: "1B2DD84A8E458526"
+				type: "item"
+				item: "bloodmagic:strong_tau"
+			}]
+		}
+		{
+			icon: "bloodmagic:weakbloodshard"
+			x: 13.5d
+			y: 3.0d
+			description: [
+				"我们已经收集了所有必需的元素来获得&b虚弱气血碎片&r然后向着第四阶&5血之祭坛&r前进。"
+				""
+				"使用&6炼金反应炉&r搭配&6血染恢复宝具&r来获得这些碎片。一旦你获得了&b血石砖&r，在下节课，我们将继续我们的探索。"
+				""
+				"做好准备，我们旅程的下一阶段贯穿着奥术技艺。"
+			]
+			dependencies: ["62D76E4208D8F78F"]
+			id: "05CDF6A1583773BF"
+			tasks: [
+				{
+					id: "73226FA94112CD0E"
+					type: "item"
+					item: "bloodmagic:weakbloodshard"
+				}
+				{
+					id: "11425C8DEAE245A1"
+					type: "item"
+					item: "bloodmagic:largebloodstonebrick"
+				}
+			]
+			rewards: [
+				{
+					id: "70D7FBF62BB0CE25"
+					type: "item"
+					item: {
+						id: "bloodmagic:sanguinereverter"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "1645C88EA661B752"
+					type: "xp_levels"
+					xp_levels: 4
+				}
+			]
+		}
+		{
+			x: 15.5d
+			y: 0.0d
+			description: ["狱锻块闪烁着原始的恶魔意志，更像是一件诱人的中心装饰品。它们将会作为你的第五阶血之祭坛的基石。"]
+			dependencies: ["3406F2D47C79C6E4"]
+			id: "138BD1F399AF5758"
+			tasks: [{
+				id: "3DBD8981E934DB6D"
+				type: "item"
+				item: "bloodmagic:dungeon_metal"
+			}]
+			rewards: [
+				{
+					id: "54B4A78FE48A0BA7"
+					type: "item"
+					item: {
+						id: "bloodmagic:dungeon_ore"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 4
+				}
+				{
+					id: "053C4703E08589AB"
+					type: "item"
+					item: {
+						id: "bloodmagic:simplekey"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			x: 13.5d
+			y: 0.0d
+			description: [
+				"把&b仪式推测杖&r升级到它的薄暮版本是一项简单的任务。刚开始把两块&6煤炭块&r嬗变为元素铭文工具：薄暮。把这个工具你的旧的&b仪式推测杖&r相组合，再加上两块恶魔石板来完成升级。"
+				""
+				"这次升级过程应该对于生产改良后的&b仪式推测杖&r[薄暮]没有任何难度。"
+				""
+				"为这个升级能力后的工具做好准备，日后将会提供我们在魔法上的需求。"
+			]
+			dependencies: ["3D04A755B3FAFE95"]
+			id: "49917727000AB63A"
+			tasks: [{
+				id: "3CD89017126DDFBD"
+				type: "item"
+				item: "bloodmagic:ritualdivinerdusk"
+			}]
+			rewards: [{
+				id: "6B59E3F28FC28262"
+				type: "item"
+				team_reward: true
+				item: {
+					id: "bloodmagic:ritualstone"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 4
+			}]
+		}
+		{
+			x: 6.5d
+			y: 4.5d
+			description: ["瓶子是炼金药剂的开始。你应该快速学习来储存材料，因为它们这些经常用的到。"]
+			dependencies: ["4D8EAAC6A2576BCD"]
+			id: "7E2B7879C3C7FA47"
+			tasks: [{
+				id: "07DB0942B1EAF496"
+				type: "item"
+				item: {
+					id: "bloodmagic:alchemy_flask"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "6070AEA9318ED08F"
+					type: "item"
+					item: {
+						id: "minecraft:rabbit_spawn_egg"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 2
+				}
+				{
+					id: "236C3B19EF3770B2"
+					type: "item"
+					item: {
+						id: "minecraft:rabbit_foot"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "1C4A7C53348F74D0"
+					type: "item"
+					item: {
+						id: "bloodmagic:blankslate"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			x: 6.5d
+			y: 6.0d
+			description: ["建议催化剂是所有高级药剂的初级粘合剂。它能把平凡的材料结合到注入生命源质的炼金瓶中以提取独一无二的效果。"]
+			dependencies: ["4D8EAAC6A2576BCD"]
+			id: "500CFBA806613E18"
+			tasks: [{
+				id: "010194406DBDF27A"
+				type: "item"
+				item: "bloodmagic:simplecatalyst"
+			}]
+			rewards: [
+				{
+					id: "447E4E76314DFC62"
+					type: "item"
+					item: {
+						id: "bloodmagic:simplecatalyst"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 8
+				}
+				{
+					id: "273050610B2AB3AB"
+					type: "item"
+					item: {
+						id: "bloodmagic:blankslate"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			x: 6.5d
+			y: 7.5d
+			description: ["强化这些催化剂需要更加稀有的材料，但是可以大幅增加多种药水的效果。在你已经升级了它们之后，考虑使用填充剂在这些更加昂贵的瓶子上。"]
+			dependencies: ["500CFBA806613E18"]
+			id: "15FB4DF8E7671C6F"
+			tasks: [{
+				id: "4FEB666DC56CF2C1"
+				type: "item"
+				item: "bloodmagic:strengthenedcatalyst"
+			}]
+			rewards: [
+				{
+					id: "2B66456BDA030876"
+					type: "item"
+					item: {
+						id: "bloodmagic:standardfillingagent"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 4
+				}
+				{
+					id: "188CBC2B8646D0C4"
+					type: "item"
+					item: {
+						id: "bloodmagic:infusedslate"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			x: 5.0d
+			y: 6.0d
+			description: ["小型增强催化剂和在普通药水中的荧石类似。它只会增强瓶子中最上层的效果。"]
+			dependencies: ["500CFBA806613E18"]
+			id: "1BB440E428FACDA2"
+			tasks: [{
+				id: "0D82C1E6DF11A7FF"
+				type: "item"
+				item: "bloodmagic:mundanepowercatalyst"
+			}]
+			rewards: [
+				{
+					id: "7C78F3C32474BF43"
+					type: "item"
+					item: {
+						id: "bloodmagic:strong_tau"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 4
+				}
+				{
+					id: "674253BC2C2A76A5"
+					type: "xp_levels"
+					xp_levels: 4
+				}
+			]
+		}
+		{
+			x: 8.0d
+			y: 6.0d
+			description: ["小型延长催化剂会增加你瓶子中最上层效果的持续时间。在单一效果的瓶子中使用就类似于延长普通药水起到的效果。"]
+			dependencies: ["500CFBA806613E18"]
+			id: "33C35A4B86B1DF6B"
+			tasks: [{
+				id: "5A28CD9BB82453A2"
+				type: "item"
+				item: "bloodmagic:mundanelengtheningcatalyst"
+			}]
+		}
+		{
+			x: 8.0d
+			y: 7.5d
+			description: ["标准延长催化剂会增加你瓶子中所有效果的持续时间。"]
+			dependencies: ["15FB4DF8E7671C6F"]
+			id: "5F68B1F88627B7FA"
+			tasks: [{
+				id: "745C906B7C263BCA"
+				type: "item"
+				item: "bloodmagic:averagelengtheningcatalyst"
+			}]
+			rewards: [{
+				id: "28C9F2135043818F"
+				type: "item"
+				item: {
+					id: "bloodmagic:infusedslate"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 4
+			}]
+		}
+		{
+			x: 5.0d
+			y: 7.5d
+			dependencies: ["15FB4DF8E7671C6F"]
+			id: "1A7CCA189F995CD8"
+			tasks: [{
+				id: "18733E1278963FE4"
+				type: "item"
+				item: "bloodmagic:averagepowercatalyst"
+			}]
+			rewards: [
+				{
+					id: "374D0A9D76C5615E"
+					type: "item"
+					item: {
+						id: "bloodmagic:standardfillingagent"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "65F8CE5CAE7AF43E"
+					type: "item"
+					item: {
+						id: "bloodmagic:averagepowercatalyst"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "607ED9EFF16EE658"
+					type: "item"
+					item: {
+						id: "bloodmagic:infusedslate"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			x: 9.5d
+			y: 3.0d
+			description: [
+				"仪式作为&5血魔法&r领域中的一个基本方面。想要激活一个仪式，最低要求由一个&b主仪式石&r，辅以不同的&b仪式石&r组成。它们的合理搭配对成功实施这些仪式来说至关重要。"
+				""
+				"这个任务完成后，都会奖励你们每个人一个&6仪式推测杖&r。这根棍子能帮你选择你想要施展的仪式，是一件关键工具，在你未来的血魔法探索之路中起到重要作为。"
+				""
+				"理解这些材料和它们的布置的重要性。它们成为了你在精通奥术仪式的基石。"
+			]
+			dependencies: ["387CE36B90720D95"]
+			id: "602284B29D99D2F4"
+			tasks: [
+				{
+					id: "1C68BC8AD8724171"
+					type: "item"
+					item: "bloodmagic:ritualstone"
+				}
+				{
+					id: "0441974E9004ACD0"
+					type: "item"
+					item: "bloodmagic:masterritualstone"
+				}
+			]
+			rewards: [
+				{
+					id: "6E6C3E29081BE895"
+					type: "choice"
+					exclude_from_claim_all: true
+					table_id: 1351371765845877606L
+				}
+				{
+					id: "75B970013FED86AA"
+					type: "item"
+					item: {
+						id: "bloodmagic:ritualdiviner"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "47D9760304468DC9"
+					type: "item"
+					team_reward: true
+					item: {
+						id: "bloodmagic:ritualstone"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			x: 13.5d
+			y: -1.5d
+			description: [
+				"想要进入无尽领域，你必须要构建通往无尽领域的仪式。一旦激活，你会发现你自己面朝着一根反转石柱和一个无尽版本的地牢，并且门口伴随着不断增加的挑战。"
+				""
+				"确保你留意稀有挑战例如空间扭曲和稀有钥匙例如福尔曼之钥，会保证你通往地牢更深的部分。"
+			]
+			dependencies: ["49917727000AB63A"]
+			id: "38466472D199F498"
+			tasks: [{
+				id: "3E259E5DC903503C"
+				type: "dimension"
+				title: "进入无尽领域"
+				dimension: "bloodmagic:dungeon"
+			}]
+			rewards: [
+				{
+					id: "71C29DEC6858FCA0"
+					type: "item"
+					item: {
+						id: "gag:energized_hearthstone"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "016C98CC1B606CF1"
+					type: "xp_levels"
+					xp_levels: 4
+				}
+			]
+		}
+		{
+			title: "找到一些恶魔合金矿"
+			icon: "bloodmagic:dungeon_ore"
+			x: 15.5d
+			y: -1.5d
+			description: ["恶魔合金矿只能在无尽地牢中找到，尤其是在矿井之中。矿井需要一把通往空间扭曲的，里面有着类似迷宫的结构的德尔曼之钥打开。"]
+			dependencies: ["38466472D199F498"]
+			id: "3406F2D47C79C6E4"
+			tasks: [{
+				id: "78CCECCFAD89ECBB"
+				type: "item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "bloodmagic:sand_hellforged"
+								Count: 1b
+							}
+							{
+								id: "bloodmagic:rawdemonite"
+								Count: 1b
+							}
+							{
+								id: "bloodmagic:dungeon_ore"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "6990B24B890EDC2D"
+					type: "item"
+					team_reward: true
+					item: {
+						id: "occultism:iesnium_ore"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 8
+				}
+				{
+					id: "24E336DF31E84598"
+					type: "item"
+					team_reward: true
+					item: {
+						id: "bloodmagic:simplekey"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 4
+				}
+				{
+					id: "4FF14CBAAD1A5C0F"
+					type: "item"
+					team_reward: true
+					item: {
+						id: "bloodmagic:infusedslate"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			title: "鲜血与献祭"
+			icon: {
+				id: "bloodmagic:experiencebook"
+				Count: 1b
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+			x: 1.0d
+			y: 1.5d
+			shape: "pentagon"
+			subtitle: "找到萨拉斯"
+			description: [
+				"你好，同学们。 "
+				""
+				"鲜血与献祭是生命的核心。我怀疑你们中的大多数都没有勇气去完成这门课的要求，但只要照做了，这门课将带给你们前所未有的力量和知识。"
+				""
+				"凡事都有代价，我的同学们。这门课将教会你，你愿意付出多少来获得你想要得到的。"
+			]
+			dependencies: ["63368A007664E4B5"]
+			hide_text_until_complete: true
+			id: "0E0C6473FEBC9E99"
+			tasks: [{
+				id: "5C68F181A1888D74"
+				type: "location"
+				title: "找到萨拉斯"
+				icon: {
+					id: "minecraft:player_head"
+					Count: 1b
+					tag: {
+						SkullOwner: {
+							Id: "982d514c-a012-e470-d6cc-7f32e00e57a8"
+							Properties: {
+								textures: [{
+									Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzk4MmQ1MTRjYTAxMmU0NzBkNmNjN2YzMmUwMGU1N2E4MjNiMGQ4NDAyMzNlMDA5NGIyY2U5MmQxZmI0OTVlY2UifX19"
+								}]
+							}
+							Name: "Saereth"
+						}
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				dimension: "minecraft:overworld"
+				ignore_dimension: false
+				position: [I;
+					-337
+					-22
+					-201
+				]
+				size: [I;
+					32
+					10
+					32
+				]
+			}]
+			rewards: [
+				{
+					id: "580CD98789AFE881"
+					type: "item"
+					item: "bloodmagic:blankslate"
+				}
+				{
+					id: "1D38965FD886E326"
+					type: "item"
+					item: {
+						id: "bloodmagic:arcaneashes"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "3E3D2D822F60F53C"
+					type: "item"
+					item: "minecraft:redstone"
+				}
+				{
+					id: "217269F5B333DFF6"
+					type: "command"
+					auto: "invisible"
+					command: "/title @p title {\"text\":\"欢迎来到血魔法，\"color\":\"red\"}"
+					silent: true
+				}
+				{
+					id: "302E095C75858957"
+					type: "item"
+					item: {
+						id: "patchouli:guide_book"
+						Count: 1b
+						tag: {
+							"patchouli:book": "bloodmagic:guide"
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 8.0d
+			y: 4.5d
+			description: ["如果你觉得你能行，现在来点稍微更高级的东西。把兔子脚和简易催化剂组合来制作你的第一瓶高级药剂。"]
+			dependencies: [
+				"7E2B7879C3C7FA47"
+				"500CFBA806613E18"
+			]
+			id: "533B2E1315E2DC56"
+			tasks: [{
+				id: "658C40A0C7291A38"
+				type: "item"
+				item: {
+					id: "bloodmagic:alchemy_flask"
+					Count: 1b
+					tag: {
+						CustomPotionEffects: [{
+							"forge:id": "minecraft:jump_boost"
+							Ambient: 0b
+							CurativeItems: [{
+								id: "minecraft:milk_bucket"
+								Count: 1b
+							}]
+							ShowIcon: 1b
+							ShowParticles: 1b
+							Duration: 3600
+							Id: 8b
+							Amplifier: 0b
+						}]
+						effectholder: [{
+							Duration: 3600
+							Id: 8
+							LengthDurationMod: 1.0d
+							Amplifier: 0b
+							AmpDurationMod: 1.0d
+						}]
+						Damage: 0
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				weak_nbt_match: true
+			}]
+			rewards: [
+				{
+					id: "79F6577C8D623387"
+					type: "item"
+					item: {
+						id: "minecraft:phantom_membrane"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "239CC2B87D38BB37"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "5CC4952ED63696F1"
+					type: "item"
+					item: {
+						id: "minecraft:cobweb"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 9.5d
+			y: 4.5d
+			description: [
+				"目前为止做得好。但尝试坚持下去，我们正在深入更高级的话题。由低阶的炼金药水起，我们可以通过使用滞留型催化能量来进一步加强它们。把你制作的跳跃提升药水与一张蜘蛛网组合来制作一瓶沉重药水。"
+				""
+			]
+			dependencies: ["533B2E1315E2DC56"]
+			id: "04F607E6633A19E7"
+			tasks: [{
+				id: "05ABEB6EB2C8DE60"
+				type: "item"
+				item: {
+					id: "bloodmagic:alchemy_flask"
+					Count: 1b
+					tag: {
+						CustomPotionEffects: [{
+							"forge:id": "bloodmagic:grounded"
+							Ambient: 0b
+							CurativeItems: [{
+								id: "minecraft:milk_bucket"
+								Count: 1b
+							}]
+							ShowIcon: 1b
+							ShowParticles: 1b
+							Duration: 1800
+							Id: 90b
+							Amplifier: 0b
+						}]
+						effectholder: [{
+							Duration: 1800
+							Id: 90
+							LengthDurationMod: 1.0d
+							Amplifier: 0b
+							AmpDurationMod: 1.0d
+						}]
+						Damage: 0
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				match_nbt: true
+			}]
+			rewards: [
+				{
+					id: "1B0DDF8E9C7BE457"
+					type: "item"
+					item: {
+						id: "bloodmagic:simplecatalyst"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 4
+				}
+				{
+					id: "65429D551FDA9595"
+					type: "item"
+					item: {
+						id: "minecraft:obsidian"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			title: "组合药剂"
+			x: 9.5d
+			y: 6.0d
+			description: [
+				"下一阶段，这会变得更加危险，就是组合药剂。你可以通过使用一瓶你已经酿造好的药剂来制作组合药剂，从而制作一瓶新的药水而不是使用一个普通的瓶子。"
+				""
+				"使用你先前酿造的药水，把它与一个幻翼膜组合，然后再加上一个简易催化剂来制作混合药水。"
+			]
+			dependencies: ["04F607E6633A19E7"]
+			id: "477E63EFA40523B7"
+			tasks: [{
+				id: "43AF5FFEFE4BED97"
+				type: "item"
+				item: {
+					id: "bloodmagic:alchemy_flask"
+					Count: 1b
+					tag: {
+						CustomPotionEffects: [
+							{
+								"forge:id": "bloodmagic:grounded"
+								Ambient: 0b
+								CurativeItems: [{
+									id: "minecraft:milk_bucket"
+									Count: 1b
+								}]
+								ShowIcon: 1b
+								ShowParticles: 1b
+								Duration: 1800
+								Id: 90b
+								Amplifier: 0b
+							}
+							{
+								"forge:id": "minecraft:slow_falling"
+								Ambient: 0b
+								CurativeItems: [{
+									id: "minecraft:milk_bucket"
+									Count: 1b
+								}]
+								ShowIcon: 1b
+								ShowParticles: 1b
+								Duration: 1800
+								Id: 28b
+								Amplifier: 0b
+							}
+						]
+						effectholder: [
+							{
+								Duration: 1800
+								Id: 90
+								LengthDurationMod: 1.0d
+								Amplifier: 0b
+								AmpDurationMod: 1.0d
+							}
+							{
+								Duration: 1800
+								Id: 28
+								LengthDurationMod: 1.0d
+								Amplifier: 0b
+								AmpDurationMod: 1.0d
+							}
+						]
+						Damage: 0
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				match_nbt: true
+			}]
+			rewards: [
+				{
+					id: "78AAA0B51A05DC3F"
+					type: "item"
+					item: {
+						id: "bloodmagic:combinationalcatalyst"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "1AD91907F27F43EC"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			title: "引力的体验"
+			x: 9.5d
+			y: 7.5d
+			description: [
+				"下一步，你可以拿一些混合药水然后插入一个组合型催化剂来产生内部的一个协同反应。这通常会产生一个有着完全不同效果的全新试剂。"
+				""
+				"使用你已经酿造好的药水，然后把它与这个混合式催化剂组合来制作一瓶引力药水。"
+				""
+			]
+			dependencies: ["477E63EFA40523B7"]
+			id: "7DFDB0FA8BB3ED57"
+			tasks: [{
+				id: "13CCB01FCF74D915"
+				type: "item"
+				item: {
+					id: "bloodmagic:alchemy_flask"
+					Count: 1b
+					tag: {
+						CustomPotionEffects: [{
+							"forge:id": "bloodmagic:gravity"
+							Ambient: 0b
+							CurativeItems: [{
+								id: "minecraft:milk_bucket"
+								Count: 1b
+							}]
+							ShowIcon: 1b
+							ShowParticles: 1b
+							Duration: 1800
+							Id: 88b
+							Amplifier: 0b
+						}]
+						effectholder: [{
+							Duration: 1800
+							Id: 88
+							LengthDurationMod: 1.0d
+							Amplifier: 0b
+							AmpDurationMod: 1.0d
+						}]
+						Damage: 0
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				match_nbt: true
+			}]
+			rewards: [
+				{
+					id: "37B64BB30F324962"
+					type: "item"
+					item: {
+						id: "ars_nouveau:glyph_crush"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "6560D5B1185012DA"
+					type: "item"
+					item: {
+						id: "bloodmagic:blankslate"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 2
+				}
+				{
+					id: "71240ACD95ED1C67"
+					type: "item"
+					item: {
+						id: "bloodmagic:alchemy_flask"
+						Count: 1b
+						tag: {
+							CustomPotionEffects: [{
+								"forge:id": "minecraft:slow_falling"
+								Ambient: 0b
+								CurativeItems: [{
+									id: "minecraft:milk_bucket"
+									Count: 1b
+								}]
+								ShowIcon: 1b
+								ShowParticles: 1b
+								Duration: 1800
+								Id: 28b
+								Amplifier: 0b
+							}]
+							effectholder: [{
+								Duration: 1800
+								Id: 28
+								LengthDurationMod: 1.0d
+								Amplifier: 0b
+								AmpDurationMod: 1.0d
+							}]
+							Damage: 0
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "羽加迪姆勒维……额，飘浮药水"
+			x: 11.5d
+			y: 6.0d
+			description: [
+				"通过在一瓶缓降药水加入一个发酵蛛眼酿造你可以制作一瓶飘浮药水。大多数情况下，作为喷溅型或者混合药水中是非常有用的。"
+				""
+				"就像我们正准备制作一瓶混合药水，应该和你做的悬浮药水搭配一个幻翼膜和一个简易催化剂搭配使用来制作一瓶混合缓降和悬浮的药水。最后，你应该用产生的药水与另一个发酵蛛眼组合（这一次不用催化剂）来制作一瓶混合飘浮与悬浮的药水。"
+			]
+			dependencies: ["3630A055036FE55D"]
+			id: "799EF66469EB3233"
+			tasks: [{
+				id: "725E8D52BD219FA9"
+				type: "item"
+				item: {
+					id: "bloodmagic:alchemy_flask"
+					Count: 1b
+					tag: {
+						CustomPotionEffects: [
+							{
+								"forge:id": "bloodmagic:suspended"
+								Ambient: 0b
+								CurativeItems: [{
+									id: "minecraft:milk_bucket"
+									Count: 1b
+								}]
+								ShowIcon: 1b
+								ShowParticles: 1b
+								Duration: 1800
+								Id: 91b
+								Amplifier: 0b
+							}
+							{
+								"forge:id": "minecraft:levitation"
+								Ambient: 0b
+								CurativeItems: [{
+									id: "minecraft:milk_bucket"
+									Count: 1b
+								}]
+								ShowIcon: 1b
+								ShowParticles: 1b
+								Duration: 3600
+								Id: 25b
+								Amplifier: 0b
+							}
+						]
+						effectholder: [
+							{
+								Duration: 1800
+								Id: 91
+								LengthDurationMod: 1.0d
+								Amplifier: 0b
+								AmpDurationMod: 1.0d
+							}
+							{
+								Duration: 3600
+								Id: 25
+								LengthDurationMod: 1.0d
+								Amplifier: 0b
+								AmpDurationMod: 1.0d
+							}
+						]
+						Damage: 0
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				match_nbt: true
+			}]
+			rewards: [
+				{
+					id: "4DBA595335809763"
+					type: "item"
+					item: {
+						id: "bloodmagic:tippedamethystthrowingdagger"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 8
+				}
+				{
+					id: "7939E545F805BDAF"
+					type: "item"
+					item: {
+						id: "bloodmagic:combinationalcatalyst"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 4
+				}
+				{
+					id: "7F901F7B578E6684"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			title: "悬浮"
+			x: 11.5d
+			y: 7.5d
+			description: ["现在把一个发酵蛛眼与引力药水组合会做出悬浮药水。"]
+			dependencies: ["7DFDB0FA8BB3ED57"]
+			id: "3630A055036FE55D"
+			tasks: [{
+				id: "122ABE6827DF0B56"
+				type: "item"
+				item: {
+					id: "bloodmagic:alchemy_flask"
+					Count: 1b
+					tag: {
+						CustomPotionEffects: [{
+							"forge:id": "bloodmagic:suspended"
+							Ambient: 0b
+							CurativeItems: [{
+								id: "minecraft:milk_bucket"
+								Count: 1b
+							}]
+							ShowIcon: 1b
+							ShowParticles: 1b
+							Duration: 1800
+							Id: 91b
+							Amplifier: 0b
+						}]
+						effectholder: [{
+							Duration: 1800
+							Id: 91
+							LengthDurationMod: 1.0d
+							Amplifier: 0b
+							AmpDurationMod: 1.0d
+						}]
+						Damage: 0
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				match_nbt: true
+			}]
+			rewards: [
+				{
+					id: "6F2D039B6A37C162"
+					type: "item"
+					item: {
+						id: "minecraft:black_shulker_box"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "3DE0A2360A25FDB1"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			title: "熟练掌握飞行"
+			x: 13.5d
+			y: 6.0d
+			description: [
+				"通过再一次把混合药水与一个混合式催化剂相结合，产生的药水可以给予一段有限的持续飞行的效果。"
+				""
+				"你可以使用延长催化剂来进一步强化这些药水。"
+				""
+			]
+			dependencies: ["799EF66469EB3233"]
+			id: "1890C2CCC5FA297F"
+			tasks: [{
+				id: "637E93C60BD96C86"
+				type: "item"
+				item: {
+					id: "bloodmagic:alchemy_flask"
+					Count: 1b
+					tag: {
+						CustomPotionEffects: [{
+							"forge:id": "bloodmagic:flight"
+							Ambient: 0b
+							CurativeItems: [{
+								id: "minecraft:milk_bucket"
+								Count: 1b
+							}]
+							ShowIcon: 1b
+							ShowParticles: 1b
+							Duration: 3600
+							Id: 86b
+							Amplifier: 0b
+						}]
+						effectholder: [{
+							Duration: 3600
+							Id: 86
+							LengthDurationMod: 1.0d
+							Amplifier: 0b
+							AmpDurationMod: 1.0d
+						}]
+						Damage: 0
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				match_nbt: true
+			}]
+			rewards: [
+				{
+					id: "0E9C822829DCE9F8"
+					type: "item"
+					item: {
+						id: "apotheosis:infused_hellshelf"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "46AE26CE120CD4A3"
+					type: "item"
+					item: {
+						id: "minecraft:enchanted_book"
+						Count: 1b
+						tag: {
+							StoredEnchantments: [{
+								lvl: 1s
+								id: "minecraft:mending"
+							}]
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "4BF57D56029D28DC"
+					type: "xp_levels"
+					xp_levels: 4
+				}
+			]
+		}
+		{
+			title: "简化重填"
+			x: 5.0d
+			y: 4.5d
+			description: [
+				"在这节课你学会制作的有些药水可能相当复杂，并且需要很多步骤来提纯。"
+				""
+				"为此，幸运的是填充它们简单多了。制作填充剂来与你制作的瓶子相组合，代价是需要更多平凡的元素来重新填充它们。"
+			]
+			dependencies: ["7E2B7879C3C7FA47"]
+			id: "52F59996FF884FE8"
+			tasks: [{
+				id: "0249D5A3EF4B7535"
+				type: "item"
+				item: {
+					id: "bloodmagic:weakfillingagent"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "5442AE19FE101A14"
+					type: "item"
+					item: {
+						id: "bloodmagic:weakfillingagent"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 4
+				}
+				{
+					id: "7DE49BB87A6A7702"
+					type: "item"
+					item: {
+						id: "bloodmagic:reinforcedslate"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			title: "规划你的节点"
+			x: 8.5d
+			y: -1.5d
+			description: [
+				"通过接入&6恶魔意志&r，是时候钻研使用路由节点搬运物品的功能了。"
+				""
+				"设置一个路由节点系统需要至少一个&b主控路由节点&r，起到我们系统中的“大脑”的作用。"
+				""
+				"使用你的&6节点连接器&r来链接两个&b路由节点&r到一起，这就是拓展你网络的方式了。"
+			]
+			dependencies: ["47525C1CDE2346F4"]
+			id: "2C708A0A20040DF4"
+			tasks: [{
+				id: "646BCF58E5A5018D"
+				type: "item"
+				item: {
+					id: "bloodmagic:masterroutingnode"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "1EBFDE0D1FCAFCD1"
+					type: "item"
+					item: {
+						id: "bloodmagic:noderouter"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "0DCF7BE23D870B2E"
+					type: "item"
+					item: {
+						id: "bloodmagic:itemroutingnode"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			title: "IO节点"
+			x: 10.0d
+			y: -1.5d
+			description: [
+				"除了&6主控路由节点&r，拥有至少一个&b输入路由节点&r和一个&b输出路由节点&r是极其重要的，在这个系统里掌控着输入和输出物品。"
+				""
+				"此外，一个&6物品过滤器&r是必不可少的，允许或者拒绝移动特定的物品。有好几种&6物品过滤器&r可供使用，提供在物品管理上的多功能性。这些路由节点以多个频道为特色，每一个频道都能接受一个单独的筛选器。"
+				""
+				"了解这个多功能工具将会显著简化你想成为血魔法师之路。"
+			]
+			dependencies: ["2C708A0A20040DF4"]
+			id: "230FC217A5BC41C1"
+			tasks: [
+				{
+					id: "04580BB9E67D1B99"
+					type: "item"
+					item: {
+						id: "bloodmagic:inputroutingnode"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "6DA5B0545D0E06FE"
+					type: "item"
+					item: {
+						id: "bloodmagic:outputroutingnode"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "61A200521A8D27B5"
+				type: "item"
+				item: {
+					id: "bloodmagic:itemrouterfilterexact"
+					Count: 1b
+					tag: { }
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 4
+			}]
+		}
+		{
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "bloodmagic:textures/block/alchemyarray.png"
+				}
+			}
+			x: 13.5d
+			y: -3.0d
+			shape: "diamond"
+			description: [
+				"所以你在地牢里面与那些怪物遇到困难了？"
+				""
+				"如果你没有能力解决它们，我会使得它们更简单。"
+			]
+			dependencies: ["38466472D199F498"]
+			hide: true
+			can_repeat: true
+			id: "50FF56AF28B3F3BF"
+			tasks: [{
+				id: "0B46A30EA2A2A963"
+				type: "checkmark"
+				title: "地牢削弱"
+			}]
+			rewards: [{
+				id: "6D36AABFF74E02C3"
+				type: "custom"
+				title: "切换至削弱怪物"
+				icon: {
+					id: "ftbquests:custom_icon"
+					Count: 1b
+					tag: {
+						Icon: "bloodmagic:textures/block/alchemyarray.png"
+					}
+				}
+				auto: "enabled"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

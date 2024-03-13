@@ -1,0 +1,1681 @@
+{
+	id: "5DD2F65DABF3914C"
+	group: "0960D5B8A7FB00EA"
+	order_index: 4
+	filename: "ars_neauvou"
+	title: "法术构造学"
+	icon: "ars_nouveau:creative_spell_book"
+	subtitle: ["新生魔艺"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	default_min_width: 300
+	quests: [
+		{
+			title: "你的第一本法术书"
+			icon: "ars_nouveau:novice_spell_book"
+			x: -0.5d
+			y: -5.5d
+			subtitle: "提交至高木原木"
+			description: [
+				"作为第一次的任务，你做得很好。这些原木很完美。"
+				""
+				"作为感谢，我非常高兴能将这本&6法术书&r和一些基础的魔符赠予你来帮助你进行魔法学习。"
+				""
+				"我建议你在校舍中&6种植这些魔源浆果&r，因为它们是不错的魔力来源。"
+			]
+			dependencies: ["0CF0DB4C6B3419C2"]
+			id: "54D7F5310E879150"
+			tasks: [{
+				id: "489ABE4026E0C8E1"
+				type: "item"
+				title: "至高木"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:logs/archwood"
+					}
+				}
+				count: 8L
+			}]
+			rewards: [
+				{
+					id: "0FBB5D00044F6F42"
+					type: "item"
+					item: "ars_nouveau:novice_spell_book"
+				}
+				{
+					id: "6D758F9158A32658"
+					type: "item"
+					item: {
+						id: "ars_nouveau:glyph_craft"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "0CA970053267C330"
+					type: "item"
+					item: "ars_nouveau:source_berry"
+					count: 4
+				}
+				{
+					id: "4428FAA4208D27AC"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			title: "法师法术书"
+			icon: "ars_nouveau:apprentice_spell_book"
+			x: 11.5d
+			y: -4.0d
+			subtitle: "制作一个次等节魔之戒"
+			description: [
+				"崭新的一天，我亲爱的同学们！"
+				""
+				"我想花点时间感谢你们每个人在这个班里取得的&6出色进步&r。你们的奉献精神、热情和辛勤工作得到了真正的回报，我很高兴看到你们魔法能力的成长。"
+				""
+				"为了进一步对同学们取得的进步进行评价，我准备了一个&6特别挑战&r：我需要你们每个人都制作一个&b次等节魔之戒&r。"
+				""
+				"作为完成的奖励，我将赠予你一本&6法师法术书&r，这将扩展你的知识面并增强你施法的能力。"
+			]
+			dependencies: [
+				"3693F0A7021419E6"
+				"5683C9DEBD9A30E6"
+				"31A754EB419CD398"
+			]
+			min_width: 300
+			id: "612BC02EEA4C9BBA"
+			tasks: [{
+				id: "1CB15D16BE8F3824"
+				type: "item"
+				item: "ars_nouveau:ring_of_lesser_discount"
+			}]
+			rewards: [
+				{
+					id: "5F267EA948669878"
+					type: "item"
+					item: "ars_nouveau:apprentice_spell_book"
+				}
+				{
+					id: "026B95DF194F5DBF"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:ars_gate"
+						}
+					}
+				}
+				{
+					id: "40539E877195353F"
+					type: "item"
+					item: "ars_nouveau:glyph_exchange"
+				}
+				{
+					id: "4A565F0E01CC5B54"
+					type: "item"
+					item: "ars_nouveau:glyph_transmute"
+				}
+			]
+		}
+		{
+			title: "钢铁守护者地牢"
+			icon: "ars_nouveau:archmage_spell_book"
+			x: 11.5d
+			y: -1.0d
+			description: [
+				"一份令人担忧的报告已经传到我们手中。邪恶女巫莱克西夫人的特工正在学院外骚动。由于暂时还不构成严重的威胁，所以它创造了一个绝佳的机会来帮助你们更好地理解你们的学习内容！在群山深处有一个秘密的地牢，由强大的&b钢铁守护者&r镇守。"
+				""
+				"你的任务是深入地牢冒险取回传说中的&b千锻巨斧&r这是一件蕴含着巨大力量的魔法遗物。"
+				""
+				"与&b钢铁守护者&r战斗需要利用你对奥术的理解来解决它的防御。"
+				""
+				"这个强大的敌人守护着珍贵的巨斧，这把巨斧拥有独特的&6奥术特质&r等待探索。"
+				""
+				"只要安全返回&d奥术学院&r，在导师的指导下研究巨斧的秘密，那么作为你努力的奖励，你就能得到下一本&d法术书&r。"
+			]
+			dependencies: ["252E046EBDB11FB1"]
+			min_width: 300
+			id: "183BE6BBAF4FADA7"
+			tasks: [
+				{
+					id: "5B67BD5A2C5EA8A0"
+					type: "dimension"
+					dimension: "ftbdungeons:dungeon_dim"
+				}
+				{
+					id: "6E583F695A5894A0"
+					type: "kill"
+					icon: "mowziesmobs:wrought_axe"
+					entity: "mowziesmobs:ferrous_wroughtnaut"
+					value: 1L
+				}
+			]
+			rewards: [
+				{
+					id: "34BDDFE6D092E866"
+					type: "item"
+					item: {
+						id: "arsomega:arcane_book"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "0C9F6A892D90B97D"
+					type: "gamestage"
+					title: "解锁元素魔艺"
+					auto: "invisible"
+					ignore_reward_blocking: true
+					stage: "ars_elemental_unlock"
+				}
+			]
+		}
+		{
+			title: "法术构造"
+			icon: "ars_nouveau:glyph_projectile"
+			x: 1.5d
+			y: -5.5d
+			subtitle: "学习如何自定义法术"
+			description: [
+				"在你获得并学习了&6魔符&r后，你就可以&6在法术中使用它&r了！"
+				""
+				"想要制作法术需要&6拿着你的法术书并按“C”键&r，然后选择右侧的一个槽位开始制作。法术有&6三个主要的组成部分&r："
+				""
+				"&l1. 形态：&r "
+				"  - &6法术的传递方式&r。它决定了法术如何选中其目标。一个法术只能有一种形态。"
+				""
+				"&l2. 效果：&r "
+				"  - &6法术对目标造成的效果&r。一个法术可以有多种效果。"
+				""
+				"&l3. 增强：&r"
+				"  - 以某种方式&6改变另一个魔符的效果&r。增强魔符是&6可选的&r，没有任何增强的情况下也可以制作一个完整的法术。"
+				""
+				"最后，命名这个法术并点击&6制作&r！“V”键可以选定法术，选定后右击使用法术书以施放！"
+			]
+			dependencies: ["54D7F5310E879150"]
+			min_width: 300
+			id: "666A026D77AEEAA4"
+			tasks: [{
+				id: "2A35BE239EC0BF9C"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "413583D464E964A5"
+				type: "item"
+				item: {
+					id: "ftbai:source_coal"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 8
+			}]
+		}
+		{
+			title: "看门人的努力"
+			x: 3.5d
+			y: -5.5d
+			subtitle: "杀死一只僵尸"
+			description: [
+				"&b亡灵生物&r被发现潜伏于&6学校周围的山谷中&r，特别是在魔艺教室东北部海岸的巨石附近。你会在他们越过的那条海岸线上注意到许多被杀死的亡灵生物的头颅。"
+				""
+				"与其说它们带来了实际的危机，不如说它们令人厌烦的，因此，我们喜欢把它们留给学生。它们可以帮助你磨练所需的技能。为了保护学校，也为了帮助实验，我希望你可以&6制作一个伤害法术&r来&b抵御这些生物的进攻&r。"
+				""
+				"完成后，作为奖励，我将很乐意赠予你一个你应得的魔符，以及一份特别的礼物。"
+			]
+			dependencies: ["666A026D77AEEAA4"]
+			id: "029EBED0E1801FBC"
+			tasks: [{
+				id: "3B202DD640DDE7BF"
+				type: "kill"
+				title: "杀死一只僵尸"
+				icon: {
+					id: "ftbquests:custom_icon"
+					Count: 1b
+					tag: {
+						Icon: "ftbchunks:textures/faces/minecraft/zombie.png"
+					}
+				}
+				entity: "minecraft:zombie"
+				value: 1L
+			}]
+			rewards: [
+				{
+					id: "61FFBD06E8C1940C"
+					type: "item"
+					item: "ars_nouveau:glyph_harvest"
+				}
+				{
+					id: "2B62C72C2F14C6EE"
+					type: "item"
+					item: "ars_nouveau:magebloom_crop"
+					count: 4
+				}
+				{
+					id: "0ACE2038F6D2D24C"
+					type: "item"
+					item: {
+						id: "gateways:gate_pearl"
+						Count: 1b
+						tag: {
+							gateway: "gateways:zombie_gate_small"
+						}
+					}
+				}
+				{
+					id: "05634852BE63B33B"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:edelwood_water_bucket"
+						Count: 1b
+						tag: {
+							Fullness: 1
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "1292B73CDEBDA234"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			x: 5.5d
+			y: -5.5d
+			subtitle: "制作一个抄写台"
+			description: [
+				"同学们好！我们今天的主题是&b抄写台&r。"
+				""
+				"使用抄写台可以&6为你的法术制作新魔符&r！每个魔符都有其对应的&6等级&r。你的法术书&c必须达到对应等级&r才能发挥魔符的作用。"
+				""
+				"通过在抄写台上放置&6空白羊皮纸&r（译者注：不需要空白羊皮纸），在达到&6经验需求&r的前提下&6对着抄写台使用法术书&r并选择你要制作的魔符来进行制作。"
+				""
+				"将&6魔符的材料&r扔到抄写台上，抄写台就能为你画出需要的魔符！"
+			]
+			dependencies: [
+				"029EBED0E1801FBC"
+				"18B32901E5D2C5BA"
+			]
+			min_width: 300
+			id: "2F8A51FEB237D9EA"
+			tasks: [{
+				id: "2CCDE50BB16860E9"
+				type: "item"
+				item: "ars_nouveau:scribes_table"
+			}]
+			rewards: [
+				{
+					id: "739A4B3891238A1D"
+					type: "item"
+					item: "minecraft:budding_amethyst"
+				}
+				{
+					id: "022CC6C7421361E2"
+					type: "item"
+					item: "minecraft:amethyst_shard"
+					count: 4
+				}
+				{
+					id: "016F4585AC27A4A9"
+					type: "item"
+					item: {
+						id: "minecraft:lantern"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 9.5d
+			y: -5.5d
+			subtitle: "获得一个魔源宝石"
+			description: [
+				"听好了，同学们。在上一课中，你们每个人都收到了一份特殊的礼物——一个&6紫水晶母岩&r。"
+				""
+				"它拥有令人难以置信的奥术特质，特别是在制作&b魔源宝石&r中，这对&d新生魔艺&r至关重要。"
+				""
+				"请尽快种植&6紫水晶&r，时间宝贵。它的潜力将极大影响你的奥术之旅。"
+				""
+				"&b魔源宝石&r的独特之处在于它们&6不需要罐装的魔源&r，它们可以从大气中吸收魔源。"
+				""
+				"利用好&b魔源宝石&r，你将获得强大的法术和神器。"
+				""
+				"所以立刻！马上！去工作！"
+			]
+			dependencies: ["16728DA8E476FEE4"]
+			id: "5862BCF8C9D8866E"
+			tasks: [{
+				id: "2A06EC0CAC37A76E"
+				type: "item"
+				item: "ars_nouveau:source_gem"
+			}]
+			rewards: [{
+				id: "64A8D5A3799AC459"
+				type: "item"
+				team_reward: true
+				item: {
+					id: "ars_nouveau:source_gem"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 4
+			}]
+		}
+		{
+			title: "会呼吸的生命体"
+			x: 9.5d
+			y: -2.5d
+			subtitle: "获得一个启蒙之板"
+			description: [
+				"&b启蒙仪式&r是一种特殊的仪式，可以&6赋予附近的至高木和紫水晶母岩生命&r。"
+				""
+				"至高木会化为4种&6林地行者&r之一，种类取决于树的元素。它们可以作为守卫&6守护一个区域&r，抵御敌人。"
+				""
+				"紫水晶母岩则会化为紫晶傀儡，掉落可以再次生成紫晶傀儡的&6紫晶傀儡护符&r。"
+			]
+			dependencies: ["23F6282DF69B8625"]
+			id: "5F9524BE2EE74E15"
+			tasks: [{
+				id: "784C43A03478710D"
+				type: "item"
+				item: "ars_nouveau:ritual_awakening"
+			}]
+			rewards: [{
+				id: "52A15B9C1A79E5C4"
+				type: "item"
+				item: "minecraft:budding_amethyst"
+			}]
+		}
+		{
+			icon: "ars_nouveau:enchanting_apparatus"
+			x: 11.5d
+			y: -5.5d
+			subtitle: "制作一个附魔装置"
+			description: [
+				"&b附魔装置&r的工作原理与灌注室类似！它使用魔源&6制作物品&r！"
+				""
+				"在附魔装置3格范围内放置任意数量的&b奥术基座&r，并确保将&b奥术核心&r放置在附魔装置的正下方。"
+			]
+			dependencies: ["5862BCF8C9D8866E"]
+			id: "31A754EB419CD398"
+			tasks: [
+				{
+					id: "68E0ADE79A6873A9"
+					type: "item"
+					item: "ars_nouveau:enchanting_apparatus"
+				}
+				{
+					id: "6C08F1F488F82299"
+					type: "item"
+					item: "ars_nouveau:arcane_core"
+				}
+			]
+			rewards: [
+				{
+					id: "310707F92FC0D97D"
+					type: "item"
+					item: {
+						id: "quark:gunpowder_sack"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "098A9DD2EDCBE11C"
+					type: "item"
+					item: {
+						id: "minecraft:flint_and_steel"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			icon: "ars_nouveau:blank_parchment"
+			x: 5.5d
+			y: -7.0d
+			subtitle: "获取一些空白羊皮纸"
+			description: [
+				"获得&b空白羊皮纸&r需要其他魔法的进度。我说的是，&d植物魔法&r。"
+				""
+				"羊皮纸需要纸，纸需要甘蔗，而甘蔗必须使用&6魔力池&r！"
+				""
+				"[\"\",\"请确保你已经上过\",{\"text\":\"梅希姆夫人\",\"color\":\"gold\"},\"的课！特别是课上有关\",{\"text\":\"[魔力池]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"4169963D23A8F9FF\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"转到该任务\"]}},\"的内容。\"]"
+			]
+			dependencies: ["2F8A51FEB237D9EA"]
+			id: "57EAE710537B248D"
+			tasks: [{
+				id: "04DE3068397B24B4"
+				type: "item"
+				item: {
+					id: "ars_nouveau:blank_parchment"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "67E08F0AA71F529D"
+				type: "item"
+				item: {
+					id: "botania:black_lotus"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 17.5d
+			y: -4.0d
+			dependencies: ["38A919DBFA0FAB21"]
+			id: "064EC66D9E6749A4"
+			tasks: [{
+				id: "4BA8EF287B3FC098"
+				type: "item"
+				item: "ars_nouveau:glyph_crush"
+			}]
+		}
+		{
+			x: 16.5d
+			y: -4.0d
+			dependencies: ["38A919DBFA0FAB21"]
+			id: "56AB14FB5D9FC303"
+			tasks: [{
+				id: "09A0E5718F3E9AD2"
+				type: "item"
+				item: "ars_nouveau:glyph_fell"
+			}]
+		}
+		{
+			x: 15.5d
+			y: -4.0d
+			dependencies: ["38A919DBFA0FAB21"]
+			id: "3C60F002ACBF1B8F"
+			tasks: [{
+				id: "33D43D79927BCF2F"
+				type: "item"
+				item: "ars_nouveau:glyph_smelt"
+			}]
+			rewards: [{
+				id: "680A39ECBDA53F75"
+				type: "gamestage"
+				auto: "invisible"
+				ignore_reward_blocking: true
+				stage: "learned_to_smelt"
+			}]
+		}
+		{
+			title: "2级魔符"
+			icon: "ars_nouveau:blank_parchment"
+			x: 13.5d
+			y: -4.0d
+			description: ["&6法师法术书&r允许你使用&62级魔符&r，这些魔符在这之前无法使用。"]
+			dependencies: ["612BC02EEA4C9BBA"]
+			id: "38A919DBFA0FAB21"
+			tasks: [{
+				id: "280E7205D205E5A9"
+				type: "checkmark"
+			}]
+		}
+		{
+			icon: "ars_nouveau:amethyst_golem_charm"
+			x: 9.5d
+			y: -1.0d
+			subtitle: "制作一个支配之杖"
+			description: [
+				"&b紫晶傀儡&r是神奇的自动化生物，可以&6收获和储存生长的紫水晶&r。在任何方块上使用&b紫晶傀儡护符&r来召唤紫晶傀儡。"
+				""
+				"傀儡可以在家10格内任意移动。你需要先在傀儡上使用&b支配之杖&r，然后在你想要的位置设置它的家。"
+				""
+				"紫晶傀儡将&6自动收获生长的紫水晶&r。如果它的家是一个容器，它就会在那里储存紫水晶。"
+			]
+			dependencies: ["5F9524BE2EE74E15"]
+			id: "5322AEA19A4C73A1"
+			tasks: [
+				{
+					id: "76CEA8F0C6C5C5D8"
+					type: "item"
+					item: {
+						id: "ars_nouveau:dominion_wand"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "021DB292FD301C0B"
+					type: "observation"
+					title: "观察紫晶傀儡"
+					icon: {
+						id: "ars_nouveau:amethyst_golem_charm"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					timer: 0L
+					observe_type: 5
+					to_observe: "ars_nouveau:amethyst_golem"
+				}
+			]
+		}
+		{
+			title: "掘地三尺"
+			x: 3.5d
+			y: -4.0d
+			subtitle: "获得法师之花"
+			description: [
+				"一些人可能已经注意到了，寻找&b法师之花&r时会遇到一些问题。也就是，&c掘地三尺都找不到&r！这是设计使然。"
+				""
+				"至于耕作问题，我们的常驻植物学专家&6梅希姆教授&r成功地将锄头的能力与&6森林法杖&r绑定在了一起。"
+				""
+				"耕作问题解决，但你仍然没有办法为庄稼补水。现阶段只能&6使用之前给的水桶&r，直到你能够自己变出水。"
+			]
+			dependencies: ["029EBED0E1801FBC"]
+			id: "5ECD0E0C81090B43"
+			tasks: [{
+				id: "339A6DBA046FBE27"
+				type: "item"
+				item: "ars_nouveau:magebloom_fiber"
+				count: 4L
+			}]
+			rewards: [{
+				id: "4A5409C669182184"
+				type: "item"
+				item: "ars_nouveau:magebloom_crop"
+				count: 4
+			}]
+		}
+		{
+			title: "炼金重组"
+			x: 7.5d
+			y: -5.5d
+			subtitle: "制作一个灌注室"
+			description: [
+				"&b灌注室&r是一种特殊装置，它可以将物品&6重组&r为新的物品。"
+				""
+				"先将辅助材料放入1格内&6奥术基座&r中，然后将主要材料放入灌注室中，基座中的物品在灌注时不会丢失。"
+				""
+				"大多数配方需要2格内&6魔源罐&r中的&6魔源&r。我们稍后就将讨论这个问题。"
+			]
+			dependencies: ["2F8A51FEB237D9EA"]
+			id: "16728DA8E476FEE4"
+			tasks: [{
+				id: "12B7CCC5B1DCF553"
+				type: "item"
+				item: "ars_nouveau:imbuement_chamber"
+			}]
+			rewards: [
+				{
+					id: "6E8024F4E769217A"
+					type: "item"
+					item: "minecraft:amethyst_shard"
+					count: 8
+				}
+				{
+					id: "184FDAC7E5697171"
+					type: "item"
+					item: "ars_nouveau:arcane_pedestal"
+					count: 3
+				}
+			]
+		}
+		{
+			title: "魔源之来源"
+			icon: "ars_nouveau:agronomic_sourcelink"
+			x: 9.5d
+			y: -7.0d
+			subtitle: "获得产生可储存魔源的必要装置"
+			description: [
+				"&6魔源&r是装置使用的&6魔法能量&r的名称。"
+				""
+				"魔源可以用&b魔源通道&r产生。"
+				""
+				"例如，&b农艺魔源通道&r可以从&6附近自然植物的生长&r中产生魔源，在这一过程中不能使用化肥！如果是魔法植物，如&6法师之花&r可以产生更多魔源。"
+				""
+				"魔源产生后会被&6自动存储到附近&r5格内的&b魔源罐&r中。"
+				""
+				"当装置需要魔源时也可以&6自动从附近的魔源罐中提取&r！"
+			]
+			dependencies: ["5862BCF8C9D8866E"]
+			min_width: 300
+			id: "2D945108E5A67869"
+			tasks: [
+				{
+					id: "7D00EBD76CA36670"
+					type: "item"
+					title: "魔源通道"
+					item: {
+						id: "itemfilters:id_regex"
+						Count: 1b
+						tag: {
+							value: "sourcelink"
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "0EB7ED27C3959B69"
+					type: "item"
+					item: "ars_nouveau:source_jar"
+				}
+			]
+			rewards: [
+				{
+					id: "56D27B424DAFF36F"
+					type: "item"
+					item: "minecraft:budding_amethyst"
+				}
+				{
+					id: "000872CD664CD26D"
+					type: "item"
+					item: "ars_nouveau:volcanic_sourcelink"
+				}
+			]
+		}
+		{
+			x: 1.5d
+			y: -4.0d
+			subtitle: "获取烈焰纤维"
+			description: [
+				"好了，我熟练的学生们，你们已经成功获得了&6法师之花纤维&r。现在，是时候迎接下一个挑战了——制作&b烈焰纤维&r。"
+				""
+				"要制作&b烈焰纤维&r，你有两个选择。你可以使用&6魔符：嬗变&r将某些材料转化为&6烈焰粉&r，以获得&b烈焰纤维&r的这种关键材料。"
+				""
+				"又或者，你可以勇敢面对并击败&6烈焰人&r来获取&6烈焰粉&r，但请注意，这并非易事。"
+				""
+				"要接触&6烈焰人&r并获得它们珍贵的&6烈焰粉&r，你需要一个&6烈焰人传送门珍珠&r。"
+				""
+				"这颗神奇的珍珠将打开通往&6烈焰人&r领域的大门，让你与它们正面对决。只有这样，你才能收集到&b烈焰纤维&r的关键材料。"
+			]
+			dependencies: ["5ECD0E0C81090B43"]
+			id: "75C8C7BFC2C7358B"
+			tasks: [{
+				id: "4A31F40CE02D6278"
+				type: "item"
+				item: "ars_nouveau:blaze_fiber"
+			}]
+			rewards: [{
+				id: "55677E2CCBF4E90D"
+				type: "item"
+				item: {
+					id: "gateways:gate_pearl"
+					Count: 1b
+					tag: {
+						gateway: "gateways:blaze_gate_small"
+					}
+				}
+			}]
+		}
+		{
+			x: -0.5d
+			y: -4.0d
+			subtitle: "获取末影纤维"
+			description: [
+				"&b末影纤维&r是一种独特的材料，结合了两个相反维度的灵性。"
+				""
+				"只要末影纤维在手，离掌控奥术就又近了一步。"
+				""
+				"当你深入研究末影纤维的奥秘及其所能展现的所有奇迹时，你的奉献精神和你掌握的技能都将得到回报。"
+				""
+				"祝你们好运，年轻的法师们，你们将冒险深入强大魔咒和非凡工艺的领域！"
+			]
+			dependencies: ["75C8C7BFC2C7358B"]
+			id: "1E049792E5C4A1B7"
+			tasks: [{
+				id: "5AD9875D72397451"
+				type: "item"
+				item: "ars_nouveau:end_fiber"
+			}]
+			rewards: [{
+				id: "2DD0D436EE0113D7"
+				type: "item"
+				team_reward: true
+				item: {
+					id: "botania:mana_pearl"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 4
+			}]
+		}
+		{
+			title: "初始法袍"
+			icon: {
+				id: "ars_nouveau:novice_robes"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 3.5d
+			y: -2.5d
+			subtitle: "制作一套学徒法袍"
+			description: [
+				"亲爱的同学们，恭喜你们收获了法师之花！"
+				""
+				"有了这种珍贵的材料，你将能够制作你的第一套&6法师袍&r！"
+				""
+				"&b学徒法袍&r并非只是好看而已，它同样也非常实用。穿上法袍会&6增强你的施法能力&r，提升你的魔力上限和魔力恢复速度。"
+				""
+				"所以，请集中注意并开始制作，记住，学徒法袍代表着开始精通奥术。在这一过程中，你将解锁更伟大的潜能。"
+			]
+			dependencies: ["5ECD0E0C81090B43"]
+			id: "2197492499A65E45"
+			tasks: [
+				{
+					id: "7F5991F9C49D4BFC"
+					type: "item"
+					item: {
+						id: "ars_nouveau:novice_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "33E609941313E9C6"
+					type: "item"
+					item: {
+						id: "ars_nouveau:novice_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "181F0AEDF90DCB53"
+					type: "item"
+					item: {
+						id: "ars_nouveau:novice_robes"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "67816ACC5DDED5C4"
+					type: "item"
+					item: {
+						id: "ars_nouveau:novice_hood"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "24787CF837854413"
+				type: "item"
+				item: "ars_nouveau:magebloom_crop"
+				count: 2
+			}]
+		}
+		{
+			title: "卓越法袍"
+			icon: {
+				id: "ars_nouveau:apprentice_robes"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 1.5d
+			y: -2.5d
+			subtitle: "制作一套法师法袍"
+			description: [
+				"干得不错，志向远大的法师们"
+				""
+				"现在，你已经完全掌控了学徒法袍，是时候进军&6更高等级&r——&b法师&r级了。这套法袍将更加强大，并且会&6显著提升你的魔法能力&r。"
+				""
+				"抓住机会，我的学生们，然后继续踏上成为受人尊敬的法师的旅途。"
+				""
+				"不断冲击自己的极限，并且记住，知识的储备和不懈的练习是解锁你真正潜能的钥匙。现在，开始努力吧"
+			]
+			dependencies: ["75C8C7BFC2C7358B"]
+			id: "0E0820EEAA29DEAE"
+			tasks: [
+				{
+					id: "4D2924A890178834"
+					type: "item"
+					item: {
+						id: "ars_nouveau:apprentice_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "125692C726A769AA"
+					type: "item"
+					item: {
+						id: "ars_nouveau:apprentice_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "3E7473998D23A145"
+					type: "item"
+					item: {
+						id: "ars_nouveau:apprentice_robes"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0CB829F993566467"
+					type: "item"
+					item: {
+						id: "ars_nouveau:apprentice_hood"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "巅峰之作"
+			icon: {
+				id: "ars_nouveau:archmage_robes"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -0.5d
+			y: -2.5d
+			subtitle: "制作一套大法师法袍"
+			description: [
+				"为了真正展现工作本身就是回报，我希望你制作一套自己的&b大法师法袍&r，这是&d新生魔艺&r法袍中的巅峰之作。它的力量超越了所有同类。"
+				""
+				"当你做出这套非凡的衣物，你的&6魔法能力&r将得到空前的增强"
+				""
+				"&b大法师法袍&r将解锁你更深的魔法潜能，使你能够编写力量巨大的法术。"
+				""
+				"这套传奇服饰的每根纤维的魔力紧密交织，你将成为魔法技能方面的完人。"
+				""
+				"接受它的力量，它会将你带上能够真正掌握奥术的阶位。"
+			]
+			dependencies: ["1E049792E5C4A1B7"]
+			id: "3427DAA629E49EE0"
+			tasks: [
+				{
+					id: "7FDD876F58C9F0F4"
+					type: "item"
+					item: {
+						id: "ars_nouveau:archmage_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "68F07FDDF1949EFE"
+					type: "item"
+					item: {
+						id: "ars_nouveau:archmage_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "799475A4B56219CB"
+					type: "item"
+					item: {
+						id: "ars_nouveau:archmage_robes"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "277DD95B983F5E31"
+					type: "item"
+					item: {
+						id: "ars_nouveau:archmage_hood"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 15.5d
+			y: -3.0d
+			hide_dependency_lines: true
+			dependencies: ["38A919DBFA0FAB21"]
+			hide: true
+			id: "0240E4D8C833E273"
+			tasks: [{
+				id: "76A74849BCD93A56"
+				type: "item"
+				item: "ars_nouveau:glyph_extract"
+			}]
+		}
+		{
+			x: 16.5d
+			y: -3.0d
+			hide_dependency_lines: true
+			dependencies: ["38A919DBFA0FAB21"]
+			hide: true
+			id: "25B97433CFB6B07E"
+			tasks: [{
+				id: "0EEABFB92C8C0178"
+				type: "item"
+				item: "ars_nouveau:glyph_fortune"
+			}]
+		}
+		{
+			x: 9.5d
+			y: -4.0d
+			subtitle: "制作一个仪式火盆"
+			description: [
+				"&6仪式&r是依赖&b仪式火盆r&r和它周边区域的一个特殊魔法分支。"
+				""
+				"要进行仪式，要将对应的&6仪式之板&r放入仪式火盆。某些特殊的仪式允许你&6投入特定物品&r来修改仪式效果。"
+				""
+				"当你准备好后，空手右击仪式火盆来允许仪式吸收所需的魔源，并开启仪式。"
+			]
+			dependencies: ["5862BCF8C9D8866E"]
+			id: "23F6282DF69B8625"
+			tasks: [{
+				id: "06DA238AB048417F"
+				type: "item"
+				item: "ars_nouveau:ritual_brazier"
+			}]
+			rewards: [{
+				id: "7C526138492AD3D7"
+				type: "item"
+				team_reward: true
+				item: {
+					id: "bloodmagic:ritualstone"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 4
+			}]
+		}
+		{
+			x: 7.5d
+			y: -4.0d
+			subtitle: "制作荒野召唤之板"
+			description: [
+				"&b荒野召唤之板&r是个名副其实的魔法物品。它能&6召唤荒野怪物&r！"
+				""
+				"荒野怪物是会立即对你发起攻击的&6狂乱野兽&r。虽然在学院中非常少见（几乎不可能见到），但是它们在更广阔的世界中可是个大麻烦。"
+				""
+				"在你需要学习它们的时候，这个仪式可以说是&6接触荒野怪物的最好方法&r。"
+				""
+				"仪式可以使用&6荒野尖刺、荒野之角、荒野膜翼&r增强，以召唤强大的&c荒野奇美拉&r，一个令人生畏的敌人。"
+			]
+			dependencies: ["23F6282DF69B8625"]
+			id: "4950C09D65D7AFF5"
+			tasks: [{
+				id: "75429985FAB4C476"
+				type: "item"
+				item: "ars_nouveau:ritual_wilden_summon"
+			}]
+			rewards: [{
+				id: "271AE6450FDB56E6"
+				type: "item"
+				item: {
+					id: "ars_nouveau:ritual_restoration"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			icon: "minecraft:lava_bucket"
+			x: 11.5d
+			y: -7.0d
+			subtitle: "收集熔岩"
+			description: [
+				"注意听，擅长奥术的学生们"
+				""
+				"&6火山魔源通道&r是一种使用可燃物产生&6魔源&r的非凡方法。而燃烧带有魔力的&6至高木&r无疑能产生更多魔源。"
+				""
+				"但是还有一些事情需要注意！使用这个魔源通道时，周围的石头会彻底变样。"
+				""
+				"它们将会先变为岩浆块，并最终变为&b熔岩&r。这为你提供了一个掌控&6魔源&r的这种强大形式的独特机会。"
+			]
+			dependencies: ["2D945108E5A67869"]
+			id: "097138E6117FC9A2"
+			tasks: [{
+				id: "6A56CD48BD14C14A"
+				type: "item"
+				item: "minecraft:lava_bucket"
+			}]
+			rewards: [{
+				id: "195F34D9633F1D4F"
+				type: "item"
+				item: "ars_nouveau:lava_lily"
+				count: 8
+			}]
+		}
+		{
+			x: -0.5d
+			y: -7.0d
+			subtitle: "制作一个魔源浆果卷"
+			description: [
+				"我想你不会认为你的施法之旅要以烘焙为起点，你会吗？"
+				""
+				"&b魔源浆果卷&r是一种非常可口的小吃，并且会&6提供可观的魔力恢复&r！"
+				""
+				"因此，对任何一个出外探索的法师来说，携带一些魔源浆果卷都是个好主意。"
+			]
+			dependencies: ["54D7F5310E879150"]
+			id: "4ED3DD00B8B5C2A7"
+			tasks: [{
+				id: "672E913277A98E77"
+				type: "item"
+				item: "ars_nouveau:source_berry_roll"
+			}]
+			rewards: [{
+				id: "3C69A95C319D491D"
+				type: "item"
+				item: "ars_nouveau:source_berry_pie"
+			}]
+		}
+		{
+			title: "法术构造简介"
+			icon: "arsomega:arcane_book"
+			x: -2.5d
+			y: -5.5d
+			shape: "pentagon"
+			subtitle: "找到瑞根教授"
+			description: [
+				"同学们好！欢迎来到&6基于新生魔艺的法术构造课程&r。"
+				""
+				"在本课中，你将会掌握魔咒、施法等等的奥术技艺。"
+				""
+				"在我们开始之前，请&b在你的校舍中种植并培育一些树苗&r，我们接下来的实践课将用到它们的&6原木&r。"
+			]
+			dependencies: ["63368A007664E4B5"]
+			min_width: 300
+			id: "0CF0DB4C6B3419C2"
+			tasks: [{
+				id: "59221FE23ACE6C2C"
+				type: "location"
+				title: "与瑞根见面"
+				icon: {
+					id: "minecraft:player_head"
+					Count: 1b
+					tag: {
+						SkullOwner: {
+							Id: "6881a2b4-0e6e-f3c1-7387-b6f6b42b1f2a"
+							Properties: {
+								textures: [{
+									Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzY4ODFhMmI0MGU2ZWYzYzE3Mzg3YjZmNmI0MmIxZjJhMjI2NTUzYTQxYWM4N2NlMWIxN2ZiZGM1Zjc5N2FhMmQifX19"
+								}]
+							}
+							Name: "R3GEN"
+						}
+					}
+				}
+				dimension: "minecraft:overworld"
+				ignore_dimension: false
+				position: [I;
+					-138
+					-51
+					-113
+				]
+				size: [I;
+					10
+					15
+					10
+				]
+			}]
+			rewards: [
+				{
+					id: "5262771C03F406B9"
+					type: "item"
+					item: "ars_nouveau:worn_notebook"
+				}
+				{
+					id: "1197AB1B5F603408"
+					type: "custom"
+					title: "元素树苗"
+					icon: "ars_nouveau:green_archwood_sapling"
+				}
+				{
+					id: "2BFF7181B540B92B"
+					type: "command"
+					auto: "invisible"
+					command: "/title @p title {\"text\":\"欢迎来到新生魔艺\", \"color\":\"yellow\"}"
+					silent: true
+				}
+				{
+					id: "18D5957BF5BBEEF2"
+					type: "item"
+					item: {
+						id: "minecraft:bone_meal"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			title: "进入地牢"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "occultism:textures/block/dimensional_mineshaft_portal.png"
+				}
+			}
+			x: 12.5d
+			y: -2.5d
+			description: [
+				"虽然我们并不鼓励我们的学生使用，但将真正可怕的危险清除后，我们依然建造了一个可供有能力学生随意进入的奥术模拟地牢。"
+				""
+				"你将能够在内得到额外的锻炼，并且我们保证其中包含了大量的奖励，以勉励勤奋的学生。"
+			]
+			hide_dependency_lines: true
+			dependencies: ["612BC02EEA4C9BBA"]
+			hide: true
+			can_repeat: true
+			id: "0E17E544806CB933"
+			tasks: [{
+				id: "16BDE2C91D56C25F"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "6CFDFFDBC3FD7CC1"
+				type: "command"
+				auto: "invisible"
+				command: "/execute as @p run ftbdungeons create ftbdungeons:elemental"
+				silent: true
+			}]
+		}
+		{
+			title: "通过元素地牢"
+			icon: "arsomega:infinity_crystal"
+			x: 11.5d
+			y: -2.5d
+			description: [
+				"我相信你已经听到了怪物正在攻击学院的传闻。很遗憾，这是真的。然而，我们已经决定利用好这个独特的机会来继续你的训练，并获取一个重要的遗物。"
+				""
+				"我们希望你进入魔艺元素地牢冒险，以获取&6大法师法术书&r。"
+				""
+				"在地牢中击败可怕的荒野守护者是获取这本颇具盛名的法术书的关键。我们同样相信这将结束学院受到的攻击。"
+				""
+				"为这个艰巨而有意义的任务武装你自己，面对元素地牢中的考验，以获取这本强大的法术书。"
+			]
+			dependencies: ["612BC02EEA4C9BBA"]
+			id: "252E046EBDB11FB1"
+			tasks: [
+				{
+					id: "118DFD3E17113BB4"
+					type: "dimension"
+					dimension: "ftbdungeons:dungeon_dim"
+				}
+				{
+					id: "0A00010517814C16"
+					type: "custom"
+					title: "杀死荒野守护者"
+					icon: {
+						id: "ars_nouveau:wilden_spike"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "564C5F79D086B9B8"
+				type: "item"
+				item: {
+					id: "ars_nouveau:archmage_spell_book"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			title: "开启地牢"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "occultism:textures/block/dimensional_mineshaft_portal.png"
+				}
+			}
+			x: 12.5d
+			y: -1.0d
+			hide_dependency_lines: true
+			dependencies: ["252E046EBDB11FB1"]
+			hide: true
+			can_repeat: true
+			id: "6C621064A1ED181B"
+			tasks: [{
+				id: "25A3C4A52A6E8D65"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "5F9120C33EC3A82F"
+				type: "command"
+				auto: "invisible"
+				command: "/execute as @p run ftbdungeons create ftbdungeons:stone"
+				silent: true
+			}]
+		}
+		{
+			title: "荧光闪烁！"
+			x: 5.5d
+			y: -4.0d
+			description: [
+				"作为制作魔符的练习，你需要制作一个基本法术，召唤魔光。"
+				""
+				"你应该能够找到并摧毁一些营火，获得木炭来制作火把。将它与给你的灯笼结合，制作魔符并添加到你的法术书中。"
+			]
+			dependencies: ["2F8A51FEB237D9EA"]
+			id: "394321C01C7A718A"
+			tasks: [{
+				id: "388651330350D82D"
+				type: "item"
+				item: {
+					id: "ars_nouveau:glyph_light"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "6EFB242C000D35BE"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+				{
+					id: "7AD3070719F484EE"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "ars_nouveau:mana_regen_potion"
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 7.5d
+			y: -7.0d
+			subtitle: "物超所值！"
+			description: [
+				"如果你想从煤炭中获得更多的能量，可以尝试注入一些&5魔源&r。"
+				""
+				"放置在&6灌注室&r中的煤、木炭将慢慢变成&b魔源炭&r。"
+				""
+				"与非魔法燃料相比，这种燃料的燃烧时间是原来的三倍。"
+			]
+			dependencies: ["16728DA8E476FEE4"]
+			id: "537D2FF232549EE5"
+			tasks: [{
+				id: "0271ED1C4ADA08D4"
+				type: "item"
+				item: {
+					id: "ftbai:source_coal"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "2AFEDD9983AF777C"
+					type: "item"
+					item: {
+						id: "minecraft:budding_amethyst"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "4407D5DBA6D5C482"
+					type: "item"
+					item: {
+						id: "ars_nouveau:starbuncle_se"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 9.5d
+			y: -9.0d
+			description: [
+				"&b法术炮塔&r是施放预定义法术的工具，这些法术需要来自于&6法术羊皮纸&r。激活需要红石信号和装有&5魔源&r的容器。"
+				""
+				"[\"\",\"更多细节请看\",{\"text\":\"[破旧的笔记本]\",\"underlined\":true,\"color\":\"red\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/execute as @p run open-book ars_nouveau:worn_notebook ars_nouveau:automation/spell_turret 1\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"打开法术炮塔页面\"]}},\"。它说明了炮塔的复杂操作和功能，信息全面。\"]"
+			]
+			dependencies: [
+				"5862BCF8C9D8866E"
+				"4B1C6C5EB09436E7"
+			]
+			id: "1AC427EBA1B16219"
+			tasks: [{
+				id: "18550E50CD3B2959"
+				type: "item"
+				item: {
+					id: "ars_nouveau:basic_spell_turret"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 9.5d
+			y: -11.0d
+			description: [
+				"&b附魔法术炮塔&r可以被注入元素核心力量，这将赋予他们一小部分元素能力。这些炮塔发射的法术将能够激活与相应核心相关的效果。"
+				""
+				"此外，如果法术包含对应元素学派的魔符，则将减少&665%&r的魔源消耗。"
+			]
+			dependencies: ["1AC427EBA1B16219"]
+			id: "4B542B591111DE7B"
+			tasks: [{
+				id: "23D3EADF3F778678"
+				type: "item"
+				title: "元素炮台"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "ars_elemental:earth_turret"
+								Count: 1b
+							}
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "ars_elemental:air_turret"
+								Count: 1b
+							}
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "ars_elemental:water_turret"
+								Count: 1b
+							}
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "ars_elemental:fire_turret"
+								Count: 1b
+							}
+						]
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 11.5d
+			y: -9.0d
+			description: [
+				"&b附魔法术炮塔&r与基础法术炮塔很相似，不同之处在于它们的&5魔源&r消耗仅为基础的一半。这种魔源利用效率使它们在功能上更加有效。"
+				""
+				"这些加强十分重要，它们显着增强了我们的法术装置。"
+			]
+			dependencies: ["1AC427EBA1B16219"]
+			id: "405C265371AF9B0D"
+			tasks: [{
+				id: "11AC634A78C0A75B"
+				type: "item"
+				item: {
+					id: "ars_nouveau:spell_turret"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			title: "嘀嗒嘀嗒钟在转"
+			x: 11.5d
+			y: -11.0d
+			description: [
+				"&b定时法术炮塔&r与基础法术炮塔类似，但有一个有趣的区别——它们可以在没有红石信号的情况下运行。右击可以使延迟增加一秒，左击会减少一秒。"
+				""
+				"别忘了赋予这些炮塔法术，如前所述，你需要理解它们功能的细微差别，它们构成了我们奥术装置的独特部分。"
+			]
+			dependencies: ["1AC427EBA1B16219"]
+			id: "5E23F9EDB34F1A19"
+			tasks: [{
+				id: "1C433D7617480003"
+				type: "item"
+				item: {
+					id: "ars_nouveau:timer_spell_turret"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 5.5d
+			y: -9.0d
+			description: [
+				"将&6空白羊皮纸&r与几个&6魔源宝石&r相结合就能得到&b法术羊皮纸&r."
+				""
+				"这种羊皮纸有赋予多种实体法术的能力，可以接受法术的实体包括&5炮塔&r、&5书龙&r等等。"
+				""
+				"将&b法术羊皮纸&r简单地放置在&5抄写台&r上，手持法术书潜行右击抄写台即可抄录法术。"
+			]
+			dependencies: ["57EAE710537B248D"]
+			id: "4B1C6C5EB09436E7"
+			tasks: [{
+				id: "5231D8FC113FADDF"
+				type: "item"
+				item: {
+					id: "ars_nouveau:spell_parchment"
+					Count: 1b
+					tag: { }
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			title: "巫师工具"
+			icon: {
+				id: "ars_nouveau:enchanters_sword"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+			x: 13.5d
+			y: -5.5d
+			description: [
+				"&b巫师工具&r作为一种强大的装置，被设计为只能容纳单个法术。将你的工具放置在&6抄写台&r上并从你的法术书上抄录可用法术。"
+				""
+				"工具种类："
+				""
+				"{\"text\":\"[施法法杖]\",\"underlined\":true,\"color\":\"red\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/execute as @p run open-book ars_nouveau:worn_notebook ars_nouveau:equipment/wand 1\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"打开施法法杖页面\"]}}"
+				"这个法杖可以在抄写台上抄录一个法术，并自动在抄入的法术前添加“弹射物->加速”效果，抄录需要一个没有形态的特殊法术。"
+				""
+				"{\"text\":\"[巫师之弓]\",\"underlined\":true,\"color\":\"red\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/execute as @p run open-book ars_nouveau:worn_notebook ars_nouveau:equipment/spell_bow 1\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"打开巫师之弓页面\"]}}"
+				"将射出的箭矢变为法术箭矢，并对击中的目标释放该法术；没有箭时仅法术造成伤害，而没有魔力时只会射出常规箭矢，特殊的增强箭也将增强法术效果。"
+				""
+				"{\"text\":\"[巫师之剑]\",\"underlined\":true,\"color\":\"red\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/execute as @p run open-book ars_nouveau:worn_notebook ars_nouveau:equipment/enchanters_sword 1\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"打开巫师之剑页面\"]}}"
+				"在对实体造成伤害前施放接触类法术，并在法术的最后额外添加一个增强（例如，增加燃烧时间），这需要在抄写台抄录一个无形态法术。"
+				""
+				"{\"text\":\"[巫师之镜]\",\"underlined\":true,\"color\":\"red\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/execute as @p run open-book ars_nouveau:worn_notebook ars_nouveau:equipment/enchanters_mirror 1\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"打开巫师之镜页面\"]}}"
+				"对使用者施放自身类法术，降低法术消耗并延长法术生效时间（例如，增强生命恢复），这需要在抄写台抄录一个无形态法术。"
+			]
+			dependencies: ["31A754EB419CD398"]
+			id: "2D57D4469411F8FD"
+			tasks: [{
+				id: "4840DE0BE034CE29"
+				type: "item"
+				title: "巫师工具"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "ars_nouveau:enchanters_mirror"
+								Count: 1b
+								tag: { }
+							}
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "ars_nouveau:enchanters_sword"
+								Count: 1b
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "ars_nouveau:spell_bow"
+								Count: 1b
+								tag: { }
+							}
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "ars_nouveau:wand"
+								Count: 1b
+								tag: {
+									ars_nouveau_spellCaster: {
+										flavor: ""
+										spell_name_0: ""
+										spell_0: "[]"
+										spell_name_1: ""
+										spell_1: "[projectile, accelerate, harm]"
+										current_slot: 1
+										spell_sound_1: {
+											volume: 1.0f
+											pitch: 1.0f
+											soundTag: {
+												id: "ars_nouveau:fire_family"
+											}
+										}
+										spell_sound_0: {
+											volume: 1.0f
+											pitch: 1.0f
+											soundTag: {
+												id: "ars_nouveau:fire_family"
+											}
+										}
+										spell_color_0: "255,25,180"
+										spell_color_1: "255,25,180"
+									}
+								}
+							}
+						]
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+	]
+	quest_links: [ ]
+}

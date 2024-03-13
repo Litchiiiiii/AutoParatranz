@@ -1,0 +1,1959 @@
+{
+	id: "355D3C48AF6F1440"
+	group: "0960D5B8A7FB00EA"
+	order_index: 7
+	filename: "occultism"
+	title: "灵体学"
+	icon: "occultism:ritual_dummy/custom_ritual"
+	subtitle: ["神秘学与灵灾"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "观察灵火"
+			x: 0.0d
+			y: -3.0d
+			description: [
+				"同学们，过来围着&5灵火&r，观察它迷人的光芒和神秘的本质。"
+				""
+				"花点时间欣赏它的迷人之美，思考它在&e神秘学&r领域中所蕴含的深远力量。"
+				""
+				"我们将在下一课深入探讨它的意义和应用。请保持好奇和开放的心态，让我们一起揭开它的神秘面纱。"
+			]
+			dependencies: ["5195093F6886F0F3"]
+			id: "2CA20C350E71D2C3"
+			tasks: [{
+				id: "7738A8EA69F026B2"
+				type: "observation"
+				icon: "occultism:spirit_fire"
+				timer: 0L
+				observe_type: 0
+				to_observe: "occultism:spirit_fire"
+			}]
+			rewards: [
+				{
+					id: "2229BA8E3A259934"
+					type: "item"
+					item: "occultism:datura_seeds"
+					count: 4
+				}
+				{
+					id: "5910A260114F9B16"
+					type: "item"
+					item: "minecraft:oak_sapling"
+					count: 4
+				}
+			]
+		}
+		{
+			x: 1.5d
+			y: -3.0d
+			description: [
+				"在第一项任务中，我们将在令人着迷的&5灵火&r的带领下，共同踏上这段改造之旅。"
+				""
+				"你需要小心翼翼地让指定的材料投入&5灵火&r的怀抱。"
+				""
+				"当&6橡树树苗&r接触到灵火时，它将蜕变为&b异界树苗&r。"
+				"&6安山岩&r能转化为&b异界石&r，同样地，&6黑色染料&r也能提纯为&b纯净墨水&r。"
+				"最后，&6钻石&r经历一些深度改变后，也能变为&b魔灵同调宝石&r。"
+				""
+				"见证这非凡的转变，拥抱展现在我们面前的神奇潜能。"
+			]
+			dependencies: ["2CA20C350E71D2C3"]
+			id: "4F4F86A19FD58A99"
+			tasks: [
+				{
+					id: "10923777316150B6"
+					type: "item"
+					item: {
+						id: "occultism:otherworld_sapling_natural"
+						Count: 1b
+						tag: {
+							isInventoryItem: 1b
+						}
+					}
+				}
+				{
+					id: "76D00504D5ECBCB6"
+					type: "item"
+					item: "occultism:otherstone"
+				}
+				{
+					id: "3AEE86206D24864D"
+					type: "item"
+					item: "occultism:purified_ink"
+				}
+			]
+			rewards: [
+				{
+					id: "143E0DB8D3C20D20"
+					type: "item"
+					item: {
+						id: "occultism:storage_controller_base"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "5C2846C575FEB0F2"
+					type: "item"
+					item: {
+						id: "occultism:dimensional_matrix"
+						Count: 1b
+						tag: {
+							spiritName: "Desht"
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 3.0d
+			y: -3.0d
+			description: [
+				"通过将&6煅烧异界石&r与&6异界灰烬&r相结合，你可以创造出&b含杂白色粉笔&r。不过，旅途并未结束。"
+				""
+				"想要将潜能完全施放，我们需要向灵火的改造之力求助。"
+				""
+				"当&b含杂白色粉笔&r暴露在&5灵火&r的炽热火焰中时，其杂质将被轻松除去。通过这一净化过程，&b粉笔&r变得纯净，并获得它真正的魔法精华。"
+			]
+			dependencies: ["4F4F86A19FD58A99"]
+			id: "14F8A018C345B67E"
+			tasks: [{
+				id: "117A4A1E57B20542"
+				type: "item"
+				item: {
+					id: "occultism:chalk_white"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "5C8A59ECC9A16852"
+					type: "item"
+					item: "occultism:brush"
+				}
+				{
+					id: "6D9513DFFE74F19B"
+					type: "item"
+					item: "minecraft:writable_book"
+				}
+			]
+		}
+		{
+			x: 4.5d
+			y: -1.5d
+			description: [
+				"一旦你获得了&b金粉&r，你就能将它与&6含杂白色粉笔&r和&6荧石&r结合，创造&b含杂金色粉笔&r。"
+				""
+				"通过在仪式中使用&5金色粉笔符文&r，我们能挖掘出更多魔法能量的潜力，从而探索更深奥的&b神秘学&r。"
+				""
+				"我亲爱的学生们，抓住机会，增长你们的魔法见识吧。继续学习，成长，掌握&e神秘学&r的秘密，使用&5金色粉笔符文&r让神秘力量与智慧达到新境界吧。"
+			]
+			dependencies: ["27B607C10DDF0580"]
+			id: "42E6B803DBB7E962"
+			tasks: [{
+				id: "13471EE4DE31DECC"
+				type: "item"
+				item: {
+					id: "occultism:chalk_gold"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			icon: {
+				id: "occultism:chalk_purple"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 7.5d
+			y: -1.5d
+			description: [
+				"除了获得&6金粉&r外，&5魔精碎矿者&r也为我们的魔法事业提供了更多可能。利用这种生物，我们还可以提取&b粉碎末地石&r和&b黑曜石&r。"
+				""
+				"一般我们获得了&b粉碎末地石&r和&b黑曜石&r，我们就能将它们与&6含杂白色粉笔&r结合，创造&b含杂紫色粉笔&r。"
+				""
+				"&b紫色粉笔符文&r扩展了我们的魔法符号库，让我们能使用高级仪式和咒语。这些符文利用&6末地石&r和&6黑曜石&r的神秘力量，增强了我们与周边神秘能量的联系。"
+			]
+			dependencies: ["27B607C10DDF0580"]
+			id: "4E3AFD92714322F5"
+			tasks: [
+				{
+					id: "39C0D2EC5BDF49D5"
+					type: "item"
+					item: "occultism:obsidian_dust"
+					count: 2L
+				}
+				{
+					id: "358E3E785E8A987B"
+					type: "item"
+					item: "occultism:crushed_end_stone"
+				}
+				{
+					id: "26B5B1B38D5472DC"
+					type: "item"
+					item: {
+						id: "occultism:chalk_purple"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			icon: {
+				id: "occultism:chalk_red"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 7.5d
+			y: -4.5d
+			description: [
+				"想要获得红石粉笔，必须得召唤并击败火灵。不过需要注意的是，火灵是一种攻击性很强的生物，遇到它们时要小心谨慎。"
+				""
+				"要安全地与火灵交往并获得火灵灵髓作为奖励，学生们应谨慎对待该任务，并做好充足准备，确保自己拥有适当的防御措施和策略。"
+				""
+				"在召唤并面对这些可怕实体时，保持警惕，注意其中的危险。"
+			]
+			dependencies: ["236EB6393DE807D4"]
+			id: "207B0A3CEC6BD7BF"
+			tasks: [
+				{
+					id: "142490F9C60880BC"
+					type: "item"
+					item: "occultism:afrit_essence"
+				}
+				{
+					id: "15C88CE82E94CABB"
+					type: "item"
+					item: {
+						id: "occultism:chalk_red"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "你的第一个仪式"
+			x: 6.0d
+			y: -3.0d
+			description: [
+				"在开始召唤&5魔精&r前，准备一个专用的仪式区是很重要的。"
+				""
+				"首先，使用&6纯净的白色粉笔&r绘制符号和符文。这些标记被叫做&b白色粉笔符文&r，将会充当召唤能量的通道。花点时间精心制作这些符号，确保其准确无误。"
+				""
+				"接着，在仪式区的中心放置&b黄金献祭之碗&r。"
+				""
+				"为了营造一种神秘的氛围，可在仪式区周围摆上几支&b蜡烛&r。"
+				""
+				"另外，在仪式区附近放几个&6献祭之碗&r。在涉及&5魔精&r的各种献祭和仪式中，这些&6碗&r扮演着重要的角色。"
+			]
+			dependencies: ["1E02923806A707B0"]
+			id: "256A0BC4E1201753"
+			tasks: [
+				{
+					id: "14B14D1A3D7F7018"
+					type: "item"
+					item: "occultism:golden_sacrificial_bowl"
+				}
+				{
+					id: "6947430D4BD4A2AF"
+					type: "item"
+					item: "occultism:sacrificial_bowl"
+					count: 4L
+				}
+				{
+					id: "0913B812C9538AB1"
+					type: "item"
+					item: "occultism:candle_white"
+					count: 4L
+				}
+			]
+			rewards: [{
+				id: "500A1A0C88A6614B"
+				type: "item"
+				item: {
+					id: "minecraft:cow_spawn_egg"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 2
+			}]
+		}
+		{
+			x: 4.5d
+			y: -3.0d
+			description: [
+				"想要召唤第一只魔精，你必须获得一本绑定之书。"
+				""
+				"这本书包含召唤所需的仪式与知识。"
+				""
+				"将它与你的魔灵全典结合，书会与你的一只魔灵绑定。"
+				""
+				"一旦你拥有了已绑定的绑定之书，你就可以开始召唤程序了。"
+			]
+			dependencies: ["14F8A018C345B67E"]
+			id: "1E02923806A707B0"
+			tasks: [{
+				id: "107FDBADA2E7F86B"
+				type: "item"
+				item: "occultism:book_of_binding_foliot"
+			}]
+			rewards: [
+				{
+					id: "1DB70E09B7B3F9D6"
+					type: "item"
+					item: {
+						id: "occultism:soul_gem"
+						Count: 1b
+						tag: { }
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "4DB61FF4A4437F73"
+					type: "item"
+					item: {
+						id: "occultism:spawn_egg/familiar_beaver"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "仪式：召唤魔精粉碎者"
+			icon: {
+				id: "occultism:book_of_binding_bound_foliot"
+				Count: 1b
+				tag: {
+					spiritName: "Croloriaeus"
+				}
+			}
+			x: 6.0d
+			y: -1.5d
+			description: [
+				"亲爱的同学们，随着我们逐渐深入&e神秘学&r领域的研究，寻求威力更强的仪式，获得不同种类的&6粉笔符文&r变得至关重要。"
+				""
+				"想要制造&6金色粉笔&r，我们必须先获得&6金粉&r作为重要成分。"
+				""
+				"使用&b魔精碎矿者&r可以获得这种珍贵的材料。"
+				""
+				"请注意，使用&b魔精碎矿者&r时需要小心谨慎，因为它是我们的魔法事业中非常重要的生物。"
+			]
+			dependencies: ["256A0BC4E1201753"]
+			id: "27B607C10DDF0580"
+			tasks: [
+				{
+					id: "2EE3440B894B8622"
+					type: "item"
+					item: "minecraft:raw_iron"
+				}
+				{
+					id: "75F875932CFEF85E"
+					type: "item"
+					item: "minecraft:raw_gold"
+				}
+				{
+					id: "6DBBBCF6471A17D1"
+					type: "item"
+					item: "minecraft:raw_copper"
+				}
+				{
+					id: "07C658A14D6BFAB9"
+					type: "item"
+					item: {
+						id: "occultism:book_of_binding_bound_foliot"
+						Count: 1b
+						tag: {
+							spiritName: ""
+						}
+					}
+					weak_nbt_match: true
+				}
+				{
+					id: "5704A4095627BC38"
+					type: "item"
+					item: {
+						id: "occultism:raw_silver"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "4DF56D632C6F7037"
+				type: "item"
+				item: "minecraft:gold_ore"
+				count: 16
+			}]
+		}
+		{
+			x: 1.5d
+			y: -1.5d
+			description: [
+				"使用&b屠刀&r从&6牛&r、&6猪&r、&6绵羊&r、&6马&r、&6羊驼&r这样的动物中获取&b动物油脂&r是很重要的。这是我们探索&e神秘学&r的重要工具。"
+				""
+				"从这些生物的脂肪中获得的&b动物油脂&r具有独特的特性，可用于制作蜡烛。"
+				""
+				"记住，在收集动物精华时，带着尊重和感恩之心接近它们。小心翼翼的挥舞&b屠刀&r，施放&e神秘学&r魔法仪式的全部潜能。"
+			]
+			dependencies: ["4F4F86A19FD58A99"]
+			id: "7BFA2F0F5F7D10CE"
+			tasks: [
+				{
+					id: "68D9B8252C5700AD"
+					type: "item"
+					item: {
+						id: "occultism:butcher_knife"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7EBA75C99B23446F"
+					type: "item"
+					item: "occultism:tallow"
+				}
+			]
+		}
+		{
+			x: 1.5d
+			y: -4.5d
+			description: [
+				"一旦异界树苗被种下并生长，其外观将保持不变，直到获得第三只眼效果。"
+				""
+				"吃下魔鬼之梦果可短暂获得该效果。有了&6第三只眼&r，你可以从完全成熟的树苗上收获&b异界原木&r。"
+				""
+				"这种独特的木材蕴含着无穷的力量，是制作强效&e神秘学&r物品的关键。"
+			]
+			dependencies: ["4F4F86A19FD58A99"]
+			id: "36B99346DF1FE8E2"
+			tasks: [{
+				id: "6B73920E1F8A1B14"
+				type: "item"
+				item: "occultism:otherworld_log"
+				count: 16L
+			}]
+			rewards: [
+				{
+					id: "034758BC873EEB09"
+					type: "item"
+					item: {
+						id: "occultism:otherworld_ashes"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 8
+				}
+				{
+					id: "15B2D3FF206FD116"
+					type: "item"
+					item: {
+						id: "occultism:otherstone"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			title: "未约束火灵"
+			x: 6.0d
+			y: -4.5d
+			description: [
+				"要制作最高级粉笔，你需要召唤并摧毁未约束火灵，这样才能将它的灵髓注入粉笔。"
+				""
+				"为阿巴拉斯开环召唤术来施放仪式圆圈和标记。这需要你献祭一头牛作为仪式的一部分。"
+			]
+			dependencies: ["256A0BC4E1201753"]
+			id: "236EB6393DE807D4"
+			tasks: [{
+				id: "33221FD8F3C4A019"
+				type: "item"
+				item: {
+					id: "occultism:book_of_binding_bound_afrit"
+					Count: 1b
+					tag: {
+						spiritName: ""
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "4C3641DA6035B76B"
+					type: "item"
+					item: {
+						id: "occultism:iesnium_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "4AFE56C1509BD81D"
+					type: "xp_levels"
+					xp_levels: 6
+				}
+			]
+		}
+		{
+			x: 7.5d
+			y: -3.0d
+			description: ["巨灵是最常被召唤的魔灵职业。它们是提供智慧和力量的首选工具。它们可以用于各种用途，从高级魔法物品到附身低等生命形式。你需要一个绑定的巨灵以及相应的仪式来完成许多更强大的神秘仪式。"]
+			dependencies: ["256A0BC4E1201753"]
+			id: "37C9BE1277FA87CD"
+			tasks: [{
+				id: "1147B2F9C8738CCA"
+				type: "item"
+				item: {
+					id: "occultism:book_of_binding_bound_djinni"
+					Count: 1b
+					tag: {
+						spiritName: ""
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "7318DBC3B759355C"
+					type: "item"
+					item: {
+						id: "minecraft:end_stone"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 4
+				}
+				{
+					id: "08803C0D303A8997"
+					type: "item"
+					item: {
+						id: "apotheosis:mythic_material"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 10.0d
+			y: 0.5d
+			description: [
+				"亲爱的同学们，关于&b艾瑟金属锭&r，我有些耐人寻味的信息想跟你们分享。"
+				""
+				"这种金属是最复杂的仪式与&e神秘学&r的高级工具所需的独特且珍贵的材料。不过，它们无法通过常规手段获得。"
+				""
+				"&5萨拉斯教授&r在跨维度探索和神秘材料领域颇有建树，十分了解专业知识与技能。"
+				""
+				"找他们寻求指导，你将从中获得宝贵的见解，并有可能揭开获得&b艾瑟金属锭&r的秘密。"
+			]
+			id: "44C3AE74D03D1EA9"
+			tasks: [{
+				id: "6721797CFEEDB22D"
+				type: "item"
+				item: "occultism:iesnium_ingot"
+			}]
+			rewards: [{
+				id: "468429F1AD3A6B80"
+				type: "item"
+				item: "occultism:iesnium_ore"
+				count: 3
+			}]
+		}
+		{
+			title: "维度矿工"
+			icon: {
+				id: "occultism:miner_foliot_unspecialized"
+				Count: 1b
+				tag: {
+					spiritName: "Thrgornryne"
+					Damage: 0
+				}
+			}
+			x: 11.5d
+			y: -3.0d
+			description: [
+				"通过利用艾瑟金属锭的力量，我们能到神秘的矿井中冒险，那里有许多宝贵的资源和隐藏的宝藏。"
+				""
+				"这些矿井存在于另一个维度，充满了神秘的能量和未开发的财富。"
+				""
+				"用一本已绑定的书、一盏空神灯、一把艾瑟精神镐和其他材料就能举行仪式，我们就能创造出神灯中的矿工。"
+				""
+				"矿工可以前往维度矿井，为我们提供各种宝贵的资源。"
+			]
+			id: "44A634D9684DBBFF"
+			tasks: [
+				{
+					id: "5E3F0AEC900F2A71"
+					type: "item"
+					item: "occultism:magic_lamp_empty"
+				}
+				{
+					id: "31D2F93F6193296E"
+					type: "item"
+					item: "occultism:dimensional_mineshaft"
+				}
+			]
+			rewards: [
+				{
+					id: "36DEFF8FD3BB23C9"
+					type: "item"
+					item: {
+						id: "quark:ancient_tome"
+						Count: 1b
+						tag: {
+							StoredEnchantments: [{
+								lvl: 8s
+								id: "minecraft:unbreaking"
+							}]
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "4705082CA3D2459A"
+					type: "item"
+					item: {
+						id: "minecraft:enchanted_book"
+						Count: 1b
+						tag: {
+							StoredEnchantments: [{
+								lvl: 1s
+								id: "naturesaura:aura_mending"
+							}]
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 10.0d
+			y: -4.5d
+			description: [
+				"戴上异界眼镜能获得吃下魔鬼之梦果的效果。这将赋予你永久的第三只眼效果，让你看见异界的方块。"
+				""
+				"你仍然需要灌注和艾瑟金属镐才能采掘它们。"
+			]
+			id: "35605C879A16392F"
+			tasks: [{
+				id: "3798F1EFD5156230"
+				type: "item"
+				item: {
+					id: "occultism:otherworld_goggles"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "0A61916D090DAB1E"
+					type: "item"
+					item: {
+						id: "hexerei:large_satchel"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "692CF87D4662E344"
+					type: "item"
+					item: {
+						id: "minecraft:enchanted_book"
+						Count: 1b
+						tag: {
+							StoredEnchantments: [{
+								lvl: 3s
+								id: "ensorcellation:exp_boost"
+							}]
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "创造你自己的灵火"
+			icon: {
+				id: "firesticks:fire_stick"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 0.0d
+			y: -4.5d
+			description: ["点燃魔鬼之梦果时要小心。你必须先把它放置下来，再用起火器、火焰弹或打火石点燃它。你需要瞄准真正的果实，如果只是简单地点燃方块，你可能会冒着烧毁而不转化物品的风险。"]
+			dependencies: ["2CA20C350E71D2C3"]
+			hide: true
+			id: "4D1EDF57F95F23E4"
+			tasks: [
+				{
+					id: "054567E91CBA3D55"
+					type: "item"
+					item: "occultism:datura"
+				}
+				{
+					id: "597E2E0843B370F9"
+					type: "item"
+					item: {
+						id: "firesticks:fire_stick"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "1A17980E8AC344C6"
+					type: "item"
+					item: "minecraft:black_dye"
+					count: 8
+				}
+				{
+					id: "4AD79D31E6126501"
+					type: "item"
+					item: "minecraft:netherrack"
+					count: 4
+				}
+				{
+					id: "44FD37D318A61AD1"
+					type: "item"
+					item: {
+						id: "occultism:datura"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 3
+				}
+			]
+		}
+		{
+			x: 10.0d
+			y: -3.0d
+			description: [
+				"斯特里格高等束缚仪式允许你将强大的巨灵绑定至特定的容器。一个维度矿井和一个深层矿石矿工魔灵就能提供无限的资源。特别是如果在神灯完全退化之前将其与修复方法结合起来。"
+				""
+			]
+			dependencies: ["37C9BE1277FA87CD"]
+			id: "6925F8ED680D4A6B"
+			tasks: [{
+				id: "72B82920360A8DF0"
+				type: "item"
+				item: "occultism:dimensional_mineshaft"
+			}]
+			rewards: [
+				{
+					id: "12E7F59C894C94D1"
+					type: "item"
+					item: {
+						id: "occultism:spirit_attuned_gem"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 4
+				}
+				{
+					id: "6573E352289CD776"
+					type: "xp_levels"
+					xp_levels: 6
+				}
+			]
+		}
+		{
+			icon: "occultism:storage_controller"
+			x: 1.5d
+			y: 1.5d
+			description: ["存储促动器基座是由维度矩阵组成的多方块结构，有一只巨灵居住于维度矩阵，这只精灵能创建并管理一个存储维度。基座中注入了一只魔精，可以为你将物品移入或移除维度。这个额外的维度空间可以储存大量物品，并可以多次升级。"]
+			hide_dependency_lines: true
+			dependencies: ["4F4F86A19FD58A99"]
+			hide: true
+			id: "0AC9F55FAB0A1C1A"
+			tasks: [{
+				id: "24178F79D59FF54D"
+				type: "item"
+				item: {
+					id: "occultism:storage_controller"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "33F61830662F714E"
+					type: "item"
+					item: {
+						id: "occultism:otherstone"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 16
+				}
+				{
+					id: "23E8F643423F4173"
+					type: "item"
+					item: {
+						id: "enderstorage:ender_chest"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 4.5d
+			y: 1.5d
+			description: ["等级2稳定器需要更高级的绑定仪式进行绑定，以及恶魂之泪。该升级版能额外为矩阵提供512格。"]
+			dependencies: ["0AC9F55FAB0A1C1A"]
+			id: "740F611DCB42EBF2"
+			tasks: [{
+				id: "3B34EB5A2D069DBD"
+				type: "item"
+				item: "occultism:storage_stabilizer_tier2"
+			}]
+			rewards: [{
+				id: "7100375CACFF26B4"
+				type: "item"
+				team_reward: true
+				item: {
+					id: "gateways:gate_pearl"
+					Count: 1b
+					tag: {
+						gateway: "gateways:ghast_gate_small"
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 6.0d
+			y: 1.5d
+			description: ["这些强化稳定器开始变得昂贵。它们需要一个下界之星，并且必须在塞维拉永囚咒仪式中与一只火灵绑定。每个稳定器都能为维度矩阵提供惊人的1024格。"]
+			dependencies: ["0AC9F55FAB0A1C1A"]
+			id: "3A8A41220AFA4534"
+			tasks: [{
+				id: "2E2CB6971BDE4248"
+				type: "item"
+				item: "occultism:storage_stabilizer_tier3"
+			}]
+			rewards: [{
+				id: "21BD2744D72D2B4B"
+				type: "item"
+				item: {
+					id: "ars_nouveau:glyph_wither"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 7.5d
+			y: 1.5d
+			description: [
+				"终极稳定器需要一个龙首，并使用危险强大的修菲斯倒转之塔仪式绑定一只致命的魔王。每个稳定器都能提供最多的存储空间，可增加2048格。"
+				""
+			]
+			dependencies: ["0AC9F55FAB0A1C1A"]
+			id: "70BCAC1AC9A2BE79"
+			tasks: [{
+				id: "7C0CA86A70D65D86"
+				type: "item"
+				item: "occultism:storage_stabilizer_tier4"
+			}]
+			rewards: [
+				{
+					id: "1D8756C6DF37D8B3"
+					type: "item"
+					team_reward: true
+					item: {
+						id: "occultism:storage_stabilizer_tier4"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "73F42F031B8260CA"
+					type: "item"
+					item: {
+						id: "occultism:stable_wormhole"
+						Count: 1b
+						tag: { }
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "0B51FF5CAC6BBC2A"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: 1.5d
+			description: ["Shift右击存储访问器可以将其链接至维度存储。一旦链接，内部的巨灵就会使你能在任何地方跨维度访问存储于其中的物品。"]
+			hide_dependency_lines: true
+			dependencies: [
+				"256A0BC4E1201753"
+				"37C9BE1277FA87CD"
+			]
+			hide: true
+			id: "0F5BB5102B50889E"
+			tasks: [{
+				id: "34FF29B6F543068D"
+				type: "item"
+				item: {
+					id: "occultism:storage_remote"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [
+				{
+					id: "41EA6A78ADA7F113"
+					type: "item"
+					item: {
+						id: "occultism:stable_wormhole"
+						Count: 1b
+						tag: { }
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "217D6CD2345B8317"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			x: 10.0d
+			y: -1.5d
+			description: [
+				"绑定在这个平凡背包上的魔精的任务是扭曲内部的现实。这让它的内部变得更大，能够装下大量物品。"
+				""
+				"使用埃兹维斯灵体强迫仪式以绑定魔精至背包。"
+			]
+			hide_dependency_lines: true
+			dependencies: ["256A0BC4E1201753"]
+			hide: true
+			id: "2D4E52F70DA383EB"
+			tasks: [{
+				id: "66D70432E9FF182F"
+				type: "item"
+				item: {
+					id: "occultism:satchel"
+					Count: 1b
+					tag: {
+						spiritName: "Niddornkyn"
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				weak_nbt_match: true
+			}]
+			rewards: [
+				{
+					id: "022403D46240808A"
+					type: "item"
+					item: {
+						id: "minecraft:enchanted_book"
+						Count: 1b
+						tag: {
+							StoredEnchantments: [{
+								lvl: 1s
+								id: "ensorcellation:soulbound"
+							}]
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "7CC0BEAA4891EB05"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			title: "神秘学"
+			x: -2.5d
+			y: -3.0d
+			shape: "pentagon"
+			subtitle: "找到埃弗利普斯教授"
+			description: [
+				"欢迎你们来到&e神秘学&r课程，年轻的男巫女巫们！我是埃弗利普斯教授，你们神秘魔法领域的领路人。"
+				""
+				"在我们踏上迷人的&e神秘学&r的非凡旅程时，愿你们精神抖擞，魔杖准备就绪。"
+				""
+				"我很高兴你们每个人都能来到这里，准备揭开这门古老艺术的秘密。开始这段神奇的冒险吧！"
+			]
+			hide_dependency_lines: true
+			dependencies: ["63368A007664E4B5"]
+			dependency_requirement: "one_started"
+			hide_text_until_complete: true
+			id: "5195093F6886F0F3"
+			tasks: [{
+				id: "061C0F7DB5BD145C"
+				type: "location"
+				title: "找到埃弗利普斯"
+				icon: {
+					id: "minecraft:player_head"
+					Count: 1b
+					tag: {
+						SkullOwner: {
+							Id: "1b3a13c3-11bd-8eb2-0283-8c32afa52b49"
+							Properties: {
+								textures: [{
+									Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzFiM2ExM2MzMTFiZDhlYjIwMjgzOGMzMmFmYTUyYjQ5MDlkODEwODU3OTU1NTEyYTVlNTA4ZTgwMzYwZmY1ZmIifX19"
+								}]
+							}
+							Name: "Everlipse"
+						}
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				dimension: "minecraft:overworld"
+				ignore_dimension: false
+				position: [I;
+					-337
+					-50
+					-200
+				]
+				size: [I;
+					30
+					10
+					30
+				]
+			}]
+			rewards: [{
+				id: "63FF91171E7DE6BB"
+				type: "item"
+				item: {
+					id: "occultism:dictionary_of_spirits"
+					Count: 1b
+					tag: {
+						"modonomicon:book_id": "occultism:dictionary_of_spirits"
+					}
+				}
+			}]
+		}
+		{
+			x: -6.5d
+			y: -3.0d
+			description: [
+				"在&5灵灾&r的武器库中，有一件至关重要的工具——&b镰刀&r。"
+				""
+				"我们的旅程从创造基础工具开始：&b粗制镰刀&r。"
+				""
+				"使用一些&6铁和灵魂石&r，制作&b粗制链接&r应当是小儿科。"
+				""
+				"有了&b镰刀&r，当生命体被击杀后，我们可以收割它们的&6精魄&r。如果我们想要深耕于&5灵灾&r领域，这些&6精魄&r是必不可缺。"
+			]
+			dependencies: ["0C8A7D05ABEBF23B"]
+			id: "470630A08B38DD98"
+			tasks: [{
+				id: "0BB26ECF9411BD47"
+				type: "item"
+				item: {
+					id: "malum:crude_scythe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "0958045F72108BB3"
+					type: "item"
+					item: "malum:runewood_sapling"
+					count: 4
+				}
+				{
+					id: "4B1EFFAF7809F1BC"
+					type: "item"
+					item: {
+						id: "minecraft:enchanted_book"
+						Count: 1b
+						tag: {
+							StoredEnchantments: [{
+								lvl: 3s
+								id: "spirit:soul_reaper"
+							}]
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -8.5d
+			y: -3.0d
+			description: [
+				"你手中树苗不是普通的植物，它们是受人尊敬的&6符文树苗&r。"
+				""
+				"这些树木的宝藏蕴含着魔法能量。它们会在合适的时候揭开神秘的面纱，为任何进入&5灵灾&r领域的巫师带来奇迹和启示。"
+				""
+				"请留心，因为它们的神秘力量将在接下来的课程中揭开面纱，照亮你的魔法之路。"
+			]
+			dependencies: ["470630A08B38DD98"]
+			id: "1DAF23FF00B2FA03"
+			tasks: [{
+				id: "4CBB032D38AE3BBD"
+				type: "item"
+				item: "malum:runewood_log"
+			}]
+		}
+		{
+			x: -10.5d
+			y: -3.0d
+			description: [
+				"最后，我们班的亮点是：备受好评的&b精魄祭坛r&r。"
+				""
+				"这个神秘的平台是制作各种魔法工具和材料的关键。"
+				""
+				"其中，&6魂染钢锭&r将是一个重要的组成部分，它是标准&6铁锭&r的升级版。"
+				""
+				"这些非凡的材料提供了一种新的制作强大魔法工具的方法，让你在魔法领域的造诣更上一层楼。"
+			]
+			dependencies: ["1DAF23FF00B2FA03"]
+			id: "50B9F03C73F0A696"
+			tasks: [{
+				id: "2E201746395AD29D"
+				type: "item"
+				item: "malum:spirit_altar"
+			}]
+			rewards: [
+				{
+					id: "3A67ADA07AA217AF"
+					type: "item"
+					item: {
+						id: "malum:runewood_item_pedestal"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 4
+				}
+				{
+					id: "24E6B426969D6094"
+					type: "item"
+					item: {
+						id: "botania:brew_vial"
+						Count: 1b
+						tag: {
+							brewKey: "botania:regen_weak"
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -12.5d
+			y: -2.5d
+			description: [
+				"啊，我亲爱的同学们，是时候锻造你们自己的&b魂染钢&r。"
+				""
+				"收集所有必需的&6精魄&r，小心将它们放在祭坛。将&6魂染钢&r放在物品基座上，将不起眼的&6铁锭&r放在祭坛上。"
+				""
+				""
+				"用惊奇的目光看待这在你面前展开的魔法。见证祭坛传递能量时发生的神秘嬗变，将各种元素融为一体，拥抱&b魂染钢&r的诞生。它是原始魔法力量与世俗铁器的融合，是你在奥术方面日益精湛的证明。"
+			]
+			dependencies: ["50B9F03C73F0A696"]
+			id: "312E05896ACFD061"
+			tasks: [{
+				id: "65EDD30B77C1B234"
+				type: "item"
+				item: "malum:soul_stained_steel_ingot"
+				count: 4L
+			}]
+			rewards: [{
+				id: "45C0A18B75B5FA6E"
+				type: "item"
+				item: {
+					id: "malum:soul_stained_steel_ingot"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 4
+			}]
+		}
+		{
+			x: -8.5d
+			y: -5.0d
+			subtitle: "无限粘液球"
+			description: [
+				"一些原木中蕴藏着一种罕见的强效物质——&b神圣树脂&r。"
+				""
+				"要获得这种精华，首先要把树皮从原木上剥离下来。然后，用玻璃瓶萃取封装在其中的&b神圣树脂&r。"
+				""
+				"当你把这种&b神圣树脂&r和我给你的少量&6粘液球&r结合在一起时，你就能制作出更多的&6粘液球&r。这就像把各种东西混合在一起，创造出一个神奇的配方，让你从特殊的汁液中获得几乎无穷无尽的&6粘液球&r。"
+			]
+			dependencies: ["1DAF23FF00B2FA03"]
+			id: "38A76677C8D56F2C"
+			tasks: [{
+				id: "007AACCBFEF68FD4"
+				type: "item"
+				item: "malum:holy_sap"
+			}]
+			rewards: [{
+				id: "29B1409450F32A40"
+				type: "item"
+				item: "minecraft:slime_ball"
+				count: 4
+			}]
+		}
+		{
+			title: "灵魂石"
+			x: -4.5d
+			y: -3.0d
+			description: [
+				"想要进入&5灵灾&r的领域，&b灵魂石&r是必不可缺的第一步。"
+				""
+				"由于它是一种矿石，所以向我们的植物魔法老师&e梅希姆夫人&r寻求有关&b凝矿兰&r的指导是再好不过了。"
+				""
+				"在寻找并收集&b灵魂石&r这神秘存在的过程中，&6凝矿兰&r这个神秘的装置被证明是很有帮助的，它将开启你在&5灵灾&r领域的探索之旅。"
+			]
+			dependencies: ["5195093F6886F0F3"]
+			id: "0C8A7D05ABEBF23B"
+			tasks: [{
+				id: "2947EA26EDE22D9D"
+				type: "item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "malum:raw_soulstone"
+								Count: 1b
+							}
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "malum:soulstone_ore"
+								Count: 1b
+							}
+						]
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "32B454A7EF6A08F2"
+					type: "item"
+					item: {
+						id: "malum:raw_soulstone"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 3
+				}
+				{
+					id: "7BD17F736BF02426"
+					type: "item"
+					item: {
+						id: "quark:soul_bead"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "精魄布袋"
+			icon: {
+				id: "malum:spirit_pouch"
+				Count: 1b
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+			x: -10.5d
+			y: -5.0d
+			description: [
+				"为了减缓收集精魄的负担，让我们将目光转向&b精魄布袋&r。"
+				""
+				"利用&6精魄祭坛&r的功能，我们可以制作&b精魄布匹&r，并将其编织成复杂的精魄布袋。"
+				""
+				"这种奇妙的造物拥有神奇的能量，可以装下的&5精魄&r需要一个箱子才能容纳，而这些全都在你的口袋中。"
+				""
+				"接受这项发明吧，因为它将彻底改变你管理和运送精魄的方式，减轻杂乱的负担，帮助你为魔法事业做好准备。"
+			]
+			dependencies: ["50B9F03C73F0A696"]
+			id: "5DD709EC2D67B018"
+			tasks: [
+				{
+					id: "70A4A395260AD16D"
+					type: "item"
+					item: {
+						id: "malum:spirit_fabric"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 3L
+				}
+				{
+					id: "225B34538624F8DB"
+					type: "item"
+					item: {
+						id: "malum:spirit_pouch"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -8.5d
+			y: -1.0d
+			description: [
+				"使用我们新铸造的&6精魄祭坛&r，我们可以将&6火药&r注入至&d奥术精魄&r的精华中，从而创造出&b咒灰&r。"
+				""
+				"这个强大的组件是灵灾魔法师们梦寐以求的重要元素，也是未来复杂的高级合成的关键材料。接受这种造物吧，因为它将成为你在灵灾领域中追求魔法的关键工具。"
+			]
+			dependencies: ["50B9F03C73F0A696"]
+			id: "796B0F86D2F21A18"
+			tasks: [{
+				id: "3E481AD61070EA47"
+				type: "item"
+				item: "malum:hex_ash"
+			}]
+			rewards: [
+				{
+					id: "3DC8B1F27CDE1473"
+					type: "item"
+					item: {
+						id: "malum:hex_ash"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 4
+				}
+				{
+					id: "08D1047406B1856D"
+					type: "item"
+					item: {
+						id: "hexcasting:amethyst_dust"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			x: -12.5d
+			y: 0.5d
+			description: [
+				"将&6精魄&r刻在符文原木上，让它们在&6图腾魔法&r中发挥关键作用。"
+				""
+				"通过注入5个奥术精魄，图腾经历了一次蜕变，逐渐腐化并燃烧，最终化为T&b灵魂木&r。"
+				""
+				"这个复杂的仪式被称为&b释缚仪式&r，在图腾周围的方块会表现流血效果。"
+				""
+				"想要了解各种方块的使用方法，可以查阅你的笔记，其中详细介绍了这神秘领域中转换炼金术的复杂性。"
+			]
+			dependencies: ["349C018CCFD38608"]
+			id: "43002F405D573AA2"
+			tasks: [{
+				id: "42DC2DA530D2B392"
+				type: "item"
+				item: "malum:soulwood_log"
+			}]
+		}
+		{
+			title: "图腾魔法"
+			x: -12.5d
+			y: -1.0d
+			description: [
+				"在&5灵灾&r领域中，随着&6图腾魔法&r的出现，我们的视野逐渐开阔。"
+				""
+				"要开始这段旅程，首先需要在受人尊敬的精魄祭坛上制作图腾基座，这标志着你开始进入图腾制作领域。"
+				""
+				"启动你第一个图腾可以检验你的努力，如果你想获得更多指导，可查阅&e奥术全典&r，这是知识的宝库，引领你走上这条神秘之路。"
+			]
+			dependencies: ["50B9F03C73F0A696"]
+			id: "349C018CCFD38608"
+			tasks: [{
+				id: "245FACADE55E99EB"
+				type: "item"
+				item: "malum:runewood_totem_base"
+			}]
+		}
+		{
+			x: -12.5d
+			y: -3.5d
+			description: [
+				"亲爱的同学们，是时候锻造你自己的&b神圣金&r了。"
+				""
+				"将收集到的&6精魄&r小心的放在祭坛上。在物品基座上放上&6适应&r，把&6金锭&r放在祭坛的表面。"
+				""
+				"观察展开的神秘舞蹈，见证其中发生的迷人转变，孕育出光芒四射的&b神圣金&r。拥抱这神奇的时刻，尽情挥洒这非凡创造的新力量。"
+			]
+			dependencies: ["50B9F03C73F0A696"]
+			id: "69F2C8CA0DC0083F"
+			tasks: [{
+				id: "51F3049AC6539F75"
+				type: "item"
+				item: "malum:hallowed_gold_ingot"
+				count: 4L
+			}]
+			rewards: [{
+				id: "70E6C42E033AA630"
+				type: "item"
+				item: {
+					id: "malum:hallowed_gold_ingot"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 4
+			}]
+		}
+		{
+			title: "深层存储单元？"
+			x: -12.5d
+			y: -5.0d
+			description: [
+				"当魔法师积累了大量的特定精魄后，&5灵灾&r中的&b精魄罐&r就是个不错的解决方案。"
+				""
+				"这个非凡的容器几乎能容纳无限的单种精魄，可用来解决魔法精华溢出的问题。"
+				""
+				"不过值得注意的是，每个罐子只能容纳一种精魄，这为组织并存储多余的魔法精华提供了一个实用的解决方案。"
+			]
+			dependencies: ["69F2C8CA0DC0083F"]
+			id: "3320A823D21106A1"
+			tasks: [{
+				id: "291391ECB5E96CAF"
+				type: "item"
+				item: "malum:spirit_jar"
+			}]
+		}
+		{
+			x: -14.5d
+			y: -3.0d
+			description: [
+				"当然，在&5灵灾&r领域，有大量的&b项链和腰带&r在等着你，每种都有独特的优势，可以帮助你成为强大的巫师。"
+				""
+				"深入了解这些物品，因为每件都有其独特的魅力，能满足巫师旅程中不同方面的需求。请明智选择，因为这些宝贝将为你在魔法和神秘主义领域的冒险追求提供巨大帮助。"
+			]
+			dependencies: [
+				"69F2C8CA0DC0083F"
+				"312E05896ACFD061"
+			]
+			id: "4890448829D47CFA"
+			tasks: [{
+				id: "44F3FF8A9CDE5049"
+				type: "item"
+				title: "灵灾的宝贝"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "malum:necklace_of_the_mystic_mirror"
+								Count: 1b
+							}
+							{
+								id: "malum:necklace_of_tidal_affinity"
+								Count: 1b
+							}
+							{
+								id: "malum:necklace_of_the_narrow_edge"
+								Count: 1b
+							}
+							{
+								id: "malum:necklace_of_the_hidden_blade"
+								Count: 1b
+							}
+							{
+								id: "malum:necklace_of_blissful_harmony"
+								Count: 1b
+							}
+							{
+								id: "malum:belt_of_the_starved"
+								Count: 1b
+							}
+							{
+								id: "malum:belt_of_the_prospector"
+								Count: 1b
+							}
+							{
+								id: "malum:belt_of_the_magebane"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			x: -6.5d
+			y: -1.0d
+			description: [
+				"啊，从简陋的&6粗制镰刀&r升级到精美的&b魂染钢镰刀&r。"
+				""
+				"随着增强的魔法能力和卓越的效果，这把升级的镰刀代表着你魔法武器库中显著的进步。"
+				""
+				"接受它强大的魔力吧，因为它将被证明是一个强大的工具，在魔法和神秘领域的能力和效率都超过了它的前辈。"
+			]
+			dependencies: [
+				"470630A08B38DD98"
+				"796B0F86D2F21A18"
+			]
+			id: "63AD6A3ABE7C983A"
+			tasks: [{
+				id: "4662A2780252A046"
+				type: "item"
+				item: {
+					id: "malum:soul_stained_steel_scythe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "3CEF7AF1E1C0B353"
+				type: "item"
+				item: {
+					id: "minecraft:enchanted_book"
+					Count: 1b
+					tag: {
+						StoredEnchantments: [{
+							lvl: 3s
+							id: "apotheosis:life_mending"
+						}]
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 3.0d
+			y: 1.5d
+			description: ["基础稳定器使用由埃兹维斯灵体强迫绑定的魔精。每个等级1稳定器能为维度存储增加256格。每个维度矩阵最多能支持6个稳定器。"]
+			dependencies: ["0AC9F55FAB0A1C1A"]
+			id: "6A56F10A26573057"
+			tasks: [{
+				id: "4B1505495694E818"
+				type: "item"
+				item: {
+					id: "occultism:storage_stabilizer_tier1"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "356E56C1F34C1CA7"
+				type: "item"
+				team_reward: true
+				item: {
+					id: "gateways:gate_pearl"
+					Count: 1b
+					tag: {
+						gateway: "gateways:blaze_gate_small"
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			title: "熔炼出地狱"
+			icon: {
+				id: "malum:spirit_crucible"
+				Count: 1b
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+			x: -10.5d
+			y: 2.0d
+			description: [
+				"来看这个精妙的&b精魄坩埚&r，它是机械中的多功能奇迹。它不仅限于修理你的装备和工具，还超越了传统的界限。"
+				""
+				"通过利用精魄和炼金促符，它可以生成各种不同的物品。"
+				""
+				"拥抱坩埚的多功能吧，因为它是多功能的灯塔，它不只是负责维修工作，而是开启了合成和创造的无数可能性。"
+			]
+			dependencies: ["50B9F03C73F0A696"]
+			id: "52331FAD092FE0F7"
+			tasks: [
+				{
+					id: "4FCA5C70D760A606"
+					type: "item"
+					item: {
+						id: "malum:spirit_crucible"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "5F6D3E05BCBB730A"
+					type: "item"
+					item: {
+						id: "malum:alchemical_calx"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "4B62C4E8A48E4CC6"
+				type: "item"
+				item: {
+					id: "malum:alchemical_impetus"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: -8.5d
+			y: 1.0d
+			description: [
+				"通过注入&b碧水与奥术精魄&r，坩埚中普通的&6炼金促符&r获得了无与伦比的力量，从而创造出海晶碎片。"
+				""
+				"这种精致的合成材料在广受好评的&d奥术学院&r中的所有课程中都具有重要意义，是无数令人着迷的造物的关键成分。"
+				""
+				"接受这一精炼过程的潜力，因为海晶碎片是元素之灵汇聚的见证，在学院的教导下可以进行各种神秘的尝试。"
+			]
+			dependencies: ["52331FAD092FE0F7"]
+			id: "1AF6D31835DC5CC1"
+			tasks: [{
+				id: "446EA003E6090830"
+				type: "item"
+				item: {
+					id: "minecraft:prismarine_shard"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 8L
+			}]
+			rewards: [{
+				id: "6789DB4E09D1964C"
+				type: "item"
+				item: {
+					id: "minecraft:prismarine_shard"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 8
+			}]
+		}
+		{
+			x: -8.5d
+			y: 2.0d
+			description: [
+				"当&6狱火与奥术精魄&r与炼金促符交汇于伟大的&6坩埚&r中，令人垂涎的&b烈焰石英&r就会诞生。"
+				""
+				"这种神秘的材料，拥有在&5灵灾&r领域中制作下界岩和各种奥术材料的能力。"
+				""
+				"烈焰石英是制造各种魔法器具的通道，它将狱火精魄的炽热精华与奥术精魄的神秘力量相结合。"
+			]
+			dependencies: ["52331FAD092FE0F7"]
+			id: "0F55C6D7C806D3D5"
+			tasks: [{
+				id: "5E4199C1096F923E"
+				type: "item"
+				item: {
+					id: "malum:blazing_quartz"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 4L
+			}]
+			rewards: [{
+				id: "710F7D4F886ABD87"
+				type: "item"
+				item: {
+					id: "malum:blazing_quartz"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 8
+			}]
+		}
+		{
+			x: -8.5d
+			y: 3.0d
+			description: [
+				"杰出的&b石英&r材料是由&6大地与奥术精魄&r和谐汇聚，并与古老坩埚中的&6炼金促符&r结合而成。"
+				""
+				"这种著名的物质在各个领域都享有盛誉，受到巫师、魔法师甚至麻瓜的追捧。"
+				""
+				"它的繁多功能与广泛应用使其成为大部分人梦寐以求的主要材料，是各种神秘和实践活动的基石。"
+			]
+			dependencies: ["52331FAD092FE0F7"]
+			id: "3700683C087DFD46"
+			tasks: [{
+				id: "3F3FDA2361F1E914"
+				type: "item"
+				item: {
+					id: "minecraft:quartz"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 8L
+			}]
+			rewards: [{
+				id: "6917B2BC7FCFAF79"
+				type: "item"
+				item: {
+					id: "minecraft:quartz"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 8
+			}]
+		}
+		{
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "malum:textures/block/runewood/totem_poles/eldritch_runewood_cutout.png"
+				}
+			}
+			x: -12.5d
+			y: 2.0d
+			description: [
+				"&6图腾魔法&r呈现了极具震撼力的世界，展现了影响动植物和周围自然元素的各种效果。"
+				""
+				"要深度掌握这些神秘能力，强烈建议阅读&e奥术全典&r中包含的全面知识。"
+				""
+				"深入书页，揭开图腾魔法对环境和居民产生的无数影响，探寻这一强大魔法艺术的深邃奥秘。"
+			]
+			dependencies: ["43002F405D573AA2"]
+			id: "4ED44B7168C3C84B"
+			tasks: [{
+				id: "3A41E17E59A1C4FB"
+				type: "checkmark"
+				title: "礼与过"
+			}]
+			rewards: [{
+				id: "38EA2E49B66C57C4"
+				type: "item"
+				item: {
+					id: "malum:soulwood_growth"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 4
+			}]
+		}
+		{
+			title: "我在哪里可以获得更多的黑色墨水？"
+			x: 0.75d
+			y: -2.25d
+			description: [
+				"所以，你的意思是如何获得更多的黑色染料。"
+				""
+				"一种方法是使用&5植物魔法的&r黑色花。另一种方法是去校园潜水，众所周知，鱿鱼住在奥术学院的圣地里。"
+				""
+				"去搞一些来吧！"
+			]
+			dependencies: ["4F4F86A19FD58A99"]
+			size: 0.5d
+			id: "0286958581F5CDF4"
+			tasks: [{
+				id: "11950F89E819222D"
+				type: "item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "minecraft:ink_sac"
+								Count: 1b
+							}
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "botania:black_mystical_flower"
+								Count: 1b
+							}
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "botania:black_double_flower"
+								Count: 1b
+							}
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "botania:black_mushroom"
+								Count: 1b
+							}
+						]
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "1349E132819D0210"
+				type: "item"
+				item: {
+					id: "minecraft:black_dye"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 8
+			}]
+		}
+	]
+	quest_links: [ ]
+}

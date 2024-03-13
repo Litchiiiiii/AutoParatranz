@@ -1,0 +1,1375 @@
+{
+	id: "2D203BFFF0EB7337"
+	group: "0960D5B8A7FB00EA"
+	order_index: 5
+	filename: "natures_blessing"
+	title: "自然祝福"
+	icon: {
+		id: "patchouli:guide_book"
+		Count: 1b
+		tag: {
+			"patchouli:book": "naturesaura:book"
+		}
+	}
+	subtitle: ["自然灵气和根源魔法"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	default_min_width: 300
+	quests: [
+		{
+			title: "获得一个黄金叶"
+			x: 1.0d
+			y: -5.0d
+			description: [
+				"在&e自然灵气&r的魔法研究中，我们面临着一项有趣的任务。"
+				""
+				"你首先需要对叶子使用&b闪耀纤维&r。使用这个物品你可以看到叶子发生特殊的转变。最终转变为&6黄金叶&r。"
+				""
+				"一旦你成功制造出了&6黄金叶&r，就要把它拿来进一步的研究。"
+				""
+				"迎接这有趣的挑战，并让&e自然灵气&r的魔力满足你的求知欲吧！"
+			]
+			dependencies: ["00894E8821E62449"]
+			min_width: 300
+			hide_details_until_startable: true
+			id: "51F6ACC0A8B4CFA9"
+			tasks: [{
+				id: "548AFA1A41E4E705"
+				type: "item"
+				item: "naturesaura:gold_leaf"
+			}]
+			rewards: [
+				{
+					id: "236E2EFFFABFD12A"
+					type: "item"
+					item: "minecraft:oak_sapling"
+					count: 16
+				}
+				{
+					id: "28B31CF5F5A7B330"
+					type: "item"
+					item: "naturesaura:bottle_two_the_rebottling"
+					count: 8
+				}
+				{
+					id: "399E4F8C259CB68A"
+					type: "item"
+					item: {
+						id: "naturesaura:gold_fiber"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			x: 3.0d
+			y: -6.5d
+			description: [
+				"在探索有趣的&e自然灵气&r世界中，我们面临着一项有趣的任务。"
+				""
+				"我建议你阅读有关&6森林仪式&r的书籍，在阅读过程中你会受到很多帮助。你也可以认真阅读&6自然灵气之书&r，就是我之前发给你的那本。"
+				""
+				"接下来，我们将深入研究&b远古树&r的领域。你的任务是从&b远古树&r中获得一个树苗。"
+				""
+				"你把树苗带给我，在下一节课我们将继续我们的魔法之旅。"
+				""
+				"努力学习，自然灵气的知识将会指引你。我希望在下一次集会前看到你的成果。"
+			]
+			hide_dependency_lines: true
+			dependencies: ["439711A12F1593A7"]
+			size: 0.5d
+			min_width: 300
+			id: "44679457F7B25CCB"
+			tasks: [{
+				id: "63FBBECDCFA6B4E1"
+				type: "item"
+				item: "naturesaura:ancient_sapling"
+			}]
+			rewards: [{
+				id: "75A850E43F7F0DE7"
+				type: "item"
+				item: "naturesaura:ancient_sapling"
+				count: 4
+			}]
+		}
+		{
+			icon: "naturesaura:nature_altar"
+			x: 4.5d
+			y: -5.0d
+			subtitle: "制作自然祭坛"
+			description: [
+				"我们下一项有趣的任务是制造一个宏伟的&b自然祭坛&r————我们魔法实践所必须的一个基础。"
+				""
+				"让我们一起开始努力吧，首先我推荐你反复查阅&6自然灵气之书&r。"
+				""
+				"除此之外，我们制造&b自然祭坛&r就是为了制造&b灌注之石&r。"
+				""
+				"只要你准备好了&b自然祭坛&r和&b灌注之石&r，就在下节课开始前带给我。"
+				""
+				"我希望看到你在这项魔法探索中的进步。记住，耐心、实践和敬畏自然是成功的关键。"
+				""
+				"我还想提醒你的是，你要知道这不是&e植物魔法&r，所以我们使用&e自然灵气&r的催化器时是把它放在&b黄金石砖&r上方，而不是把它放在祭坛下方。"
+			]
+			dependencies: [
+				"3B29B9822D5248BD"
+				"439711A12F1593A7"
+				"593F27D3FF233B37"
+			]
+			min_width: 300
+			id: "282B976F2593CEC6"
+			tasks: [
+				{
+					id: "49AD2A70394415FE"
+					type: "item"
+					item: "naturesaura:nature_altar"
+				}
+				{
+					id: "53FE011CF3190453"
+					type: "item"
+					item: "naturesaura:gold_brick"
+					count: 8L
+				}
+			]
+			rewards: [
+				{
+					id: "3F7F583F599F7EE1"
+					type: "item"
+					item: "minecraft:iron_ingot"
+					count: 8
+				}
+				{
+					id: "7C932BE017E68163"
+					type: "item"
+					item: "naturesaura:infused_stone"
+					count: 16
+				}
+				{
+					id: "65C134C4F3E27D3C"
+					type: "item"
+					item: {
+						id: "naturesaura:conversion_catalyst"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 2.75d
+			y: -5.75d
+			description: [
+				"使用&b森林仪式&r来制作物品需要放置&b木基座&r、&6金叶粉&r和一个&6树苗&r。"
+				""
+				"&6自然灵气之书&r会告诉你哪些方块放在哪里。虽然你不需要使用八个木基座，但是你必须摆放八个。"
+				""
+				"把材料放在木桩上。等到中间的树苗长大，周围的金叶粉就会消失，你就能制作出你想要合成的物品。"
+				""
+				"不同仪式需要&c不同的树苗&r去驱动。如果叫你用橡树树苗，你就不能用白桦树苗之类的。"
+			]
+			dependencies: ["51F6ACC0A8B4CFA9"]
+			min_width: 250
+			id: "439711A12F1593A7"
+			tasks: [{
+				id: "791503E7AAE63FC3"
+				type: "item"
+				item: "naturesaura:wood_stand"
+			}]
+			rewards: [{
+				id: "022E31463EBF8EFC"
+				type: "item"
+				item: "naturesaura:wood_stand"
+				count: 3
+			}]
+		}
+		{
+			x: 2.5d
+			y: -6.5d
+			description: ["只要你的&b环境之眼&r在你的快捷栏或者饰品栏，你就能够在你屏幕左上角看到一个&6周围环境的灵气&r的测量条。"]
+			hide_dependency_lines: true
+			dependencies: ["439711A12F1593A7"]
+			size: 0.5d
+			id: "4FE66D3A254387F2"
+			tasks: [{
+				id: "5CEE33F05582983E"
+				type: "item"
+				item: "naturesaura:eye"
+			}]
+			rewards: [{
+				id: "70CA92A533755599"
+				type: "item"
+				item: "botania:third_eye"
+			}]
+		}
+		{
+			x: 2.75d
+			y: -4.0d
+			description: [
+				"&6灵气&r是存在于环境中的资源。一些地方可能会有更多的灵气；而一些地方则更少，取决于你位于何处。"
+				""
+				"有些东西能够在所在的环境中增加并&6产生灵气&r。有些东西则会在环境中&c消耗灵气&r。"
+				""
+				"灵气也会在环境中自然的扩散。高灵气含量的地方就会缓慢的扩散到低灵气含量的地方，直至平均。"
+				""
+				"如果一个区域中灵气过多或过少将会造成一些&c问题&r。可以去看书中的&6灵气失衡&r章节，它会告诉你会发生什么。"
+				""
+				"可以使用&b瓶与塞&r来将灵气装瓶，用来暂存。"
+			]
+			dependencies: ["51F6ACC0A8B4CFA9"]
+			min_width: 250
+			id: "593F27D3FF233B37"
+			tasks: [{
+				id: "5E0D4662C4FD9F4C"
+				type: "item"
+				item: "naturesaura:bottle_two_the_rebottling"
+			}]
+			rewards: [
+				{
+					id: "3A9A8D5B8EB0573A"
+					type: "item"
+					item: {
+						id: "naturesaura:aura_bottle"
+						Count: 1b
+						tag: {
+							stored_type: "naturesaura:overworld"
+						}
+					}
+				}
+				{
+					id: "7D89E7E4E839D37F"
+					type: "item"
+					item: {
+						id: "naturesaura:aura_bottle"
+						Count: 1b
+						tag: {
+							stored_type: "naturesaura:nether"
+						}
+					}
+				}
+				{
+					id: "03359184A4D7AFE6"
+					type: "item"
+					item: {
+						id: "naturesaura:aura_bottle"
+						Count: 1b
+						tag: {
+							stored_type: "naturesaura:end"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "效应粉末"
+			icon: {
+				id: "naturesaura:effect_powder"
+				Count: 1b
+				tag: {
+					effect: "naturesaura:cache_recharge"
+				}
+			}
+			x: 3.0d
+			y: -3.25d
+			subtitle: "制作一些效应粉末"
+			description: [
+				"&b效应粉末&r能够抑制或实现灵气失衡时产生的效果。"
+				""
+				"右击可以堆放在地上，它的作用半径是所堆放大小的一半。"
+			]
+			hide_dependency_lines: true
+			dependencies: ["593F27D3FF233B37"]
+			size: 0.5d
+			id: "6CC5DE2EE4CDC051"
+			tasks: [{
+				id: "4FECA1B416782F78"
+				type: "item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "naturesaura:effect_powder"
+								tag: {
+									effect: "naturesaura:ore_spawn"
+								}
+							}
+							{
+								Count: 1b
+								id: "naturesaura:effect_powder"
+								tag: {
+									effect: "naturesaura:plant_boost"
+								}
+							}
+							{
+								Count: 1b
+								id: "naturesaura:effect_powder"
+								tag: {
+									effect: "naturesaura:animal"
+								}
+							}
+							{
+								Count: 1b
+								id: "naturesaura:effect_powder"
+								tag: {
+									effect: "naturesaura:cache_recharge"
+								}
+							}
+							{
+								Count: 1b
+								id: "naturesaura:effect_powder"
+								tag: {
+									effect: "naturesaura:nether_grass"
+								}
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "68C05CA4E2BECA3C"
+				type: "item"
+				item: {
+					id: "naturesaura:effect_powder"
+					Count: 1b
+					tag: {
+						effect: "naturesaura:ore_spawn"
+					}
+				}
+				count: 16
+			}]
+		}
+		{
+			title: "灵气生成器"
+			icon: "naturesaura:firework_generator"
+			x: 2.5d
+			y: -3.25d
+			subtitle: "制作任意灵气生成器"
+			description: ["这里所有的方块都能&6产生灵气&r。大多数生成器也都有自己的任务，但你也可以使用这个来同时查看它们。"]
+			hide_dependency_lines: true
+			dependencies: ["593F27D3FF233B37"]
+			size: 0.5d
+			id: "143FBED2C13732F3"
+			tasks: [{
+				id: "16212DB821960A2B"
+				type: "item"
+				item: {
+					id: "itemfilters:id_regex"
+					Count: 1b
+					tag: {
+						value: "natures.*generator"
+					}
+				}
+			}]
+		}
+		{
+			x: 4.5d
+			y: -6.0d
+			description: [
+				"&b灵气探测器&r配合比较器来使用，可以让你&6探测环境中灵气的等级&r。"
+				""
+				"这些信号可以被用来激活一些东西来产生灵气。"
+			]
+			size: 0.5d
+			id: "3D5C5360C905D441"
+			tasks: [{
+				id: "260119F7DE101AAC"
+				type: "item"
+				item: "naturesaura:aura_detector"
+			}]
+			rewards: [{
+				id: "2E0FC1DBC41DB0DC"
+				type: "item"
+				item: "minecraft:comparator"
+				count: 8
+			}]
+		}
+		{
+			icon: "naturesaura:infused_iron"
+			x: 6.25d
+			y: -5.0d
+			description: ["&b灌注铁锭&r和&b污染黄金&r可以被用来多种配方。"]
+			dependencies: ["282B976F2593CEC6"]
+			id: "095D23F1BCE5FE6F"
+			tasks: [
+				{
+					id: "61EB1AA9D723D541"
+					type: "item"
+					item: "naturesaura:infused_iron"
+				}
+				{
+					id: "6ACB2E1B94308AEA"
+					type: "item"
+					item: "naturesaura:tainted_gold"
+				}
+			]
+			rewards: [{
+				id: "473AC8EBC0BBEF74"
+				type: "random"
+				icon: {
+					id: "naturesaura:infused_iron"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				table_id: 379608785577865937L
+			}]
+		}
+		{
+			x: 6.0d
+			y: -6.0d
+			subtitle: "制作一个射击标靶"
+			description: [
+				"&b射击标靶&r在被&6弹射物击中&r时会产生灵气。有些弹射物产生的灵气比别的弹射物产生的多。"
+				""
+				"然而，你&c不能只射一个方向&r。每个方向被击中一次后，可以再一次射击不同方向。"
+			]
+			hide_dependency_lines: true
+			dependencies: ["095D23F1BCE5FE6F"]
+			size: 0.5d
+			id: "17E32EFCB4D4B3E2"
+			tasks: [{
+				id: "06D4DC8618AF4011"
+				type: "item"
+				item: "naturesaura:projectile_generator"
+			}]
+			rewards: [{
+				id: "4584A1367D68D00D"
+				type: "item"
+				item: "minecraft:ender_pearl"
+				count: 8
+			}]
+		}
+		{
+			x: 6.0d
+			y: -6.5d
+			description: ["&b沼泽之霍米&r通过&6移除附近方块上的苔藓&r来产生灵气。"]
+			hide_dependency_lines: true
+			dependencies: ["095D23F1BCE5FE6F"]
+			size: 0.5d
+			id: "78C251C71067E62E"
+			tasks: [{
+				id: "282B15B6F72231CD"
+				type: "item"
+				item: "naturesaura:moss_generator"
+			}]
+			rewards: [{
+				id: "16A1CFCA770116BE"
+				type: "item"
+				item: "minecraft:mossy_cobblestone"
+				count: 32
+			}]
+		}
+		{
+			x: 6.0d
+			y: -7.0d
+			description: [
+				"&b分裂观测仪&r从&6史莱姆或岩浆怪分裂过程中&r产生灵气。"
+				""
+				"大型岩浆怪/史莱姆分裂产生的灵气高于中型岩浆怪/史莱姆分裂产生的灵气，同等体型下岩浆怪分裂产生的灵气高于史莱姆分裂产生的灵气。"
+				""
+				"分裂观测仪在它产生更多的灵气之前&c必须消耗之前的&r。如果不这样做将会浪费很多分裂产生的灵气。"
+			]
+			hide_dependency_lines: true
+			dependencies: ["095D23F1BCE5FE6F"]
+			size: 0.5d
+			id: "1A5F84867B633977"
+			tasks: [{
+				id: "75F00160B9392D8D"
+				type: "item"
+				item: "naturesaura:slime_split_generator"
+			}]
+			rewards: [{
+				id: "3267269D401A2ED7"
+				type: "item"
+				item: {
+					id: "minecraft:magma_cube_spawn_egg"
+					Count: 1b
+					tag: {
+						EntityTag: {
+							CustomName: "[{\"text\":\"大男孩\"}]"
+							Size: 40
+							Attributes: [
+								{
+									Base: 2048.0f
+									Name: "generic.follow_range"
+								}
+								{
+									Name: "generic.armor"
+								}
+							]
+							PersistenceRequired: 1b
+							Glowing: 1b
+							CustomNameVisible: 1b
+						}
+						display: {
+							Name: "[{\"text\":\"大男孩刷怪蛋\",\"italic\":false}]"
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 6.5d
+			y: -7.0d
+			description: [
+				"&b凡俗解脱之物&r在&6附近的动物死亡时产生灵气&r。"
+				""
+				"用这种方式杀死动物&c将无法获得其掉落物&r。值得注意的是，凡俗解脱之物需要&6花费一些时间去转换灵气&r，如果在这期间杀死动物将不能产生灵气和获得其掉落物。"
+				""
+				"动物&6活的时间越长&r被转换的灵气也就越多，最佳生长时长为一个半小时。"
+			]
+			hide_dependency_lines: true
+			dependencies: ["095D23F1BCE5FE6F"]
+			size: 0.5d
+			id: "1FBD495B61FCBAE5"
+			tasks: [{
+				id: "42FCC6C262448F0C"
+				type: "item"
+				item: "naturesaura:animal_generator"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -6.5d
+			description: ["&b树冠减光器&r可以&6阻止橡树树苗长成超大树&r，并且在树苗长大时&6产出灵气&r。"]
+			hide_dependency_lines: true
+			dependencies: ["095D23F1BCE5FE6F"]
+			size: 0.5d
+			id: "7069A79BB0ED1EF4"
+			tasks: [{
+				id: "7629F99FE29169AE"
+				type: "item"
+				item: "naturesaura:oak_generator"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -6.0d
+			description: [
+				"&b草食性吸收器&r通过消耗附近的花朵&6产出灵气&r。"
+				""
+				"给同样的花朵将会造成&c提供的灵气越来越少&r，如果要达到满效率需要至少6朵不同种类的花。"
+			]
+			hide_dependency_lines: true
+			dependencies: ["095D23F1BCE5FE6F"]
+			size: 0.5d
+			id: "759E9028D5EB9E1D"
+			tasks: [{
+				id: "3399619AC3FC5B77"
+				type: "item"
+				item: "naturesaura:flower_generator"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -4.0d
+			description: ["对着机器使用&b奥秘放大镜&r将会&6显示机器的工作范围&r。再使用一次隐藏范围。"]
+			hide_dependency_lines: true
+			dependencies: ["095D23F1BCE5FE6F"]
+			size: 0.5d
+			id: "65CEFC530B3F4B99"
+			tasks: [{
+				id: "0450DFFF210E8FBE"
+				type: "item"
+				item: "naturesaura:range_visualizer"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -4.0d
+			description: [
+				"&b无感知建造器&r可以&6以它为中心5格以内的区域（11X11X11）放置方块&r。无感知建造器会放置其顶部容器中的方块。"
+				""
+				"要想指定容器内方块摆放在什么方块上，需要在瞬息建造器上摆放一个&6物品展示架&r并将你想指定的方块挂在物品展示架上。"
+				""
+				"例如，要在附近放置圆石就把圆石放在物品展示架上就行。"
+				""
+				"把&6耕作模板&r放在物品展示框上，无感知建造器就可以在附近放置耕地。提供红石信号可使其停止工作。"
+			]
+			hide_dependency_lines: true
+			dependencies: ["095D23F1BCE5FE6F"]
+			size: 0.5d
+			min_width: 250
+			id: "7A711574CDB7324C"
+			tasks: [{
+				id: "7A159DCA4AC629A0"
+				type: "item"
+				item: "naturesaura:placer"
+			}]
+			rewards: [{
+				id: "4F98AF03B0FC7F93"
+				type: "item"
+				item: "naturesaura:farming_stencil"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -3.5d
+			description: [
+				"当附近有&b物品束缚器&r时，玩家只能靠潜行捡起物品。"
+				""
+				"它的有效范围取决于它的红石信号强度。"
+			]
+			hide_dependency_lines: true
+			dependencies: ["095D23F1BCE5FE6F"]
+			size: 0.5d
+			id: "318547E3EF58E1FE"
+			tasks: [{
+				id: "6AB1A43E0108B6D1"
+				type: "item"
+				item: "naturesaura:pickup_stopper"
+			}]
+		}
+		{
+			icon: "naturesaura:grated_chute"
+			x: 6.0d
+			y: -3.5d
+			description: [
+				"&b专家型漏斗&r比普通漏斗的传输速度更快一点。在专家型漏斗任意面放上物品展示框后，在展示框中放入想要&6过滤&r的物品，则专家型漏斗只会让被标记的物品通过。"
+				""
+				"潜行右击专家型漏斗将会把过滤模式转换为&6黑名单&r，即拒绝让展示框中的物品通过。"
+				""
+				"如果把&b漏斗增强器&r放在漏斗顶部（普通漏斗或者专家型漏斗），就可以使漏斗收集以漏斗增强装置为中心周围7格内的掉落物。 这个过程会消耗一点点灵气。"
+			]
+			hide_dependency_lines: true
+			dependencies: ["095D23F1BCE5FE6F"]
+			size: 0.5d
+			id: "320809F2791572DA"
+			tasks: [
+				{
+					id: "4F8997897C7844DD"
+					type: "item"
+					item: "naturesaura:grated_chute"
+				}
+				{
+					id: "512E79ABCE3ECD8D"
+					type: "item"
+					item: "naturesaura:hopper_upgrade"
+				}
+			]
+		}
+		{
+			icon: {
+				id: "naturesaura:infused_iron_pickaxe"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 6.0d
+			y: -3.0d
+			description: [
+				"由&b灌注铁锭&r制成的&b工具&r和&b盔甲&r有很多特殊功能。"
+				""
+				"例如：镐子可以让某些方块变成苔藓方块，斧头可以快速破坏树叶。"
+				""
+				"如果穿了一整套盔甲会让攻击者受到凋零效果。"
+				""
+				"在站立和潜行时，这些物品会使用快捷栏中的灵气缓存中的灵气&6自我修复&r。"
+			]
+			hide_dependency_lines: true
+			dependencies: ["095D23F1BCE5FE6F"]
+			size: 0.5d
+			id: "707F2C1FD2AE7109"
+			tasks: [
+				{
+					id: "3FC58A8032F8E2E8"
+					type: "item"
+					title: "植物学家工具"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "naturesaura:infused_iron_pickaxe"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "naturesaura:infused_iron_axe"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "naturesaura:infused_iron_shovel"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "naturesaura:infused_iron_hoe"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "naturesaura:infused_iron_sword"
+									tag: {
+										Damage: 0
+									}
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "266510B80D489475"
+					type: "item"
+					title: "植物学家盔甲"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "naturesaura:infused_iron_helmet"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "naturesaura:infused_iron_chest"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "naturesaura:infused_iron_pants"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "naturesaura:infused_iron_shoes"
+									tag: {
+										Damage: 0
+									}
+								}
+							]
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "4EE6C56F35EFAC37"
+				type: "item"
+				item: "naturesaura:break_prevention"
+			}]
+		}
+		{
+			icon: {
+				id: "naturesaura:aura_cache"
+				Count: 1b
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+			x: 6.5d
+			y: -3.0d
+			subtitle: "制作一个灵气缓存"
+			description: ["&b灵气缓存&r可以&6存储灵气&r并且可以供给灵气工具使用。把灵气缓存放在自然祭坛上就能充能。"]
+			hide_dependency_lines: true
+			dependencies: ["095D23F1BCE5FE6F"]
+			size: 0.5d
+			id: "3D005CC0A0278835"
+			tasks: [{
+				id: "555D0AB6A8AC25C5"
+				type: "item"
+				title: "灵气缓存"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "naturesaura:aura_cache"
+							}
+							{
+								Count: 1b
+								id: "naturesaura:aura_trove"
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			title: "安全的&m光源&r"
+			x: 8.25d
+			y: -3.0d
+			description: [
+				"当提供红石信号时，&b圣域之灯&r就可以&6阻止怪物生成&r。"
+				""
+				"圣域之灯的作用范围取决于红石信号强度，且最大范围不超过&648格&r。"
+				""
+				"每阻止生成一次都会&6消耗一点点灵气&r。"
+			]
+			hide_dependency_lines: true
+			dependencies: ["54191E5A6BFAD3A1"]
+			size: 0.5d
+			id: "351828FC305F1DD7"
+			tasks: [{
+				id: "3B708DD7F68275A8"
+				type: "item"
+				item: "naturesaura:spawn_lamp"
+			}]
+		}
+		{
+			x: 8.5d
+			y: -3.5d
+			description: [
+				"&b阴影之杖&r可以让你&6看到黑暗区域&r是否会生成怪物，即使是&6隔着墙&r。"
+				""
+				"它的可视范围是30格，且能持续30秒，但是必须使用灵气缓存供能。"
+			]
+			hide_dependency_lines: true
+			dependencies: ["54191E5A6BFAD3A1"]
+			size: 0.5d
+			id: "5A2CBFE73198155B"
+			tasks: [{
+				id: "2A1D97E862658EE8"
+				type: "item"
+				item: "naturesaura:cave_finder"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -3.5d
+			description: ["&b财富之杖&r会使用灵气缓存中的灵气并且&6高亮显示附近的箱子&r。"]
+			hide_dependency_lines: true
+			dependencies: ["54191E5A6BFAD3A1"]
+			size: 0.5d
+			id: "2E361070F1ABEB51"
+			tasks: [{
+				id: "270241D779CDE2B9"
+				type: "item"
+				item: "naturesaura:loot_finder"
+			}]
+		}
+		{
+			title: "天体操控器"
+			icon: "naturesaura:time_changer"
+			x: 8.0d
+			y: -4.0d
+			description: [
+				"&b移时日晷&r可以让你&6改变时间&r，但这需要消耗大量灵气，灵气消耗量取决于跳过的时间。"
+				""
+				"将&b时间之手&r放在位于移时日晷的物品展示框上，并旋转它就可以选择时间。它默认位置是午夜。"
+				""
+				"要想触发它必须在旁边丢一个时钟。"
+			]
+			hide_dependency_lines: true
+			dependencies: ["54191E5A6BFAD3A1"]
+			size: 0.5d
+			id: "7AFC6579BBF55FC3"
+			tasks: [
+				{
+					id: "0F1D070AE9B6F23C"
+					type: "item"
+					item: "naturesaura:time_changer"
+				}
+				{
+					id: "4A937D973B9FED4B"
+					type: "item"
+					item: "naturesaura:clock_hand"
+				}
+			]
+			rewards: [{
+				id: "67BD27E861F5DDA4"
+				type: "item"
+				item: "minecraft:clock"
+			}]
+		}
+		{
+			x: 8.5d
+			y: -4.0d
+			description: [
+				"&b移云器&r使用灵气来&6改变天气&r，天气取决于附近掉落物的种类。"
+				""
+				"&6向日葵&r可以改为晴天，&6暗海晶石&r可以改为雨天，&6火焰弹&r可以改为雷雨天。"
+				""
+				"掉落物越多，天气持续的时间越长，但灵气消耗也越多。"
+			]
+			hide_dependency_lines: true
+			dependencies: ["54191E5A6BFAD3A1"]
+			size: 0.5d
+			id: "2C8CE13A203A94EE"
+			tasks: [{
+				id: "7BB284638BF2DB42"
+				type: "item"
+				item: "naturesaura:weather_changer"
+			}]
+			rewards: [
+				{
+					id: "587B8E7D7C206296"
+					type: "item"
+					item: {
+						id: "minecraft:sunflower"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "18EA8BF418A7614F"
+					type: "item"
+					item: {
+						id: "minecraft:dark_prismarine"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "52F56D88D086CE97"
+					type: "item"
+					item: {
+						id: "minecraft:fire_charge"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 8.25d
+			y: -5.0d
+			description: [
+				"&b祭祀台&r是另一个重要的多方块结构，它可以用来创造新的物品。"
+				""
+				"在书中查看其如何搭建。"
+				""
+				"&6放入任意数量的主要材料&r并且在附近丢一个&b呼唤之魂&r就可以使用祭祀台。"
+				""
+				"祭祀台创造1个物品和创造64个物品的花费都是相同的，所以我建议你批量放入材料。"
+			]
+			dependencies: ["095D23F1BCE5FE6F"]
+			id: "54191E5A6BFAD3A1"
+			tasks: [{
+				id: "5CE4B57A3AA6F576"
+				type: "item"
+				item: "naturesaura:offering_table"
+			}]
+		}
+		{
+			x: 8.5d
+			y: -6.0d
+			description: [
+				"&b末影高花收割机&r通过&6收获附近的紫颂花&r来产生灵气。"
+				""
+				"在2格远的地方放置紫颂花并让其成长，接收红石信号后就可以收割它。"
+				""
+				"紫颂花长的越大产生的灵气越多。"
+			]
+			hide_dependency_lines: true
+			dependencies: ["54191E5A6BFAD3A1"]
+			size: 0.5d
+			id: "011EA4069D4BA3D5"
+			tasks: [{
+				id: "102FE2542ECD5699"
+				type: "item"
+				item: "naturesaura:chorus_generator"
+			}]
+			rewards: [{
+				id: "72AEB974D7B12A8D"
+				type: "item"
+				item: "minecraft:chorus_flower"
+				count: 4
+			}]
+		}
+		{
+			x: 8.0d
+			y: -6.0d
+			description: ["大多数灵气生成器产生的灵气都有限制。把&b制造催化剂&r放在灵气生成器下方可以解除这个限制。"]
+			hide_dependency_lines: true
+			dependencies: ["54191E5A6BFAD3A1"]
+			size: 0.5d
+			id: "568D8AB05C89F0E4"
+			tasks: [{
+				id: "502C48AE0BD2D475"
+				type: "item"
+				item: "naturesaura:generator_limit_remover"
+			}]
+		}
+		{
+			x: 9.75d
+			y: -6.0d
+			description: [
+				"&b降生祭坛&r可以用来&6召唤指定生物&r。这需要一个多方块结构，需要不同数量的灵气。"
+				""
+				"准备好了之后，&6把所有的材料丢在附近&r。"
+				""
+				"我们&6增加了配方&r可以召唤更多种类的生物。祭坛的配方请查看JEI。"
+			]
+			hide_dependency_lines: true
+			dependencies: ["63A00BAF318851F9"]
+			size: 0.75d
+			id: "47114EF7A11EE288"
+			tasks: [{
+				id: "356F3EABE8A74C10"
+				type: "item"
+				item: "naturesaura:animal_spawner"
+			}]
+			rewards: [{
+				id: "27E1681ABAFB49E2"
+				type: "item"
+				item: "naturesaura:birth_spirit"
+				count: 4
+			}]
+		}
+		{
+			x: 9.75d
+			y: -5.0d
+			description: ["&b苍穹锭&r用于多种高级配方。"]
+			dependencies: ["54191E5A6BFAD3A1"]
+			id: "63A00BAF318851F9"
+			tasks: [{
+				id: "04D65B60C1726EA6"
+				type: "item"
+				item: "naturesaura:sky_ingot"
+			}]
+			rewards: [
+				{
+					id: "55360FD5E39D54F5"
+					type: "item"
+					item: "naturesaura:sky_ingot"
+					count: 6
+				}
+				{
+					id: "44B12DF5519C872B"
+					type: "item"
+					item: {
+						id: "ars_nouveau:glyph_ender_inventory"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 9.5d
+			y: -4.25d
+			description: ["&b最后机会之指环&r实际上就是可以在&6背包里面任何位置&r触发的&6不死图腾&r。"]
+			hide_dependency_lines: true
+			dependencies: ["63A00BAF318851F9"]
+			size: 0.5d
+			id: "3A451CE74947B1DF"
+			tasks: [{
+				id: "41A40203A186338C"
+				type: "item"
+				item: "naturesaura:death_ring"
+			}]
+		}
+		{
+			title: "探天者物品"
+			icon: {
+				id: "naturesaura:sky_axe"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 10.0d
+			y: -3.75d
+			description: ["&b探天者&r物品像植物魔法的物品一样，有特殊的功能并可以通过背包中的灵气缓存自我修复。"]
+			hide_dependency_lines: true
+			dependencies: ["63A00BAF318851F9"]
+			size: 0.5d
+			id: "65290B57700526E1"
+			tasks: [
+				{
+					id: "0DA19A8403D5693B"
+					type: "item"
+					title: "探天者工具"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "naturesaura:sky_pickaxe"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "naturesaura:sky_axe"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "naturesaura:sky_shovel"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "naturesaura:sky_hoe"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "naturesaura:sky_sword"
+									tag: {
+										Damage: 0
+									}
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "013B01E60DBD27A6"
+					type: "item"
+					title: "探天者盔甲"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "naturesaura:sky_helmet"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "naturesaura:sky_chest"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "naturesaura:sky_pants"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "naturesaura:sky_shoes"
+									tag: {
+										Damage: 0
+									}
+								}
+							]
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 10.0d
+			y: -4.25d
+			description: [
+				"当&b灵气吸引矿车&r通过被激活的&6激活铁轨&r就会&6吸收区域的灵气&r。"
+				""
+				"当灵气吸引矿车通过&o未被激活的&r激活铁轨就会释放灵气。"
+				""
+				"实际上，这可以让你把一个区域的灵气运输至另一个区域。但是运输过程中会浪费一点点。"
+			]
+			hide_dependency_lines: true
+			dependencies: ["63A00BAF318851F9"]
+			size: 0.5d
+			id: "63BA09BD4C5D4E1A"
+			tasks: [{
+				id: "55DC219522D573D7"
+				type: "item"
+				item: "naturesaura:mover_cart"
+			}]
+			rewards: [{
+				id: "34C43FC7E23C98D9"
+				type: "item"
+				item: "minecraft:rail"
+				count: 32
+			}]
+		}
+		{
+			title: "美丽的自然"
+			icon: {
+				id: "patchouli:guide_book"
+				Count: 1b
+				tag: {
+					"patchouli:book": "naturesaura:book"
+				}
+			}
+			x: -1.0d
+			y: -5.0d
+			shape: "pentagon"
+			subtitle: "寻找隆泽塔教授"
+			dependencies: ["63368A007664E4B5"]
+			id: "00894E8821E62449"
+			tasks: [{
+				id: "2B379EBE1D1DF541"
+				type: "location"
+				title: "遇见隆泽塔"
+				icon: {
+					id: "minecraft:player_head"
+					Count: 1b
+					tag: {
+						SkullOwner: {
+							Id: "e9077b62-9a68-4dcb-0fac-85c546f0ac5c"
+							Properties: {
+								textures: [{
+									Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2U5MDc3YjYyOWE2ODRkY2IwZmFjODVjNTQ2ZjBhYzVjNzI2MDQ5MzBjOTM2M2Y0YTAzNzUyN2FiNWNmYmVhZjMifX19"
+								}]
+							}
+							Name: "Loneztar"
+						}
+					}
+				}
+				dimension: "minecraft:overworld"
+				ignore_dimension: false
+				position: [I;
+					-334
+					-55
+					-324
+				]
+				size: [I;
+					10
+					11
+					10
+				]
+			}]
+			rewards: [
+				{
+					id: "7CCA9B6625D16A2F"
+					type: "item"
+					item: {
+						id: "patchouli:guide_book"
+						Count: 1b
+						tag: {
+							"patchouli:book": "naturesaura:book"
+						}
+					}
+				}
+				{
+					id: "391E6CB564FB4BAD"
+					type: "item"
+					item: "rootsclassic:runic_tablet"
+				}
+				{
+					id: "679F6E4C636CE4A8"
+					type: "item"
+					item: "naturesaura:gold_fiber"
+					count: 4
+				}
+				{
+					id: "6A669D766FADD463"
+					type: "command"
+					auto: "invisible"
+					command: "/title @p title {\"text\":\"欢迎来到灵灾\", \"color\":\"purple\"}"
+					silent: true
+				}
+			]
+		}
+		{
+			icon: {
+				id: "naturesaura:gold_fiber"
+				Count: 1b
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+			x: -1.0d
+			y: -4.0d
+			subtitle: "别像瑞根一样！"
+			description: [
+				"看起来你已经用完了所有的&b闪耀纤维&r？在这里，你还能再搞一些！"
+				""
+				"这次一定不要全部用完！"
+			]
+			dependencies: ["00894E8821E62449"]
+			hide: true
+			size: 0.5d
+			id: "58C439D69B9417AB"
+			tasks: [{
+				id: "3E656E17A80CABD0"
+				type: "checkmark"
+				title: "女士！我的纤维没了！"
+			}]
+			rewards: [{
+				id: "21BE9EB889B8D8E4"
+				type: "item"
+				item: {
+					id: "naturesaura:gold_fiber"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 4
+			}]
+		}
+		{
+			icon: "naturesaura:gold_fiber"
+			x: -1.0d
+			y: -3.0d
+			subtitle: "别像瑞根一样！"
+			description: [
+				"这可能听起来无法让人相信，因为这将是我最后一次给你发放&b闪耀纤维&r！"
+				""
+				"如果你还是想千方百计的消耗它们，我听说最近&6艾普信&r那边有卖一点这个。"
+			]
+			dependencies: ["58C439D69B9417AB"]
+			hide: true
+			size: 0.5d
+			id: "784F3508AD70DEEF"
+			tasks: [{
+				id: "680C296AF598D2E1"
+				type: "checkmark"
+				title: "女士！我的纤维*又*没了！"
+			}]
+			rewards: [{
+				id: "7AD59E112785826B"
+				type: "item"
+				item: {
+					id: "naturesaura:gold_fiber"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 4
+			}]
+		}
+	]
+	quest_links: [ ]
+}

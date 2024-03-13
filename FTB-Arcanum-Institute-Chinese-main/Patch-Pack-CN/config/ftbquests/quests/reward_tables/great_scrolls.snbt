@@ -1,0 +1,668 @@
+{
+	id: "053881C42EF34D11"
+	order_index: 22
+	title: "远古卷轴"
+	icon: {
+		id: "hexcasting:scroll"
+		Count: 1b
+		tag: {
+			pattern: {
+				angles: [B;
+					2b
+					4b
+					1b
+					1b
+					2b
+					0b
+					0b
+					5b
+					4b
+					4b
+					0b
+					2b
+					5b
+					1b
+					0b
+					1b
+					1b
+					0b
+					1b
+					1b
+					4b
+					5b
+					5b
+					0b
+					5b
+					0b
+					0b
+					4b
+					4b
+					2b
+					4b
+					5b
+					4b
+				]
+				start_dir: 3b
+			}
+			op_id: "hexcasting:craft/battery"
+		}
+		ForgeCaps: {
+			"customnpcs:itemscripteddata": { }
+		}
+	}
+	loot_size: 1
+	rewards: [
+		{
+			title: "制作试剂瓶"
+			item: {
+				id: "hexcasting:scroll"
+				Count: 1b
+				tag: {
+					pattern: {
+						angles: [B;
+							2b
+							4b
+							1b
+							1b
+							2b
+							0b
+							0b
+							5b
+							4b
+							4b
+							0b
+							2b
+							5b
+							1b
+							0b
+							1b
+							1b
+							0b
+							1b
+							1b
+							4b
+							5b
+							5b
+							0b
+							5b
+							0b
+							0b
+							4b
+							4b
+							2b
+							4b
+							5b
+							4b
+						]
+						start_dir: 3b
+					}
+					op_id: "hexcasting:craft/battery"
+				}
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+		}
+		{
+			title: "制造熔岩"
+			item: {
+				id: "hexcasting:scroll"
+				Count: 1b
+				tag: {
+					pattern: {
+						angles: [B;
+							1b
+							4b
+							5b
+							4b
+							2b
+							1b
+							2b
+							4b
+							2b
+							1b
+							4b
+						]
+						start_dir: 4b
+					}
+					op_id: "hexcasting:create_lava"
+				}
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+		}
+		{
+			title: "白阳当空"
+			item: {
+				id: "hexcasting:scroll"
+				Count: 1b
+				tag: {
+					pattern: {
+						angles: [B;
+							1b
+							1b
+							1b
+							1b
+							1b
+							5b
+							2b
+							0b
+							2b
+							0b
+							2b
+							5b
+							4b
+						]
+						start_dir: 4b
+					}
+					op_id: "hexcasting:potion/regeneration"
+				}
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+		}
+		{
+			title: "红阳当空"
+			item: {
+				id: "hexcasting:scroll"
+				Count: 1b
+				tag: {
+					pattern: {
+						angles: [B;
+							4b
+							0b
+							1b
+							4b
+							0b
+							4b
+							0b
+							4b
+							4b
+							5b
+							5b
+							5b
+							5b
+						]
+						start_dir: 4b
+					}
+					op_id: "hexcasting:potion/haste"
+				}
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+		}
+		{
+			title: "驱雨"
+			item: {
+				id: "hexcasting:scroll"
+				Count: 1b
+				tag: {
+					pattern: {
+						angles: [B;
+							4b
+							2b
+							0b
+							4b
+							4b
+							0b
+							4b
+							0b
+							4b
+							2b
+							2b
+							4b
+							1b
+							1b
+							1b
+							0b
+							0b
+							0b
+							1b
+							1b
+						]
+						start_dir: 1b
+					}
+					op_id: "hexcasting:dispel_rain"
+				}
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+		}
+		{
+			title: "卓越传送"
+			item: {
+				id: "hexcasting:scroll"
+				Count: 1b
+				tag: {
+					pattern: {
+						angles: [B;
+							0b
+							0b
+							0b
+							2b
+							1b
+							1b
+							0b
+							5b
+							5b
+							5b
+							5b
+							5b
+							0b
+							1b
+							1b
+							4b
+							5b
+							5b
+							0b
+							0b
+							0b
+							5b
+							5b
+							1b
+							5b
+							5b
+							0b
+							0b
+							0b
+							5b
+							5b
+						]
+						start_dir: 4b
+					}
+					op_id: "hexcasting:teleport"
+				}
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+		}
+		{
+			title: "黑阳当空"
+			item: {
+				id: "hexcasting:scroll"
+				Count: 1b
+				tag: {
+					pattern: {
+						angles: [B;
+							1b
+							2b
+							4b
+							4b
+							1b
+							2b
+							0b
+							2b
+							5b
+							1b
+							1b
+							4b
+							4b
+						]
+						start_dir: 2b
+					}
+					op_id: "hexcasting:potion/absorption"
+				}
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+		}
+		{
+			title: "绑定咒灵"
+			item: {
+				id: "hexcasting:scroll"
+				Count: 1b
+				tag: {
+					pattern: {
+						angles: [B;
+							5b
+							1b
+							1b
+							2b
+							0b
+							5b
+							1b
+							2b
+							5b
+							2b
+							1b
+							0b
+							5b
+							5b
+							0b
+							1b
+							2b
+							5b
+							2b
+							1b
+							2b
+						]
+						start_dir: 4b
+					}
+					op_id: "hexal:wisp/seon/set"
+				}
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+		}
+		{
+			title: "飞行"
+			item: {
+				id: "hexcasting:scroll"
+				Count: 1b
+				tag: {
+					pattern: {
+						angles: [B;
+							5b
+							4b
+							0b
+							4b
+							0b
+							5b
+							4b
+							4b
+							1b
+							0b
+							2b
+							5b
+						]
+						start_dir: 4b
+					}
+					op_id: "hexcasting:flight"
+				}
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+		}
+		{
+			title: "蓝阳当空"
+			item: {
+				id: "hexcasting:scroll"
+				Count: 1b
+				tag: {
+					pattern: {
+						angles: [B;
+							5b
+							2b
+							0b
+							2b
+							1b
+							4b
+							4b
+							2b
+							1b
+							1b
+							1b
+							4b
+							4b
+						]
+						start_dir: 3b
+					}
+					op_id: "hexcasting:potion/night_vision"
+				}
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+		}
+		{
+			title: "拆解咒灵"
+			item: {
+				id: "hexcasting:scroll"
+				Count: 1b
+				tag: {
+					pattern: {
+						angles: [B;
+							0b
+							2b
+							0b
+							1b
+							0b
+							2b
+							0b
+							5b
+							5b
+							2b
+							0b
+							5b
+							5b
+							1b
+							2b
+							2b
+							0b
+							5b
+							5b
+							1b
+							4b
+							4b
+							1b
+							0b
+							5b
+							2b
+							5b
+							4b
+							0b
+							5b
+							0b
+							0b
+							0b
+							5b
+							0b
+							5b
+							0b
+							5b
+							0b
+							0b
+							0b
+							5b
+							0b
+							0b
+							0b
+							2b
+							0b
+							1b
+							0b
+							2b
+							0b
+						]
+						start_dir: 0b
+					}
+					op_id: "hexal:wisp/consume"
+				}
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+		}
+		{
+			title: "召雨"
+			item: {
+				id: "hexcasting:scroll"
+				Count: 1b
+				tag: {
+					pattern: {
+						angles: [B;
+							4b
+							2b
+							0b
+							4b
+							0b
+							2b
+							4b
+							4b
+							0b
+							0b
+							0b
+							1b
+							1b
+							1b
+							0b
+							0b
+							0b
+							1b
+							1b
+						]
+						start_dir: 2b
+					}
+					op_id: "hexcasting:summon_rain"
+				}
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+		}
+		{
+			title: "召唤卓越哨卫"
+			item: {
+				id: "hexcasting:scroll"
+				Count: 1b
+				tag: {
+					pattern: {
+						angles: [B;
+							5b
+							0b
+							5b
+							4b
+							5b
+							2b
+							0b
+							2b
+							5b
+							1b
+							1b
+							1b
+							2b
+							0b
+							5b
+							5b
+							0b
+						]
+						start_dir: 1b
+					}
+					op_id: "hexcasting:sentinel/create/great"
+				}
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+		}
+		{
+			title: "剥离意识"
+			item: {
+				id: "hexcasting:scroll"
+				Count: 1b
+				tag: {
+					pattern: {
+						angles: [B;
+							0b
+							2b
+							1b
+							0b
+							2b
+							5b
+							0b
+							2b
+							1b
+							2b
+							5b
+							5b
+							1b
+							1b
+							1b
+							0b
+							1b
+							0b
+							1b
+							2b
+							5b
+							1b
+							5b
+							5b
+							5b
+							0b
+							5b
+							2b
+							1b
+						]
+						start_dir: 2b
+					}
+					op_id: "hexcasting:brainsweep"
+				}
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+		}
+		{
+			title: "绿阳当空"
+			item: {
+				id: "hexcasting:scroll"
+				Count: 1b
+				tag: {
+					pattern: {
+						angles: [B;
+							4b
+							2b
+							4b
+							0b
+							4b
+							5b
+							2b
+							2b
+							4b
+							5b
+							5b
+							5b
+							5b
+						]
+						start_dir: 3b
+					}
+					op_id: "hexcasting:potion/strength"
+				}
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+		}
+		{
+			title: "召雷"
+			item: {
+				id: "hexcasting:scroll"
+				Count: 1b
+				tag: {
+					pattern: {
+						angles: [B;
+							1b
+							0b
+							5b
+							5b
+							0b
+							2b
+							2b
+							4b
+							0b
+							2b
+							0b
+							5b
+							4b
+							4b
+							1b
+						]
+						start_dir: 5b
+					}
+					op_id: "hexcasting:lightning"
+				}
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+		}
+	]
+}

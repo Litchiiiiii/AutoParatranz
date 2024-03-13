@@ -1,0 +1,50 @@
+{
+    "biome.ftbai.school": "奥术学院",
+    "biome.ftbai.outerskirts": "学院边界",
+    "biome.ftbai.arena": "星月竞技场",
+    "biome.ftbai.dorms_biome": "校舍",
+    
+
+    "block.ftbai.botania_smelter": "植物学熔炉",
+    "block.ftbai.waterstone": "水之石",
+    "block.ftbai.airstone": "气之石",
+    "block.ftbai.firestone": "火之石",
+    "block.ftbai.earthstone": "土之石",
+    "block.ftbai.team_island_portal": "团队岛屿传送门",
+    "block.ftbai.team_island_portal_2": "团队岛屿传送门",
+    "block.ftbai.block_of_flesh": "肉块",
+    "block.ftbai.blast_furnace": "高炉",
+    "block.ftbai.fauxhopper": "假漏斗",
+
+    "sdrp.dorms.in": "在元素校舍",
+    "sdrp.dorms": "元素校舍",
+    
+    "sdrp.overworld.in": "在奥术学院",
+    "sdrp.overworld": "奥术学院",
+
+    "sdrp.the_end.in": "在星月竞技场",
+    "sdrp.the_end": "星月竞技场",
+
+    "sdrp.dungeons.in": "在悠远界域",
+    "sdrp.dungeons": "悠远界域",
+
+    "sdrp.dungeon_dim.in": "在奥术地牢",
+    "sdrp.dungeon_dim": "奥术地牢",
+
+    
+    
+    "tip.ftbai.version": "你应该知道，这个整合包是基于1.18.2制作的。使用1.19.2打开将会崩溃",
+    "tip.ftbai.goblins": "4个哥布林小店坐落于于学院各处",
+    "tip.ftbai.dialogue": "部分任务在完成前没有任何可见的文本提示！请确保在完成后检查任务！",
+    "tip.ftbai.university": "许多章节任务来源于1.19的FTB大学！之后试试吧！",
+    "item.ftbai.codex_hexcasting": "咒法学典籍",
+    "item.ftbai.codex_arsnouveau.desc": "一个图书管理员的故事",
+    "item.ftbai.codex_bloodmagic.desc": "一个可敬的天才",
+    "item.ftbai.codex_botania.desc": "一个爱情故事，更好的爱情故事，比……",
+    "item.ftbai.codex_final.desc": "奥术学院简史",
+    "item.ftbai.codex_malum.desc": "测试对象-1",
+    "item.ftbai.codex_occultism.desc": "构造世界的神秘学大师",
+    "item.ftbai.codex_evilcraft.desc": "邪恶工艺，一个天才的故事",
+    "item.ftbai.lexxies_charm.desc": "邪恶女巫，只因误入歧途……",
+    "item.ftbai.codex_goblin.desc": "热爱黄金的商人，恶作剧的大师"
+}

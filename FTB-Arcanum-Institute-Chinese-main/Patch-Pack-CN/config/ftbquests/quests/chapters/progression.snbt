@@ -1,0 +1,914 @@
+{
+	id: "30B1C2E28BD6FFAD"
+	group: ""
+	order_index: 2
+	filename: "progression"
+	title: "进程"
+	icon: "minecraft:crafting_table"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	default_min_width: 250
+	quests: [
+		{
+			title: "合成"
+			x: -2.642857142857146d
+			y: -5.482142857142861d
+			shape: "hexagon"
+			subtitle: "获得魔符：合成 "
+			description: [
+				"请铭记每次旅程起始于合成的能力。"
+				""
+				"你也许已经注意到了你&c不能使用或者放置工作台&r。由于这个限制，你的第一堂课应该是在你的&e法术构造学&r课中的入门任务。"
+				""
+				"[\"\",\"反而，你控制并利用这份创造性潜能的第一步是通过\",{\"text\":\"[你的第一本法术书]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"54D7F5310E879150\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"前往该任务\"]}},\" 将会\",{\"text\":\"让你使用合成栏\",\"color\":\"gold\"},\"！\"]"
+				""
+				"拥抱这个魔法工具，并让它成为在我们魔法领域中给予你支持的基石。使用它，你将编织奇迹并解锁我们世界中的奥秘。愿你的冒险合成之旅充满探索和创新。"
+			]
+			dependencies: ["4F0DD323FB26A2AD"]
+			size: 1.5d
+			min_width: 300
+			id: "16E3903518FEC30E"
+			tasks: [{
+				id: "366866B7006FCC56"
+				type: "item"
+				item: "ars_nouveau:glyph_craft"
+			}]
+			rewards: [{
+				id: "14FD772EF57899E7"
+				type: "item"
+				item: "ars_nouveau:source_berry_roll"
+				count: 4
+			}]
+		}
+		{
+			title: "你的第一块圆石"
+			icon: "minecraft:cobblestone"
+			x: -1.0d
+			y: -5.5d
+			shape: "hexagon"
+			subtitle: "获得圆石"
+			description: [
+				"对于你渴望开始的合成之旅来说，有一个简单的方法就在你的校舍中轻轻松松地获取&b圆石&r。"
+				""
+				"在你的生活空间中&6搜寻土壤&r即为开始，空手潜行并右击草皮；你会发现大量的小&b卵石&r藏在地表之下。"
+				""
+				"伴随着耐心和勤奋，你能收集到这些卵石并把它们转化为有价值的&b圆石&r。"
+			]
+			min_width: 300
+			id: "18B32901E5D2C5BA"
+			tasks: [
+				{
+					id: "634511F235AB7757"
+					type: "item"
+					item: {
+						id: "botania:pebble"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "4F71056AF3559FC3"
+					type: "item"
+					item: {
+						id: "minecraft:cobblestone"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "6E675FC1DDCAF043"
+				type: "item"
+				item: "minecraft:carrot"
+				count: 8
+			}]
+		}
+		{
+			title: "你的第一份原木"
+			icon: "minecraft:oak_log"
+			x: -4.0d
+			y: -5.5d
+			shape: "hexagon"
+			subtitle: "获得任意原木"
+			description: [
+				"&b木材&r是一个&6很重要的合成部分&r，应用于各种各样的物品的所有形态。"
+				""
+				"完成某些课程之后，你的&6老师会给你一些树苗&r。这些可以&6在你的校舍里种植并收获&r。"
+				""
+				"&l植物魔法&r"
+				"[\"\",{\"text\":\"[水盆]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"005DDE56C5926F5D\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"前往该任务\"]}},\"\"]"
+				""
+				"&l新生魔艺&r"
+				"[\"\",{\"text\":\"[法术初学者]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"0CF0DB4C6B3419C2\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"前往该任务\"]}},\"\"]"
+				""
+				"&l神秘学&r"
+				"[\"\",{\"text\":\"[观察灵火]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"2CA20C350E71D2C3\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"前往该任务\"]}},\"\"]"
+				""
+				"&l自然灵气&r"
+				"[\"\",{\"text\":\"[获得一片黄金叶]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"51F6ACC0A8B4CFA9\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"前往该任务\"]}},\"\"]"
+			]
+			dependency_requirement: "one_started"
+			min_width: 300
+			id: "4F0DD323FB26A2AD"
+			tasks: [{
+				id: "5FAEBCDF7507BA35"
+				type: "item"
+				title: "原木"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+			}]
+			rewards: [{
+				id: "56FEB14AAC23852B"
+				type: "item"
+				item: "minecraft:oak_sapling"
+				count: 16
+			}]
+		}
+		{
+			title: "牢不可破"
+			x: 3.0d
+			y: -7.5d
+			shape: "hexagon"
+			subtitle: "获得一颗钻石"
+			description: [
+				"亲爱的好奇的学者，"
+				""
+				"一场迷人的探索等待着你——&6把魔力钻石上的魔力灌输剥离下来&r的能力。"
+				""
+				"这是通过&6把魔力钻石在灵火中洗礼&r完成的。火焰的死灵能量会驱逐钻石的生命能量，只剩下了不可接触的宝石。"
+			]
+			dependencies: ["456860FA6F0C1B0B"]
+			min_width: 300
+			id: "5683C9DEBD9A30E6"
+			tasks: [{
+				id: "4668C0C63A75CF92"
+				type: "item"
+				item: {
+					id: "arsomega:alchemical_diamond"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "73BB87C43805821A"
+				type: "item"
+				item: "minecraft:diamond"
+				count: 4
+			}]
+		}
+		{
+			x: 1.0d
+			y: -7.5d
+			shape: "hexagon"
+			subtitle: "获得一颗魔力钻石"
+			description: [
+				"亲爱的有抱负的魔力操纵者，"
+				""
+				"&b魔力钻石&r是一种奇妙的资源，蕴含巨大的能量。它们能通过两种方式获取："
+				""
+				"它们通过&6把钻石浸没在魔力中&r合成。然而，钻石非常难获取。"
+				""
+				"如果你没法获取钻石，&6魔源宝石&r可以作为他们的替代品。然而由于复杂的魔力渠道，这使得&c效率低很多&r。"
+			]
+			dependencies: ["4169963D23A8F9FF"]
+			min_width: 300
+			id: "456860FA6F0C1B0B"
+			tasks: [{
+				id: "465E7DE53C50F54E"
+				type: "item"
+				item: "botania:mana_diamond"
+			}]
+			rewards: [
+				{
+					id: "2592EB294B69705C"
+					type: "item"
+					item: "botania:mana_pearl"
+					count: 4
+				}
+				{
+					id: "2527E9EE183866BA"
+					type: "item"
+					item: {
+						id: "ftbai:gold_coin"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "现在原版了！"
+			x: -1.0d
+			y: -1.5d
+			shape: "hexagon"
+			subtitle: "获得铜"
+			description: [
+				"亲爱的同学们，"
+				""
+				"刚开始的时候，你的铜的主要来源会是通过&6哥布林商店&r（具体来说，&6植物学花园&r后面的那只）。那里，你将能够&6购买粗铜&r！"
+				""
+				"以后，你能使用以下其中一种方式来生产所有种类的矿石："
+				""
+				"&l植物魔法的凝矿兰&r："
+				"[\"  \",\"\",{\"text\":\"[制作符文]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"467B9515336B7593\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"前往该任务\"]}}]"
+				""
+				"&l神秘学的维度矿井&r："
+				"[\"  \",\"\",{\"text\":\"[在其他维度挖矿]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"6925F8ED680D4A6B\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"前往该任务\"]}}]"
+				""
+				"&l血魔法的坠星位标仪式&r："
+				"[\"\",\"  \",{\"text\":\"[巨大陨石]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"30BF579CD3C865A6\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"前往该任务\"]}}]"
+			]
+			dependencies: ["4CCB6C082F5C0622"]
+			min_width: 300
+			id: "47674D4034004B1C"
+			tasks: [{
+				id: "70CFFD825AA1D738"
+				type: "item"
+				item: "minecraft:copper_ingot"
+			}]
+			rewards: [{
+				id: "663293947CCD134C"
+				type: "item"
+				item: "minecraft:raw_copper_block"
+			}]
+		}
+		{
+			title: "得到铁"
+			x: 1.0d
+			y: -5.5d
+			shape: "hexagon"
+			subtitle: "获得铁"
+			description: [
+				"亲爱的同学们，"
+				""
+				"当谈到早期在我们神秘的校园中获取珍贵的资源——&b铁&r时，有&6两条捷径&r供你选择："
+				""
+				"&l&6猎杀僵尸&r:"
+				""
+				"有时候，运气垂青于勇者。在参与与&6亡灵生物的战斗中&r能收获这个珍贵的金属。当你在你的任务过程中遭遇僵尸时，时刻留意着这个幸运一击。僵尸传送门珍珠保证在每波完成后会掉落一些铁。"
+				""
+				"&l&6哥布林商店&r:"
+				""
+				"或者，你可以选择通过神秘的&6哥布林商店&r获取铁。在这里，哥布林们提供各种各样的&6稀有和有用的资源&r，你需要用你的宝藏和魔法货币来交换。&6靠近野兽大师教室&r的哥布林商店售卖粗铁！不过你有办法熔炼它，例如咒法学的熔炼法术。"
+				""
+				"此后，你能使用以下其中一种方式来生产所有种类的矿石："
+				""
+				"&l植物魔法的凝矿兰&r："
+				"[\"  \",\"\",{\"text\":\"[制作符文]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"467B9515336B7593\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"前往该任务\"]}}]"
+				""
+				"&l神秘学的维度矿井&r："
+				"[\"  \",\"\",{\"text\":\"[在其他维度挖矿]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"6925F8ED680D4A6B\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"前往该任务\"]}}]"
+				""
+				"&l血魔法的坠星位标仪&r："
+				"[\"\",\"  \",{\"text\":\"[巨大陨石]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"30BF579CD3C865A6\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"前往该任务\"]}}]"
+			]
+			min_width: 375
+			id: "3693F0A7021419E6"
+			tasks: [{
+				id: "376FDE4D1D807797"
+				type: "item"
+				item: "minecraft:iron_ingot"
+			}]
+			rewards: [{
+				id: "1BB9CE50C10D82D2"
+				type: "item"
+				item: {
+					id: "gateways:gate_pearl"
+					Count: 1b
+					tag: {
+						gateway: "gateways:enderman_gate_small"
+					}
+				}
+			}]
+		}
+		{
+			title: "和“金”的名声"
+			x: 0.0d
+			y: -1.5d
+			shape: "hexagon"
+			subtitle: "获得银"
+			description: [
+				"亲爱的同学们，"
+				""
+				"&b银&r是一种&6精神上十分纯洁的&r金属，并且在很多魔法上用得到。"
+				""
+				"刚开始的时候，你主要通过&6哥布林商店&r（具体来说，&6植物学花园&r后面的那只）获得银。在那里，你将能够&6购买粗银&r！"
+				""
+				"此后，你能使用以下其中一种方式来生产所有种类的矿石："
+				""
+				"&l植物魔法的凝矿兰&r："
+				"[\"  \",\"\",{\"text\":\"[制作符文]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"467B9515336B7593\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"前往该任务\"]}}]"
+				""
+				"&l神秘学的维度矿井&r："
+				"[\"  \",\"\",{\"text\":\"[在其他维度挖矿]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"6925F8ED680D4A6B\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"前往该任务\"]}}]"
+				""
+				"&l血魔法的坠星位标仪&r："
+				"[\"\",\"  \",{\"text\":\"[巨大陨石]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"30BF579CD3C865A6\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"前往该任务\"]}}]"
+			]
+			dependencies: ["4CCB6C082F5C0622"]
+			min_width: 300
+			id: "5003C95508902DED"
+			tasks: [{
+				id: "2BEAE1ABD1773505"
+				type: "item"
+				item: {
+					id: "occultism:silver_ingot"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "7702ECE2D52A766F"
+				type: "item"
+				item: "occultism:raw_silver"
+				count: 9
+			}]
+		}
+		{
+			title: "忽视人际关系"
+			icon: "minecraft:gold_ingot"
+			x: 1.0d
+			y: -1.5d
+			shape: "hexagon"
+			subtitle: "获得金锭"
+			description: ["&b金锭&r可以通过&6嬗变铁锭&r获得。通过使用&d炼金矩阵&r和&d金叶粉&r，你能够轻松得到它。"]
+			dependencies: ["3693F0A7021419E6"]
+			min_width: 300
+			id: "3B29B9822D5248BD"
+			tasks: [{
+				id: "3B0FC454EFC77F7E"
+				type: "item"
+				title: "金锭"
+				item: {
+					id: "minecraft:gold_ingot"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "4DEFDFCA6EA4A589"
+				type: "item"
+				item: "naturesaura:token_joy"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -1.5d
+			shape: "circle"
+			subtitle: "获得龙之眼"
+			description: [
+				"&b龙之眼&r是一种稀有试剂，但它有&6十分之一的几率从紫颂花中掉落&r。"
+				""
+				"食用它会表现为和紫颂果相似，在一个随机方向&6传送食用者&r，最大32米。"
+				""
+				"但是，更重要的是：龙之眼可以被&6熔炼以制作末影珍珠&r，一种非常稀有并珍贵的资源。"
+				""
+				"另外，它们可以用于制作一个&6末影人传送门珍珠&r，会召唤一群末影人供你战斗！"
+				""
+				"龙之眼是你旅途中深入奥术秘密的核心的一个证明。"
+			]
+			dependencies: ["3EFFC3A8B075061A"]
+			min_width: 300
+			id: "322870F322A43E51"
+			tasks: [{
+				id: "2D2A58D392D84BA7"
+				type: "item"
+				item: "rootsclassic:dragons_eye"
+			}]
+			rewards: [{
+				id: "4EF7679F71BC5DBD"
+				type: "item"
+				item: {
+					id: "gateways:gate_pearl"
+					Count: 1b
+					tag: {
+						gateway: "gateways:blaze_gate_small"
+					}
+				}
+			}]
+		}
+		{
+			x: 6.0d
+			y: 0.0d
+			shape: "circle"
+			description: [
+				"我们熟练的园艺家深知悉心培育&6下界疣&r的重要性，因为它经常提供一个关于&b地狱鳞茎&r作为副产物的额外提示。"
+				""
+				"在我们的魔法事业种，无论是为我们的活动提供燃料，还是制作小型烈焰人传送门，它们都被证明是十分有用的。"
+			]
+			dependencies: ["3F0CE4D0B1C005F3"]
+			min_width: 300
+			id: "03C2D00542B4965D"
+			tasks: [{
+				id: "7D298B498CBAE0F2"
+				type: "item"
+				item: "rootsclassic:infernal_bulb"
+			}]
+			rewards: [{
+				id: "36532862C33CFB90"
+				type: "item"
+				item: {
+					id: "gateways:gate_pearl"
+					Count: 1b
+					tag: {
+						gateway: "gateways:blaze_gate_small"
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 7.0d
+			y: -1.5d
+			shape: "circle"
+			subtitle: "获得一颗末影珍珠"
+			description: [
+				"亲爱的拥有好奇心的人，"
+				""
+				"&b末影珍珠&r在制作领域掌握多种魔法用途。"
+				""
+				"两种最重要的用途是："
+				""
+				"• 能制作&6特殊生物传送门&r，例如烈焰人的和末影人的。"
+				""
+				"[\"\",\"• 制作\",{\"text\":\"[次等节魔之戒]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"612BC02EEA4C9BBA\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"前往该任务\"]}},\"的能力，需要在你的新生魔艺课上解锁\",{\"text\":\"二阶法术书\",\"color\":\"gold\"},\"。\"]"
+			]
+			dependencies: ["322870F322A43E51"]
+			min_width: 300
+			id: "4BB704F6736A8D18"
+			tasks: [{
+				id: "298D81DC18181296"
+				type: "item"
+				item: "minecraft:ender_pearl"
+			}]
+			rewards: [{
+				id: "64D10A62096E5568"
+				type: "item"
+				item: "minecraft:ender_pearl"
+				count: 4
+			}]
+		}
+		{
+			x: 7.0d
+			y: 0.0d
+			description: [
+				"战胜&6烈焰人传送门&r会是一个危险的任务，但可获取大量的&b烈焰棒&r，此后这极大地帮助了我们推动魔法的研究。"
+				""
+				"这些棒子在我们的魔法的追求具有重要价值。它们对酿造，制作特殊的附魔书，还有数不清的其他魔法配方来说是必不可少的。它们的多功能性，使得它们在我们的魔法事业上成为一种重要的资源。"
+			]
+			dependencies: ["03C2D00542B4965D"]
+			min_width: 300
+			id: "55B2DBF8D7A35B25"
+			tasks: [{
+				id: "2FB102FBB65827FB"
+				type: "item"
+				item: "minecraft:blaze_rod"
+			}]
+			rewards: [{
+				id: "60D2EC23EEE13669"
+				type: "item"
+				item: {
+					id: "ftbai:gold_coin"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 2
+			}]
+		}
+		{
+			title: "种植紫颂"
+			x: 5.0d
+			y: -1.5d
+			subtitle: "种下一朵紫颂花"
+			description: [
+				"亲爱的具有奉献精神的学者们,"
+				""
+				"获取梦寐以求的紫颂花的途径确实是一件漫长的事，但可以保证的是，你积极致力于魔法技艺，一定会有丰厚的回报。"
+				""
+				"[\"\",\"\",{\"text\":\"[白雏菊]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"3E19F49E1CA299A6\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"前往该任务\"]}}]"
+				"刚开始的时候，使用一朵&6白雏菊&r来进行一次神秘的转化。&6把你的紫珀块转化为紫颂杂草&r，在进程中一个至关重要的中间阶段。"
+				""
+				"[\"\",\"\",{\"text\":\"[精魂灌注]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"50B9F03C73F0A696\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"前往该任务\"]}}]"
+				"下一步，控制并利用灵灾的&6精魂灌注&r之力，使用所需要的精魂灌注进紫颂杂草内。"
+			]
+			dependencies: ["52CE1B114CB8605F"]
+			min_width: 300
+			id: "3EFFC3A8B075061A"
+			tasks: [{
+				id: "2299186AE32F855A"
+				type: "observation"
+				title: "观察一朵紫颂花"
+				icon: "minecraft:chorus_flower"
+				timer: 0L
+				observe_type: 0
+				to_observe: "minecraft:chorus_flower"
+			}]
+			rewards: [{
+				id: "40BCFD849A9C9C01"
+				type: "item"
+				item: "minecraft:chorus_flower"
+				count: 4
+			}]
+		}
+		{
+			title: "做饭是不可能的"
+			x: 5.0d
+			y: 0.0d
+			shape: "circle"
+			description: [
+				"你知道我们的鬼魂朋友&6小幽灵&r在大厅吗，可以花很少的钱提供很多种食物？ 嗯，你猜怎么着？它们也有下界疣！"
+				""
+				"如果你在寻找下界疣，试着在大厅里询问我们友好的小幽灵。它们有很多商品，包括为了我们的魔法活动，有用的&b下界疣&r。"
+			]
+			min_width: 300
+			id: "3F0CE4D0B1C005F3"
+			tasks: [{
+				id: "347581EA1DE9D00A"
+				type: "item"
+				item: {
+					id: "minecraft:nether_wart"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "2BA318BC5E33748D"
+				type: "item"
+				item: {
+					id: "minecraft:soul_sand"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 4
+			}]
+		}
+		{
+			x: 4.0d
+			y: -1.5d
+			subtitle: "获得紫珀块"
+			description: [
+				"亲爱的有抱负的炼金师们，"
+				""
+				"你的通往神秘的&6紫珀花&r之旅就还剩下几步了，但是你仍需要继续前进。"
+				""
+				"使用&6灌注室&r来制作末地石，然后在&6自然祭坛&r灌注成&b紫珀块&r。"
+				""
+				"继续你的勤奋学习和炼金实验。每一步，你就离解锁我们魔力世界的秘密和它掌握的奇迹更近一步。"
+			]
+			dependencies: [
+				"282B976F2593CEC6"
+				"7AD6F8246B30DF9B"
+			]
+			min_width: 300
+			id: "52CE1B114CB8605F"
+			tasks: [{
+				id: "5ED783E3EE86D7F6"
+				type: "item"
+				item: "minecraft:purpur_block"
+			}]
+		}
+		{
+			title: "掌握熔炼"
+			x: -1.0d
+			y: -3.5d
+			subtitle: "完成任意课程来解锁熔炼"
+			description: [
+				"就像工作台，&c使用非魔法的熔炉是禁止的&r。然而，我们主办的许多关于&o正确&r熔炼的课程，就像&o巫师&r一样。"
+				""
+				"&l植物魔法&r"
+				"{\"text\":\"[植物学熔炉]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"30F12709B6842237\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"前往该任务\"]}}"
+				""
+				"&l新生魔艺&r"
+				"{\"text\":\"[魔符：熔炼]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"3C60F002ACBF1B8F\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"前往该任务\"]}}"
+				""
+				"&l咒法学&r"
+				"{\"text\":\"[学会熔炼]\",\"color\":\"yellow\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"38A3B49A5D413BBF\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"前往该任务\"]}}"
+			]
+			dependencies: [
+				"18B32901E5D2C5BA"
+				"16E3903518FEC30E"
+			]
+			id: "4CCB6C082F5C0622"
+			tasks: [{
+				id: "4B81E5BFA4C83612"
+				type: "gamestage"
+				icon: {
+					id: "minecraft:furnace"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				stage: "learned_to_smelt"
+			}]
+			rewards: [
+				{
+					id: "2AA1794D44F33A9A"
+					type: "xp"
+					xp: 2
+				}
+				{
+					id: "51F6189E1C7BC3BB"
+					type: "item"
+					item: {
+						id: "minecraft:hopper"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 2
+				}
+				{
+					id: "6C802EE29CA92ACC"
+					type: "item"
+					item: {
+						id: "naturesaura:sky_axe"
+						Count: 1b
+						tag: {
+							RepairCost: 15
+							Damage: 0
+							Enchantments: [
+								{
+									lvl: 1s
+									id: "minecraft:mending"
+								}
+								{
+									lvl: 3s
+									id: "minecraft:unbreaking"
+								}
+								{
+									lvl: 1s
+									id: "ensorcellation:curse_mercy"
+								}
+								{
+									lvl: 1s
+									id: "ensorcellation:curse_fool"
+								}
+							]
+							display: {
+								Name: "{\"text\":\"仁爱之路\"}"
+							}
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+		}
+		{
+			icon: "ars_nouveau:glyph_transmute"
+			x: 3.0d
+			y: -4.0d
+			subtitle: "获得末影珍珠，红石，或者绿宝石"
+			description: [
+				"通过使用&6魔符：嬗变&r，现在你拥有把&6特定的材料转化为其他别的材料&r的能力。"
+				""
+				"没有任何帮助的情况下，这个法术&c只能把大约等价的资源相互转化&r，例如铁锭和金锭。"
+				""
+				"更有用的转化，例如&b末影珍珠&r和&b绿宝石&r需要一些加强来驱动。"
+				""
+				"这是通过施加适量数量的&6魔符：强化&r来实现的。如果那也不够，你也许也需要佩戴一个&6炼金术之核心&r。"
+			]
+			dependencies: ["612BC02EEA4C9BBA"]
+			min_width: 275
+			id: "5B267C791D966C41"
+			tasks: [{
+				id: "14C9B192C92C0985"
+				type: "item"
+				title: "材料转化"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "minecraft:ender_pearl"
+								Count: 1b
+							}
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "minecraft:redstone"
+								Count: 1b
+							}
+							{
+								ForgeCaps: {
+									"customnpcs:itemscripteddata": { }
+								}
+								id: "minecraft:emerald_block"
+								Count: 1b
+							}
+						]
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			title: "炼金重构"
+			disable_toast: true
+			x: 2.5d
+			y: -0.5d
+			subtitle: "制作一个灌注室"
+			description: [
+				"&b灌注室&r是一个特殊的设备，可以把&6物品组合&r成新东西。"
+				""
+				"把主要物品放进舱室内，然后把其他额外的物品放在相距1米之内的&6奥术基座&r里。在基座里的物品使用时不会被消耗。"
+				""
+				"大多数的配方会需要一个放置在相距两米之内的，&6魔源罐&r中的&6魔源&r。我们将会稍后复习一下。"
+			]
+			dependencies: ["3B29B9822D5248BD"]
+			id: "7AD6F8246B30DF9B"
+			tasks: [{
+				id: "4AA0581FDB86A74E"
+				type: "item"
+				item: "ars_nouveau:imbuement_chamber"
+			}]
+		}
+		{
+			title: "获得水"
+			x: -2.642857142857146d
+			y: -7.5d
+			dependencies: ["4169963D23A8F9FF"]
+			id: "0830120BFCCC270B"
+			tasks: [{
+				id: "0108C8A77D634627"
+				type: "item"
+				item: {
+					id: "forbidden_arcanus:edelwood_water_bucket"
+					Count: 1b
+					tag: {
+						Fullness: 1
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "70DF8058F2DFC20F"
+				type: "item"
+				item: {
+					id: "cnb:pink_waterlily"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			icon: "ftbai:codex_final"
+			x: 7.5d
+			y: -5.5d
+			shape: "hexagon"
+			description: [
+				"亲爱的同学们，"
+				""
+				"看到你在获取我们的魔法追求时所需的大部分物品时，而取得的非凡进步，我真的很高兴。你的奉献和努力确实值得嘉许！"
+				""
+				"既然你已经掌握了获取这些物品，我建议你去了解下老师们的不情之请。协助他们完成任务不仅仅会巩固你的知识，而且还会对我们共同掌握奥术技艺做出重要贡献。"
+				""
+				"花些时间协助我们令人尊敬的老师们完成任务，将会提供无价的经历和深化你对魔法领域的理解。"
+				""
+				"你对学习的热情和成长着实令人激动！愿你的努力就像你钻研到更深的魔法奇迹一样持续繁荣下去。"
+				""
+				"——塔兹校长"
+			]
+			dependencies: ["612BC02EEA4C9BBA"]
+			size: 2.0d
+			min_width: 300
+			id: "5207857B81F59652"
+			tasks: [{
+				id: "69836238BDC4CB56"
+				type: "checkmark"
+				title: "获得典籍"
+			}]
+		}
+		{
+			x: 8.0d
+			y: 0.0d
+			dependencies: ["55B2DBF8D7A35B25"]
+			id: "4C6CDDC55DD577CD"
+			tasks: [{
+				id: "1B674D9BD16D3547"
+				type: "item"
+				item: {
+					id: "gateways:gate_pearl"
+					Count: 1b
+					tag: {
+						gateway: "gateways:blaze_gate_small"
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 8.0d
+			y: -1.5d
+			dependencies: ["4BB704F6736A8D18"]
+			id: "28568994E1FA8207"
+			tasks: [{
+				id: "6C3A9144E5123F27"
+				type: "item"
+				item: {
+					id: "gateways:gate_pearl"
+					Count: 1b
+					tag: {
+						gateway: "gateways:enderman_gate_small"
+					}
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+		}
+		{
+			title: "进程章节"
+			icon: {
+				id: "botania:cosmetic_questgiver_mark"
+				Count: 1b
+				ForgeCaps: {
+					"customnpcs:itemscripteddata": { }
+				}
+			}
+			x: -6.5d
+			y: -5.5d
+			shape: "hexagon"
+			description: [
+				"你好，有抱负的魔法师们！"
+				""
+				"这个章节是你在&d奥术学院&r的起点。它会指导你如何开始和收集必不可少的材料。"
+				""
+				"尝试在不同的课程中跨越！这个方法会提供给你一个关于多样化魔法练习和材料的全方位理解。它对你拥有一个关于魔法学习更广阔的眼界来说很有好处。"
+				""
+				"你在课堂上的刻苦钻研不会被忽视的！在完成任务之后，你会得到一本&6法师法术书&r和有用的咒语。这些会协助你在&d奥术学院&r的旅途。"
+				""
+				"对于你的魔法学习，请注意打好基础是很重要的。材料和知识会对与你的魔法之旅来说是相当重要的。"
+				""
+				"再接再厉！获取奖励和知识会帮助你成长为一名魔法师！"
+			]
+			size: 2.0d
+			min_width: 300
+			id: "0B5523FD5FC1D471"
+		}
+	]
+	quest_links: [
+		{
+			linked_quest: "4169963D23A8F9FF"
+			x: -1.0d
+			y: -7.5d
+			id: "27EDC60414678125"
+		}
+		{
+			icon: "ars_nouveau:glyph_transmute"
+			linked_quest: "612BC02EEA4C9BBA"
+			x: 3.0d
+			y: -5.5d
+			shape: "hexagon"
+			size: 2.0d
+			id: "3521ED3D191D0103"
+		}
+		{
+			linked_quest: "282B976F2593CEC6"
+			x: 2.5d
+			y: -2.5d
+			id: "25D31184820E8E1D"
+		}
+	]
+}
