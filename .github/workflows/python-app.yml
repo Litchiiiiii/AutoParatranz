@@ -8,6 +8,20 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
+  workflow_call:
+    inputs:
+      dir:
+        description: Directory to download modpack
+        required: true
+        type: string
+      url:
+        description: URL to download modpack
+        required: true
+        type: string
+      name:
+        description: Name of modpack
+        required: true
+        type: string
 
 env: 
   API_KEY: c6b450a2fb51077faa022f7412d89dcb
