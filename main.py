@@ -64,4 +64,4 @@ if __name__ == '__main__':
         path = path.replace('\\', '/')
         path = path.replace(os.path.basename(a), "")
         print(a + "\n")
-        asyncio.run(f(file=a,path="a"))
+        asyncio.run(f(file=a,path=path))
