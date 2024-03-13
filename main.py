@@ -1,7 +1,7 @@
-import asyncio
 import time
 import os
 import paratranz_client
+from paratranz_client.models.create_file200_response import CreateFile200Response
 from paratranz_client.rest import ApiException
 from pprint import pprint
 
@@ -17,25 +17,23 @@ configuration = paratranz_client.Configuration(
 # satisfies your auth use case.
 
 # Configure API key authorization: Token
-configuration.api_key['Token'] = "c6b450a2fb51077faa022f7412d89dcb"
+configuration.api_key['Token'] = os.environ["API_KEY"]
 
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['Token'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-async def f():
-    async with paratranz_client.ApiClient(configuration) as api_client:
+async with paratranz_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-        api_instance = paratranz_client.ArtifactsApi(api_client)
-        project_id = 9574 # int | 项目ID
+    api_instance = paratranz_client.FilesApi(api_client)
+    project_id = 9574 # int | 项目ID
+    file = None# bytearray | 文件数据，文件名由此项的文件名决定 (optional)
+    path = "./" # str | 文件路径 (optional)
 
-        try:
-        # 下载
-            await api_instance.download_artifact(project_id)
-        except Exception as e:
-            print("Exception when calling ArtifactsApi->download_artifact: %s\n" % e)
-#asyncio.run(f())
-if __name__ == '__main__':
-    # asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
-    asyncio.run(f())
-
+    try:
+        # 上传文件
+        api_response = await api_instance.create_file(project_id, file=file, path=path)
+        print("The response of FilesApi->create_file:\n")
+        pprint(api_response)
+    except Exception as e:
+        print("Exception when calling FilesApi->create_file: %s\n" % e)
