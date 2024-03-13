@@ -55,6 +55,11 @@ def get_filelist(dir, Filelist):
 if __name__ == '__main__':
     Filelist = []
     s = get_filelist(os.environ["FILE_PATH"], Filelist)
+    
     for a in s:
+        pathlist = split("Patch-Pack-CN")
+        path = pathlist.index(1)
+        path = path.replace('\\', '/')
+        path = path.replace(os.path.basename(a), "")
         print(a + "\n")
         asyncio.run(f(file=a,path="a"))
