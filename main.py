@@ -26,7 +26,7 @@ async def f(path):
 
         try:
             # 上传文件
-            api_response = await api_instance.create_file(project_id, file=file, path=this.path)
+            api_response = await api_instance.create_file(project_id, file=file, path=path)
             print("The response of FilesApi->create_file:\n")
             pprint(api_response)
         except Exception as e:
