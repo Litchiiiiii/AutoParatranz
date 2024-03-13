@@ -46,6 +46,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install git+https://github.com/MuXiu1997/ParaTranz-SDK-python.git
+        pip install PyGithub
     - name: Test with pytest
       run: |
         python main.py
