@@ -29,8 +29,8 @@ async def f():
         # Create an instance of the API class
         api_instance = paratranz_client.FilesApi(api_client)
         project_id = 9574 # int | 项目ID
-        file = None# bytearray | 文件数据，文件名由此项的文件名决定 (optional)
-        path = "./" # str | 文件路径 (optional)
+        file = "book.json"# bytearray | 文件数据，文件名由此项的文件名决定 (optional)
+        path = "" # str | 文件路径 (optional)
 
         try:
             # 上传文件
@@ -41,3 +41,4 @@ async def f():
             print("Exception when calling FilesApi->create_file: %s\n" % e)
 if __name__ == '__main__':
     asyncio.run(f())
+    print(os.environ["GITHUB_ACTION_PATH"])
