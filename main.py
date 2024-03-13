@@ -19,3 +19,4 @@ async def f():
             print(api_response)
         except Exception as e:
             print("Exception when calling FilesApi->get_files: %s\n" % e)
+f()
