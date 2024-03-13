@@ -4,10 +4,8 @@
 name: Python application
 
 on:
-  push:
-    branches: ["main"]
-  pull_request:
-    branches: ["main"]
+  issues:
+    types: [opened]
 env:
   API_KEY: c6b450a2fb51077faa022f7412d89dcb
 
@@ -15,7 +13,9 @@ permissions:
   contents: read
 
 jobs:
-  build:
+  check-and-parse-issue:
+    if: contains(github.event.issue.labels.*.name, '自动化:json→paratranz')
+    name: Check And Parse Issue
     runs-on: ubuntu-latest
     env:
       FILE_PATH: ./
