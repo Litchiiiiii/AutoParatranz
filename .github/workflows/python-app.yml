@@ -21,7 +21,7 @@ jobs:
 
     runs-on: ubuntu-latest
     env:
-     FILE_PATH: ${{ github.action.path }}
+     FILE_PATH: ${{ github.ref }}
     steps:
     - uses: actions/checkout@v3
     - name: Set up Python 3.9
