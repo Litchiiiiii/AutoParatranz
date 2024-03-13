@@ -7,7 +7,6 @@ on:
 env:
   PARATRANZ_TOKEN: ${{ secrets.PARATRANZ_TOKEN }}
   PARATRANZ_PROJECT_ID: ${{ secrets.PARATRANZ_PROJECT_ID }}
-  GIT_AUTHOR: MuXiu1997 <muxiu1997@gmail.com>
 
 jobs:
   check-and-parse-issue:
