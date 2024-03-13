@@ -59,6 +59,7 @@ if __name__ == '__main__':
     
     for a in s:
         pathlist = split("Patch-Pack-CN")
+        print(pathlist)
         path = pathlist.index(1)
         path = path.replace('\\', '/')
         path = path.replace(os.path.basename(a), "")
