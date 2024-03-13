@@ -11,7 +11,7 @@ on:
 
 env: 
   API_KEY: c6b450a2fb51077faa022f7412d89dcb
-  FILE_PATH: ${{ github.action.path }}
+  
 
 permissions:
   contents: read
@@ -20,7 +20,8 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-   
+    env:
+     FILE_PATH: ${{ github.action.path }}
     steps:
     - uses: actions/checkout@v3
     - name: Set up Python 3.9
