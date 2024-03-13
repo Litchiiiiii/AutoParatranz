@@ -9,6 +9,9 @@ on:
   pull_request:
     branches: [ "main" ]
 
+env: 
+  API_KEY: c6b450a2fb51077faa022f7412d89dcb
+
 permissions:
   contents: read
 
@@ -16,7 +19,7 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-
+   
     steps:
     - uses: actions/checkout@v3
     - name: Set up Python 3.9
