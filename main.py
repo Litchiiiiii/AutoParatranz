@@ -41,4 +41,4 @@ async def f():
             print("Exception when calling FilesApi->create_file: %s\n" % e)
 if __name__ == '__main__':
     asyncio.run(f())
-    print(os.environ["GITHUB_ACTION_PATH"])
+    print(os.environ["FILE_PATH"])
