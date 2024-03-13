@@ -16,7 +16,7 @@ configuration = paratranz_client.Configuration(
 configuration.api_key['Token'] = os.environ["API_KEY"]
 
 
-async def f(self, path):
+async def f(path):
     async with paratranz_client.ApiClient(configuration) as api_client:
         # Create an instance of the API class
         api_instance = paratranz_client.FilesApi(api_client)
@@ -26,7 +26,7 @@ async def f(self, path):
 
         try:
             # 上传文件
-            api_response = await api_instance.create_file(project_id, file=file, path=self.path)
+            api_response = await api_instance.create_file(project_id, file=file, path=this.path)
             print("The response of FilesApi->create_file:\n")
             pprint(api_response)
         except Exception as e:
