@@ -36,6 +36,6 @@ async def f():
             print("Exception when calling ArtifactsApi->download_artifact: %s\n" % e)
 #asyncio.run(f())
 if __name__ == '__main__':
-    asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+    # asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
     asyncio.run(f())
 
