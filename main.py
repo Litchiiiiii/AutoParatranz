@@ -6,6 +6,7 @@ import paratranz_client
 from paratranz_client.models.create_file200_response import CreateFile200Response
 from paratranz_client.rest import ApiException
 from pprint import pprint
+from os.path import split
 
 # Defining the host is optional and defaults to https://paratranz.cn/api
 # See configuration.py for a list of all supported configuration parameters.
