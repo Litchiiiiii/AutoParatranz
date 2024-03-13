@@ -1,3 +1,4 @@
+import asyncio
 import time
 import os
 import paratranz_client
@@ -23,17 +24,20 @@ configuration.api_key['Token'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['Token'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-async with paratranz_client.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
-    api_instance = paratranz_client.FilesApi(api_client)
-    project_id = 9574 # int | 项目ID
-    file = None# bytearray | 文件数据，文件名由此项的文件名决定 (optional)
-    path = "./" # str | 文件路径 (optional)
+async def f():
+    async with paratranz_client.ApiClient(configuration) as api_client:
+        # Create an instance of the API class
+        api_instance = paratranz_client.FilesApi(api_client)
+        project_id = 9574 # int | 项目ID
+        file = None# bytearray | 文件数据，文件名由此项的文件名决定 (optional)
+        path = "./" # str | 文件路径 (optional)
 
-    try:
-        # 上传文件
-        api_response = await api_instance.create_file(project_id, file=file, path=path)
-        print("The response of FilesApi->create_file:\n")
-        pprint(api_response)
-    except Exception as e:
-        print("Exception when calling FilesApi->create_file: %s\n" % e)
+        try:
+            # 上传文件
+            api_response = await api_instance.create_file(project_id, file=file, path=path)
+            print("The response of FilesApi->create_file:\n")
+            pprint(api_response)
+        except Exception as e:
+            print("Exception when calling FilesApi->create_file: %s\n" % e)
+if __name__ == '__main__':
+    asyncio.run(f())
