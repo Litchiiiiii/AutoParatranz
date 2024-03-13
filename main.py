@@ -55,4 +55,5 @@ def get_filelist(dir, Filelist):
 if __name__ == '__main__':
     Filelist = []
     s = get_filelist(os.environ["FILE_PATH"], Filelist)
+    print(s + "\n")
     asyncio.run(f(path="a"))
