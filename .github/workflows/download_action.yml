@@ -1,15 +1,15 @@
 name: Upload Action
 
 on:
-  issues:
-    types: [opened]
+  push:
+    branches: ["main"]
+
 env:
   API_KEY: c6b450a2fb51077faa022f7412d89dcb
   GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 jobs:
   check-issue-and-upload:
-    if: contains(github.event.issue.labels.*.name, '自动化:json→paratranz')
     name: Check Issue And Upload
     runs-on: ubuntu-latest
     env:
@@ -27,7 +27,7 @@ jobs:
           pip install PyGithub
       - name: Json To Paratranz
         run: |
-          python upload.py
+          python download.py
   close-issue:
     name: Close Issue
     needs: check-issue-and-upload
