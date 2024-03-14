@@ -51,6 +51,6 @@ if __name__ == '__main__':
             zh_cn[k] = value[i]
             i = i+1
         for path in filePathList:
-            file = open("Patch-Pack-CN/" + path, "r")
-            print(file)
+            file = open("Patch-Pack-CN/" + v, "r", encoding='UTF-8')
+            print(file.read())
         print(zh_cn)
