@@ -11,7 +11,7 @@ fileUrl = "https://paratranz.cn/api/projects/" + str(projectId) + "/files/"
 
 
 def translate(id):
-    resourcePackUrl = "https://paratranz.cn/api/projects/" + str(projectId) + "/files/" + id
+    resourcePackUrl = "https://paratranz.cn/api/projects/" + str(projectId) + "/files/" + str(id)
     urlRequests = requests.get(resourcePackUrl, headers={"Authorization": token, "accept": "*/*"})
     print(urlRequests.json())
 
