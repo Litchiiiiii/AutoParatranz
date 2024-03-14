@@ -51,6 +51,8 @@ if __name__ == '__main__':
             zh_cn[k] = value[i]
             i = i+1
         for path in filePathList:
-            file = open("./Patch-Pack-CN/" + path, "w", encoding='UTF-8')
+            path = path.replace(os.path.basename(),"")
+            os.makedirs("./Patch-Pack-CN/" + path)
+            file = open("./Patch-Pack-CN/" + path + "zh_cn.json", "w", encoding='UTF-8')
             print(file.read())
         print(zh_cn)
