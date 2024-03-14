@@ -6,11 +6,12 @@ from urllib3 import response
 token = os.environ["API_KEY"]
 projectId = 9584
 fileId = 1282824
-resourcePackUrl = "https://paratranz.cn/api/projects/" + str(projectId) + "/files/" + str(fileId)
+
 fileUrl = "https://paratranz.cn/api/projects/" + str(projectId) + "/files/"
 
 
-async def translate():
+def translate(id):
+    resourcePackUrl = "https://paratranz.cn/api/projects/" + str(projectId) + "/files/" + id
     urlRequests = requests.get(resourcePackUrl, headers={"Authorization": token, "accept": "*/*"})
     print(urlRequests.json())
 
@@ -21,4 +22,5 @@ def getFile():
 
 
 if __name__ == '__main__':
-    asyncio.run(translate())
+    translate(fileId)
+    getFile()
