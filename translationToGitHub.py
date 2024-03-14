@@ -8,10 +8,9 @@ fileUrl = "https://paratranz.cn/api/projects/" + str(projectId) + "/files/"
 fileList = []
 
 def translate(id):
-    resourcePackUrl = "https://paratranz.cn/api/projects/" + str(projectId) + "/files/" + str(id)
+    resourcePackUrl = "https://paratranz.cn/api/projects/" + str(projectId) + "/files/" + str(id) + "/translation"
     urlRequests = requests.get(resourcePackUrl, headers={"Authorization": token, "accept": "*/*"})
-    if urlRequests.json()["translated"] == 1 :
-        print(urlRequests.json())
+    print(urlRequests.json())
 
 def getFile():
     fileRequest = requests.get(fileUrl, headers={"Authorization": token, "accept": "*/*"})
