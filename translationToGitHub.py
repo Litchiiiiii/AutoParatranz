@@ -42,10 +42,14 @@ def listClear():
 if __name__ == '__main__':
     getFile()
     for v in fileIdList:
+        i = 0
         listClear()
         translate(v)
         print(value)
-        zh_cn = zh_cn.fromkeys(key, value)
+        zh_cn = zh_cn.fromkeys(key)
+        for k in zh_cn:
+            zh_cn[k] = value[i]
+            ++i
         print(zh_cn)
     for v in filePathList:
         print("Patch-Pack-CN/" + v)
