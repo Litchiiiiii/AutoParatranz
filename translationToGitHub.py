@@ -52,9 +52,9 @@ if __name__ == '__main__':
             i = i+1
         for path in filePathList:
             filename = os.path.basename(path)
-            path1 = path.replace("/"+filename,"")
-            if not os.path.exists(path1):
-                os.makedirs("./Patch-Pack-CN/" + path1)
-            file = open("./Patch-Pack-CN/" + path1 + filename, "w+", encoding='UTF-8')
+            path = path.replace("/"+filename,"")
+            if not os.path.exists(path):
+                os.makedirs("Patch-Pack-CN/" + path)
+            file = open("Patch-Pack-CN/" + path + filename, "w+", encoding='UTF-8')
             print(file.read())
         print(zh_cn)
