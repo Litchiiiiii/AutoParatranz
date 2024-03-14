@@ -49,7 +49,7 @@ if __name__ == '__main__':
         zh_cn = zh_cn.fromkeys(key)
         for k in zh_cn:
             zh_cn[k] = value[i]
-            ++i
+            i = i+1
         print(zh_cn)
     for v in filePathList:
         print("Patch-Pack-CN/" + v)
