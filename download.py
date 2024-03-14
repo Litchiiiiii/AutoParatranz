@@ -1,9 +1,6 @@
-import asyncio
-import os
 import requests
-from urllib3 import response
 
-token = os.environ["API_KEY"]
+token = environ["API_KEY"]
 projectId = 9584
 fileId = 1282824
 
@@ -18,7 +15,9 @@ def translate(id):
 
 def getFile():
     fileRequest = requests.get(fileUrl, headers={"Authorization": token, "accept": "*/*"})
-    print(fileRequest.json())
+    fileJson = fileRequest.json()
+    for i in fileJson:
+        print(i["id"])
 
 
 if __name__ == '__main__':
