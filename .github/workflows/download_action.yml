@@ -1,4 +1,4 @@
-name: Download Action
+name: Translation To GitHub
 
 on:
   push:
@@ -7,11 +7,10 @@ on:
 env:
   API_KEY: c6b450a2fb51077faa022f7412d89dcb
   GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  GIT_AUTHOR: MuXiu1997 <muxiu1997@gmail.com>
 
 jobs:
-  check-issue-and-upload:
-    name: Check Issue And Upload
+  Translation-To-GitHub:
+    name: Translation To GitHub
     runs-on: ubuntu-latest
     env:
       FILE_PATH: ./
@@ -24,19 +23,8 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install git+https://github.com/MuXiu1997/ParaTranz-SDK-python.git
           pip install PyGithub
           pip install requests
       - name: Json To Paratranz
         run: |
-          python download.py
-  close-issue:
-    name: Close Issue
-    needs: check-issue-and-upload
-    runs-on: ubuntu-latest
-    steps:
-      - name: Close Issue
-        uses: peter-evans/close-issue@v2.0.0
-        with:
-          comment: |
-            此模板仅由内部人员使用，已自动关闭。
+          python translationToGitHub.py
