@@ -15,7 +15,7 @@ async def translate():
         api_instance = paratranz_client.FilesApi(api_client)
         project_id = 9584  # int | 项目ID
         file_id = 1282824  # int | 文件ID
-        json = '{"key": "","translation": ""}'
+        json = '[{"id": 406760824,"key": "eee","original": "e","translation": "1","stage": 1,"context": null}]'
 
         try:
             # 文件翻译
