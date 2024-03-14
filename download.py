@@ -2,6 +2,7 @@ import asyncio
 import os
 
 import paratranz_client
+from paratranz_client import CreateFile200Response
 
 configuration = paratranz_client.Configuration(
     host="https://paratranz.cn/api"
@@ -14,11 +15,16 @@ async def translate():
         api_instance = paratranz_client.FilesApi(api_client)
         project_id = 9584  # int | 项目ID
         file_id = 1282824  # int | 文件ID
+        json = {
+            "key": "",
+            "translation": ""
+        }
 
         try:
             # 文件翻译
             api_response = await api_instance.get_file_translation(project_id, file_id)
-            print(api_response)
+            create_file200_response_instance = CreateFile200Response.from_json(json)
+            print(create_file200_response_instance)
         except Exception as e:
             print("Exception when calling FilesApi->get_file_translation: %s\n" % e)
 
