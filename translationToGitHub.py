@@ -13,8 +13,7 @@ filePathList = []
 def translate(id):
     urlRequests = requests.get(fileTranslationUrl, headers={"Authorization": token, "accept": "*/*"})
     transilationJson = urlRequests.json()
-    for i in transilationJson:
-        print(i["key"])
+    print(transilationJson)
 
 def getFile():
     fileRequest = requests.get(fileUrl, headers={"Authorization": token, "accept": "*/*"})
