@@ -15,15 +15,12 @@ async def translate():
         api_instance = paratranz_client.FilesApi(api_client)
         project_id = 9584  # int | 项目ID
         file_id = 1282824  # int | 文件ID
-        json = {
-            "key": "",
-            "translation": ""
-        }
+        json = '{"key": "","translation": ""}'
 
         try:
             # 文件翻译
             api_response = await api_instance.get_file_translation(project_id, file_id)
-            create_file200_response_instance = CreateFile200Response.from_dict(json)
+            create_file200_response_instance = CreateFile200Response.from_json(json)
             print(create_file200_response_instance)
             print(api_response)
         except Exception as e:
