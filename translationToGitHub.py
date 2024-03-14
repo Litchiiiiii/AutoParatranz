@@ -44,7 +44,7 @@ if __name__ == '__main__':
     for v in fileIdList:
         listClear()
         translate(v)
-        print(key + ":" + value)
+        print(value)
         zh_cn = zh_cn.fromkeys(key, value)
         print(zh_cn)
     for v in filePathList:
