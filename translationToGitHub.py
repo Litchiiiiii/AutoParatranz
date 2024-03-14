@@ -45,7 +45,7 @@ if __name__ == '__main__':
         i = 0
         listClear()
         translate(id)
-        print(value)
+        #print(value)
         zh_cn = zh_cn.fromkeys(key)
         for k in zh_cn:
             zh_cn[k] = value[i]
