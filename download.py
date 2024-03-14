@@ -12,12 +12,12 @@ fileUrl = "https://paratranz.cn/api/projects/" + str(projectId) + "/files/"
 
 async def translate():
     urlRequests = requests.get(resourcePackUrl, headers={"Authorization": token, "accept": "*/*"})
-    print(urlRequests.content["name"])
+    print(urlRequests.json())
 
 
 def getFile():
     fileRequest = requests.get(fileUrl, headers={"Authorization": token, "accept": "*/*"})
-    print(fileRequest.content["id"])
+    print(fileRequest.json())
 
 
 if __name__ == '__main__':
