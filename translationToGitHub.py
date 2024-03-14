@@ -54,7 +54,7 @@ if __name__ == '__main__':
             filename = os.path.basename(path)
             path1 = path.replace("/"+filename,"")
             if not os.path.exists(path1):
-                os.makedirs("./Patch-Pack-CN/" + path)
-            file = open("./Patch-Pack-CN/" + path + filename, "w+", encoding='UTF-8')
+                os.makedirs("./Patch-Pack-CN/" + path1)
+            file = open("./Patch-Pack-CN/" + path1 + filename, "w+", encoding='UTF-8')
             print(file.read())
         print(zh_cn)
