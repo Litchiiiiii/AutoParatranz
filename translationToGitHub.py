@@ -55,10 +55,9 @@ if __name__ == '__main__':
             path = path.replace("/"+filename,"")
             if not os.path.exists(path):
                 os.makedirs("Patch-Pack-CN/" + path,0o777,True)
-            file = open("Patch-Pack-CN/" + path + filename, "w+", encoding='UTF-8')
-            file.writelines(str(zh_cn))
-            file.close()
-            f = open("Patch-Pack-CN/" + path + filename, "w+", encoding='UTF-8')
-            print(f.read())
-            f.close()
+            with open("Patch-Pack-CN/" + path + filename, "w+", encoding='UTF-8') as f:    #读操作与写操作
+                f.writelines(str(zh_cn))    #写入
+                f.seek(0)    #读出前将指针移到文件开头
+                cNames = f.readlines()    #文件所有行读出，此处也可以使用read（）函数，结果一样
+                print(cNames)  
         #print(zh_cn)
