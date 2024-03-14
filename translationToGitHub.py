@@ -26,7 +26,7 @@ def getFile():
 
 if __name__ == '__main__':
     getFile()
-    for k in fileIdList:
-        translate(k)
+    #for v in fileList:
+        #translate()
     for v in filePathList:
-        print(v)
+        print("Patch-Pack-CN/" + v)
