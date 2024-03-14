@@ -23,8 +23,9 @@ async def translate():
         try:
             # 文件翻译
             api_response = await api_instance.get_file_translation(project_id, file_id)
-            create_file200_response_instance = CreateFile200Response.from_json(json)
+            create_file200_response_instance = CreateFile200Response.from_dict(json)
             print(create_file200_response_instance)
+            print(api_response)
         except Exception as e:
             print("Exception when calling FilesApi->get_file_translation: %s\n" % e)
 
