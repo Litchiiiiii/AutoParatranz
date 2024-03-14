@@ -17,9 +17,10 @@ def getFile():
     fileRequest = requests.get(fileUrl, headers={"Authorization": token, "accept": "*/*"})
     fileJson = fileRequest.json()
     for i in fileJson:
-        print(i["id"])
+        fileList.append(i["id"])
 
 
 if __name__ == '__main__':
-    translate(fileId)
     getFile()
+    for v in fileList:
+        translate(v)
