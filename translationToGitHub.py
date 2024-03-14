@@ -53,6 +53,6 @@ if __name__ == '__main__':
         for path in filePathList:
             path = path.replace(os.path.basename(path),"")
             os.makedirs("./Patch-Pack-CN/" + path)
-            file = open("./Patch-Pack-CN/" + path + "zh_cn.json", "w", encoding='UTF-8')
+            file = open("./Patch-Pack-CN/" + path + "zh_cn.json", "w+", encoding='UTF-8')
             print(file.read())
         print(zh_cn)
