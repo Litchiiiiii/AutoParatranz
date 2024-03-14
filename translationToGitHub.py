@@ -9,6 +9,8 @@ fileUrl = "https://paratranz.cn/api/projects/" + str(projectId) + "/files/"
 fileIdList = []
 filePathList = []
 key = []
+value = []
+
 
 def translate(id):
     fileTranslationUrl = "https://paratranz.cn/api/projects/" + str(projectId) + "/files/" + str(id) + "/translation"
@@ -16,6 +18,11 @@ def translate(id):
     transilationJson = urlRequests.json()
     for i in transilationJson:
         key.append(i["key"])
+        if i["translation"] == "":
+            value.append(i["original"])
+        else:
+            value.append(i["translation"])
+
 
 def getFile():
     fileRequest = requests.get(fileUrl, headers={"Authorization": token, "accept": "*/*"})
@@ -26,11 +33,16 @@ def getFile():
         filePathList.append(n["name"])
 
 
+def listClear():
+    value.clear()
+    key.clear()
+
+
 if __name__ == '__main__':
     getFile()
     for v in fileIdList:
-        key.clear()
+        listClear()
         translate(v)
-        print(key)
+        dict.fromkeys(key, value)
     for v in filePathList:
         print("Patch-Pack-CN/" + v)
