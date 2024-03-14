@@ -52,8 +52,8 @@ if __name__ == '__main__':
             i = i+1
         for path in filePathList:
             filename = os.path.basename(path)
-            path = path.replace("/"+filename,"")
-            if not os.path.exists(path):
+            path1 = path.replace("/"+filename,"")
+            if not os.path.exists(path1):
                 os.makedirs("./Patch-Pack-CN/" + path)
             file = open("./Patch-Pack-CN/" + path + filename, "w+", encoding='UTF-8')
             print(file.read())
