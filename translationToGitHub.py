@@ -27,7 +27,7 @@ def getFile():
 
 if __name__ == '__main__':
     getFile()
-    for v in fileIdList:
-        translate(v)
+    for k in fileIdList:
+        translate(k)
     for v in filePathList:
         print(v)
