@@ -10,7 +10,7 @@ fileIdList = []
 filePathList = []
 key = []
 value = []
-
+zh_cn = {}
 
 def translate(id):
     fileTranslationUrl = "https://paratranz.cn/api/projects/" + str(projectId) + "/files/" + str(id) + "/translation"
@@ -36,6 +36,7 @@ def getFile():
 def listClear():
     value.clear()
     key.clear()
+    zh_cn.clear()
 
 
 if __name__ == '__main__':
@@ -43,7 +44,7 @@ if __name__ == '__main__':
     for v in fileIdList:
         listClear()
         translate(v)
-        dict.fromkeys(key, value)
-        print(dict)
+        zh_cn.fromkeys(key, value)
+        print(zh_cn)
     for v in filePathList:
         print("Patch-Pack-CN/" + v)
