@@ -45,7 +45,7 @@ if __name__ == '__main__':
         listClear()
         translate(v)
         print(key + ":" + value)
-        zh_cn.fromkeys(key, value)
+        zh_cn = zh_cn.fromkeys(key, value)
         print(zh_cn)
     for v in filePathList:
         print("Patch-Pack-CN/" + v)
