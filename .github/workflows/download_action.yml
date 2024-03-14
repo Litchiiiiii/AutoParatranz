@@ -26,6 +26,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install git+https://github.com/MuXiu1997/ParaTranz-SDK-python.git
           pip install PyGithub
+          pip install requests
       - name: Json To Paratranz
         run: |
           python download.py

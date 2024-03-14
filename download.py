@@ -1,31 +1,16 @@
 import asyncio
 import os
+import requests
+from urllib3 import response
 
-import paratranz_client
-from paratranz_client import CreateFile200Response
-
-configuration = paratranz_client.Configuration(
-    host="https://paratranz.cn/api"
-)
-configuration.api_key['Token'] = os.environ["API_KEY"]
+token = os.environ["API_KEY"]
+projectId = 9584
+fileId = 1282824
+resourcePackUrl = "https://paratranz.cn/api/projects/" + projectId + "/files/" + fileId
 
 
 async def translate():
-    async with paratranz_client.ApiClient(configuration) as api_client:
-        api_instance = paratranz_client.FilesApi(api_client)
-        project_id = 9584  # int | 项目ID
-        file_id = 1282824  # int | 文件ID
-        json = '{}'
-
-        try:
-            # 文件翻译
-            create_file200_response_instance = CreateFile200Response.from_json(json)
-            api_response = await api_instance.get_file_translation(project_id, file_id)
-            print(CreateFile200Response.to_json())
-            print(api_response)
-        except Exception as e:
-            print("Exception when calling FilesApi->get_file_translation: %s\n" % e)
-
-
+    urlRequests = requests.get(resourcePackUrl, headers={"Authorization": token, "accept": "*/*"})
+    print(urlRequests.content)
 if __name__ == '__main__':
-    asyncio.run(translate())
+    asyncio.get_event_loop().run_until_complete(translate())
