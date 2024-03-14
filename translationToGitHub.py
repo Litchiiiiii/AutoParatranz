@@ -56,6 +56,6 @@ if __name__ == '__main__':
             if not os.path.exists(path):
                 os.makedirs("Patch-Pack-CN/" + path,0o777,True)
             file = open("Patch-Pack-CN/" + path + filename, "w+", encoding='UTF-8')
-            file.write(zh_cn)
+            file.write(str(zh_cn))
             print(file.read())
         #print(zh_cn)
