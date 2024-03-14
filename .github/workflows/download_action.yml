@@ -1,4 +1,4 @@
-name: Upload Action
+name: Download Action
 
 on:
   push:
@@ -7,6 +7,7 @@ on:
 env:
   API_KEY: c6b450a2fb51077faa022f7412d89dcb
   GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  GIT_AUTHOR: MuXiu1997 <muxiu1997@gmail.com>
 
 jobs:
   check-issue-and-upload:
