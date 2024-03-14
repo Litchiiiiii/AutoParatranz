@@ -29,7 +29,7 @@ def getFile():
 if __name__ == '__main__':
     getFile()
     for v in fileIdList:
-        key.clear
+        key.clear()
         translate(v)
         print(key)
     for v in filePathList:
