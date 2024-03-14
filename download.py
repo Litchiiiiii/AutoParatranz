@@ -5,7 +5,7 @@ projectId = 9584
 fileId = 1282824
 
 fileUrl = "https://paratranz.cn/api/projects/" + str(projectId) + "/files/"
-
+fileList = []
 
 def translate(id):
     resourcePackUrl = "https://paratranz.cn/api/projects/" + str(projectId) + "/files/" + str(id)
