@@ -27,4 +27,4 @@ if __name__ == '__main__':
     #for v in fileList:
         #translate()
     for v in filePathList:
-        print(v)
+        print("Patch-Pack-CN/" + v)
