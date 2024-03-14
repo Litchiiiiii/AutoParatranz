@@ -44,5 +44,6 @@ if __name__ == '__main__':
         listClear()
         translate(v)
         dict.fromkeys(key, value)
+        print(dict)
     for v in filePathList:
         print("Patch-Pack-CN/" + v)
