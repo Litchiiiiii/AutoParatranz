@@ -41,15 +41,16 @@ def listClear():
 
 if __name__ == '__main__':
     getFile()
-    for v in fileIdList:
+    for id in fileIdList:
         i = 0
         listClear()
-        translate(v)
+        translate(id)
         print(value)
         zh_cn = zh_cn.fromkeys(key)
         for k in zh_cn:
             zh_cn[k] = value[i]
             i = i+1
+        for path in filePathList:
+            file = open("Patch-Pack-CN/" + path, "r")
+            print(file)
         print(zh_cn)
-    for v in filePathList:
-        print("Patch-Pack-CN/" + v)
