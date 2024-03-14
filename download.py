@@ -1,6 +1,6 @@
 import requests
-
-token = environ["API_KEY"]
+import os
+token = os.environ["API_KEY"]
 projectId = 9584
 fileId = 1282824
 
