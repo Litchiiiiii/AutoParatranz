@@ -36,5 +36,5 @@ jobs:
           git checkout develop
           git add .
           git commit -m 'paratranz上传'
-          git pull origin develop 
+          git pull origin develop --allow-unrelated-histories
           git push -u origin develop
