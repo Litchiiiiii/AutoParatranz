@@ -40,3 +40,7 @@ jobs:
       - name: Paratranz To zh_cn
         run: |
           python translationToGitHub.py
+      - uses: actions/upload-artifact@v3
+        with:
+          name: upload
+          path: ${{ github.workspace }}/Patch-Pack-CN
