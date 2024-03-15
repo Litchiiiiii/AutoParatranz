@@ -27,6 +27,9 @@ jobs:
       - name: Paratranz To zh_cn
         run: |
           python translationToGitHub.py
+      - name: Out
+        run: |
+          echo ${{ steps.Translation-To-GitHub.branch }}
     outputs:
       passed: ${{ steps.Translation-To-GitHub.passed }}
       branch: ${{ steps.Translation-To-GitHub.branch }}
