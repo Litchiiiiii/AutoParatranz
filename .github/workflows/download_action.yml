@@ -51,8 +51,6 @@ jobs:
       - name: Paratranz To zh_cn
         run: >-
           poetry run python translationToGitHub.py
-          --repo-path='.repo'
-          --issue='${{ github.event.issue.number }}'
       - name: Create PR
         uses: peter-evans/create-pull-request@v4.0.0
         with:
