@@ -38,8 +38,7 @@ jobs:
           git commit -m 'paratranz上传'
           git pull origin develop --allow-unrelated-histories
           git push -u origin develop
-      - name: Create Pull Request
-        id: cpr
+      - name: Create PR
         uses: peter-evans/create-pull-request@v6
         with:
           token: ${{ secrets.GITHUB_TOKEN}}
