@@ -3,7 +3,7 @@ import os
 from github import Github
 from github import Auth
 token = os.environ["API_KEY"]
-gittoken = os.environ["GH_TOKEN"]
+gittoken = "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"
 projectId = 9584
 fileId = 1282824
 
