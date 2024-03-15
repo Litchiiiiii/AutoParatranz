@@ -27,17 +27,9 @@ jobs:
       - name: Paratranz To zh_cn
         run: |
           python translationToGitHub.py
-      - name: List
-        run: |
-          ls ${{ github.workspace }}
-      - uses: actions/upload-artifact@v3
-        with:
-          name: upload
-          path: ${{ github.workspace }}/Patch-Pack-CN
       - name: Upload To Develop
         run: |
           git init
           git checkout  -b develop
-          git remote add origin $GIT_PATH
           git add .
           git commit -m '你的备注信息'
