@@ -58,6 +58,5 @@ if __name__ == '__main__':
             with open("Patch-Pack-CN/" + path + filename, "w+", encoding='UTF-8') as f:    #读操作与写操作
                 f.write(str(zh_cn))    #写入
                 f.seek(0)    #读出前将指针移到文件开头
-                cNames = f.read()    #文件所有行读出，此处也可以使用read（）函数，结果一样
-            print(cNames) 
+                cNames = f.read()    #文件所有行读出，此处也可以使用read（）函数，结果一样 
         #print(zh_cn)
