@@ -37,7 +37,7 @@ jobs:
           git add .
           git commit -m 'paratranz上传'
           git pull origin develop --allow-unrelated-histories
-          git push -u origin develop
+          git push origin develop
       - name: Create PR
         uses: peter-evans/create-pull-request@v6
         with:
