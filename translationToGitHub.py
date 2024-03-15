@@ -1,7 +1,7 @@
 import requests
 import os
 from github import Github
-import github
+from github import Auth
 token = os.environ["API_KEY"]
 projectId = 9584
 fileId = 1282824
@@ -41,7 +41,7 @@ def listClear():
     zh_cn.clear()
 def linkgithub():
     gitToken = os.environ['GH_TOKEN']
-    auth = github.Auth.Token[gitToken]
+    auth = Auth.Token[gitToken]
     g = Github(auth = auth)
     for repo in g.get_user().get_repos():
         print(repo.name)
