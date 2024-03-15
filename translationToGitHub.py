@@ -55,7 +55,7 @@ if __name__ == '__main__':
             zh_cn[k] = value[i]
             i = i+1
         zh_cnList.append(zh_cn)
-        print(zh_cnList)
+    print(zh_cnList[1])
     k = 0
     for path in filePathList:
         print(path)
