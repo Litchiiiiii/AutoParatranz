@@ -40,7 +40,7 @@ def listClear():
     key.clear()
     zh_cn.clear()
 def linkgithub():
-    gittoken = os.envrion['GH_TOKEN']
+    gittoken = os.envrion["GH_TOKEN"]
     auth = Auth.Token(gittoken)
     g = Github(auth = auth)
     for repo in g.get_user().get_repos():
