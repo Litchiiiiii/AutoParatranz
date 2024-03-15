@@ -57,7 +57,7 @@ jobs:
           author: ${{ github.actor }} <${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com>
           signoff: false
           branch: develop
-          delete-branch: true
+          delete-branch: false
           title: "[Example] Update report"
           body: |
             Update report
@@ -73,5 +73,4 @@ jobs:
           team-reviewers: |
             developers
             qa-team
-          milestone: 1
           draft: false

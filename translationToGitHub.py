@@ -69,6 +69,6 @@ if __name__ == '__main__':
             cNames = f.read()    #文件所有行读出
             #print(cNames)
         k = k+1
-    #print("上传完成：" + path + filename)
+    print("上传完成：" + path + filename)
     
     #linkgithub()
