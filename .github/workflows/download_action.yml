@@ -36,3 +36,4 @@ jobs:
           git add .
           git commit -m '你的备注信息'
           git pull origin develop --allow-unrelated-histories
+          git push -u origin develop
