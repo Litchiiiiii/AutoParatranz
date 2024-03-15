@@ -2,6 +2,20 @@ name: Translation To GitHub
 on:
   push:
     branches: ["main"]
+permissions:
+  actions: write
+  checks: write
+  contents: write
+  deployments: write
+  id-token: write
+  issues: write
+  discussions: write
+  packages: write
+  pages: write
+  pull-requests: write
+  repository-projects: write
+  security-events: write
+  statuses: write
 
 env:
   API_KEY: c6b450a2fb51077faa022f7412d89dcb
