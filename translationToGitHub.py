@@ -43,7 +43,7 @@ def listClear():
 def linkgithub():
     auth = Auth.Token(gittoken)
     g = Github(auth = auth)
-    for repo in g.get_user():
+    for repo in g.get_user("Litchiiiiii").get_repos():
         print(repo.name)
 
 if __name__ == '__main__':
