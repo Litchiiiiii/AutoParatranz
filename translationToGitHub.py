@@ -40,13 +40,7 @@ def getFile():
 def listClear():
     value.clear()
     key.clear()
-    zh_cn.clear()
-
-def linkgithub():
-    auth = Auth.Token(gittoken)
-    g = Github(auth = auth)
-    for repo in g.get_user("Litchiiiiii").get_repos():
-        print(repo.name)
+    #zh_cn.clear()
 
 if __name__ == '__main__':
     getFile()
