@@ -49,8 +49,8 @@ jobs:
           pip install PyGithub
           pip install requests
       - name: Paratranz To zh_cn
-        run: >-
-          poetry run python translationToGitHub.py
+        run: |
+          python translationToGitHub.py
       - name: Create PR
         uses: peter-evans/create-pull-request@v4.0.0
         with:
