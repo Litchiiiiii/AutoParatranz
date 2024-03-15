@@ -8,7 +8,6 @@ env:
   FILE_PATH: ./
   GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   GIT_PATH: https://github.com/Litchiiiiii/test.git
-  FLAG: True
 
 jobs:
   Translation-To-GitHub:
@@ -28,10 +27,7 @@ jobs:
       - name: Paratranz To zh_cn
         run: |
           python translationToGitHub.py
-        env:
-          FLAG: False
       - name: Upload To Develop
-        if: ${{env.FLAG == 'FALSE'}}
         run: |
           git init
           git fetch origin
