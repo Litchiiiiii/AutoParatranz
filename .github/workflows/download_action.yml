@@ -48,6 +48,7 @@ jobs:
           author: ${{ github.actor }} <${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com>
           signoff: false
           branch: develop
+          base: main
           delete-branch: false
           title: "[自动化]Update Translation"
           body: |
