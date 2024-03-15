@@ -30,6 +30,8 @@ jobs:
       - name: Upload To Develop
         run: |
           git init
+          git config --global user.email "1592282237@qq.com"
+          git config --global user.name "Litchiiiiiii"
           git checkout  -b develop
           git add .
           git commit -m '你的备注信息'
