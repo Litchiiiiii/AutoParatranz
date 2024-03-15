@@ -30,7 +30,7 @@ jobs:
       - name: Upload To Develop
         run: |
           git init
-          git fetch From $GIT_PATH
+          git fetch origin
           git config --global user.email "1592282237@qq.com"
           git config --global user.name "Litchiiiiiii"
           git checkout develop
