@@ -60,8 +60,8 @@ if __name__ == '__main__':
         for k in zh_cn:
             zh_cn[k] = value[i]
             i = i+1
-        print(zh_cn)
         zh_cnList.append(zh_cn)
+    print(zh_cnList)
     k = 0
     for path in filePathList:
         print(path)
