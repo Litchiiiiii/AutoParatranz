@@ -43,7 +43,7 @@ def linkgithub():
     auth = Auth.Token[os.environ['GH_TOKEN']]
     g = Github(auth = auth)
     for repo in g.get_user().get_repos():
-        print(repo.name)
+        print(repo.name+".")
 
 if __name__ == '__main__':
     getFile()
