@@ -37,10 +37,16 @@ def listClear():
     value.clear()
     key.clear()
     zh_cn.clear()
-
+def linkgithub():
+    gitToken = os.environ['GH_TOKEN']
+    auth = Auth.Token[gitToken]
+    g = Github(auth = auth)
+    for repo in g.get_user().get_repos():
+        print(repo.name)
 
 if __name__ == '__main__':
     getFile()
+    '''
     for id in fileIdList:
         i = 0
         listClear()
@@ -60,3 +66,5 @@ if __name__ == '__main__':
                 f.seek(0)    #读出前将指针移到文件开头
                 cNames = f.read()    #文件所有行读出，此处也可以使用read（）函数，结果一样 
         #print(zh_cn)
+    '''
+    linkgithub()
