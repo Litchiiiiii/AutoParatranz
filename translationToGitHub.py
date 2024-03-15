@@ -41,7 +41,7 @@ def listClear():
     key.clear()
     zh_cn.clear()
 def linkgithub():
-    auth = Auth.Token("Bearer " + gittoken)
+    auth = Auth.Token(gittoken)
     g = Github(auth = auth)
     for repo in g.get_user().get_repos():
         print(repo.name)
