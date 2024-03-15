@@ -68,7 +68,7 @@ if __name__ == '__main__':
             os.makedirs("Patch-Pack-CN/" + path,0o777,True)
         with open("Patch-Pack-CN/" + path + filename, "w+", encoding='UTF-8') as f:    #读操作与写操作
             f.write(json.dumps(zh_cn, sort_keys=True, indent=4, separators=(',', ':')))    #写入
-            cNames = f.read()    #文件所有行读出，此处也可以使用read（）函数，结果一样 
+            cNames = f.readlines()    #文件所有行读出，此处也可以使用read（）函数，结果一样 
             print(cNames)
     #print("上传完成：" + path + filename)
     
