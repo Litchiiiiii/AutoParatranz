@@ -40,6 +40,7 @@ jobs:
           git push -u origin develop
   createPullRequest:
     runs-on: ubuntu-latest
+    needs: Translation-To-GitHub
     steps:
       - uses: actions/checkout@v4
 
