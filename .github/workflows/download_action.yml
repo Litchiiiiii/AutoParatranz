@@ -35,6 +35,6 @@ jobs:
           git config --global user.name "Litchiiiiiii"
           git checkout develop
           git add .
-          git commit -m '你的备注信息'
-          git pull --rebase origin develop 
+          git commit -m 'paratranz上传'
+          git pull origin develop 
           git push -u origin develop
