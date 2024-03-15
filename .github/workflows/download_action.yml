@@ -61,5 +61,5 @@ jobs:
             - 由 #${{ github.event.issue.number }} 触发
           base: ${{ needs.check-and-parse-issue.outputs.branch }}
           branch: automation/compare/${{ github.event.issue.number }}
-          path: ".repo"
+          path: ""
           delete-branch: true
