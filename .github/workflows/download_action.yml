@@ -7,13 +7,12 @@ on:
 env:
   API_KEY: c6b450a2fb51077faa022f7412d89dcb
   GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  FILE_PATH: ./
 
 jobs:
   Translation-To-GitHub:
     name: Translation To GitHub
     runs-on: ubuntu-latest
-    env:
-      FILE_PATH: ./
     steps:
       - uses: actions/checkout@v3
       - name: Set up Python 3.9
@@ -25,6 +24,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install PyGithub
           pip install requests
-      - name: Json To Paratranz
+      - name: Paratranz To zh_cn
         run: |
           python translationToGitHub.py
+    outputs:
+      passed: ${{ steps.Translation-To-GitHub.passed }}
+      branch: ${{ steps.Translation-To-GitHub.branch }}
