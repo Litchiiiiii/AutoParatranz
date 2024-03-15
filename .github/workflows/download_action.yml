@@ -35,3 +35,4 @@ jobs:
           git checkout  -b develop
           git add .
           git commit -m '你的备注信息'
+          git pull origin develop
