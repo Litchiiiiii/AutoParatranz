@@ -32,11 +32,9 @@ jobs:
     runs-on: ubuntu-latest
     needs: Translation-To-GitHub
     steps:
-      - uses: actions/checkout@v3
       - name: Upload To Develop
         run: |
           git init
-          git fetch
           git config --global user.email "1592282237@qq.com"
           git config --global user.name "Litchiiiiiii"
           git checkout develop
