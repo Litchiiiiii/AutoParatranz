@@ -1,8 +1,7 @@
 name: Translation To GitHub
-
 on:
-  issues:
-    types: [opened]
+  push:
+    branches: ["main"]
 
 env:
   API_KEY: c6b450a2fb51077faa022f7412d89dcb
@@ -10,32 +9,8 @@ env:
   FILE_PATH: ./
 
 jobs:
-  check-and-parse-issue:
-    if: contains(github.event.issue.labels.*.name, '自动化:paratranz→lang')
-    name: Check And Parse Issue
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Litchiiiiii/test
-        uses: actions/checkout@v3
-        with:
-          repository: Litchiiiiii/test
-          ref: main
-    outputs:
-      passed: ${{ steps.check-and-parse-issue.outputs.passed }}
-      branch: ${{ steps.check-and-parse-issue.outputs.branch }}
-  close-issue:
-    name: Close Issue
-    needs: check-and-parse-issue
-    runs-on: ubuntu-latest
-    steps:
-      - name: Close Issue
-        uses: peter-evans/close-issue@v2.0.0
-        with:
-          comment: |
-            此模板仅由内部人员使用，已自动关闭。
   Translation-To-GitHub:
     name: Translation To GitHub
-    needs: check-and-parse-issue
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -51,15 +26,3 @@ jobs:
       - name: Paratranz To zh_cn
         run: |
           python translationToGitHub.py
-      - name: Create PR
-        uses: peter-evans/create-pull-request@v4.0.0
-        with:
-          title: "[自动化] 更新 语言文件 + 脚本"
-          labels: |
-            自动化:paratranz→lang
-          body: |
-            - 由 #${{ github.event.issue.number }} 触发
-          base: ${{ needs.check-and-parse-issue.outputs.branch }}
-          branch: automation/compare/${{ github.event.issue.number }}
-          path: ""
-          delete-branch: true
