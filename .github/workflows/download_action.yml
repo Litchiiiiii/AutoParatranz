@@ -20,7 +20,7 @@ permissions:
 env:
   API_KEY: c6b450a2fb51077faa022f7412d89dcb
   FILE_PATH: ./
-  GH_TOKEN: ${{ secrets.SECRET_NAME }}
+  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 jobs:
   Translation-To-GitHub:
