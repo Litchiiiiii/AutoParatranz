@@ -40,8 +40,7 @@ def listClear():
     key.clear()
     zh_cn.clear()
 def linkgithub():
-    gitToken = os.environ['GH_TOKEN']
-    auth = Auth.Token[gitToken]
+    auth = Auth.Token[os.environ['GH_TOKEN']]
     g = Github(auth = auth)
     for repo in g.get_user().get_repos():
         print(repo.name)
