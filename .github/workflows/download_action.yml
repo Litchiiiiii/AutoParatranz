@@ -42,8 +42,8 @@ jobs:
         uses: peter-evans/create-pull-request@v6
         with:
           token: ${{ secrets.GITHUB_TOKEN}}
-          branch: develop
           base: main
+          branch: develop
           delete-branch: false
           title: "[自动化]Update Translation"
           body: |
