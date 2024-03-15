@@ -54,7 +54,7 @@ jobs:
           author: ${{ github.actor }} <${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com>
           signoff: false
           branch: develop
-          delete-branch: false
+          delete-branch: true
           title: "[自动化]paratranz翻译"
           body: |
             Update report
