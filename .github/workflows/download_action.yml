@@ -44,21 +44,18 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Make changes to pull request
-        run: date +%s > report.txt
-
       - name: Create Pull Request
         id: cpr
         uses: peter-evans/create-pull-request@v6
         with:
           token: ${{ secrets.GITHUB_TOKEN}}
-          commit-message: Update report
+          commit-message: Update Translation
           committer: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
           author: ${{ github.actor }} <${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com>
           signoff: false
           branch: develop
           delete-branch: false
-          title: "[Example] Update report"
+          title: "[自动化]paratranz翻译"
           body: |
             Update report
             - Updated with *today's* date
@@ -70,7 +67,4 @@ jobs:
             automated pr
           assignees: peter-evans
           reviewers: peter-evans
-          team-reviewers: |
-            developers
-            qa-team
           draft: false
