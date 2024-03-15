@@ -27,6 +27,11 @@ jobs:
       - name: Paratranz To zh_cn
         run: |
           python translationToGitHub.py
+  Upload-To-Develop:
+    name: Upload To Develop
+    runs-on: ubuntu-latest
+    needs: Translation-To-GitHub
+    steps:
       - name: Upload To Develop
         run: |
           git init
