@@ -55,10 +55,10 @@ if __name__ == '__main__':
             zh_cn[k] = value[i]
             i = i+1
         zh_cnList.append(zh_cn)
-    print(zh_cnList[1])
+    #print(zh_cnList[1])
     k = 0
     for path in filePathList:
-        print(path)
+        #print(path)
         filename = os.path.basename(path)
         path = path.replace(filename,"")
         if not os.path.exists(path):
@@ -67,7 +67,7 @@ if __name__ == '__main__':
             f.write(json.dumps(zh_cnList[k], sort_keys=True, indent=4, separators=(',', ':')))#写入
             f.seek(0)    
             cNames = f.read()    #文件所有行读出
-            #print(cNames)
+            print(cNames)
         k = k+1
     #print("上传完成：" + path + filename)
     
