@@ -30,10 +30,11 @@ jobs:
       - name: Upload To Develop
         run: |
           git init
-          git checkout -b develop
+          git branch develop
           git fetch origin
           git config --global user.email "1592282237@qq.com"
           git config --global user.name "Litchiiiiiii"
+          git checkout develop
           git add .
           git commit -m 'paratranz上传'
           git pull origin develop --allow-unrelated-histories
