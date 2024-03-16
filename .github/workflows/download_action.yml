@@ -46,7 +46,7 @@ jobs:
           git config --global user.name "Litchiiiiiii"
           git stash
           git checkout develop
-          git stash pop
+          git stash apply
           git add .
           git commit -m 'paratranz上传'
           git pull origin develop --allow-unrelated-histories
