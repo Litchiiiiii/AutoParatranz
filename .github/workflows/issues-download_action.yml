@@ -2,8 +2,6 @@ name: Translation To GitHub
 on:
   issues:
     types: [opened]
-  schedule:
-    - cron: "59 * * * *"
 
 env:
   API_KEY: c6b450a2fb51077faa022f7412d89dcb
@@ -53,8 +51,10 @@ jobs:
           git config --global pull.rebase true
           git add .
           git commit -m 'paratranz上传'
+          git stash
           git pull origin develop --allow-unrelated-histories
           git push -u origin develop
+          git stash pop
   close-issue:
     name: Close Issue
     needs: check-issue

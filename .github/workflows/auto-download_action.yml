@@ -1,0 +1,47 @@
+name: Auto Translation To GitHub
+on:
+  schedule:
+    - cron: "59 * * * *"
+
+env:
+  API_KEY: c6b450a2fb51077faa022f7412d89dcb
+  FILE_PATH: ./
+  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  PROJECT_ID: 9584
+  GIT_PATH: https://github.com/Litchiiiiii/test.git
+
+jobs:
+  Auto-Translation-To-GitHub:
+    name: Auto Translation To GitHub
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python 3.9
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.9"
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install PyGithub
+          pip install requests
+      - name: merge main
+        run: |
+          git init
+          git fetch origin
+          git config --global user.email "1592282237@qq.com"
+          git config --global user.name "Litchiiiiiii"
+          git checkout develop 
+          git reset --hard main
+      - name: Paratranz To zh_cn
+        run: |
+          python translationToGitHub.py
+      - name: Upload To Develop
+        run: |
+          git config --global pull.rebase true
+          git add .
+          git commit -m 'paratranz上传'
+          git stash
+          git pull origin develop --allow-unrelated-histories
+          git push -u origin develop
+          git stash pop
