@@ -7,6 +7,7 @@ env:
   API_KEY: c6b450a2fb51077faa022f7412d89dcb
   FILE_PATH: ./
   GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  PROJECT_ID: 9584
   GIT_PATH: https://github.com/Litchiiiiii/test.git
 
 jobs:
@@ -38,13 +39,3 @@ jobs:
           git commit -m 'paratranz上传'
           git pull origin develop --allow-unrelated-histories
           git push -u origin develop
-      - name: Create PR
-        uses: peter-evans/create-pull-request@v6
-        with:
-          token: ${{ secrets.GITHUB_TOKEN}}
-          base: main
-          branch: develop
-          delete-branch: false
-          title: "[自动化]Update Translation"
-          body: |
-            自动化更新paratranz->github

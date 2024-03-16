@@ -5,7 +5,7 @@ from github import Github
 from github import Auth
 token = os.environ["API_KEY"]
 gittoken = os.environ["GH_TOKEN"]
-projectId = 9584
+projectId = os.environ["PROJECT_ID"]
 fileId = 1282824
 
 
