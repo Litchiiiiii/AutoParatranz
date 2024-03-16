@@ -21,7 +21,7 @@ async def f(path,file):
     async with paratranz_client.ApiClient(configuration) as api_client:
         # Create an instance of the API class
         api_instance = paratranz_client.FilesApi(api_client)
-        project_id = os.environ["PROJECT_ID"]  # int | 项目ID
+        project_id = int(os.environ["PROJECT_ID"])  # int | 项目ID
         #file = os.environ["FILE_PATH"]  # bytearray | 文件数据，文件名由此项的文件名决定 (optional)
         #self.path = ""  # str | 文件路径 (optional)
 
