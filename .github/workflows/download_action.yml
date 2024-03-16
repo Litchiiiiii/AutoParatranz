@@ -42,7 +42,7 @@ jobs:
           git config --global user.email "1592282237@qq.com"
           git config --global user.name "Litchiiiiiii"
           git checkout develop 
-          git merge main --allow-unrelated-histories
+          git reset --hard main
           git pull origin develop --allow-unrelated-histories
           git push -u origin develop
       - name: Paratranz To zh_cn
