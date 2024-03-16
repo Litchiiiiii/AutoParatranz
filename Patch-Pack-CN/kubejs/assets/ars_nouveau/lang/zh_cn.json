@@ -768,7 +768,7 @@
     "enchantment.ars_nouveau.mana_boost":"魔力提升",
     "enchantment.ars_nouveau.mana_boost.desc":"增加玩家魔力上限。",
     "enchantment.ars_nouveau.mana_regen":"魔力恢复",
-    "enchantment.ars_nouveau.mana_regen.desc":"提高玩家魔力恢复速度。",
+    "enchantment.ars_nouveau.mana_regen.desc":"mana_regen.desc",
     "enchantment.ars_nouveau.reactive":"反应",
     "enchantment.ars_nouveau.reactive.desc":"在使用物品或受击时概率释放抄录在物品内的法术。",
     "entity.ars_nouveau.ally_vex":"被召唤的恼鬼",
