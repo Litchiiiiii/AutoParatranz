@@ -51,10 +51,8 @@ jobs:
           git config --global pull.rebase true
           git add .
           git commit -m 'paratranz上传'
-          git stash
           git pull origin develop --allow-unrelated-histories
           git push -u origin develop
-          git stash pop
   close-issue:
     name: Close Issue
     needs: check-issue
