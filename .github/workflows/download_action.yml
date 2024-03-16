@@ -1,7 +1,7 @@
 name: Translation To GitHub
 on:
-  push:
-    branches: ["main"]
+  issues:
+    types: [opened]
 
 env:
   API_KEY: c6b450a2fb51077faa022f7412d89dcb
@@ -11,6 +11,15 @@ env:
   GIT_PATH: https://github.com/Litchiiiiii/test.git
 
 jobs:
+  check-issue-and-upload:
+    if: contains(github.event.issue.labels.*.name, '自动化:paratranz→Github')
+    name: Check Issue And Upload
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: issue check
+        run: |
+          echo "检测成功："${{github.event.issue.labels.*.name}}
   Translation-To-GitHub:
     name: Translation To GitHub
     runs-on: ubuntu-latest
