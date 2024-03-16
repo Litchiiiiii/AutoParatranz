@@ -41,8 +41,8 @@ jobs:
           git fetch origin
           git config --global user.email "1592282237@qq.com"
           git config --global user.name "Litchiiiiiii"
-          git checkout develop --allow-unrelated-histories
-          git merge main
+          git checkout develop 
+          git merge main --allow-unrelated-histories
       - name: Paratranz To zh_cn
         run: |
           python translationToGitHub.py
