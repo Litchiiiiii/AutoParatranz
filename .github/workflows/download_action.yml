@@ -1,15 +1,25 @@
 name: Translation To GitHub
 on:
-  push:
-    branches: ["main"]
+  issues:
+    types: [opened]
 
 env:
   API_KEY: c6b450a2fb51077faa022f7412d89dcb
   FILE_PATH: ./
   GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  PROJECT_ID: 9584
   GIT_PATH: https://github.com/Litchiiiiii/test.git
 
 jobs:
+  check-issue-and-upload:
+    if: contains(github.event.issue.labels.*.name, '自动化:paratranz→Github')
+    name: Check Issue And Upload
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: issue check
+        run: |
+          echo "检测成功："${{github.event.issue.labels.*.name}}
   Translation-To-GitHub:
     name: Translation To GitHub
     runs-on: ubuntu-latest
@@ -38,13 +48,3 @@ jobs:
           git commit -m 'paratranz上传'
           git pull origin develop --allow-unrelated-histories
           git push -u origin develop
-      - name: Create PR
-        uses: peter-evans/create-pull-request@v6
-        with:
-          token: ${{ secrets.GITHUB_TOKEN}}
-          base: main
-          branch: develop
-          delete-branch: false
-          title: "[自动化]Update Translation"
-          body: |
-            自动化更新paratranz->github
