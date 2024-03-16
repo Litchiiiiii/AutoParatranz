@@ -44,7 +44,6 @@ jobs:
           git checkout develop 
           git reset --hard main
           git pull origin develop --allow-unrelated-histories
-          git push -u origin develop
       - name: Paratranz To zh_cn
         run: |
           python translationToGitHub.py
