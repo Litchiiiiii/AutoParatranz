@@ -21,7 +21,7 @@ async def f(path,file):
     async with paratranz_client.ApiClient(configuration) as api_client:
         # Create an instance of the API class
         api_instance = paratranz_client.FilesApi(api_client)
-        project_id = 9584  # int | 项目ID
+        project_id = os.environ["PROJECT_ID"]  # int | 项目ID
         #file = os.environ["FILE_PATH"]  # bytearray | 文件数据，文件名由此项的文件名决定 (optional)
         #self.path = ""  # str | 文件路径 (optional)
 
@@ -37,7 +37,7 @@ async def f(path,file):
 def get_filelist(dir, Filelist):
     newDir = dir
     if os.path.isfile(dir):
-        if re.match(".+(.json)$", dir, flags=0) is not None:
+        if re.match("en_us.json", dir, flags=0) is not None:
             Filelist.append(dir)
         # # 若只是要返回文件文，使用这个
         # Filelist.append(os.path.basename(dir))
@@ -55,9 +55,9 @@ def get_filelist(dir, Filelist):
 
 if __name__ == '__main__':
     Filelist = []
-    s = get_filelist(os.environ["FILE_PATH"], Filelist)
+    file = get_filelist(os.environ["FILE_PATH"], Filelist)
     
-    for a in s:
+    for a in file:
         pathlist = a.split("Patch-Pack-CN")
         print(pathlist)
         path = pathlist[1]
