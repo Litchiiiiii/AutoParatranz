@@ -50,7 +50,7 @@ jobs:
           git add .
           git commit -m 'paratranz上传'
           git pull origin develop --allow-unrelated-histories
-          git push -u origin develop
+          git push -f origin develop
   close-issue:
     name: Close Issue
     needs: check-issue
