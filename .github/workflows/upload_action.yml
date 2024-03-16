@@ -7,14 +7,13 @@ env:
   API_KEY: c6b450a2fb51077faa022f7412d89dcb
   GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   PROJECT_ID: 9584
+  FILE_PATH: ./
 
 jobs:
   check-issue-and-upload:
     if: contains(github.event.issue.labels.*.name, '自动化:Github→paratranz')
     name: Check Issue And Upload
     runs-on: ubuntu-latest
-    env:
-      FILE_PATH: ./
     steps:
       - uses: actions/checkout@v3
       - name: Set up Python 3.9
