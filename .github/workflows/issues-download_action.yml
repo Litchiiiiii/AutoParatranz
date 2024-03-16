@@ -2,8 +2,6 @@ name: Translation To GitHub
 on:
   issues:
     types: [opened]
-  schedule:
-    - cron: "59 * * * *"
 
 env:
   API_KEY: c6b450a2fb51077faa022f7412d89dcb
