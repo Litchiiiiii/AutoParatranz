@@ -44,13 +44,12 @@ jobs:
           git fetch origin
           git config --global user.email "1592282237@qq.com"
           git config --global user.name "Litchiiiiiii"
-          git stash
           git checkout develop
-          git stash apply
+          git merge main
           git add .
           git commit -m 'paratranz上传'
           git pull origin develop --allow-unrelated-histories
-          git push -f origin develop
+          git push -u origin develop
   close-issue:
     name: Close Issue
     needs: check-issue
