@@ -48,7 +48,7 @@ jobs:
           python translationToGitHub.py
       - name: Upload To Develop
         run: |
-          git config --global pull.rebase false
+          git config --global pull.rebase true
           git add .
           git commit -m 'paratranz上传'
           git pull origin develop --allow-unrelated-histories
