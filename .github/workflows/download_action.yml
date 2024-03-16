@@ -43,6 +43,8 @@ jobs:
           git config --global user.name "Litchiiiiiii"
           git checkout develop 
           git merge main --allow-unrelated-histories
+          git pull origin develop --allow-unrelated-histories
+          git push -u origin develop
       - name: Paratranz To zh_cn
         run: |
           python translationToGitHub.py
