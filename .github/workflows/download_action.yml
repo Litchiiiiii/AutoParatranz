@@ -24,6 +24,7 @@ jobs:
           echo "检测成功："${{github.event.issue.labels.*.name}}
   Translation-To-GitHub:
     name: Translation To GitHub
+    needs: check-issue
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
