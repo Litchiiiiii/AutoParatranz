@@ -37,7 +37,7 @@ async def f(path,file):
 def get_filelist(dir, Filelist):
     newDir = dir
     if os.path.isfile(dir):
-        if re.match(".+(.json)$", dir, flags=0) is not None:
+        if re.match(".+(en_us.json)$", dir, flags=0) is not None:
             Filelist.append(dir)
         # # 若只是要返回文件文，使用这个
         # Filelist.append(os.path.basename(dir))
