@@ -1019,7 +1019,7 @@
     "item.minecraft.tipped_arrow.effect.spell_damage_strong":"法术伤害之箭",
     "itemGroup.ars_nouveau":"ars_nouveau",
     "key.ars_nouveau.next_slot":"previous_slot",
-    "key.ars_nouveau.open_book":"（法术书）打开法术书",
+    "key.ars_nouveau.open_book":"nouveau.open_book",
     "key.ars_nouveau.previous_slot":"previous_slot",
     "key.ars_nouveau.qc1":"快捷施法栏位 01",
     "key.ars_nouveau.qc10":"快捷施法栏位 10",
