@@ -54,8 +54,9 @@ jobs:
           git pull origin develop --allow-unrelated-histories
           git push -u origin develop
       - name: Create PR
-        uses: peter-evans/create-pull-request@v6
+        uses: peter-evans/create-pull-request@v4.0.0
         with:
+          title: "[自动化] 更新语言文件"
           branch: develop
           base: main
           token: ${{secrets.GITHUB_TOKEN}}
