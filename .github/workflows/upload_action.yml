@@ -4,7 +4,7 @@ on:
   issues:
     types: [opened]
 env:
-  API_TOKEN: c6b450a2fb51077faa022f7412d89dcb
+  API_TOKEN: ${{secrets.API_KEY}}
   GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   FILE_PATH: ./
 
