@@ -55,6 +55,9 @@ jobs:
           git push -u origin develop
       - name: Create PR
         uses: peter-evans/create-pull-request@v6
+        with:
+          branch: develop
+          base: main
   close-issue:
     name: Close Issue
     needs: check-issue
