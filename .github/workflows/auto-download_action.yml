@@ -4,7 +4,7 @@ on:
     - cron: "59 * * * *"
 
 env:
-  API_KEY: c6b450a2fb51077faa022f7412d89dcb
+  API_TOKEN: c6b450a2fb51077faa022f7412d89dcb
   FILE_PATH: ./
   GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   PROJECT_ID: 9584
