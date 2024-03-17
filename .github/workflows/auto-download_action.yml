@@ -3,17 +3,17 @@ on:
   schedule:
     - cron: "59 * * * *"
 
-env:
-  API_TOKEN: ${{secrets.API_KEY}}
-  FILE_PATH: ./
-  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  PROJECT_ID: ${{vars.ID}}
-  GIT_PATH: https://github.com/Litchiiiiii/test.git
-
 jobs:
   Auto-Translation-To-GitHub:
     name: Auto Translation To GitHub
     runs-on: ubuntu-latest
+    environment: API_KEY
+    env:
+      API_TOKEN: ${{secrets.API_KEY}}
+      FILE_PATH: ./
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      PROJECT_ID: ${{vars.ID}}
+      GIT_PATH: https://github.com/Litchiiiiii/test.git
     steps:
       - uses: actions/checkout@v3
       - name: Set up Python 3.9

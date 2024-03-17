@@ -3,17 +3,18 @@ name: Upload Action
 on:
   issues:
     types: [opened]
-env:
-  API_TOKEN: ${{secrets.API_KEY}}
-  PROJECT_ID: ${{vars.ID}}
-  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  FILE_PATH: ./
-
 jobs:
   check-issue-and-upload:
     if: contains(github.event.issue.labels.*.name, '自动化:Github→paratranz')
     name: Check Issue And Upload
     runs-on: ubuntu-latest
+    environment: API_KEY
+    env:
+      API_TOKEN: ${{secrets.API_KEY}}
+      FILE_PATH: ./
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      PROJECT_ID: ${{vars.ID}}
+      GIT_PATH: https://github.com/Litchiiiiii/test.git
     steps:
       - uses: actions/checkout@v3
       - name: Set up Python 3.9
