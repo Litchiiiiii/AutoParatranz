@@ -48,14 +48,11 @@ jobs:
           python translationToGitHub.py
       - name: Upload To Develop
         run: |
-          git config --global pull.rebase true
+          git config --global pull.rebase false
           git add .
           git commit -m 'paratranz上传'
           git pull origin develop --allow-unrelated-histories
           git push -u origin develop
-
-      - name: Make changes to pull request
-        run: date +%s > report.txt
       - name: Create PR
         id: cpr
         uses: peter-evans/create-pull-request@v4.0.0
