@@ -7,7 +7,7 @@ jobs:
   Auto-Translation-To-GitHub:
     name: Auto Translation To GitHub
     runs-on: ubuntu-latest
-    environment: API_KEY
+    environment: PARATRANZ_ENV
     env:
       API_TOKEN: ${{secrets.API_KEY}}
       FILE_PATH: ./

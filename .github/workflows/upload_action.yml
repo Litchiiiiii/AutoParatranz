@@ -8,7 +8,7 @@ jobs:
     if: contains(github.event.issue.labels.*.name, '自动化:Github→paratranz')
     name: Check Issue And Upload
     runs-on: ubuntu-latest
-    environment: API_KEY
+    environment: PARATRANZ_ENV
     env:
       API_TOKEN: ${{secrets.API_KEY}}
       FILE_PATH: ./
