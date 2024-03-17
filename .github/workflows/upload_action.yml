@@ -5,6 +5,7 @@ on:
     types: [opened]
 env:
   API_TOKEN: ${{secrets.API_KEY}}
+  PROJECT_ID: ${{vars.PROJECT_ID}}
   GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   FILE_PATH: ./
 
