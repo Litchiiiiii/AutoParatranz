@@ -14,7 +14,7 @@ configuration = paratranz_client.Configuration(
     host="https://paratranz.cn/api"
 )
 
-configuration.api_key['Token'] = os.environ["API_KEY"]
+configuration.api_key['Token'] = os.environ["API_TOKEN"]
 
 
 async def f(path,file):
