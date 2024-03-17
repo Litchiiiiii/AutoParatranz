@@ -7,7 +7,7 @@ env:
   API_TOKEN: ${{secrets.API_KEY}}
   FILE_PATH: ./
   GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  PROJECT_ID: ${{vars.PROJECT_ID}}
+  PROJECT_ID: ${{vars.ID}}
   GIT_PATH: https://github.com/Litchiiiiii/test.git
 
 jobs:
