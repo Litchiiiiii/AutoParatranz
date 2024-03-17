@@ -58,6 +58,7 @@ jobs:
         with:
           branch: develop
           base: main
+          token: ${{secrets.GITHUB_TOKEN}}
   close-issue:
     name: Close Issue
     needs: check-issue
