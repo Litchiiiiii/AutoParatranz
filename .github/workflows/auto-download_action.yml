@@ -1,7 +1,7 @@
 name: Auto Translation To GitHub
 on:
   schedule:
-    - cron: "59 * * * *"
+    - cron: "0 0,12 * * *"
 
 jobs:
   Auto-Translation-To-GitHub:
