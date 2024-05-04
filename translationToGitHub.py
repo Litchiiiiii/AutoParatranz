@@ -6,7 +6,6 @@ from github import Auth
 token = os.environ["API_TOKEN"]
 gittoken = os.environ["GH_TOKEN"]
 projectId = os.environ["PROJECT_ID"]
-fileId = 1282824
 
 
 fileUrl = "https://paratranz.cn/api/projects/" + str(projectId) + "/files/"
