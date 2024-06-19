@@ -1,71 +1,73 @@
-import requests
-import os
 import json
+import os
+import re
+
+import requests
 from github import Github
 from github import Auth
+
+# 从环境变量中获取必要的Token和项目ID
 token = os.environ["API_TOKEN"]
 gittoken = os.environ["GH_TOKEN"]
-projectId = os.environ["PROJECT_ID"]
+project_id = os.environ["PROJECT_ID"]
+file_url = f"https://paratranz.cn/api/projects/{project_id}/files/"
+
+# 初始化列表和字典
+file_id_list, file_path_list, zh_cn_list = [], [], []
 
 
-fileUrl = "https://paratranz.cn/api/projects/" + str(projectId) + "/files/"
-fileIdList = []
-filePathList = []
-key = []
-value = []
-zh_cn = {}
-zh_cnList = []
-def translate(id):
-    fileTranslationUrl = "https://paratranz.cn/api/projects/" + str(projectId) + "/files/" + str(id) + "/translation"
-    urlRequests = requests.get(fileTranslationUrl, headers={"Authorization": token, "accept": "*/*"})
-    transilationJson = urlRequests.json()
-    for i in transilationJson:
-        key.append(i["key"])
-        if i["translation"] == "":
-            value.append(i["original"])
-        else:
-            value.append(i["translation"])
+def translate(file_id):
+    """
+    获取指定文件的翻译内容，并返回键值对列表。
+    """
+    url = f"https://paratranz.cn/api/projects/{project_id}/files/{file_id}/translation"
+    response = requests.get(url, headers={"Authorization": token, "accept": "*/*"})
+    translations = response.json()
+    keys, values = [], []
+
+    for item in translations:
+        keys.append(item["key"])
+        translation = item["translation"]
+        original = item["original"]
+        values.append(original if not(translation) and (item["stage"]==0 or item["stage"] == -1) else translation)
+
+    return keys, values
 
 
-def getFile():
-    fileRequest = requests.get(fileUrl, headers={"Authorization": token, "accept": "*/*"})
-    fileJson = fileRequest.json()
-    for i in fileJson:
-        fileIdList.append(i["id"])
-    for n in fileJson:
-        filePathList.append(n["name"])
+def get_files():
+    """
+    获取项目中的文件列表，并提取文件ID和路径。
+    """
+    response = requests.get(file_url, headers={"Authorization": token, "accept": "*/*"})
+    files = response.json()
+
+    for file in files:
+        file_id_list.append(file["id"])
+        file_path_list.append(file["name"])
 
 
-def listClear():
-    value.clear()
-    key.clear()
-    #zh_cn.clear()
+def save_translation(zh_cn_dict, path):
+    """
+    保存翻译字典为JSON文件。
+    """
+    dir_path = os.path.join("Patch-Pack-CN", os.path.dirname(path))
+    os.makedirs(dir_path, exist_ok=True)
+    file_path = os.path.join(dir_path, "zh_cn.json")
+
+    with open(file_path, "w+", encoding='UTF-8') as f:
+        json.dump(zh_cn_dict, f, ensure_ascii=False, indent=4, separators=(',', ':'))
+
+
+def main():
+    get_files()
+
+    for file_id, path in zip(file_id_list, file_path_list):
+        keys, values = translate(file_id)
+        zh_cn_dict = {key: re.sub(r'\\n', '\n', value) for key, value in zip(keys, values)}
+        zh_cn_list.append(zh_cn_dict)
+        save_translation(zh_cn_dict, path)
+        print(f"上传完成：{path}")
+
 
 if __name__ == '__main__':
-    getFile()
-    
-    for id in fileIdList:
-        i = 0
-        listClear()
-        translate(id)
-        #print(value)
-        zh_cn = zh_cn.fromkeys(key)
-        for k in zh_cn:
-            zh_cn[k] = value[i]
-            i = i+1
-        zh_cnList.append(zh_cn)
-    #print(zh_cnList[1])
-    k = 0
-    for path in filePathList:
-        #print(path)
-        filename = os.path.basename(path)
-        path = path.replace(filename,"")
-        if not os.path.exists(path):
-            os.makedirs("Patch-Pack-CN/" + path,0o777,True)
-        with open("Patch-Pack-CN/" + path + "zh_cn.json", "w+", encoding='UTF-8') as f:    #读操作与写操作
-            f.write(json.dumps(zh_cnList[k],ensure_ascii=False,sort_keys=False, indent=4, separators=(',', ':')))#写入
-            #f.seek(0)    
-            #cNames = f.read()    #文件所有行读出
-            #print(cNames)
-        k = k+1
-        print("上传完成：" + path + filename)
+    main()

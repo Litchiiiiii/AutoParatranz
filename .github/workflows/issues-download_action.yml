@@ -2,14 +2,13 @@ name: Translation To GitHub
 on:
   issues:
     types: [opened]
-
 jobs:
   check-issue:
     if: contains(github.event.issue.labels.*.name, '自动化:paratranz→Github')
     name: Check Issue
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: issue check
         run: |
           echo "检测成功："${{github.event.issue.labels.*.name}}
@@ -23,43 +22,65 @@ jobs:
       FILE_PATH: ./
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       PROJECT_ID: ${{vars.ID}}
-      GIT_PATH: https://github.com/Litchiiiiii/test.git
+      GIT_PATH: ${{vars.G_PATH}}
     steps:
-      - uses: actions/checkout@v3
-      - name: Set up Python 3.9
-        uses: actions/setup-python@v3
+      - uses: actions/checkout@v4
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
         with:
-          python-version: "3.9"
+          python-version: "3.12"
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install PyGithub
           pip install requests
-      - name: merge main
+      - name: Config Ident
         run: |
-          git init
-          git fetch origin
-          git config --global user.email "1592282237@qq.com"
-          git config --global user.name "Litchiiiiiii"
-          git checkout develop 
-          git reset --hard main
+           git init
+           git fetch origin
+           git config --global user.email "1592282237@qq.com"
+           git config --global user.name "Litchiiiiiii"
+           git branch develop
+           git push -u origin develop
+           git checkout develop 
+           git reset --hard main
       - name: Paratranz To zh_cn
         run: |
           python translationToGitHub.py
-      - name: Upload To Develop
+      - name: Upload To develop
         run: |
-          git config --global pull.rebase false
-          git add .
-          git commit -m 'paratranz上传'
-          git pull origin develop --allow-unrelated-histories
-          git push -u origin develop
+           git config --global pull.rebase false
+           git add .
+           if [[ -n $(git status -s)  ]]
+           then
+             echo '译文更改'
+             git commit -m 'paratranz上传'
+             git pull origin develop --allow-unrelated-histories
+             git push -u origin develop
+             gh pr create --title 'paratranz上传' --body '自动PR'
+             sleep 1
+             gh pr merge develop --merge
+             git checkout main
+             git branch -D develop
+             git push origin --delete develop
+           else
+             echo '译文未更改'
+             git checkout main
+             git branch -D develop
+             git push origin --delete develop
+           fi
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: CNPack
+          path: ${{ github.workspace }}/Patch-Pack-CN/CNPack
   close-issue:
     name: Close Issue
-    needs: check-issue
+    needs: Translation-To-GitHub
     runs-on: ubuntu-latest
     steps:
       - name: Close Issue
-        uses: peter-evans/close-issue@v2.0.0
+        uses: peter-evans/close-issue@v3
         with:
           comment: |
             此模板仅由内部人员使用，已自动关闭。

@@ -1,68 +1,65 @@
 import asyncio
-import re
-import time
 import os
-import paratranz_client
-from paratranz_client.models.create_file200_response import CreateFile200Response
-from paratranz_client.rest import ApiException
+import re
 from pprint import pprint
-from os.path import split
+import paratranz_client
 
-# Defining the host is optional and defaults to https://paratranz.cn/api
-# See configuration.py for a list of all supported configuration parameters.
-configuration = paratranz_client.Configuration(
-    host="https://paratranz.cn/api"
-)
-
+# 配置Paratranz客户端
+configuration = paratranz_client.Configuration(host="https://paratranz.cn/api")
 configuration.api_key['Token'] = os.environ["API_TOKEN"]
+project_id = int(os.environ["PROJECT_ID"])
 
 
-async def f(path,file):
+async def upload_file(file_path, upload_path):
+    """
+    异步上传文件到Paratranz。
+    :param file_path: 本地文件路径
+    :param upload_path: 服务器端路径
+    """
     async with paratranz_client.ApiClient(configuration) as api_client:
-        # Create an instance of the API class
         api_instance = paratranz_client.FilesApi(api_client)
-        project_id = int(os.environ["PROJECT_ID"])  # int | 项目ID
-        #file = os.environ["FILE_PATH"]  # bytearray | 文件数据，文件名由此项的文件名决定 (optional)
-        #self.path = ""  # str | 文件路径 (optional)
-
         try:
             # 上传文件
-            api_response = await api_instance.create_file(project_id, file=file, path=path)
+            api_response = await api_instance.create_file(project_id, file=file_path, path=upload_path)
             print("The response of FilesApi->create_file:\n")
             pprint(api_response)
         except Exception as e:
-            print("Exception when calling FilesApi->create_file: %s\n" % e)
+            print(f"Exception when calling FilesApi->create_file: {e}\n")
 
 
-def get_filelist(dir, Filelist):
-    newDir = dir
-    if os.path.isfile(dir):
-        if re.match(".+(en_us.json)$", dir, flags=0) is not None:
-            Filelist.append(dir)
-        # # 若只是要返回文件文，使用这个
-        # Filelist.append(os.path.basename(dir))
-    elif os.path.isdir(dir):
-        for s in os.listdir(dir):
-            # 如果需要忽略某些文件夹，使用以下代码
-            # if s == "xxx":
-            # continue
-            #if s == "patchouli_books":
-                #continue
-            newDir = os.path.join(dir, s)
-            get_filelist(newDir, Filelist)
-    return Filelist
+def get_filelist(dir_path, file_list):
+    """
+    获取指定目录下所有符合条件的文件。
+    :param dir_path: 目录路径
+    :param file_list: 文件列表
+    :return: 更新后的文件列表
+    """
+    if os.path.isfile(dir_path):
+        if re.match(".+(en_us.json)$", dir_path):
+            file_list.append(dir_path)
+        # # 若只是要返回文件名，使用这个
+        # file_list.append(os.path.basename(dir_path))
+    elif os.path.isdir(dir_path):
+        for item in os.listdir(dir_path):
+            # # 如果需要忽略某些文件夹，使用以下代码
+            # if item == "xxx":
+            #     continue
+            # if item == "patchouli_books":
+            #     continue
+            new_path = os.path.join(dir_path, item)
+            get_filelist(new_path, file_list)
+    return file_list
+
+
+async def main():
+    file_list = get_filelist(os.environ["FILE_PATH"], [])
+
+    for file_path in file_list:
+        relative_path = file_path.split("Patch-Pack-CN")[1]
+        upload_path = relative_path.replace('\\', '/').replace(os.path.basename(file_path), "")
+        print(f"Uploading {file_path} to {upload_path}\n")
+        await upload_file(file_path, upload_path)
 
 
 if __name__ == '__main__':
-    Filelist = []
-    file = get_filelist(os.environ["FILE_PATH"], Filelist)
-    
-    for a in file:
-        pathlist = a.split("Patch-Pack-CN")
-        print(pathlist)
-        path = pathlist[1]
-        path = path.replace('\\', '/')
-        path = path.replace(os.path.basename(a), "")
-        print(a + "\n")
-        print(path)
-        asyncio.run(f(file=a,path=path))
+    asyncio.run(main())
