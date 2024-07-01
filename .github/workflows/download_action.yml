@@ -50,7 +50,7 @@ jobs:
           git reset --hard main
       - name: Paratranz To zh_cn
         run: |
-          python translationToGitHub.py
+          python .github/workflows/translationToGitHub.py
       - name: Upload To develop
         run: |
           git add .
@@ -75,7 +75,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: CNPack
-          path: ${{ github.workspace }}/Patch-Pack-CN/CNPack
+          path: ${{ github.workspace }}/Patch-Pack-CN
 
   close-issue:
     name: Close Issue
