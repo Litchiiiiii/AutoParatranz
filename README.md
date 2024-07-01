@@ -20,7 +20,7 @@
 
 - 本仓库的Py文件复制到目标仓库(无需放入文件夹)
 
-- 创建Patch-Pack-CN文件夹,并在该目录下创建CN-Pack文件夹(用于放置汉化包的所有内容包括MOD|语言文件|Config等)
+- 创建Patch-Pack-CN文件夹(用于放置汉化包的所有内容包括MOD|语言文件|Config等)
 
 ## 3.开始使用
 - 上传原文至Paratranz: 使用issue事件启动,open一个issue并选择上文提到的'自动化:Github→paratranz' Label
