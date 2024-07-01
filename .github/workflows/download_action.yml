@@ -37,8 +37,8 @@ jobs:
           pip install PyGithub requests
       - name: Configure Git
         run: |
-          git config --global user.email "1592282237@qq.com"
-          git config --global user.name "Litchiiiiiii"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "VM[BOT]"
           git config --global pull.rebase false
       - name: Initialize and Checkout Branch
         run: |
