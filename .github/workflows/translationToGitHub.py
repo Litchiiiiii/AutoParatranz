@@ -72,6 +72,7 @@ def main() -> None:
     for file_id, path in zip(file_id_list, file_path_list):
         keys, values = translate(file_id)
         zh_cn_dict = {key: re.sub(r'\\n', '\n', value) for key, value in zip(keys, values)}
+        zh_cn_dict = {key: re.sub(r'\\u00A0', '\u00A0', value) for key, value in zip(keys, values)}
         if "ftbquest" in path:
             zh_cn_dict = {key: re.sub(r' ','\u00A0',value) for key, value in zip(keys,values)}
         zh_cn_list.append(zh_cn_dict)
