@@ -1,29 +1,35 @@
 import asyncio
-import os
 import re
-from pprint import pprint
+import time
+import os
 import paratranz_client
+from paratranz_client.models.create_file200_response import CreateFile200Response
+from paratranz_client.rest import ApiException
+from pprint import pprint
+from os.path import split
+# Defining the host is optional and defaults to https://paratranz.cn/api
+# See configuration.py for a list of all supported configuration parameters.
+configuration = paratranz_client.Configuration(
+    host="https://paratranz.cn/api"
+)
 
-# 配置Paratranz客户端
-configuration = paratranz_client.Configuration(host="https://paratranz.cn/api")
 configuration.api_key['Token'] = os.environ["API_TOKEN"]
-project_id = int(os.environ["PROJECT_ID"])
 
-async def upload_file(file_path, upload_path):
-    """
-    异步上传文件到Paratranz。
-    :param file_path: 本地文件路径
-    :param upload_path: 服务器端路径
-    """
+
+async def f(path,file):
     async with paratranz_client.ApiClient(configuration) as api_client:
+        # Create an instance of the API class
         api_instance = paratranz_client.FilesApi(api_client)
+        project_id = int(os.environ["PROJECT_ID"])  # int | 项目ID
+        #file = os.environ["FILE_PATH"]  # bytearray | 文件数据，文件名由此项的文件名决定 (optional)
+        #self.path = ""  # str | 文件路径 (optional)
         try:
             # 上传文件
-            api_response = await api_instance.create_file(project_id, file=file_path, path=upload_path)
+            api_response = await api_instance.create_file(project_id, file=file, path=path)
             print("The response of FilesApi->create_file:\n")
             pprint(api_response)
         except Exception as e:
-            print(f"Exception when calling FilesApi->create_file: {e}\n")
+            print("Exception when calling FilesApi->create_file: %s\n" % e)
 
 
 def get_filelist(dir, Filelist):
@@ -45,16 +51,16 @@ def get_filelist(dir, Filelist):
     return Filelist
 
 
-async def main():
-    Filelist = []
-    file_list = get_filelist(os.environ["FILE_PATH"], Filelist)
-    print(file_list)
-    for file_path in file_list:
-        relative_path = file_path.split("Patch-Pack-CN")[1]
-        upload_path = relative_path.replace('\\', '/').replace(os.path.basename(file_path), "")
-        print(f"Uploading {file_path} to {upload_path}\n")
-        await upload_file(file_path, upload_path)
-
-
 if __name__ == '__main__':
-    asyncio.run(main())
+    Filelist = []
+    file = get_filelist(os.environ["FILE_PATH"], Filelist)
+    
+    for a in file:
+        pathlist = a.split("Patch-Pack-CN")
+        print(pathlist)
+        path = pathlist[1]
+        path = path.replace('\\', '/')
+        path = path.replace(os.path.basename(a), "")
+        print(a + "\n")
+        print(path)
+        asyncio.run(f(file=a,path=path))
