@@ -53,7 +53,7 @@ def get_filelist(dir_path, file_list):
 
 async def main():
     file_list = get_filelist(os.environ["FILE_PATH"], [])
-
+    print(1)
     for file_path in file_list:
         relative_path = file_path.split("Patch-Pack-CN")[1]
         upload_path = relative_path.replace('\\', '/').replace(os.path.basename(file_path), "")
@@ -63,3 +63,4 @@ async def main():
 
 if __name__ == '__main__':
     asyncio.run(main())
+    print(2)
