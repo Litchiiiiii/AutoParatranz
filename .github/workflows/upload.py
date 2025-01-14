@@ -26,28 +26,23 @@ async def upload_file(file_path, upload_path):
             print(f"Exception when calling FilesApi->create_file: {e}\n")
 
 
-def get_filelist(dir_path, file_list):
-    """
-    获取指定目录下所有符合条件的文件。
-    :param dir_path: 目录路径
-    :param file_list: 文件列表
-    :return: 更新后的文件列表
-    """
-    if os.path.isfile(dir_path):
-        if re.match(".+(en_us.json)$", dir_path):
-            file_list.append(dir_path)
-        # # 若只是要返回文件名，使用这个
-        # file_list.append(os.path.basename(dir_path))
-    elif os.path.isdir(dir_path):
-        for item in os.listdir(dir_path):
-            # # 如果需要忽略某些文件夹，使用以下代码
-            # if item == "xxx":
-            #     continue
-            # if item == "patchouli_books":
-            #     continue
-            new_path = os.path.join(dir_path, item)
-            get_filelist(new_path, file_list)
-    return file_list
+def get_filelist(dir, Filelist):
+    newDir = dir
+    if os.path.isfile(dir):
+        if re.match(".+(en_us.json)$", dir, flags=0) is not None:
+            Filelist.append(dir)
+        # # 若只是要返回文件文，使用这个
+        # Filelist.append(os.path.basename(dir))
+    elif os.path.isdir(dir):
+        for s in os.listdir(dir):
+            # 如果需要忽略某些文件夹，使用以下代码
+            # if s == "xxx":
+            # continue
+            #if s == "patchouli_books":
+                #continue
+            newDir = os.path.join(dir, s)
+            get_filelist(newDir, Filelist)
+    return Filelist
 
 
 async def main():
