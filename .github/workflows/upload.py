@@ -47,14 +47,13 @@ def get_filelist(dir_path, file_list):
             # if item == "patchouli_books":
             #     continue
             new_path = os.path.join(dir_path, item)
-            get_filelist(new_path, Filelist)
-            print(file_list)
+            get_filelist(new_path, file_list)
     return file_list
 
 
 async def main():
-    file_list = get_filelist(os.environ["FILE_PATH"], Filelist)
-    #print(file_list)
+    Filelist = get_filelist(os.environ["FILE_PATH"], Filelist)
+    print(file_list)
     for file_path in file_list:
         relative_path = file_path.split("Patch-Pack-CN")[1]
         upload_path = relative_path.replace('\\', '/').replace(os.path.basename(file_path), "")
