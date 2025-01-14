@@ -8,7 +8,6 @@ import paratranz_client
 configuration = paratranz_client.Configuration(host="https://paratranz.cn/api")
 configuration.api_key['Token'] = os.environ["API_TOKEN"]
 project_id = int(os.environ["PROJECT_ID"])
-Filelist = []
 
 async def upload_file(file_path, upload_path):
     """
@@ -52,7 +51,8 @@ def get_filelist(dir_path, file_list):
 
 
 async def main():
-    Filelist = get_filelist(os.environ["FILE_PATH"], Filelist)
+    Filelist = []
+    file_list = get_filelist(os.environ["FILE_PATH"], Filelist)
     print(file_list)
     for file_path in file_list:
         relative_path = file_path.split("Patch-Pack-CN")[1]
