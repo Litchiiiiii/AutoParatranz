@@ -46,9 +46,9 @@ def get_filelist(dir_path, file_list):
             #     continue
             # if item == "patchouli_books":
             #     continue
-            print(item)
             new_path = os.path.join(dir_path, item)
             get_filelist(new_path, file_list)
+            print(file_list)
     return file_list
 
 
