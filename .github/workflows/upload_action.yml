@@ -3,6 +3,7 @@ name: Upload Action
 on:
   issues:
     types: [opened]
+  workflow_dispatch:
 jobs:
   check-issue-and-upload:
     if: contains(github.event.issue.labels.*.name, '自动化:Github→paratranz')
