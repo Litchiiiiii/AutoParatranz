@@ -1,89 +1,79 @@
-name: Translation To GitHub
+name: Paratranz To GitHub
+
 on:
-  issues:
-    types: [opened]
   schedule:
-    - cron: "0 16,4 * * *"
+    # 每天北京时间早上9点和晚上9点运行
+    - cron: "0 1,13 * * *"
+  workflow_dispatch:
+
 jobs:
-  check-issue:
-    if: contains(github.event.issue.labels.*.name, '自动化:paratranz→Github') && github.event_name != 'schedule'
-    name: Check Issue
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: Issue Check
-        run: |
-          echo "检测成功：${{ github.event.issue.labels.*.name }}"
-  Translation-To-GitHub:
-    name: Translation To GitHub
-    runs-on: ubuntu-latest
-    if: contains(github.event.issue.labels.*.name, '自动化:paratranz→Github') || github.event_name == 'schedule'
+  paratranz-to-gitHub:
+    name: Paratranz To GitHub
     environment: PARATRANZ_ENV
+    runs-on: ubuntu-latest
     env:
       API_TOKEN: ${{ secrets.API_KEY }}
-      FILE_PATH: ./
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       PROJECT_ID: ${{ vars.ID }}
-      GIT_PATH: ${{ vars.G_PATH }}
     steps:
       - uses: actions/checkout@v4
-      - name: Set up Python 3.12
+      - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
+          python-version: "3.13"
       - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip
-          pip install PyGithub requests
+          pip install requests
       - name: Configure Git
         run: |
-          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com" && \
           git config --global user.name "VM[BOT]"
-          git config --global pull.rebase false
-      - name: Initialize and Checkout Branch
+      - name: Checkout main branch
+        run: git checkout main
+      - name: Paratranz To GitHub
+        run: python .github/workflows/para2github.py
+      - name: Commit changes
+        id: commit
         run: |
-          git init
-          git fetch origin
-          git branch develop
-          git push -u origin develop
-          git checkout develop
-          git reset --hard main
-      - name: Paratranz To zh_cn
-        run: |
-          python .github/workflows/translationToGitHub.py
-      - name: Upload To develop
-        run: |
-          git add .
           if [[ -n $(git status -s) ]]; then
-            echo '译文更改'
-            git commit -m 'paratranz上传'
-            git pull origin develop --allow-unrelated-histories
-            git push origin develop
-            gh pr create --title 'paratranz上传' --body '自动PR'
-            sleep 1
-            gh pr merge develop --merge
-            git checkout main
-            git branch -D develop
-            git push origin --delete develop
+            git add .
+            git commit -m '从Paratranz同步翻译'
+            git push origin main
+            echo "changed=true" >> $GITHUB_ENV
           else
-            echo '译文未更改'
-            git checkout main
-            git branch -D develop
-            git push origin --delete develop
+            echo "changed=false" >> $GITHUB_ENV
           fi
-      - name: Upload a Build Artifact
+    outputs:
+      changed: ${{ steps.commit.env.changed }}
+  release:
+    name: Create Release
+    runs-on: ubuntu-latest
+    needs: paratranz-to-gitHub
+    if: ${{ needs.paratranz-to-gitHub.outputs.changed == 'true' }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Upload CNPack folder
         uses: actions/upload-artifact@v4
         with:
           name: CNPack
-          path: ${{ github.workspace }}/Patch-Pack-CN
-
-  close-issue:
-    name: Close Issue
-    needs: check-issue
-    runs-on: ubuntu-latest
-    steps:
-      - name: Close Issue
-        uses: peter-evans/close-issue@v3
+          path: ${{ github.workspace }}/CNPack
+      - name: Get current datetime for tag
+        id: datetime
+        run: echo "datetime=$(date +'%Y%m%d-%H%M%S')" >> $GITHUB_ENV
+      - name: Zip CNPack folder
+        run: zip -r "${{ env.datetime }}.zip" ./CNPack
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
         with:
-          comment: |
-            此模板仅由内部人员使用，已自动关闭。
+          name: "${{ env.datetime }}.zip"
+          path: "${{ env.datetime }}.zip"
+      - name: Create Release
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: "${{ env.datetime }}.zip"
+          tag: "Release-${{ env.datetime }}"
+          name: "Release ${{ env.datetime }}"
+          body: "自动生成的最新汉化补丁"
+          draft: false
+          prerelease: true
