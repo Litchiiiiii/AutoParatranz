@@ -3,7 +3,7 @@ import os
 import json
 from pprint import pprint
 import paratranz_client
-
+from pydantic import ValidationError
 
 configuration = paratranz_client.Configuration(host="https://paratranz.cn/api")
 configuration.api_key["Token"] = os.environ["API_TOKEN"]
@@ -40,7 +40,7 @@ def get_filelist(dir):
 
 
 async def main():
-    files = get_filelist("./")
+    files = get_filelist("./Source")
     tasks = []
 
     for file in files:
