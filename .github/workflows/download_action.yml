@@ -1,9 +1,6 @@
 name: Paratranz To GitHub
 
 on:
-  schedule:
-    # 每天北京时间早上9点和晚上9点运行
-    - cron: "0 1,13 * * *"
   workflow_dispatch:
 
 jobs:
